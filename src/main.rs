@@ -127,7 +127,12 @@ fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
             current_code_block.push('\n');
 
             // If line is not a hex line, end capturing
-            if !Regex::new(r"^[\dA-Fa-fxyXY]{8} [\dA-Fa-fxyXY]{8}").unwrap().is_match(line) && !line.starts_with("*") && !line.starts_with("$") {
+            if !Regex::new(r"^[\dA-Fa-fxyXY]{8} [\dA-Fa-fxyXY]{8}")
+                .unwrap()
+                .is_match(line)
+                && !line.starts_with("*")
+                && !line.starts_with("$")
+            {
                 capturing = false;
                 if let Some(gecko_code) = GeckoCode::from_str(&current_code_block) {
                     gecko_codes.push(gecko_code);
