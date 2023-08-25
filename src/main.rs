@@ -159,47 +159,6 @@ fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
     gecko_codes
 }
 
-#[derive(Debug, PartialEq, Clone, Serialize)]
-pub struct FilteredGeckoCode {
-    header: String,
-    version: Option<GameVersion>,
-    authors: Option<Vec<String>>,
-    description: Option<Vec<String>>,
-    hex: Vec<[String; 2]>, // This will store the pair of hex strings
-    deprecated: bool,
-    overwrite: Option<Vec<String>>,
-    injection: Option<Vec<String>>,
-    categories: Option<Vec<String>>,
-}
-
-impl FilteredGeckoCode {
-    pub fn from_gecko_code(gecko: &GeckoCode) -> Self {
-        let hex_pairs = gecko
-            .hex
-            .iter()
-            .map(|hex_string| {
-                let mut split = hex_string
-                    .split_whitespace()
-                    .map(String::from)
-                    .collect::<Vec<_>>();
-                [split.remove(0), split.remove(0)]
-            })
-            .collect();
-
-        FilteredGeckoCode {
-            header: gecko.header.clone(),
-            version: gecko.version.clone(),
-            authors: gecko.authors.clone(),
-            description: gecko.description.clone(),
-            hex: hex_pairs,
-            deprecated: gecko.deprecated,
-            overwrite: gecko.overwrite.clone(),
-            injection: gecko.injection.clone(),
-            categories: gecko.categories.clone(),
-        }
-    }
-}
-
 fn main() {
     env::set_var("RUST_BACKTRACE", "full"); // this method needs to be inside main() method
 
@@ -216,54 +175,8 @@ fn main() {
     let json_output = serde_json::to_string_pretty(&gecko_codes) // Serialize the vector to JSON
         .expect("Failed to serialize to JSON");
 
-    fs::write("RawUnfilteredGeckoCodes.json", &json_output) // Save the JSON to "outputGeckoCodeBlob.json"
+    fs::write("RawUnfilteredGeckoCodes.json", json_output) // Save the JSON to "outputGeckoCodeBlob.json"
         .expect("Unable to write to file");
 
     println!("Successfully saved Gecko Codes to RawUnfilteredGeckoCodes.json");
-
-    let raw_data: Vec<GeckoCode> = serde_json::from_str(&json_output).unwrap_or_default();
-
-    let mut once_filtered_gecko_codes: Vec<FilteredGeckoCode> = Vec::new();
-
-    for gecko_code in raw_data {
-        let mut filtered_gecko_code = FilteredGeckoCode::from_gecko_code(&gecko_code);
-
-        // Update for each hex code string in gecko_code
-        for hex_code in &gecko_code.hex {
-            // Split the hex string by whitespace and then rejoin the first two parts (to remove comments and extra spaces)
-            let split_hex: Vec<&str> = hex_code.split_whitespace().collect();
-
-            if split_hex.len() >= 2 {
-                let truncated_hex = format!("{} {}", split_hex[0], split_hex[1]);
-                filtered_gecko_code
-                    .hex
-                    .push([split_hex[0].to_string(), split_hex[1].to_string()]);
-
-                // Classify hex codes
-                if truncated_hex.starts_with("C2") || truncated_hex.starts_with("C3") {
-                    filtered_gecko_code
-                        .injection
-                        .as_mut()
-                        .unwrap()
-                        .push(truncated_hex.clone());
-                }
-                if truncated_hex.starts_with("04") || truncated_hex.starts_with("05") {
-                    filtered_gecko_code
-                        .overwrite
-                        .as_mut()
-                        .unwrap()
-                        .push(truncated_hex.clone());
-                }
-            }
-        }
-        once_filtered_gecko_codes.push(filtered_gecko_code);
-    }
-
-    let filtered_json_output = serde_json::to_string_pretty(&once_filtered_gecko_codes)
-        .expect("Failed to serialize to JSON");
-
-    fs::write("OnceFilteredGeckoCodes.json", &filtered_json_output)
-        .expect("Unable to write to file");
-
-    println!("Successfully saved filtered Gecko Codes to OnceFilteredGeckoCodes.json");
 }
