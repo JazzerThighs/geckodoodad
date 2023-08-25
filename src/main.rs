@@ -22,7 +22,7 @@ pub enum Category {
     
 }
 
-#[derive(Debug, Serialize)]
+#[derive(Debug, PartialEq, Clone, Serialize)]
 pub struct GeckoCode {
     header: String,
     version: Option<GameVersion>,
