@@ -10,7 +10,7 @@ gecko_re = re.compile(
     r"^ \$(?P<header>.*?)(?: *\((?P<version>(?:Melee|SSBM)? *(?:PAL|NTSC)? *(?:v?\d\.\d\d)?)?\))?"
     r"(?: *\[(?P<authors>.*?)\])?[ \t:]*$"
     r"(?P<description>(?:\n \*(?:.*?)$)*)"
-    r"(?P<hex>(?:$\n [\dA-Fa-f]{8} [\dA-Fa-fxyXY]{8}[ \t]*(?:#.*)?$)+)",
+    r"(?P<hex>(?:$\n [\dA-Za-z]{8} [\dA-Za-z]{8}[ \t]*(?:#.*)?$)+)",
     flags=re.MULTILINE)
 
 Versions:
