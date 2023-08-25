@@ -1,10 +1,9 @@
 extern crate regex;
 
-// use std::collections::HashMap;
 use regex::Regex;
 use serde::Serialize;
 use serde_json;
-use std::env;
+// use std::collections::HashMap;
 use std::fs;
 use std::path::Path;
 
@@ -31,83 +30,82 @@ pub struct GeckoCode {
     description: Option<Vec<String>>,
     hex: Vec<String>,
     deprecated: bool,
-    overwrite: Option<Vec<String>>,
-    injection: Option<Vec<String>>,
-    categories: Option<Vec<String>>,
+    overwrite: Vec<String>,
+    injection: Vec<String>,
+    categories: Vec<String>,
 }
 
 impl GeckoCode {
     pub fn from_str(s: &str) -> Option<GeckoCode> {
-        // Helper functions for parsing various sections of the Gecko Code.
-        fn parse_header(line: &str) -> Option<String> {
-            let re = Regex::new(r"^\$(.*)").unwrap();
-            re.captures(line).map(|caps| caps[1].trim().to_string())
-        }
+        let re = Regex::new(
+            r"(?x)
+            ^\$
+            (?P<header>.*?)\s*
+            (?:\((?P<possible_version>[^\)]+)\))?\s*
+            (?:\[(?P<authors>.*?)\])?\s*$
+            (?P<description>(?:\n\*(?:.*?)$)*)
+            (?P<hex>(?:$\n[\dA-Za-z]{8}\s?[\dA-Za-z]{8}\s*(?:#.*?)?$)+)
+        ",
+        )
+        .unwrap();
 
-        fn parse_version(line: &str) -> Option<GameVersion> {
-            let re = Regex::new(r"^\(([^)]+)\)").unwrap();
-            re.captures(line).and_then(|caps| match &caps[1] {
-                "1.0" | "1.00" => Some(GameVersion::NTSC(1.0)),
-                "1.01" => Some(GameVersion::NTSC(1.01)),
-                "1.02" => Some(GameVersion::NTSC(1.02)),
-                "KOR" => Some(GameVersion::KOR),
-                "PAL" => Some(GameVersion::PAL),
-                _ => None,
-            })
-        }
+        if let Some(caps) = re.captures(s) {
+            let mut header = caps["header"].trim().to_string();
 
-        fn parse_authors(line: &str) -> Option<Vec<String>> {
-            let re = Regex::new(r"^\[([^]]+)\]").unwrap();
-            re.captures(line)
-                .map(|caps| caps[1].split(',').map(|a| a.trim().to_string()).collect())
-        }
+            let possible_version = caps
+                .name("possible_version")
+                .map(|m| m.as_str().trim().to_string());
 
-        let mut lines = s.lines();
+            let authors = caps.name("authors").map(|m| {
+                m.as_str()
+                    .split(",")
+                    .map(|author| author.trim().to_string())
+                    .collect::<Vec<String>>()
+            });
 
-        let mut gecko = GeckoCode {
-            header: String::new(),
-            version: None,
-            authors: None,
-            description: Some(Vec::new()),
-            hex: Vec::new(),
-            deprecated: false,
-            overwrite: Some(Vec::new()),
-            injection: Some(Vec::new()),
-            categories: Some(Vec::new()),
-        };
+            let description = caps.name("description").map(|m| {
+                m.as_str()
+                    .lines()
+                    .map(|line| line.trim().to_string())
+                    .collect::<Vec<String>>()
+            });
 
-        if let Some(header) = lines.next().and_then(|line| parse_header(line)) {
-            gecko.header = header;
-        } else {
-            return None;
-        }
+            let hex: Vec<String> = caps["hex"]
+                .lines()
+                .filter_map(|line| {
+                    let parts: Vec<&str> = line.splitn(2, '#').collect();
+                    Some(parts[0].trim().to_string())
+                })
+                .collect();
 
-        for line in lines {
-            if let Some(version) = parse_version(line) {
-                gecko.version = Some(version);
-            } else if let Some(authors) = parse_authors(line) {
-                gecko.authors = Some(authors);
-            } else if line.starts_with('*') {
-                if gecko.description.is_none() {
-                    gecko.description = Some(Vec::new());
+            // Check if possible_version is an actual version or part of the header
+            let version = match possible_version.as_deref() {
+                Some("1.0") | Some("1.00") => Some(GameVersion::NTSC(1.0)),
+                Some("1.01") => Some(GameVersion::NTSC(1.01)),
+                Some("1.02") => Some(GameVersion::NTSC(1.02)),
+                Some("KOR") => Some(GameVersion::KOR),
+                Some("PAL") => Some(GameVersion::PAL),
+                Some(text) => {
+                    // Append the text to the header as it's not a recognized version
+                    header.push_str(&format!(" ({})", text));
+                    None
                 }
-                gecko
-                    .description
-                    .as_mut()
-                    .unwrap()
-                    .push(line[1..].trim().to_string());
-            } else if Regex::new(r"^[\dA-Za-z]{8}\s?[\dA-Za-z]{8}")
-                .unwrap()
-                .is_match(line)
-            {
-                gecko.hex.push(line.trim().to_string());
-            }
-        }
+                None => None,
+            };
 
-        if gecko.header.is_empty() || gecko.hex.is_empty() {
-            None
+            Some(GeckoCode {
+                header,
+                version,
+                authors,
+                description,
+                hex,
+                deprecated: false,
+                overwrite: Vec::new(),
+                injection: Vec::new(),
+                categories: Vec::new(),
+            })
         } else {
-            Some(gecko)
+            None
         }
     }
 }
@@ -129,7 +127,7 @@ fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
             current_code_block.push('\n');
 
             // If line is not a hex line, end capturing
-            if !Regex::new(r"^[\dA-Za-z]{8} [\dA-Za-z]{8}")
+            if !Regex::new(r"^[\dA-Fa-fxyXY]{8} [\dA-Fa-fxyXY]{8}")
                 .unwrap()
                 .is_match(line)
                 && !line.starts_with("*")
@@ -137,6 +135,7 @@ fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
             {
                 capturing = false;
                 if let Some(gecko_code) = GeckoCode::from_str(&current_code_block) {
+                    println!("{:?} added;", gecko_code);
                     gecko_codes.push(gecko_code);
                 }
                 current_code_block.clear();
@@ -155,9 +154,7 @@ fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
 }
 
 fn main() {
-    env::set_var("RUST_BACKTRACE", "full"); // this method needs to be inside main() method
-
-    let file_path = Path::new("geckoCodeWikiPage.md"); // Read the markdown file
+    let file_path = Path::new("../geckoCodeWikiPage.md"); // Read the markdown file
     let file_content = fs::read_to_string(&file_path).expect("Unable to read file");
 
     let mut gecko_codes = extract_gecko_codes(&file_content); // Extract all Gecko Codes
