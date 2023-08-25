@@ -4,15 +4,15 @@ use regex::Regex;
 use serde::Serialize;
 use serde_json;
 // use std::collections::HashMap;
-use std::{fs, env};
 use std::path::Path;
+use std::{env, fs};
 
 #[derive(Debug, PartialEq, Clone, Serialize)]
 pub enum GameVersion {
     NTSC(f64),
     KOR,
     PAL,
-    Other,
+    Other, // to handle unexpected versions
 }
 
 #[derive(Debug, PartialEq, Clone, Serialize)]
@@ -44,19 +44,20 @@ impl GeckoCode {
         }
 
         fn parse_version(line: &str) -> Option<GameVersion> {
-            let re = Regex::new(r"^\(([^)]+)\)").unwrap();
+            let re = Regex::new(r"\(([^)]+)\)").unwrap();
             re.captures(line).and_then(|caps| match &caps[1] {
-                "1.0" | "1.00" => Some(GameVersion::NTSC(1.0)),
-                "1.01" => Some(GameVersion::NTSC(1.01)),
-                "1.02" => Some(GameVersion::NTSC(1.02)),
+                "1.0" | "1.00" | "v1.0" | "v1.00" => Some(GameVersion::NTSC(1.0)),
+                "1.01" | "v1.01" => Some(GameVersion::NTSC(1.01)),
+                "1.02" | "v1.02" => Some(GameVersion::NTSC(1.02)),
                 "KOR" => Some(GameVersion::KOR),
                 "PAL" => Some(GameVersion::PAL),
+                "20XX" | "20XXHP" | "Beyond" | "UPTM" | "UP" |  "1.03" | "v1.03" | "Silly Melee" => Some(GameVersion::Other),
                 _ => None,
             })
         }
 
         fn parse_authors(line: &str) -> Option<Vec<String>> {
-            let re = Regex::new(r"^\[([^]]+)\]").unwrap();
+            let re = Regex::new(r"\[([^]]+)\]").unwrap();
             re.captures(line)
                 .map(|caps| caps[1].split(',').map(|a| a.trim().to_string()).collect())
         }
@@ -76,17 +77,19 @@ impl GeckoCode {
         };
 
         if let Some(header) = lines.next().and_then(|line| parse_header(line)) {
+            if let Some(version) = parse_version(&header) {
+                gecko.version = Some(version);
+            }
+            if let Some(authors) = parse_authors(&header) {
+                gecko.authors = Some(authors);
+            }
             gecko.header = header;
         } else {
             return None;
         }
 
         for line in lines {
-            if let Some(version) = parse_version(line) {
-                gecko.version = Some(version);
-            } else if let Some(authors) = parse_authors(line) {
-                gecko.authors = Some(authors);
-            } else if line.starts_with('*') {
+            if line.starts_with('*') {
                 if gecko.description.is_none() {
                     gecko.description = Some(Vec::new());
                 }
@@ -156,7 +159,7 @@ fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
 
 fn main() {
     env::set_var("RUST_BACKTRACE", "full"); // this method needs to be inside main() method
-    
+
     let file_path = Path::new("geckoCodeWikiPage.md"); // Read the markdown file
     let file_content = fs::read_to_string(&file_path).expect("Unable to read file");
 
@@ -170,8 +173,8 @@ fn main() {
     let json_output = serde_json::to_string_pretty(&gecko_codes) // Serialize the vector to JSON
         .expect("Failed to serialize to JSON");
 
-    fs::write("outputGeckoCodeBlob.json", json_output) // Save the JSON to "outputGeckoCodeBlob.json"
+    fs::write("RawUnfilteredGeckoCodes.json", json_output) // Save the JSON to "outputGeckoCodeBlob.json"
         .expect("Unable to write to file");
 
-    println!("Successfully saved Gecko Codes to outputGeckoCodeBlob.json");
+    println!("Successfully saved Gecko Codes to RawUnfilteredGeckoCodes.json");
 }
