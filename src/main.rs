@@ -44,7 +44,7 @@ impl GeckoCode {
             (?:\((?P<possible_version>[^\)]+)\))?\s*
             (?:\[(?P<authors>.*?)\])?\s*$
             (?P<description>(?:\n\*(?:.*?)$)*)
-            (?P<hex>(?:$\n[\dA-Fa-fxyXY]{8}\s?[\dA-Fa-fxyXY]{8}\s*(?:#.*?)?$)+)
+            (?P<hex>(?:$\n[\dA-Za-z]{8}\s?[\dA-Za-z]{8}\s*(?:#.*?)?$)+)
         ",
         )
         .unwrap();
@@ -111,14 +111,40 @@ impl GeckoCode {
 }
 
 fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
-    input                                                   // Split by the dollar sign indicating a new Gecko Code. Keep in mind that this might not handle the very first Gecko Code correctly, which we'll handle separately.
-        .split("\n$") 
-        .filter_map(|block| {
-            
-            let adjusted_block = format!("${}", block); // We prepend a dollar sign because we split by "\n$" and lost the leading "$".
-            GeckoCode::from_str(&adjusted_block)
-        })
-        .collect()
+    let mut gecko_codes = Vec::new();
+    let mut current_code_block = String::new();
+    let mut capturing = false;
+
+    for line in input.lines() {
+        // Start capturing when a line starts with "$"
+        if line.starts_with("$") {
+            capturing = true;
+        }
+
+        // If currently capturing a Gecko Code block
+        if capturing {
+            current_code_block.push_str(line);
+            current_code_block.push('\n');
+
+            // If line is not a hex line, end capturing
+            if !Regex::new(r"^[\dA-Fa-fxyXY]{8} [\dA-Fa-fxyXY]{8}").unwrap().is_match(line) && !line.starts_with("*") && !line.starts_with("$") {
+                capturing = false;
+                if let Some(gecko_code) = GeckoCode::from_str(&current_code_block) {
+                    gecko_codes.push(gecko_code);
+                }
+                current_code_block.clear();
+            }
+        }
+    }
+
+    // Handle the case where the last Gecko Code goes till the end of the file
+    if !current_code_block.is_empty() {
+        if let Some(gecko_code) = GeckoCode::from_str(&current_code_block) {
+            gecko_codes.push(gecko_code);
+        }
+    }
+
+    gecko_codes
 }
 
 fn main() {
