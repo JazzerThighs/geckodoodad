@@ -16,6 +16,7 @@ To learn more about Gecko Codes and Basic GameCube ASM, visit [https://www.youtu
 *[https://smashboards.com/threads/melee-modding-wizard-beta-v0-9-3.517823/ Melee Modding Wizard] by DRGN is a more updated program that combines the features of DAT Texture Wizard and Melee Code Manager.
 *[https://github.com/AltimorTASDK/cpp2gecko CPP2Gecko] by Altimor is a C/C++ to gecko code build system created for Super Smash Bros. Melee.
 *[https://github.com/MeleeWorkshop/wiki2gecko Wiki2Gecko] by ribbanya, made to parse this page and output a list of the present Gecko Codes.
+*[https://github.com/JazzerThighs/geckodoodad geckodoodad] & [https://codepen.io/JazzerThighs/pen/xxmwypy geckovioodad] by JazzerThighs, made to parse this page and output a list of every Memory Address that each Gecko Code Injects/Overwrites on the ''SSBM'' Disc, and an accompanying interface to search for all Gecko Codes by Memory Address used, in order to determine conflicting allocations. Used ''Wiki2Gecko'' as a guide.
 
 ====== Gecko Code Standard Format ======
 
@@ -24,7 +25,7 @@ $Example Code Name (version) [Author 1, Author 2, etc.]
 *Description of the code's purpose.
 *Description may also contain complimentary information such as Code Options, etc.
 01234567 89ABCDEF #Developer Comments
-01234567 89ABXXYY #Developer Comments may also contain pointers to XX, YY, etc.
+01234567 89abxxyy #Developer Comments may also contain pointers to XX, YY, etc.
 
 === <big><big><big>⚠</big></big> ''It should be noted that '''Gecko Codes''' may or may not cause '''De-synchronizations''' when playing Online. Use with Caution!'' <big><big>⚠</big></big></big> ===
 
@@ -20710,6 +20711,170 @@ CBA10028 BBE10010
 80010034 38210030
 7C0803A6 4E800020
 60000000 00000000
+
+$Hide Invisible Intangible Hurtboxes [Altafen]
+C2080764 00000004 #main.asm
+881F221E 70000080
+4182000C 38000000
+48000008 881F119E
+60000000 00000000
+
+$Custom Hitbox/Hurtbox Colors [Altafen]
+C20805F4 0000001D
+7C7F1B78 8B03000C
+2C180000 41820018
+2C180001 41820040
+2C180002 41820068
+48000094 3F009900 #EADD is hurtbox port 1 RRGG
+631800FE 3F20803B #CAFE is hurtbox port 1 BBAA
+63399928 83390000
+93190000 3F009900 #FF00 is hitbox port 1 RRGG
+631800FE 3F20804D #00FE is hitbox port 1 BBAA
+633936A0 93190000
+48000090 3F004099 #4099 is hurtbox port 2 RRGG
+631899FE 3F20803B #00FE is hurtbox port 2 BBAA
+63399928 83390000
+93190000 3F009900 #0102 is hitbox port 2 RRGG
+631800FE 3F20804D #FAFE is hitbox port 2 BBAA
+633936A0 93190000
+48000060 3F008080 #FFAA is hurtbox port 3 RRGG
+631800FE 3F20803B #33FE is hurtbox port 3 BBAA
+63399928 83390000
+93190000 3F009900 #FAFA is hitbox port 3 RRGG
+631800FE 3F20804D #00FE is hitbox port 3 BBAA
+633936A0 93190000
+48000030 3F000099 #CCC5 is hurtbox port 4 RRGG
+631800FE 3F20803B #5FFE is hurtbox port 4 BBAA
+63399928 83390000
+93190000 3F009900 #00FA is hitbox port 4 RRGG
+631800FE 3F20804D #00FE is hitbox port 4 BBAA
+633936A0 93190000
+60000000 00000000
+
+$Unfreeze Game End (from 20XXTE) [Altafen, Dan Salvato]
+*Modified to be a standalone gecko code
+0416d2f4 60000000
+C20D34E0 00000004
+3C808047 8884B6A8
+2C040000 41820008
+4E800020 7C0802A6
+60000000 00000000
+C216D880 00000005
+3D808037 618C8330
+7D8903A6 4E800421
+3D80801A 618C4B60
+7D8903A6 4E800421
+60000000 00000000
+223f9704 00000000 # makes the "Game!" text half size (from here to the end)
+82200000 803f9704
+48001000 00000000
+18000020 3f000000
+20020004 00000000
+e2000001 00000000
+
+$Hold Ledges Forever [PKFreeZZy]
+0409A950 60000000
+
+$Big Light Shield Only (L) [Altafen]
+C234E67C 00000003 #l.asm
+2C050031 41800008
+38A00031 98A40006
+60000000 00000000
+
+$Big Light Shield Only (R) [Altafen]
+C234E698 00000003 #r.asm
+2C030031 41800008
+38600031 98640007
+60000000 00000000
+
+$Green Overlay during Landing IASA [Altafen]
+C20D5DB8 0000000D #main.asm
+3C608048 80639D30
+5463443E 2C030208
+40820018 806DB61C
+88630000 881E000C
+7C001800 40820038
+3C60437F 907E04BC
+3C604334 907E04C4
+38600000 907E04B8
+907E04C0 907E04C8
+907E04CC 907E04D0
+907E04D4 38600080
+987E0504 7FA3EB78
+60000000 00000000
+
+$Brawl-style Team Colors [Flieskiller]
+C225EBA0 00000016
+8AF303BE 3DE08042
+61EFB460 7DF17B78
+3A31FFFC 7E31FA14
+8A510000 8A11FFFC
+7E528214 2C120003
+41800070 8A0F0000
+896F0001 2C0B0000
+4182004C 7C10A000
+40820010 7C0B9000
+40820008 4800000C
+39EF0004 4BFFFFD8
+3E208042 6231B460
+3A31FFF4 8AEF0003
+9AF10001 8AEF0002
+39600001 99710000
+3A310008 7E31FA14
+48000018 3DE08042
+61EFB460 3AE00000
+9AEFFFF4 3A400000
+9A510000 39600000
+9971FFFC 9AFCFFFF
+60000000 00000000
+C2261BD8 00000004
+1C840003 3DE08042
+61EFB460 39EFFFF8
+7DEF9A14 3A000001
+9A0F0000 00000000
+C225EDDC 00000008
+3DE08042 61EFB460
+39EFFFF4 8A0F0000
+2C100000 41820020
+3A000000 9A0F0000
+88AF0001 3DE08025
+61EFEE1C 7DE903A6
+4E800420 880303BE
+60000000 00000000
+04261BDC 7CC43378
+041B0374 88860063
+041B0378 88050063
+041B03C4 88860063
+041B03C8 88050063
+041B0414 88860063
+041B0418 88050063
+0642B460 00000038
+00030003 00040100
+01030000 01040101
+04030000 07030201
+10030001 11030004
+11040105 16030004
+16040100 18030104
+02030301 02030103
+
+$Red Menu [Anycard]
+050F8998 990019FF
+
+$Partially Invisible Techs v1.1 [Clown, PKFreeZZy]
+C2080A30 00000006
+801F0010 280000C7
+41A0001C 280000C9
+41A10014 801F1988
+2C800002 4C421182
+41860008 5460CFFF
+60000000 00000000
+
+$Disable F-Zero Grand Prix Cars
+0420c1f8 60000000
+
+$Frozon Camera on Mushroom Kingdom I
+04207c88 4e800020
+
 
 </div>
 

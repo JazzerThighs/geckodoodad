@@ -71,7 +71,7 @@ impl GeckoCode {
                 .split_whitespace()
                 .filter_map(|s| {
                     if bytecode_pattern.is_match(s) {
-                        Some(s.to_string())
+                        Some(s.to_uppercase())
                     } else {
                         None
                     }
