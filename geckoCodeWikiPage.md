@@ -1,3 +1,33 @@
+A '''Gecko Code''' is a code that acts essentially like a Game Genie or Action Replay code, which has an effect on ''GameCube'' or ''Wii'' games across a large variety of purposes. This page is serves as a centralized archive to store the various Gecko Codes that community members have written to alter various facets of the game for competitive, aesthetic, quality-of-life, or game-play purposes. 
+
+All codes are for ''SSBM NTSC 1.02'' (the Tournament Standard revision of ''SSBM''), unless there are multiple labeled ''SSBM'' versions of the same code grouped together.
+
+====== Links ======
+
+[https://www.youtube.com/watch?v=VSyuFWItuVA This YouTube video] by David V. Kimball explains how to install Gecko Codes on ''SSBM''.
+
+*[https://web.archive.org/web/20191001120524/https://www.geckocodes.org/index.php?arsenal=1 Gecko Codetype Documentation]: Archived List of Gecko Codetypes for ''GameCube'' and ''Wii'' games.
+*[https://www.cs.uaf.edu/2011/fall/cs301/lecture/11_21_PowerPC.html GCC PowerPC Assembly Quick Reference ("Cheat Sheet")]: Handy Guide to PowerPC Assembly syntax specifically for the ''GameCube'''s programming environment.
+
+To learn more about Gecko Codes and Basic GameCube ASM, visit [https://www.youtube.com/watch?v=8eOGRZrJ4CU&ab_channel=LittleCoaks this video].
+
+*[https://github.com/JLaferri/gecko Gecko] is a program to assist in the creation of Gecko Codes. 
+*[https://smashboards.com/threads/melee-code-manager-v4-4-1-easily-add-mods-to-your-game.416437/ Melee Code Manager] by DRGN is a program for converting codes, and installing them into a ''SSBM'' ISO.
+*[https://smashboards.com/threads/melee-modding-wizard-beta-v0-9-3.517823/ Melee Modding Wizard] by DRGN is a more updated program that combines the features of DAT Texture Wizard and Melee Code Manager.
+*[https://github.com/AltimorTASDK/cpp2gecko CPP2Gecko] by Altimor is a C/C++ to gecko code build system created for Super Smash Bros. Melee.
+*[https://github.com/MeleeWorkshop/wiki2gecko Wiki2Gecko] by ribbanya, made to parse this page and output a list of the present Gecko Codes.
+
+====== Gecko Code Standard Format ======
+
+
+$Example Code Name (version) [Author 1, Author 2, etc.]
+*Description of the code's purpose.
+*Description may also contain complimentary information such as Code Options, etc.
+01234567 89ABCDEF #Developer Comments
+01234567 89ABXXYY #Developer Comments may also contain pointers to XX, YY, etc.
+
+=== <big><big><big>⚠</big></big> ''It should be noted that '''Gecko Codes''' may or may not cause '''De-synchronizations''' when playing Online. Use with Caution!'' <big><big>⚠</big></big></big> ===
+
 == Codes for a Competitive Setting ==
 
 <div class="mw-collapsible mw-collapsed" data-expandtext="Visual Buffer & Polling Drift Fixes (Lag Reduction Codes)" data-collapsetext="Click to collapse">
@@ -1917,41 +1947,23 @@ This will print onscreen exactly why the game crashed! Gone are the days of bein
 
 
 $Enable OSReport Print on Crash (1.00) [UnclePunch]
-*Button combo to display in vanilla melee:
-*ZRL
-*Y + Pad up
-*A + Pad down
-*B + Pad left
-*X + pad right
 043959B4 4800020C
 
 $Enable OSReport Print on Crash (1.01) [UnclePunch]
-*Button combo to display in vanilla melee:
-*ZRL
-*Y + Pad up
-*A + Pad down
-*B + Pad left
-*X + pad right
 04396B98 4800020C
 
 $Enable OSReport Print on Crash (1.02) [UnclePunch]
-*Button combo to display in vanilla melee:
-*ZRL
-*Y + Pad up
-*A + Pad down
-*B + Pad left
-*X + pad right
 04397878 4800020C
 
 $Enable OSReport Print on Crash (PAL) [UnclePunch]
-*Button combo to display in vanilla melee:
-*ZRL
-*Y + Pad up
-*A + Pad down
-*B + Pad left
-*X + pad right
 043977A0 4800020C
 
+Button combo to display in vanilla melee:
+ZRL
+Y + Pad up
+A + Pad down
+B + Pad left
+X + pad right
 
 </div>
 
@@ -2835,28 +2847,21 @@ $Disable Name Tag Reset After Exiting Character Select Screen [Todd Bonney]
 
 
 $Load Any Stage over Another SSS Icon in Vs. Mode (1.02) [Achilles]
-
 28480686 FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen
 00480687 00000YYY #Replace_with_Hexidecimal_Stage_ID_for_Desired_Stage_to_Load
 E2000001 00000000
 
 $Load Any Stage over Another SSS Icon in Vs. Mode (1.01) [Achilles]
-*Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]
-0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode
 2847F9A6 FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen
 0047F9A7 00000YYY
 E2000001 00000000
 
 $Load Any Stage over Another SSS Icon in Vs. Mode (1.00) [Achilles]
-*Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]
-0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode
 2847E6BE FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen
 0047E6BF 00000YYY #Replace_with_Hexidecimal_Stage_ID_for_Desired_Stage_to_Load
 E2000001 00000000
 
 $Load Any Stage over Another SSS Icon in Vs. Mode (PAL) [Achilles]
-*Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]
-0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode
 2847148E FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen
 0047148F 00000YYY #Replace_with_Hexidecimal_Stage_ID_for_Desired_Stage_to_Load
 E2000001 00000000
@@ -2867,7 +2872,6 @@ E2000001 00000000
 
 
 $Load Specific Stage in Any Mode [djwang88]
-*Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]
 0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode
 
 </div>
@@ -2875,9 +2879,645 @@ $Load Specific Stage in Any Mode [djwang88]
 <div class="mw-collapsible mw-collapsed" data-expandtext="Stage ID List" data-collapsetext="Click to collapse">
 
 
+Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]
 
 
-
+{| class="wikitable"
+|Stage ID List
+|-
+|
+|-
+|Decimal [Hexidecimal] // Stage
+|-
+|-
+|DEBUG
+|-
+|000 [000] // Dummy
+|-
+|001 [001] // TEST
+|-
+|
+|-
+|STANDARD
+|-
+|002 [002] // Fountain of Dreams (Izumi)
+|-
+|003 [003] // Pokémon Stadium (Pstadium)
+|-
+|004 [004] // Princess Peach's Castle (Castle)
+|-
+|005 [005] // Kongo Jungle (Kongo)
+|-
+|006 [006] // Brinstar (Zebes)
+|-
+|007 [007] // Corneria
+|-
+|008 [008] // Yoshi's Story (Story)
+|-
+|009 [009] // Onett
+|-
+|010 [00A] // Mute City
+|-
+|011 [00B] // Rainbow Cruise (RCruise)
+|-
+|012 [00C] // Jungle Japes (Garden)
+|-
+|013 [00D] // Great Bay
+|-
+|014 [00E] // Hyrule Temple (Shrine)
+|-
+|015 [00F] // Brinstar Depths (Kraid)
+|-
+|016 [010] // Yoshi's Island (Yoster)
+|-
+|017 [011] // Green Greens (Greens)
+|-
+|018 [012] // Fourside
+|-
+|019 [013] // Mushroom Kingdom I (Inishie1)
+|-
+|020 [014] // Mushroom Kingdom II (Inishie2)
+|-
+| // 021 [015] // Akaneia (Deleted Stage)
+|-
+|022 [016] // Venom
+|-
+|023 [017] // Poké Floats (Pura)
+|-
+|024 [018] // Big Blue
+|-
+|025 [019] // Icicle Mountain
+|-
+|026 [01A] // Icetop
+|-
+|
+|-
+|027 [01B] // Flat Zone
+|-
+|028 [01C] // Dream Land N64 (old ppp)
+|-
+|029 [01D] // Yoshi's Island N64 (old yosh)
+|-
+|030 [01E] // Kongo Jungle N64 (old kong)
+|-
+|031 [01F] // Battlefield (battle)
+|-
+|032 [020] // Final Destination (last)
+|-
+|
+|-
+|TARGET TEST
+|-
+|033 [021] // Target Test // Mario (TMario)
+|-
+|034 [022] // Target Test // C. Falcon (TCaptain)
+|-
+|035 [023] // Target Test // Young Link (TClink)
+|-
+|036 [024] // Target Test // Donkey Kong (TDonkey)
+|-
+|037 [025] // Target Test // Dr. Mario (TDrmario)
+|-
+|038 [026] // Target Test // Falco (TFalco)
+|-
+|039 [027] // Target Test // Fox (TFox)
+|-
+|040 [028] // Target Test // Ice Climbers (TIceclim)
+|-
+|041 [029] // Target Test // Kirby (TKirby)
+|-
+|042 [02A] // Target Test // Bowser (TKoopa)
+|-
+|043 [02B] // Target Test // Link (TLink)
+|-
+|044 [02C] // Target Test // Luigi (TLuigi)
+|-
+|045 [02D] // Target Test // Marth (TMars)
+|-
+|046 [02E] // Target Test // Mewtwo (TMewtwo)
+|-
+|047 [02F] // Target Test // Ness (TNess)
+|-
+|048 [030] // Target Test // Peach (TPeach)
+|-
+|049 [031] // Target Test // Pichu (TPichu)
+|-
+|050 [032] // Target Test // Pikachu (TPikachu)
+|-
+|051 [033] // Target Test // Jigglypuff (TPurin)
+|-
+|052 [034] // Target Test // Samus (TSamus)
+|-
+|053 [035] // Target Test // Sheik (TSeak)
+|-
+|054 [036] // Target Test // Yoshi (TYoshi
+|-
+|055 [037] // Target Test // Zelda (TZelda)
+|-
+|056 [038] // Target Test // Mr. Game & Watch (TGamewat)
+|-
+|057 [039] // Target Test // Roy (TEmblem)
+|-
+|058 [03A] // Target Test // Ganondorf (TGanon)
+|-
+|
+|-
+|ADVENTURE MODE
+|-
+|059 [03B] // 1 //1 Kinoko (Mushroom Kingdom Adventure)
+|-
+|060 [03C] // 1 //2 Castle (vs Peach & Mario [or luigi])
+|-
+|061 [03D] // 2 //1 Kongo (vs 2 mini Donkey Kongs)
+|-
+|062 [03E] // 2 //2 Garden (vs Donkey Kong)
+|-
+|063 [03F] // 3 //1 Meiktu (Zelda Adventure[Underground Maze])
+|-
+|064 [040] // 3 //2 Shrine (vs Zelda)
+|-
+|065 [041] // 4 //1 Zebes (vs Samus)
+|-
+|066 [042] // 4 //2 Dassyut (Escape from Brinstar Adventure)
+|-
+|067 [043] // 5 //1 Greens (vs Kirby)
+|-
+|068 [044] // 5 //2 Greens (vs Kirby Team)
+|-
+|069 [045] // 5 //3 Greens (classic Kirby music) (vs Giant Kirby)
+|-
+|070 [046] // 6 //1 Corneria (vs Fox [or Falco])
+|-
+|071 [047] // 6 //2 Corneria (vs Fox [or Falco] with massive arwing attack)
+|-
+|072 [048] // 7 //1 Pokémon Stadium (vs Pikachu Team, and 1 Jigglypuff if unlocked, lots of pokeball)
+|-
+|073 [049] // 8 //1 B Route (F //Zero Adventure[F //Zero Grand Prix])
+|-
+|074 [04A] // 8 //2 Mute City (vs Captain Falcon)
+|-
+|075 [04B] // 9 //1 Onett (vs Ness x3, lots of Mr Saturn)
+|-
+|076 [04C] // 10 //1 Icemt (Icicle Mountain Adventure)
+|-
+|077 [04D] // 10 //2 Icetop (vs Ice Climbers x2)
+|-
+|078 [04E] // 11 //1 Battle (vs Fighting Wireframe team, low gravity)
+|-
+|079 [04F] // 11 //2 Battle (vs Metal Mario [& Metal Luigi if unlocked])
+|-
+|080 [050] // 12 //1 Last (vs Bowser)
+|-
+|081 [051] // 12 //2 Last (vs Giga Bowser)
+|-
+|
+|-
+|BONUS STAGE
+|-
+|082 [052] // Takisusume (Race to the Finish Classic)
+|-
+|083 [053] // Grab the Trophies (figureget)
+|-
+|084 [054] // Homerun Contest (homerun)
+|-
+|085 [055] // Heal (All-Star's Stage Inbetween Matches)
+|-
+|
+|-
+|CLASSIC (VS SINGLE CHARACTER)
+|-
+|086 [056] // Princess Peach's Castle (vs Mario)
+|-
+|087 [057] // Rainbow Cruise (vs Mario)
+|-
+|088 [058] // Kongo Jungle (vs Donkey Kong)
+|-
+|089 [059] // Jungle Japes (vs Donkey Kong)
+|-
+|090 [05A] // Great Bay (vs Link)
+|-
+|091 [05B] // Temple (vs Link)
+|-
+|092 [05C] // Brinstar (vs Samus)
+|-
+|093 [05D] // Brinstar Depths (vs Samus)
+|-
+|094 [05E] // Yoshi's Story (vs Yoshi)
+|-
+|095 [05F] // Yoshi's Island (vs Yoshi)
+|-
+|096 [060] // Fountain of Dreams (vs Kirby)
+|-
+|097 [061] // Green Greens (vs Kirby)
+|-
+|098 [062] // Corneria (vs Fox)
+|-
+|099 [063] // Venom (vs Fox)
+|-
+|100 [064] // Pokémon Stadium (Only Pokeballs)(vs Pikachu)
+|-
+|101 [065] // Mushroom Kingdom I (vs Luigi)
+|-
+|102 [066] // Mushroom Kingdom II (vs Luigi)
+|-
+|103 [067] // Mute City (vs Captain Falcon)
+|-
+|104 [068] // Big Blue (vs Captain Falcon)
+|-
+|105 [069] // Onett (vs Ness)
+|-
+|106 [06A] // Fourside (vs Ness)
+|-
+|107 [06B] // Pokémon Stadium (vs Jigglypuff)
+|-
+|108 [06C] // Princess Peach's Castle (vs Bowser)
+|-
+|109 [06D] // Battlefield (vs Bowser)
+|-
+|110 [06E] // Princess Peach's Castle (vs Peach)
+|-
+|111 [06F] // Mushroom Kingdom II (vs Peach)
+|-
+|112 [070] // Temple (vs Zelda)
+|-
+|113 [071] // Great Bay (vs Marth)
+|-
+|114 [072] // Final Destination (vs Mewtwo)
+|-
+|115 [073] // Pokémon Stadium (vs Mewtwo)
+|-
+|116 [074] // Icicle Mountain (vs Ice Climbers)
+|-
+|117 [075] // Icicle Mountain (vs Ice Climbers)
+|-
+|118 [076] // Mushroom Kingdom I (Dr. Mario Music) (vs Dr. Mario)
+|-
+|119 [077] // Great Bay (vs Young Link)
+|-
+|120 [078] // Temple (vs Young Link)
+|-
+|121 [079] // Corneria (vs Falco)
+|-
+|122 [07A] // Venom (vs Falco)
+|-
+|123 [07B] // Great Bay (Unused)
+|-
+|124 [07C] // Pokémon Stadium (Pichu)
+|-
+|
+|-
+|CLASSIC (VS TWO CHARACTERS)
+|-
+|125 [07D] // Battlefield (Plays Mario Theme) (vs Team Mario & Bowser)
+|-
+|126 [07E] // Mushroom Kingdom II (vs Team Mario & Peach)
+|-
+|127 [07F] // Kongo Jungle (vs Team DK & Fox)
+|-
+|128 [080] // Temple (vs Team Link & Zelda)
+|-
+|129 [081] // Great Bay (vs Team Link & Young Link)
+|-
+|130 [082] // Mushroom Kingdom I (vs Team Link & Luigi)
+|-
+|131 [083] // Great Bay (Saria's Song) (vs Team Marth & Link)
+|-
+|132 [084] // Big Blue (vs Team Samus & Captain Falcon)
+|-
+|133 [085] // Brinstar (vs Team Samus & Fox)
+|-
+|134 [086] // Yoshi's Story (vs Team Yoshi & Luigi)
+|-
+|135 [087] // Yoshi's Island (vs Team Yoshi & Ness)
+|-
+|136 [088] // Green Greens (vs Team Kirby & Pikachu)
+|-
+|137 [089] // Fountain of Dreams (vs Team Kirby & Pichu)
+|-
+|138 [08A] // Green Greens (vs Team Kirby & Jigglypuff)
+|-
+|139 [08B] // Icicle Mountain (vs Team Kirby & Ice Climbers)
+|-
+|140 [08C] // Corneria (vs Team Fox & Falco)
+|-
+|141 [08D] // Mute City (vs Team Fox & Captain Falcon)
+|-
+|142 [08E] // Pokémon Stadium (vs Team Pikachu & Pichu)
+|-
+|143 [08F] // Pokémon Stadium (vs Team Pikachu & Jigglypuff)
+|-
+|144 [090] // Mushroom Kingdom I (vs Team Luigi & Dr. Mario)
+|-
+|145 [091] // Onett (alt music) (vs Team Ness & Peach)
+|-
+|146 [092] // Fourside (vs Team Ness & Mewtwo)
+|-
+|147 [093] // Big Blue (mRider song) (vs Team Captain Falcon & Falco)
+|-
+|148 [094] // Battlefield (vs Team Bowser & Mewtwo)
+|-
+|149 [095] // Battlefield (vs Team Bowser & Peach)
+|-
+|150 [096] // Battlefield (vs Team Bowser & Zelda)
+|-
+|151 [097] // Temple (vs Team Peach & Zelda)
+|-
+|152 [098] // Great Bay (Saria's Song) (vs Team Zelda & Young Link)
+|-
+|153 [099] // Temple (Emblem) (vs Team Zelda & Marth)
+|-
+|154 [09A] // Great Bay (Unused)
+|-
+|
+|-
+|CLASSIC (VS GIANT CHARACTER)
+|-
+|155 [09B] // Princess Peach's Castle (vs Giant Mario)
+|-
+|156 [09C] // Kongo Jungle (vs Giant DK)
+|-
+|157 [09D] // Great Bay (vs vs Giant Link)
+|-
+|158 [09E] // Yoshi's Story (vs Giant Yoshi)
+|-
+|159 [09F] // Mushroom Kingdom II (vs Giant Luigi)
+|-
+|160 [0A0] // Mute City (vs Giant Captain Falcon)
+|-
+|161 [0A1] // Pokémon Stadium (vs Giant Jigglypuff)
+|-
+|162 [0A2] // Fountain of Dreams (vs Giant Bowser)
+|-
+|163 [0A3] // Mushroom Kingdom I (vs Giant Dr. Mario)
+|-
+|164 [0A4] // Temple (vs Giant Young Link)
+|-
+|
+|-
+|CLASSIC (VS TEAM CHARACTER)
+|-
+|165 [0A5] // Rainbow Cruise (vs Team Mario)
+|-
+|166 [0A6] // Jungle Japes (vs Team Donkey Kong)
+|-
+|167 [0A7] // Fountain of Dreams (vs Team Kirby)
+|-
+|168 [0A8] // Mushroom Kingdom II (vs Team Luigi)
+|-
+|169 [0A9] // Onett (vs Team Ness)
+|-
+|170 [0AA] // Pokémon Stadium (vs Team Jigglypuff)
+|-
+|171 [0AB] // Icicle Mountain (Unused)
+|-
+|172 [0AC] // Pokémon Stadium (vs Team Pichu)
+|-
+|173 [0AD] // Flat Zone (vs Team Game & Watch)
+|-
+|174 [0AE] // Mute City (vs Team Captain Falcon)
+|-
+|
+|-
+|CLASSIC FINAL
+|-
+|175 [0AF] // Battlefield (No items) (vs Metal Character)
+|-
+|176 [0B0] // Final Destination (No items) (vs Master Hand)
+|-
+|
+|-
+|ALL-STAR
+|-
+|177 [0B1] // Rainbow Cruise (vs Mario)
+|-
+|178 [0B2] // Kongo Jungle (vs Donkey Kong)
+|-
+|179 [0B3] // Great Bay (vs Link)
+|-
+|180 [0B4] // Brinstar (vs Samus)
+|-
+|181 [0B5] // Yoshi's Story (vs Yoshi)
+|-
+|182 [0B6] // Green Greens (vs Kirby)
+|-
+|183 [0B7] // Corneria (vs Fox)
+|-
+|184 [0B8] // Pokémon Stadium (vs Pikachu)
+|-
+|185 [0B9] // Mushroom Kingdom I (vs Luigi)
+|-
+|186 [0BA] // Mute City (vs Captain Falcon)
+|-
+|187 [0BB] // Onett (vs Ness)
+|-
+|188 [0BC] // Poké Floats (vs Jigglypuff)
+|-
+|189 [0BD] // Icicle Mountain (vs Ice Climbers)
+|-
+|190 [0BE] // Princess Peach's Castle (vs Peach)
+|-
+|191 [0BF] // Temple (vs Zelda)
+|-
+|192 [0C0] // Fountain of Dreams (Emblem Music) (vs Marth)
+|-
+|193 [0C1] // Battlefield (Poké Floats song) (vs Mewtwo)
+|-
+|194 [0C2] // Yoshi's Island (vs Bowser)
+|-
+|195 [0C3] // Mushroom Kingdom II (Dr Mario Music) (vs Dr Mario)
+|-
+|196 [0C4] // Jungle Japes (vs Young Link)
+|-
+|197 [0C5] // Venom (vs Falco)
+|-
+|198 [0C6] // Fourside (vs Pichu)
+|-
+|199 [0C7] // Final Destination (Emblem Music) (vs Roy)
+|-
+|200 [0C8] // Flat Zone (vs Team Game & Watch)
+|-
+|201 [0C9] // Brinstar Depths (vs Gannondorf)
+|-
+|
+|-
+|EVENT MATCH
+|-
+|202 [0CA] // Battlefield (Event #01) (Trouble King)
+|-
+|203 [0CB] // Temple (Event #18) (Link's Adventure)
+|-
+|204 [0CC] // Princess Peach's Castle (Event #03) (Bomb-fest)
+|-
+|205 [0CD] // Yoshi's Story (Event #04) (Dino-wrangling)
+|-
+|206 [0CE] // Onett (Event #05) (Spare Change)
+|-
+|207 [0CF] // Fountain of Dreams (Event #06) (Kirbys on Parade)
+|-
+|208 [0D0] // Pokémon Stadium (Event #07) (Pokémon Battle)
+|-
+|209 [0D1] // Brinstar (Event #08) (Hot Date on Brinstar)
+|-
+|210 [0D2] // Great Bay (Event #09) (Hide 'n' Sheik)
+|-
+|211 [0D3] // Yoshi's Island (Event #10) (All-Star Match 1-1 /vs Mario)
+|-
+|212 [0D4] // Icicle Mountain (Event #11) (King of the Mountain)
+|-
+|213 [0D5] // Mute City (Event #12) (Seconds, Anyone?)
+|-
+|214 [0D6] // Rainbow Cruise (Event #13) (Yoshi's Egg)
+|-
+|215 [0D7] // Goomba (Event #14) (Trophy Tussle 1)
+|-
+|216 [0D8] // Battlefield (Event #37) (Legendary Pokemon)
+|-
+|217 [0D9] // Corneria (Event #16) (Kirby's Air-raid)
+|-
+|218 [0DA] // Jungle Japes (F-Zero Music) (Event #17) (Bounty Hunters)
+|-
+|219 [0DB] // Kongo Jungle (Event #2) (Lord of the Jungle)
+|-
+|220 [0DC] // Final Destination (Event #19) (Peach's Peril)
+|-
+|221 [0DD] // Brinstar (Event #20) (All-Star Match 2-1 /vs Samus)
+|-
+|222 [0DE] // Princess Peach's Castle (Event #21) (Ice Breaker)
+|-
+|223 [0DF] // Mushroom Kingdom II (Event #22) (Super Mario 128)
+|-
+|224 [0E0] // Brinstar Depths (Event #27) (Cold Armor)
+|-
+|225 [0E1] // Yoshi's Island (Event #24) (The Yoshi Herd)
+|-
+|226 [0E2] // Fourside (DK Rap) (Event #25) (Gargantuans)
+|-
+|227 [0E3] // Entei (Event #26) (Trophy Tussle 2)
+|-
+|228 [0E4] // Venom (Event #23) (Slippy's Invention)
+|-
+|229 [0E5] // Green Greens (Event #28) (Puffballs Unite)
+|-
+|230 [0E6] // Temple (Great Bay music) (Event #29) (Triforce Gathering)
+|-
+|231 [0E7] // Fountain of Dreams (Event #15) (Girl Power)
+|-
+|232 [0E8] // Mushroom Kingdom I (Event #31) (Mario Bros. Madness)
+|-
+|233 [0E9] // Corneria (Many Arwings) (Event #32) (Target Acquired)
+|-
+|234 [0EA] // F //Zero Adventure Stage (Event #33) (Lethal Marathon)
+|-
+|235 [0EB] // Great Bay (Event #34) (Seven Years)
+|-
+|236 [0EC] // Dream Land (Event #35) (Time for a Checkup)
+|-
+|237 [0ED] // Fourside (Event #36) (Space Travelers 1-1)
+|-
+|238 [0EE] // Fountain of Dreams (Event #30) (All-Star Match 3-1 /vs Kirby)
+|-
+|239 [0EF] // Mushroom Kingdom II (Event #38) (Super Mario Bros. 2)
+|-
+|240 [0F0] // Pokémon Stadium (Event #39) (Jigglypuff Live!)
+|-
+|241 [0F1] // Temple (Emblem Music) (Event #40) (All-Star Match 4-1 /vs Marth)
+|-
+|242 [0F2] // Temple (Emblem Music) (Event #41) (En Garde!)
+|-
+|243 [0F3] // Poké Floats (Event #42) (Trouble King 2)
+|-
+|244 [0F4] // Big Blue (Event #43) (Birds of Prey)
+|-
+|245 [0F5] // Battlefield (Event #44) (Mewtwo Strikes!)
+|-
+|246 [0F6] // Flat Zone (Event #45) (Game and Watch Forever!)
+|-
+|247 [0F7] // Temple (Emblem Music) (Event #46) (Fire Emblem Pride)
+|-
+|248 [0F8] // Majora's Mask (Event #47) (Trophy Tussle 3)
+|-
+|249 [0F9] // Yoshi's Story (Event #48) (Pikachu and Pichu)
+|-
+|250 [0FA] // Mushroom Kingdom I (Event #49) (All-Star Match Deluxe 5-1 /vs Dr Mario)
+|-
+|251 [0FB] // Final Destination (Final Destination Match) (Event #50)
+|-
+|252 [0FC] // Final Destination (The Showdown) (Event #51)
+|-
+|253 [0FD] // Jungle Japes (DK Rap) (Event #10) (All-Star Match 1-2 /vs DK)
+|-
+|254 [0FE] // Yoshi's Story (Event #10) (All-Star Match 1-3 /vs Yoshi)
+|-
+|255 [0FF] // Princess Peach's Castle (Event #10) (All-Star Match 1-4 /vs Peach)
+|-
+|256 [100] // Rainbow Cruise (Event #10) (All-Star Match 1-5 /vs Bowser)
+|-
+|257 [101] // Great Bay (All-Star Match 2-2 /vs Link)
+|-
+|258 [102] // Temple (All-Star Match 2-3 /vs Zelda)
+|-
+|259 [103] // Mute City (All-Star Match 2-4 /vs Captain Falcon)
+|-
+|260 [104] // Corneria (All-Star Match 2-5 /vs Fox)
+|-
+|261 [105] // Pokémon Stadium (All-Star Match 3-2 /vs Pikachu)
+|-
+|262 [106] // Onett (All-Star Match 3-3 /vs Ness)
+|-
+|263 [107] // Icicle Mountain (All-Star Match 3-4 /vs Ice Climbers)
+|-
+|264 [108] // Mushroom Kingdom II (All-Star Match 4-2 /vs Luigi)
+|-
+|265 [109] // Poké Floats (All-Star Match 4-3 /vs Jigglypuff)
+|-
+|266 [10A] // Final Destination (All-Star Match 4-4 /vs Mewtwo)
+|-
+|267 [10B] // Flat Zone (All-Star Match 4-5 /vs Mr Game & Watch)
+|-
+|268 [10C] // Venom (All-Star Match Deluxe 5-2 /vs Falco)
+|-
+|269 [10D] // Pokémon Stadium (All-Star Match Deluxe 5-3 /vs Pichu)
+|-
+|270 [10E] // Great Bay (Saria's Song) (All-Star Match Deluxe 5-4 /vs Young Link)
+|-
+|271 [10F] // Temple (Emblem Music) (All-Star Match Deluxe 5-5 /vs Roy)
+|-
+|272 [110] // Final Destination (All-Star Match Deluxe 5-6 /vs Gannondorf)
+|-
+|273 [111] // Battlefield (Event #36) (Space Travelers 1-2)
+|-
+|
+|-
+|UNLOCKABLES
+|-
+|274 [112] // Pokémon Stadium //Unlocking Jigglypuff
+|-
+|275 [113] // Final Destination //Unlocking Mewtwo
+|-
+|276 [114] // Mushroom Kingdom II //Unlocking Luigi
+|-
+|277 [115] // Fountain of Dreams //Unlocking Marth
+|-
+|278 [116] // Flat Zone //Unlocking Mr Game and Watch
+|-
+|279 [117] // Princess Peach's Castle (DR Mario song) //Unlocking Dr Mario
+|-
+|280 [118] // Final Destination (Great Bay music) //Unlocking Gannondorf
+|-
+|281 [119] // Great Bay (Saria's Song) //Unlocking Young Link
+|-
+|282 [11A] // Battlefield (Corneria Music) //Unlocking Falco
+|-
+|283 [11B] // Pokémon Stadium //Unlocking Pichu?
+|-
+|284 [11C] // Temple (Emblem Music) //Unlocking Roy?
+|-
+|
+|-
+|MULTI-MAN MELEE
+|-
+|285 [11D] // Battlefield (Multi-Man Melee)
+|}
 
 </div>
 
@@ -7092,7 +7732,6 @@ BA810008 800100B4
 $Force Nametag for Local Player [Fizzi]
 *When playing online, nametag YOU will show above your character
 *Will not cause desyncs when playing online
-*These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1XBJmEtR5_fEZrMZ3osU/view This Google Sheet] listing of all of the Hexidecimal values that correspond to all of the available characters for custom nametags.
 C20355B4 00000008 #Online/Optional/IndicateLocalPlayer/ForceLocalPlayerTag.asm
 3C608048 80639D30
 5463443E 2C030208
@@ -7127,6 +7766,315 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 <div class="mw-collapsible mw-collapsed" data-expandtext="Alphabet" data-collapsetext="Click to collapse">
 
 
+{| class="wikitable" 
+|-
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+|-
+| 41
+| A
+| 61
+| a
+| 8260
+| Ａ
+| 8281
+| ａ
+|-
+| 42
+| B
+| 62
+| b
+| 8261
+| B
+| 8282
+| ｂ
+|-
+| 43
+| C
+| 63
+| c
+| 8262
+| Ｃ
+| 8283
+| ｃ
+|-
+| 44
+| D
+| 64
+| d
+| 8263
+| Ｄ
+| 8284
+| ｄ
+|-
+| 45
+| E
+| 65
+| e
+| 8264
+| Ｅ
+| 8285
+| ｅ
+|-
+| 46
+| F
+| 66
+| f
+| 8265
+| F
+| 8286
+| ｆ
+|-
+| 47
+| G
+| 67
+| g
+| 8266
+| G
+| 8287
+| ｇ
+|-
+| 48
+| H
+| 68
+| h
+| 8267
+| H
+| 8288
+| ｈ
+|-
+| 49
+| I
+| 69
+| i
+| 8268
+| I
+| 8289
+| ｉ
+|-
+| 4A
+| J
+| 6a
+| j
+| 8269
+| Ｈ
+| 828a
+| ｊ
+|-
+| 4B
+| K
+| 6b
+| k
+| 826a
+| Ｋ
+| 828b
+| ｋ
+|-
+| 4C
+| L
+| 6c
+| l
+| 826b
+| Ｌ
+| 828c
+| ｌ
+|-
+| 4D
+| M
+| 6d
+| m
+| 826c
+| Ｍ
+| 828d
+| ｍ
+|-
+| 4E
+| N
+| 6e
+| n
+| 826d
+| Ｎ
+| 828e
+| ｎ
+|-
+| 4F
+| O
+| 6f
+| o
+| 826e
+| Ｏ
+| 828f
+| ｏ
+|-
+| 50
+| P
+| 70
+| p
+| 826f
+| Ｐ
+| 8290
+| ｐ
+|-
+| 51
+| Q
+| 71
+| q
+| 8270
+| Ｑ
+| 8291
+| ｑ
+|-
+| 52
+| R
+| 72
+| r
+| 8271
+| Ｒ
+| 8292
+| ｒ
+|-
+| 53
+| S
+| 73
+| s
+| 8272
+| Ｓ
+| 8293
+| ｓ
+|-
+| 54
+| T
+| 74
+| t
+| 8273
+| Ｔ
+| 8294
+| ｔ
+|-
+| 55
+| U
+| 75
+| u
+| 8274
+| Ｕ
+| 8295
+| ｕ
+|-
+| 56
+| V
+| 76
+| v
+| 8275
+| Ｖ
+| 8296
+| ｖ
+|-
+| 57
+| W
+| 77
+| w
+| 8276
+| Ｗ
+| 8297
+| ｗ
+|-
+| 58
+| X
+| 78
+| x
+| 8277
+| Ｘ
+| 8298
+| ｘ
+|-
+| 59
+| Y
+| 79
+| y
+| 8278
+| Y
+| 8299
+| ｙ
+|-
+| 5a
+| Z
+| 7a
+| z
+| 8279
+| Ｚ
+| 829a
+| ｚ
+|}
+
+</div>
+
+
+<div class="mw-collapsible mw-collapsed" data-expandtext="Numbers" data-collapsetext="Click to collapse">
+
+
+{| class="wikitable" 
+|-
+! value
+! character
+! value
+! character
+|-
+| 30
+| 0
+| 824f
+| ０
+|-
+| 31
+| 1
+| 8250
+| １
+|-
+| 32
+| 2
+| 8251
+| ２
+|-
+| 33
+| 3
+| 8252
+| ３
+|-
+| 34
+| 4
+| 8253
+| ４
+|-
+| 35
+| 5
+| 8254
+| ５
+|-
+| 36
+| 6
+| 8255
+| ６
+|-
+| 37
+| 7
+| 8256
+| ７
+|-
+| 38
+| 8
+| 8257
+| ８
+|-
+| 39
+| 9
+| 8258
+| ９
+|}
 
 </div>
 
@@ -7134,6 +8082,344 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 <div class="mw-collapsible mw-collapsed" data-expandtext="Hirigana" data-collapsetext="Click to collapse">
 
 
+{| class="wikitable" 
+|-
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+|-
+| 82a0
+| あ
+| 82a9
+| か
+| 82b3
+| さ
+| 82bd
+| た
+| 82c8
+| な
+| 82cd
+| は
+| 82dc
+| ま
+| 82e2
+| や
+| 82e7
+| ら
+| 82ed
+| わ
+|-
+| 82a2
+| い
+| 82ab
+| き
+| 82b5
+| し
+| 82bf
+| ち
+| 82c9
+| に
+| 82d0
+| ひ
+| 82dd
+| み
+| 82e4
+| ゆ
+| 82e8
+| り
+| 82f0
+| を
+|-
+| 82a4
+| う
+| 82ad
+| く
+| 82b7
+| す
+| 82c2
+| つ
+| 82ca
+| ぬ
+| 82d3
+| ふ
+| 82de
+| む
+| 82e6
+| よ
+| 82e9
+| る
+| 82f1
+| ん
+|-
+| 82a6
+| え
+| 82af
+| け
+| 82b9
+| せ
+| 82c4
+| て
+| 82cb
+| ね
+| 82d6
+| へ
+| 82df
+| め
+| 82e1
+| ゃ
+| 82ea
+| れ
+| 82ec
+| ゎ
+|-
+| 82a8
+| お
+| 82b1
+| こ
+| 82bb
+| そ
+| 82c6
+| と
+| 82cc
+| の
+| 82d9
+| ほ
+| 82e0
+| も
+| 82e3
+| ゅ
+| 82eb
+| ろ
+| 815b
+| ー
+|-
+| 829f
+| ぁ
+| 82aa
+| が
+| 82b4
+| ざ
+| 82be
+| だ
+| 
+| 
+| 82ce
+| ば
+| 
+| 
+| 82e5
+| ょ
+| 
+| 
+| 8160
+| ～
+|-
+| 82a1
+| ぃ
+| 82ac
+| ぎ
+| 82b6
+| じ
+| 82c0
+| ぢ
+| 
+| 
+| 82d1
+| び
+| 
+| 
+| 
+| 
+| 
+| 
+| 8141
+| 。
+|-
+| 82a3
+| ぅ
+| 82ae
+| ぐ
+| 82b8
+| ず
+| 82c3
+| づ
+| 
+| 
+| 82d4
+| ぶ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8142
+| 、
+|-
+| 82a5
+| ぇ
+| 82b0
+| げ
+| 82ba
+| ぜ
+| 82c5
+| で
+| 
+| 
+| 82d7
+| べ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8143
+| ，
+|-
+| 82a8
+| ぉ
+| 82b2
+| ご
+| 82bc
+| ぞ
+| 82c7
+| ど
+| 
+| 
+| 82da
+| ぼ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8144
+| ．
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 82c1
+| っ
+| 
+| 
+| 82cf
+| ぱ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8145
+| ・
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 82d2
+| ぴ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8146
+| ：
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 82d5
+| ぷ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8147
+| ；
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 82d8
+| ぺ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8148
+| ？
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 82db
+| ぽ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8149
+| ！
+|}
 
 </div>
 
@@ -7141,19 +8427,826 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 <div class="mw-collapsible mw-collapsed" data-expandtext="Katakana" data-collapsetext="Click to collapse">
 
 
+{| class="wikitable" 
+|-
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+|-
+| 8341
+| ア
+| 834a
+| カ
+| 8354
+| サ
+| 835e
+| タ
+| 8369
+| ナ
+| 836e
+| ハ
+| 837d
+| マ
+| 8384
+| ヤ
+| 8389
+| ラ
+| 838f
+| ワ
+|-
+| 8343
+| イ
+| 834c
+| キ
+| 8356
+| シ
+| 8360
+| チ
+| 836a
+| ニ
+| 8371
+| ヒ
+| 837e
+| ミ
+| 8386
+| ユ
+| 838a
+| リ
+| 8392
+| ヲ
+|-
+| 8345
+| ウ
+| 834e
+| ク
+| 8358
+| ス
+| 8363
+| ツ
+| 836b
+| ヌ
+| 8374
+| フ
+| 8380
+| ム
+| 8388
+| ヨ
+| 838b
+| ル
+| 8393
+| ン
+|-
+| 8347
+| エ
+| 8350
+| ケ
+| 835a
+| セ
+| 8365
+| テ
+| 836c
+| ネ
+| 8377
+| ヘ
+| 8381
+| メ
+| 8383
+| ャ
+| 838c
+| レ
+| 838e
+| ヮ
+|-
+| 8349
+| オ
+| 8352
+| コ
+| 835c
+| ソ
+| 8367
+| ト
+| 836d
+| ノ
+| 837a
+| ホ
+| 8382
+| モ
+| 8385
+| ュ
+| 838d
+| ロ
+| 815b
+| ー
+|-
+| 8340
+| ァ
+| 834b
+| ガ
+| 8355
+| ザ
+| 835f
+| ダ
+| 
+| 
+| 836f
+| バ
+| 
+| 
+| 8387
+| ョ
+| 
+| 
+| 8160
+| ～
+|-
+| 8342
+| ィ
+| 834d
+| ギ
+| 8357
+| ジ
+| 8361
+| ヂ
+| 
+| 
+| 8372
+| ビ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8141
+| 。
+|-
+| 8344
+| ゥ
+| 834f
+| グ
+| 8359
+| ズ
+| 8364
+| ヅ
+| 
+| 
+| 8375
+| ブ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8142
+| 、
+|-
+| 8346
+| ェ
+| 8351
+| ゲ
+| 835b
+| ゼ
+| 8366
+| デ
+| 
+| 
+| 8378
+| ベ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8143
+| ，
+|-
+| 8348
+| ォ
+| 8353
+| ゴ
+| 835d
+| ゾ
+| 8368
+| ド
+| 
+| 
+| 837b
+| ボ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8144
+| ．
+|-
+| 8394
+| ヴ
+| 8395
+| ヵ
+| 
+| 
+| 8362
+| ッ
+| 
+| 
+| 8370
+| パ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8145
+| ・
+|-
+| 
+| 
+| 8396
+| ヶ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8373
+| ピ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8146
+| ：
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 8376
+| プ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8147
+| ；
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 8379
+| ペ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8148
+| ？
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 837c
+| ポ
+| 
+| 
+| 
+| 
+| 
+| 
+| 8149
+| ！
+|}
+
 </div>
 
 
 <div class="mw-collapsible mw-collapsed" data-expandtext="Symbols" data-collapsetext="Click to collapse">
 
 
-
+{| class="wikitable" 
+|-
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+! value
+! character
+|-
+| 20
+| (space)
+| 8141
+| 。
+| 814F
+| ＾
+| 8166
+| ’
+| 817B
+| ＋
+|-
+| 22
+| "
+| 8142
+| 、
+| 8151
+| ＿
+| 8168
+| ”
+| 817C
+| －
+|-
+| 27
+| '
+| 8143
+| ，
+| 815B
+| ー
+| 8169
+| （
+| 817E
+| ×
+|-
+| 2c
+| ,
+| 8144
+| ．
+| 815E
+| ／
+| 816A
+| ）
+| 8181
+| ＝
+|-
+| 2d
+| -
+| 8145
+| ・
+| 8160
+| ～
+| 816D
+| ［
+| 8183
+| ＜
+|-
+| 2e
+| .
+| 8146
+| ：
+| 8162
+| ｜
+| 816E
+| ］
+| 8184
+| ＞
+|-
+| 3a
+| :
+| 8147
+| ；
+| 
+| 
+| 816F
+| ｛
+| 818F
+| ￥
+|-
+| 
+| 
+| 8148
+| ？
+| 
+| 
+| 8170
+| ｝
+| 8190
+| ＄
+|-
+| 
+| 
+| 8149
+| ！
+| 
+| 
+| 
+| 
+| 8193
+| ％
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 8194
+| ＃
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 8195
+| ＆
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 8196
+| ＊
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 8197
+| ＠
+|}
 
 </div>
 
 
 <div class="mw-collapsible mw-collapsed" data-expandtext="CHEAT CODE" data-collapsetext="Click to collapse">
 
+
+{| class="wikitable" 
+|-
+! No.
+! v1.00(04XXXXXX)
+! v1.00(04YYYYYY)
+! v1.01(04XXXXXX)
+! v1.01(04YYYYYY)
+! v1.02(04XXXXXX)
+! v1.02(04YYYYYY)
+! 
+! 
+|-
+| 1st
+| 45b888
+| 45B88C
+| 
+| 
+| 45d850
+| 45D854
+| 
+| Note:Xth name tag = 45d850+1a4*(X-1)
+|-
+| 2nd
+| 45BA2C
+| 45BA30
+| 
+| 
+| 45D9F4
+| 45D9F8
+| 
+| 
+|-
+| 3rd
+| 45BBD0
+| 45BBD4
+| 
+| 
+| 45DB98
+| 45DB9C
+| 
+| 04XXXXXX AAAAAAAA
+|-
+| 4th
+| 45BD74
+| 45BD78
+| 
+| 
+| 45DD3C
+| 45DD40
+| 
+| 04YYYYYY BBBBBBBB
+|-
+| 5th
+| 45BF18
+| 45BF1C
+| 
+| 
+| 45DEE0
+| 45DEE4
+| 
+| 
+|-
+| 6th
+| 45C0BC
+| 45C0C0
+| 
+| 
+| 45E084
+| 45E088
+| 
+| 
+|-
+| 7th
+| 45C260
+| 45C264
+| 
+| 
+| 45E228
+| 45E22C
+| 
+| 
+|-
+| 8th
+| 45C404
+| 45C408
+| 
+| 
+| 45E3CC
+| 45E3D0
+| 
+| 
+|-
+| 9th
+| 45C5A8
+| 45C5AC
+| 
+| 
+| 45E570
+| 45E574
+| 
+| 
+|-
+| 10th
+| 45C74C
+| 45C750
+| 
+| 
+| 45E714
+| 45E718
+| 
+| 
+|-
+| 11th
+| 45C8F0
+| 45C8F4
+| 
+| 
+| 45E8B8
+| 45E8BC
+| 
+| 
+|-
+| 12th
+| 45CA94
+| 45CA98
+| 
+| 
+| 45EA5C
+| 45EA60
+| 
+| 
+|-
+| 13th
+| 45CC38
+| 45CC3C
+| 
+| 
+| 45EC00
+| 45EC04
+| 
+| 
+|-
+| 14th
+| 45CDDC
+| 45CDE0
+| 
+| 
+| 45EDA4
+| 45EDA8
+| 
+| 
+|-
+| 15th
+| 45CF80
+| 45CF84
+| 
+| 
+| 45EF48
+| 45EF4C
+| 
+| 
+|-
+| 16th
+| 45D124
+| 45D128
+| 
+| 
+| 45F0EC
+| 45F0F0
+| 
+| 
+|-
+| 17th
+| 45D2C8
+| 45D2CC
+| 
+| 
+| 45F290
+| 45F294
+| 
+| 
+|-
+| 18th
+| 45D46C
+| 45D470
+| 
+| 
+| 45F434
+| 45F438
+| 
+| 
+|-
+| 19th
+| 45D610
+| 45D614
+| 
+| 
+| 45F5D8
+| 45F5DC
+| 
+| 
+|-
+| 20th
+| 45D7B4
+| 45D7B8
+| 
+| 
+| 45F77C
+| 45F780
+| 
+| 
+|-
+| 21st
+| 45D958
+| 45D95C
+| 
+| 
+| 45F920
+| 45F924
+| 
+| 
+|-
+| 22nd
+| 45DAFC
+| 45DB00
+| 
+| 
+| 45FAC4
+| 45FAC8
+| 
+| 
+|-
+| 23rd
+| 45DCA0
+| 45DCA4
+| 
+| 
+| 45FC68
+| 45FC6C
+| 
+| 
+|-
+| 24th
+| 45DE44
+| 45DE48
+| 
+| 
+| 45FE0C
+| 45FE10
+| 
+| 
+|-
+| 25th
+| 45DFE8
+| 45DFEC
+| 
+| 
+| 45FFB0
+| 45FFB4
+| 
+| 
+|-
+| 26th
+| 45E18C
+| 45E190
+| 
+| 
+| 460154
+| 460158
+| 
+| 
+|-
+| 27th
+| 45E330
+| 45E334
+| 
+| 
+| 4602F8
+| 4602FC
+| 
+| 
+|-
+| 28th
+| 45E4D4
+| 45E4D8
+| 
+| 
+| 46049C
+| 4604A0
+| 
+| 
+|-
+| 29th
+| 45E678
+| 45E67C
+| 
+| 
+| 460640
+| 460644
+| 
+| 
+|-
+| 30th
+| 45E81C
+| 45E820
+| 
+| 
+| 4607E4
+| 4607E8
+| 
+| 
+|}
 
 </div>
 
@@ -12221,6 +14314,263 @@ $Home-Run Contest Item Modifier (1.02) [Achilles]
 <div class="mw-collapsible mw-collapsed" data-expandtext="Items (Decimal/Hexidecimal/Name)" data-collapsetext="Click to collapse">
 
 
+Items (Decimal/Hex/Name)
+'''Note: Regular items and Pokemon work fine. The others will probably freeze the game.'''
+
+(Number) (Hexidecimal) (Item Name)
+* 00 00    capsule
+* 01 01    box
+* 02 02    barrel
+* 03 03    egg
+* 04 04    partyball
+* 05 05    cannon
+* 06 06    bombomb
+* 07 07    mr. saturn
+* 08 08    heart
+* 09 09    tomato
+* 10 0A    star
+* 11 0B    bat
+* 12 0C    sword
+* 13 0D    umbrella
+* 14 0E    green shell
+* 15 0F    red shell
+* 16 10    gun
+* 17 11    freezie
+* 18 12    food
+* 19 13    mine
+* 20 14    bumper
+* 21 15    super scope
+* 22 16    star rod
+* 23 17    lip stick
+* 24 18    fan
+* 25 19    fire flower
+* 26 1A    big mushroom
+* 27 1B    small mushroom
+* 28 1C    hammer
+* 29 1D    warp star
+* 30 1E    screw attack
+* 31 1F    rabbit hood
+* 32 20    metal
+* 33 21    cloak
+* 34 22    pokeball
+* 43 2B    goomba
+* 44 2C    redead
+* 45 2D    octarok
+* 46 2E    otosea
+
+(Hexidecimal) (Pokemon Name)
+* A0 Null pokemon entry? 
+* A1 Goldeen (Tosakinto) 
+* A2 Chicorita 
+* A3 Snorlax 
+* A4 Blastoise 
+* A5 Weezing (Matadogas) 
+* A6 Charizard (Lizardon) 
+* A7 Moltres 
+* A8 Zapdos 
+* A9 Articuno 
+* AA Wobbuffet 
+* AB Scizor 
+* AC Unown 
+* AD Entei 
+* AE Raikou 
+* AF Suicune 
+* B0 Bellossom (Kireihana) 
+* B1 Electrode (Marumine) 
+* B2 Lugia 
+* B3 Ho-oh 
+* B4 Metamon 
+* B5 Clefairy 
+* B6 Togepi 
+* B7 Mew 
+* B8 Celebi 
+* B9 Staryu (Hitodeman) 
+* BA Chansey 
+* BB Porygon2 
+* BC Cyndaquil (Hinoarashi) 
+* BD Marill 
+* BE Venusaur (Fushigibana) 
+
+(Hexidecimal) (Item Name)
+* 2F Stone
+* 30 Mario's fire 
+* 31 Dr.Mario's Capsule 
+* 32 Kirby's Cutter beam 
+* 33 Kirby's Hammer 
+* 34 Raygun beam 
+* 35 
+* 36 Fox's laser 
+* 37 ? Falco's Laser ? 
+* 38 Fox's shadow 
+* 39 Falco's shadow 
+* 3A Link's bomb 
+* 3B Young Link's bomb 
+* 3C Link's boomerang 
+* 3D Young Link's boomerang 
+* 3E Link's Hookshot 
+* 3F Young Link's Hookshot 
+* 40 Arrow 
+* 41 Fire Arrow 
+* 42 PK Fire 
+* 43 PK Flash 
+* 44 PK Flash 
+* 45 PK Thunder 
+* 46 PK Thunder 
+* 47 PK Thunder 
+* 48 PK Thunder 
+* 49 PK Thunder 
+* 4A Fox's Blaster 
+* 4B Falco's Blaster 
+* 4C ? Link's Arrow ? 
+* 4D Young Link's arrow 
+* 4E PK Flash (explosion) 
+* 4F Needle(thrown) 
+* 50 Needle 
+* 51 Pikachu's Thunder 
+* 52 Pichu's Thunder 
+* 53 Mario's cape 
+* 54 Dr.Mario's cape 
+* 55 Smoke (Sheik) 
+* 56 Yoshi's egg(thrown) 
+* 57 
+* 58 Yoshi's Star 
+* 59 Pikachu's thunder 
+* 5A Pikachu's thunder 
+* 5B Pichu's thunder 
+* 5C Pichu's thunder 
+* 5D Samus's bomb 
+* 5E Samus's chargeshot 
+* 5F Missile 
+* 60 Grapple beam 
+* 61 Sheik's chain 
+* 62 
+* 63 Turnip 
+* 64 Bowser's flame 
+* 65 Ness's bat 
+* 66 Yoyo 
+* 67 Peach's parasol 
+* 68 Toad 
+* 69 Luigi's fire 
+* 6A Ice(Iceclimbers) 
+* 6B Blizzard 
+* 6C Zelda's fire 
+* 6D Zelda's fire (explosion) 
+* 6E 
+* 6F Toad's spore 
+* 70 Mewtwo's Shadowball 
+* 71 Iceclimbers' Up-B 
+* 72 Pesticide 
+* 73 Manhole 
+* 74 Fire(G&W) 
+* 75 Parashute 
+* 76 Turtle 
+* 77 Sperky 
+* 78 Judge 
+* 79 
+* 7A Sausage 
+* 7B Milk (Young Link) 
+* 7C Firefighter(G&W) 
+* 7D Masterhand's laser 
+* 7E Masterhand's bullet 
+* 7F 
+* 80 
+* 81 Crazyhand's Bomb 
+* 82 
+* 83 
+* 84 
+* 85 
+* 86 
+* 87 
+* 88 
+* 89 
+* 8A 
+* 8B 
+* 8C 
+* 8D 
+* 8E 
+* 8F 
+* 90 
+* 91 
+* 92 
+* 93 
+* 94 
+* 95 
+* 96 
+* 97  (crashes with peach pulls out) 
+* 98 
+* 99 
+* 9A 
+* 9B 
+* 9C 
+* 9D 
+* 9E Coin 
+* 9F 
+
+* BF Chikorita's Leaf 
+* C0 Blastoise's Water  
+* C1 Weezing's Gas 
+* C2 Weezing's Gas 
+* C3 Burn ??? Fire something 
+* C4 Burn ??? Fire something 
+* C5 Charizard's Breath 
+* C6 Charizard's Breath 
+* C7 Unowns 
+* C8 Lugia's Aeroblast 
+* C9 Lugia's Aeroblast 
+* CA Lugia's Aeroblast 
+* CB Ho-oh's Flame 
+* CC Staryu's Star 
+* CD Healing Egg 
+* CE Cyndaquil's Fire 
+* CF ??? invisible 
+* D0 
+* D1 Target 
+* D2 Shyguy (Heiho) 
+* D3 Koopa(Green) (Nokonoko) 
+* D4 Koopa(Red) (PataPata) 
+* D5 Likelile 
+* D6 (old-lead) 
+* D7 (old-octa) 
+* D8 (old-otto) 
+* D9 White Bear (whitebea) 
+* DA klap 
+* DB Paratroopa (Green) (zgshell) 
+* DC Paratroopa (Red) (zrshell) 
+* DD 
+* DE 
+* DF 
+* E0 (crashes with peach pulls out) 
+* E1 Apple 
+* E2 
+* E3 
+* E4 
+* E5 
+* E6 Tool 
+* E7 
+* E8 
+* EA Arwing Laser 
+* EB Wolfen Laser 
+* EC 
+* ED 
+* EE 
+* EF 
+* F0 
+* F1 
+* F2 
+* F3 
+* F4 
+* F5 
+* F6 
+* F7 
+* F8 
+* F9 (crashes with peach pulls out) 
+* FA 
+* FB 
+* FC 
+* FD 
+* FE 
+* FF
+
 </div>
 
 </div>
@@ -12230,7 +14580,6 @@ $Home-Run Contest Item Modifier (1.02) [Achilles]
 
 
 $2-Player Adventure Mode [Nick Reynolds]
-*External Character ID goes inside the spots.
 04456ac4 000000XX #Change "X" to the character ID from the list.
 04456ac8 000000XX #Change "X" to the character ID from the list.
 04432094 000000XX #Change "X" to the character ID from the list.
@@ -12252,6 +14601,79 @@ $2-Player Adventure Mode [Nick Reynolds]
 
 <div class="mw-collapsible mw-collapsed" data-expandtext="Character ID List" data-collapsetext="Click to collapse">
 
+{| class="wikitable"
+|Character External ID
+|-
+|Hexidecimal // Character
+|-
+|0x00 // Captain Falcon
+|-
+|0x01 // Donkey Kong
+|-
+|0x02 // Fox
+|-
+|0x03 // Mr. Game & Watch
+|-
+|0x04 // Kirby
+|-
+|0x05 // Bowser
+|-
+|0x06 // Link
+|-
+|0x07 // Luigi
+|-
+|0x08 // Mario
+|-
+|0x09 // Marth
+|-
+|0x0A // Mewtwo
+|-
+|0x0B // Ness
+|-
+|0x0C // Peach
+|-
+|0x0D // Pikachu
+|-
+|0x0E // Ice Climbers
+|-
+|0x0F // Jigglypuff
+|-
+|0x10 // Samus
+|-
+|0x11 // Yoshi
+|-
+|0x12 // Zelda
+|-
+|0x13 // Sheik
+|-
+|0x14 // Falco
+|-
+|0x15 // Young Link
+|-
+|0x16 // Dr. Mario
+|-
+|0x17 // Roy
+|-
+|0x18 // Pichu
+|-
+|0x19 // Ganondorf
+|-
+|0x1A // Master Hand
+|-
+|0x1B // Wireframe Male
+|-
+|0x1C // Wireframe Female
+|-
+|0x1D // Giga Bowser
+|-
+|0x1E // Crazy Hand
+|-
+|0x1F // Sandbag
+|-
+|0x20 // Popo
+|-
+|0x21 // User Select(Event) / None (Crashes)
+|}
 
 </div>
 
@@ -15535,6 +17957,647 @@ $Load Specfic Stage for Target Test (1.02) [djwang88]
 
 <div class="mw-collapsible mw-collapsed" data-expandtext="Stage ID List" data-collapsetext="Click to collapse">
 
+
+Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]
+
+
+{| class="wikitable"
+|Stage ID List
+|-
+|
+|-
+|Decimal [Hexidecimal] // Stage
+|-
+|-
+|DEBUG
+|-
+|000 [000] // Dummy
+|-
+|001 [001] // TEST
+|-
+|
+|-
+|STANDARD
+|-
+|002 [002] // Fountain of Dreams (Izumi)
+|-
+|003 [003] // Pokémon Stadium (Pstadium)
+|-
+|004 [004] // Princess Peach's Castle (Castle)
+|-
+|005 [005] // Kongo Jungle (Kongo)
+|-
+|006 [006] // Brinstar (Zebes)
+|-
+|007 [007] // Corneria
+|-
+|008 [008] // Yoshi's Story (Story)
+|-
+|009 [009] // Onett
+|-
+|010 [00A] // Mute City
+|-
+|011 [00B] // Rainbow Cruise (RCruise)
+|-
+|012 [00C] // Jungle Japes (Garden)
+|-
+|013 [00D] // Great Bay
+|-
+|014 [00E] // Hyrule Temple (Shrine)
+|-
+|015 [00F] // Brinstar Depths (Kraid)
+|-
+|016 [010] // Yoshi's Island (Yoster)
+|-
+|017 [011] // Green Greens (Greens)
+|-
+|018 [012] // Fourside
+|-
+|019 [013] // Mushroom Kingdom I (Inishie1)
+|-
+|020 [014] // Mushroom Kingdom II (Inishie2)
+|-
+| // 021 [015] // Akaneia (Deleted Stage)
+|-
+|022 [016] // Venom
+|-
+|023 [017] // Poké Floats (Pura)
+|-
+|024 [018] // Big Blue
+|-
+|025 [019] // Icicle Mountain
+|-
+|026 [01A] // Icetop
+|-
+|
+|-
+|027 [01B] // Flat Zone
+|-
+|028 [01C] // Dream Land N64 (old ppp)
+|-
+|029 [01D] // Yoshi's Island N64 (old yosh)
+|-
+|030 [01E] // Kongo Jungle N64 (old kong)
+|-
+|031 [01F] // Battlefield (battle)
+|-
+|032 [020] // Final Destination (last)
+|-
+|
+|-
+|TARGET TEST
+|-
+|033 [021] // Target Test // Mario (TMario)
+|-
+|034 [022] // Target Test // C. Falcon (TCaptain)
+|-
+|035 [023] // Target Test // Young Link (TClink)
+|-
+|036 [024] // Target Test // Donkey Kong (TDonkey)
+|-
+|037 [025] // Target Test // Dr. Mario (TDrmario)
+|-
+|038 [026] // Target Test // Falco (TFalco)
+|-
+|039 [027] // Target Test // Fox (TFox)
+|-
+|040 [028] // Target Test // Ice Climbers (TIceclim)
+|-
+|041 [029] // Target Test // Kirby (TKirby)
+|-
+|042 [02A] // Target Test // Bowser (TKoopa)
+|-
+|043 [02B] // Target Test // Link (TLink)
+|-
+|044 [02C] // Target Test // Luigi (TLuigi)
+|-
+|045 [02D] // Target Test // Marth (TMars)
+|-
+|046 [02E] // Target Test // Mewtwo (TMewtwo)
+|-
+|047 [02F] // Target Test // Ness (TNess)
+|-
+|048 [030] // Target Test // Peach (TPeach)
+|-
+|049 [031] // Target Test // Pichu (TPichu)
+|-
+|050 [032] // Target Test // Pikachu (TPikachu)
+|-
+|051 [033] // Target Test // Jigglypuff (TPurin)
+|-
+|052 [034] // Target Test // Samus (TSamus)
+|-
+|053 [035] // Target Test // Sheik (TSeak)
+|-
+|054 [036] // Target Test // Yoshi (TYoshi
+|-
+|055 [037] // Target Test // Zelda (TZelda)
+|-
+|056 [038] // Target Test // Mr. Game & Watch (TGamewat)
+|-
+|057 [039] // Target Test // Roy (TEmblem)
+|-
+|058 [03A] // Target Test // Ganondorf (TGanon)
+|-
+|
+|-
+|ADVENTURE MODE
+|-
+|059 [03B] // 1 //1 Kinoko (Mushroom Kingdom Adventure)
+|-
+|060 [03C] // 1 //2 Castle (vs Peach & Mario [or luigi])
+|-
+|061 [03D] // 2 //1 Kongo (vs 2 mini Donkey Kongs)
+|-
+|062 [03E] // 2 //2 Garden (vs Donkey Kong)
+|-
+|063 [03F] // 3 //1 Meiktu (Zelda Adventure[Underground Maze])
+|-
+|064 [040] // 3 //2 Shrine (vs Zelda)
+|-
+|065 [041] // 4 //1 Zebes (vs Samus)
+|-
+|066 [042] // 4 //2 Dassyut (Escape from Brinstar Adventure)
+|-
+|067 [043] // 5 //1 Greens (vs Kirby)
+|-
+|068 [044] // 5 //2 Greens (vs Kirby Team)
+|-
+|069 [045] // 5 //3 Greens (classic Kirby music) (vs Giant Kirby)
+|-
+|070 [046] // 6 //1 Corneria (vs Fox [or Falco])
+|-
+|071 [047] // 6 //2 Corneria (vs Fox [or Falco] with massive arwing attack)
+|-
+|072 [048] // 7 //1 Pokémon Stadium (vs Pikachu Team, and 1 Jigglypuff if unlocked, lots of pokeball)
+|-
+|073 [049] // 8 //1 B Route (F //Zero Adventure[F //Zero Grand Prix])
+|-
+|074 [04A] // 8 //2 Mute City (vs Captain Falcon)
+|-
+|075 [04B] // 9 //1 Onett (vs Ness x3, lots of Mr Saturn)
+|-
+|076 [04C] // 10 //1 Icemt (Icicle Mountain Adventure)
+|-
+|077 [04D] // 10 //2 Icetop (vs Ice Climbers x2)
+|-
+|078 [04E] // 11 //1 Battle (vs Fighting Wireframe team, low gravity)
+|-
+|079 [04F] // 11 //2 Battle (vs Metal Mario [& Metal Luigi if unlocked])
+|-
+|080 [050] // 12 //1 Last (vs Bowser)
+|-
+|081 [051] // 12 //2 Last (vs Giga Bowser)
+|-
+|
+|-
+|BONUS STAGE
+|-
+|082 [052] // Takisusume (Race to the Finish Classic)
+|-
+|083 [053] // Grab the Trophies (figureget)
+|-
+|084 [054] // Homerun Contest (homerun)
+|-
+|085 [055] // Heal (All-Star's Stage Inbetween Matches)
+|-
+|
+|-
+|CLASSIC (VS SINGLE CHARACTER)
+|-
+|086 [056] // Princess Peach's Castle (vs Mario)
+|-
+|087 [057] // Rainbow Cruise (vs Mario)
+|-
+|088 [058] // Kongo Jungle (vs Donkey Kong)
+|-
+|089 [059] // Jungle Japes (vs Donkey Kong)
+|-
+|090 [05A] // Great Bay (vs Link)
+|-
+|091 [05B] // Temple (vs Link)
+|-
+|092 [05C] // Brinstar (vs Samus)
+|-
+|093 [05D] // Brinstar Depths (vs Samus)
+|-
+|094 [05E] // Yoshi's Story (vs Yoshi)
+|-
+|095 [05F] // Yoshi's Island (vs Yoshi)
+|-
+|096 [060] // Fountain of Dreams (vs Kirby)
+|-
+|097 [061] // Green Greens (vs Kirby)
+|-
+|098 [062] // Corneria (vs Fox)
+|-
+|099 [063] // Venom (vs Fox)
+|-
+|100 [064] // Pokémon Stadium (Only Pokeballs)(vs Pikachu)
+|-
+|101 [065] // Mushroom Kingdom I (vs Luigi)
+|-
+|102 [066] // Mushroom Kingdom II (vs Luigi)
+|-
+|103 [067] // Mute City (vs Captain Falcon)
+|-
+|104 [068] // Big Blue (vs Captain Falcon)
+|-
+|105 [069] // Onett (vs Ness)
+|-
+|106 [06A] // Fourside (vs Ness)
+|-
+|107 [06B] // Pokémon Stadium (vs Jigglypuff)
+|-
+|108 [06C] // Princess Peach's Castle (vs Bowser)
+|-
+|109 [06D] // Battlefield (vs Bowser)
+|-
+|110 [06E] // Princess Peach's Castle (vs Peach)
+|-
+|111 [06F] // Mushroom Kingdom II (vs Peach)
+|-
+|112 [070] // Temple (vs Zelda)
+|-
+|113 [071] // Great Bay (vs Marth)
+|-
+|114 [072] // Final Destination (vs Mewtwo)
+|-
+|115 [073] // Pokémon Stadium (vs Mewtwo)
+|-
+|116 [074] // Icicle Mountain (vs Ice Climbers)
+|-
+|117 [075] // Icicle Mountain (vs Ice Climbers)
+|-
+|118 [076] // Mushroom Kingdom I (Dr. Mario Music) (vs Dr. Mario)
+|-
+|119 [077] // Great Bay (vs Young Link)
+|-
+|120 [078] // Temple (vs Young Link)
+|-
+|121 [079] // Corneria (vs Falco)
+|-
+|122 [07A] // Venom (vs Falco)
+|-
+|123 [07B] // Great Bay (Unused)
+|-
+|124 [07C] // Pokémon Stadium (Pichu)
+|-
+|
+|-
+|CLASSIC (VS TWO CHARACTERS)
+|-
+|125 [07D] // Battlefield (Plays Mario Theme) (vs Team Mario & Bowser)
+|-
+|126 [07E] // Mushroom Kingdom II (vs Team Mario & Peach)
+|-
+|127 [07F] // Kongo Jungle (vs Team DK & Fox)
+|-
+|128 [080] // Temple (vs Team Link & Zelda)
+|-
+|129 [081] // Great Bay (vs Team Link & Young Link)
+|-
+|130 [082] // Mushroom Kingdom I (vs Team Link & Luigi)
+|-
+|131 [083] // Great Bay (Saria's Song) (vs Team Marth & Link)
+|-
+|132 [084] // Big Blue (vs Team Samus & Captain Falcon)
+|-
+|133 [085] // Brinstar (vs Team Samus & Fox)
+|-
+|134 [086] // Yoshi's Story (vs Team Yoshi & Luigi)
+|-
+|135 [087] // Yoshi's Island (vs Team Yoshi & Ness)
+|-
+|136 [088] // Green Greens (vs Team Kirby & Pikachu)
+|-
+|137 [089] // Fountain of Dreams (vs Team Kirby & Pichu)
+|-
+|138 [08A] // Green Greens (vs Team Kirby & Jigglypuff)
+|-
+|139 [08B] // Icicle Mountain (vs Team Kirby & Ice Climbers)
+|-
+|140 [08C] // Corneria (vs Team Fox & Falco)
+|-
+|141 [08D] // Mute City (vs Team Fox & Captain Falcon)
+|-
+|142 [08E] // Pokémon Stadium (vs Team Pikachu & Pichu)
+|-
+|143 [08F] // Pokémon Stadium (vs Team Pikachu & Jigglypuff)
+|-
+|144 [090] // Mushroom Kingdom I (vs Team Luigi & Dr. Mario)
+|-
+|145 [091] // Onett (alt music) (vs Team Ness & Peach)
+|-
+|146 [092] // Fourside (vs Team Ness & Mewtwo)
+|-
+|147 [093] // Big Blue (mRider song) (vs Team Captain Falcon & Falco)
+|-
+|148 [094] // Battlefield (vs Team Bowser & Mewtwo)
+|-
+|149 [095] // Battlefield (vs Team Bowser & Peach)
+|-
+|150 [096] // Battlefield (vs Team Bowser & Zelda)
+|-
+|151 [097] // Temple (vs Team Peach & Zelda)
+|-
+|152 [098] // Great Bay (Saria's Song) (vs Team Zelda & Young Link)
+|-
+|153 [099] // Temple (Emblem) (vs Team Zelda & Marth)
+|-
+|154 [09A] // Great Bay (Unused)
+|-
+|
+|-
+|CLASSIC (VS GIANT CHARACTER)
+|-
+|155 [09B] // Princess Peach's Castle (vs Giant Mario)
+|-
+|156 [09C] // Kongo Jungle (vs Giant DK)
+|-
+|157 [09D] // Great Bay (vs vs Giant Link)
+|-
+|158 [09E] // Yoshi's Story (vs Giant Yoshi)
+|-
+|159 [09F] // Mushroom Kingdom II (vs Giant Luigi)
+|-
+|160 [0A0] // Mute City (vs Giant Captain Falcon)
+|-
+|161 [0A1] // Pokémon Stadium (vs Giant Jigglypuff)
+|-
+|162 [0A2] // Fountain of Dreams (vs Giant Bowser)
+|-
+|163 [0A3] // Mushroom Kingdom I (vs Giant Dr. Mario)
+|-
+|164 [0A4] // Temple (vs Giant Young Link)
+|-
+|
+|-
+|CLASSIC (VS TEAM CHARACTER)
+|-
+|165 [0A5] // Rainbow Cruise (vs Team Mario)
+|-
+|166 [0A6] // Jungle Japes (vs Team Donkey Kong)
+|-
+|167 [0A7] // Fountain of Dreams (vs Team Kirby)
+|-
+|168 [0A8] // Mushroom Kingdom II (vs Team Luigi)
+|-
+|169 [0A9] // Onett (vs Team Ness)
+|-
+|170 [0AA] // Pokémon Stadium (vs Team Jigglypuff)
+|-
+|171 [0AB] // Icicle Mountain (Unused)
+|-
+|172 [0AC] // Pokémon Stadium (vs Team Pichu)
+|-
+|173 [0AD] // Flat Zone (vs Team Game & Watch)
+|-
+|174 [0AE] // Mute City (vs Team Captain Falcon)
+|-
+|
+|-
+|CLASSIC FINAL
+|-
+|175 [0AF] // Battlefield (No items) (vs Metal Character)
+|-
+|176 [0B0] // Final Destination (No items) (vs Master Hand)
+|-
+|
+|-
+|ALL-STAR
+|-
+|177 [0B1] // Rainbow Cruise (vs Mario)
+|-
+|178 [0B2] // Kongo Jungle (vs Donkey Kong)
+|-
+|179 [0B3] // Great Bay (vs Link)
+|-
+|180 [0B4] // Brinstar (vs Samus)
+|-
+|181 [0B5] // Yoshi's Story (vs Yoshi)
+|-
+|182 [0B6] // Green Greens (vs Kirby)
+|-
+|183 [0B7] // Corneria (vs Fox)
+|-
+|184 [0B8] // Pokémon Stadium (vs Pikachu)
+|-
+|185 [0B9] // Mushroom Kingdom I (vs Luigi)
+|-
+|186 [0BA] // Mute City (vs Captain Falcon)
+|-
+|187 [0BB] // Onett (vs Ness)
+|-
+|188 [0BC] // Poké Floats (vs Jigglypuff)
+|-
+|189 [0BD] // Icicle Mountain (vs Ice Climbers)
+|-
+|190 [0BE] // Princess Peach's Castle (vs Peach)
+|-
+|191 [0BF] // Temple (vs Zelda)
+|-
+|192 [0C0] // Fountain of Dreams (Emblem Music) (vs Marth)
+|-
+|193 [0C1] // Battlefield (Poké Floats song) (vs Mewtwo)
+|-
+|194 [0C2] // Yoshi's Island (vs Bowser)
+|-
+|195 [0C3] // Mushroom Kingdom II (Dr Mario Music) (vs Dr Mario)
+|-
+|196 [0C4] // Jungle Japes (vs Young Link)
+|-
+|197 [0C5] // Venom (vs Falco)
+|-
+|198 [0C6] // Fourside (vs Pichu)
+|-
+|199 [0C7] // Final Destination (Emblem Music) (vs Roy)
+|-
+|200 [0C8] // Flat Zone (vs Team Game & Watch)
+|-
+|201 [0C9] // Brinstar Depths (vs Gannondorf)
+|-
+|
+|-
+|EVENT MATCH
+|-
+|202 [0CA] // Battlefield (Event #01) (Trouble King)
+|-
+|203 [0CB] // Temple (Event #18) (Link's Adventure)
+|-
+|204 [0CC] // Princess Peach's Castle (Event #03) (Bomb-fest)
+|-
+|205 [0CD] // Yoshi's Story (Event #04) (Dino-wrangling)
+|-
+|206 [0CE] // Onett (Event #05) (Spare Change)
+|-
+|207 [0CF] // Fountain of Dreams (Event #06) (Kirbys on Parade)
+|-
+|208 [0D0] // Pokémon Stadium (Event #07) (Pokémon Battle)
+|-
+|209 [0D1] // Brinstar (Event #08) (Hot Date on Brinstar)
+|-
+|210 [0D2] // Great Bay (Event #09) (Hide 'n' Sheik)
+|-
+|211 [0D3] // Yoshi's Island (Event #10) (All-Star Match 1-1 /vs Mario)
+|-
+|212 [0D4] // Icicle Mountain (Event #11) (King of the Mountain)
+|-
+|213 [0D5] // Mute City (Event #12) (Seconds, Anyone?)
+|-
+|214 [0D6] // Rainbow Cruise (Event #13) (Yoshi's Egg)
+|-
+|215 [0D7] // Goomba (Event #14) (Trophy Tussle 1)
+|-
+|216 [0D8] // Battlefield (Event #37) (Legendary Pokemon)
+|-
+|217 [0D9] // Corneria (Event #16) (Kirby's Air-raid)
+|-
+|218 [0DA] // Jungle Japes (F-Zero Music) (Event #17) (Bounty Hunters)
+|-
+|219 [0DB] // Kongo Jungle (Event #2) (Lord of the Jungle)
+|-
+|220 [0DC] // Final Destination (Event #19) (Peach's Peril)
+|-
+|221 [0DD] // Brinstar (Event #20) (All-Star Match 2-1 /vs Samus)
+|-
+|222 [0DE] // Princess Peach's Castle (Event #21) (Ice Breaker)
+|-
+|223 [0DF] // Mushroom Kingdom II (Event #22) (Super Mario 128)
+|-
+|224 [0E0] // Brinstar Depths (Event #27) (Cold Armor)
+|-
+|225 [0E1] // Yoshi's Island (Event #24) (The Yoshi Herd)
+|-
+|226 [0E2] // Fourside (DK Rap) (Event #25) (Gargantuans)
+|-
+|227 [0E3] // Entei (Event #26) (Trophy Tussle 2)
+|-
+|228 [0E4] // Venom (Event #23) (Slippy's Invention)
+|-
+|229 [0E5] // Green Greens (Event #28) (Puffballs Unite)
+|-
+|230 [0E6] // Temple (Great Bay music) (Event #29) (Triforce Gathering)
+|-
+|231 [0E7] // Fountain of Dreams (Event #15) (Girl Power)
+|-
+|232 [0E8] // Mushroom Kingdom I (Event #31) (Mario Bros. Madness)
+|-
+|233 [0E9] // Corneria (Many Arwings) (Event #32) (Target Acquired)
+|-
+|234 [0EA] // F //Zero Adventure Stage (Event #33) (Lethal Marathon)
+|-
+|235 [0EB] // Great Bay (Event #34) (Seven Years)
+|-
+|236 [0EC] // Dream Land (Event #35) (Time for a Checkup)
+|-
+|237 [0ED] // Fourside (Event #36) (Space Travelers 1-1)
+|-
+|238 [0EE] // Fountain of Dreams (Event #30) (All-Star Match 3-1 /vs Kirby)
+|-
+|239 [0EF] // Mushroom Kingdom II (Event #38) (Super Mario Bros. 2)
+|-
+|240 [0F0] // Pokémon Stadium (Event #39) (Jigglypuff Live!)
+|-
+|241 [0F1] // Temple (Emblem Music) (Event #40) (All-Star Match 4-1 /vs Marth)
+|-
+|242 [0F2] // Temple (Emblem Music) (Event #41) (En Garde!)
+|-
+|243 [0F3] // Poké Floats (Event #42) (Trouble King 2)
+|-
+|244 [0F4] // Big Blue (Event #43) (Birds of Prey)
+|-
+|245 [0F5] // Battlefield (Event #44) (Mewtwo Strikes!)
+|-
+|246 [0F6] // Flat Zone (Event #45) (Game and Watch Forever!)
+|-
+|247 [0F7] // Temple (Emblem Music) (Event #46) (Fire Emblem Pride)
+|-
+|248 [0F8] // Majora's Mask (Event #47) (Trophy Tussle 3)
+|-
+|249 [0F9] // Yoshi's Story (Event #48) (Pikachu and Pichu)
+|-
+|250 [0FA] // Mushroom Kingdom I (Event #49) (All-Star Match Deluxe 5-1 /vs Dr Mario)
+|-
+|251 [0FB] // Final Destination (Final Destination Match) (Event #50)
+|-
+|252 [0FC] // Final Destination (The Showdown) (Event #51)
+|-
+|253 [0FD] // Jungle Japes (DK Rap) (Event #10) (All-Star Match 1-2 /vs DK)
+|-
+|254 [0FE] // Yoshi's Story (Event #10) (All-Star Match 1-3 /vs Yoshi)
+|-
+|255 [0FF] // Princess Peach's Castle (Event #10) (All-Star Match 1-4 /vs Peach)
+|-
+|256 [100] // Rainbow Cruise (Event #10) (All-Star Match 1-5 /vs Bowser)
+|-
+|257 [101] // Great Bay (All-Star Match 2-2 /vs Link)
+|-
+|258 [102] // Temple (All-Star Match 2-3 /vs Zelda)
+|-
+|259 [103] // Mute City (All-Star Match 2-4 /vs Captain Falcon)
+|-
+|260 [104] // Corneria (All-Star Match 2-5 /vs Fox)
+|-
+|261 [105] // Pokémon Stadium (All-Star Match 3-2 /vs Pikachu)
+|-
+|262 [106] // Onett (All-Star Match 3-3 /vs Ness)
+|-
+|263 [107] // Icicle Mountain (All-Star Match 3-4 /vs Ice Climbers)
+|-
+|264 [108] // Mushroom Kingdom II (All-Star Match 4-2 /vs Luigi)
+|-
+|265 [109] // Poké Floats (All-Star Match 4-3 /vs Jigglypuff)
+|-
+|266 [10A] // Final Destination (All-Star Match 4-4 /vs Mewtwo)
+|-
+|267 [10B] // Flat Zone (All-Star Match 4-5 /vs Mr Game & Watch)
+|-
+|268 [10C] // Venom (All-Star Match Deluxe 5-2 /vs Falco)
+|-
+|269 [10D] // Pokémon Stadium (All-Star Match Deluxe 5-3 /vs Pichu)
+|-
+|270 [10E] // Great Bay (Saria's Song) (All-Star Match Deluxe 5-4 /vs Young Link)
+|-
+|271 [10F] // Temple (Emblem Music) (All-Star Match Deluxe 5-5 /vs Roy)
+|-
+|272 [110] // Final Destination (All-Star Match Deluxe 5-6 /vs Gannondorf)
+|-
+|273 [111] // Battlefield (Event #36) (Space Travelers 1-2)
+|-
+|
+|-
+|UNLOCKABLES
+|-
+|274 [112] // Pokémon Stadium //Unlocking Jigglypuff
+|-
+|275 [113] // Final Destination //Unlocking Mewtwo
+|-
+|276 [114] // Mushroom Kingdom II //Unlocking Luigi
+|-
+|277 [115] // Fountain of Dreams //Unlocking Marth
+|-
+|278 [116] // Flat Zone //Unlocking Mr Game and Watch
+|-
+|279 [117] // Princess Peach's Castle (DR Mario song) //Unlocking Dr Mario
+|-
+|280 [118] // Final Destination (Great Bay music) //Unlocking Gannondorf
+|-
+|281 [119] // Great Bay (Saria's Song) //Unlocking Young Link
+|-
+|282 [11A] // Battlefield (Corneria Music) //Unlocking Falco
+|-
+|283 [11B] // Pokémon Stadium //Unlocking Pichu?
+|-
+|284 [11C] // Temple (Emblem Music) //Unlocking Roy?
+|-
+|
+|-
+|MULTI-MAN MELEE
+|-
+|285 [11D] // Battlefield (Multi-Man Melee)
+|}
+
 </div>
 
 
@@ -17639,7 +20702,7 @@ FC20E850 C01F1844
 EC210032 D03F00F0
 7FE3FB78 C01F0844
 FC000050 EC400072
-3C008008 6000DC0
+3C008008 6000DC0C
 7C0803A6 4E800021
 38600000 907F18AC
 CBE10018 CBC10020
@@ -17647,3 +20710,11 @@ CBA10028 BBE10010
 80010034 38210030
 7C0803A6 4E800020
 60000000 00000000
+
+</div>
+
+
+{{Smash Melee}}
+
+
+[[Category: Super Smash Bros. Melee]]

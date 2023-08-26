@@ -1,5 +1,34 @@
 [
   {
+    "header": "Example Code Name (version) [Author 1, Author 2, etc.]",
+    "version": null,
+    "authors": [
+      "Author 1",
+      "Author 2",
+      "etc."
+    ],
+    "description": [
+      "Description of the code's purpose.",
+      "Description may also contain complimentary information such as Code Options, etc."
+    ],
+    "hex_lines": [
+      "01234567 89ABCDEF #Developer Comments",
+      "01234567 89ABXXYY #Developer Comments may also contain pointers to XX, YY, etc."
+    ],
+    "hex_words": [
+      "01234567",
+      "89ABCDEF",
+      "Comments",
+      "01234567",
+      "89ABXXYY",
+      "Comments",
+      "pointers"
+    ],
+    "deprecated": false,
+    "addresses": [],
+    "categories": []
+  },
+  {
     "header": "Polling Drift Fix - GameCube or Wii [Dan Salvato]",
     "version": null,
     "authors": [
@@ -5835,14 +5864,7 @@
     "authors": [
       "UnclePunch"
     ],
-    "description": [
-      "Button combo to display in vanilla melee:",
-      "ZRL",
-      "Y + Pad up",
-      "A + Pad down",
-      "B + Pad left",
-      "X + pad right"
-    ],
+    "description": [],
     "hex_lines": [
       "043959B4 4800020C"
     ],
@@ -5864,14 +5886,7 @@
     "authors": [
       "UnclePunch"
     ],
-    "description": [
-      "Button combo to display in vanilla melee:",
-      "ZRL",
-      "Y + Pad up",
-      "A + Pad down",
-      "B + Pad left",
-      "X + pad right"
-    ],
+    "description": [],
     "hex_lines": [
       "04396B98 4800020C"
     ],
@@ -5893,14 +5908,7 @@
     "authors": [
       "UnclePunch"
     ],
-    "description": [
-      "Button combo to display in vanilla melee:",
-      "ZRL",
-      "Y + Pad up",
-      "A + Pad down",
-      "B + Pad left",
-      "X + pad right"
-    ],
+    "description": [],
     "hex_lines": [
       "04397878 4800020C"
     ],
@@ -5920,14 +5928,7 @@
     "authors": [
       "UnclePunch"
     ],
-    "description": [
-      "Button combo to display in vanilla melee:",
-      "ZRL",
-      "Y + Pad up",
-      "A + Pad down",
-      "B + Pad left",
-      "X + pad right"
-    ],
+    "description": [],
     "hex_lines": [
       "043977A0 4800020C"
     ],
@@ -8392,18 +8393,13 @@
     "authors": [
       "Achilles"
     ],
-    "description": [
-      "Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]"
-    ],
+    "description": [],
     "hex_lines": [
-      "0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode",
       "2847F9A6 FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen",
       "0047F9A7 00000YYY",
       "E2000001 00000000"
     ],
     "hex_words": [
-      "0416E7F4",
-      "386000XX",
       "2847F9A6",
       "FF0000XX",
       "0047F9A7",
@@ -8412,9 +8408,7 @@
       "00000000"
     ],
     "deprecated": false,
-    "addresses": [
-      "16E7F4"
-    ],
+    "addresses": [],
     "categories": []
   },
   {
@@ -8425,18 +8419,13 @@
     "authors": [
       "Achilles"
     ],
-    "description": [
-      "Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]"
-    ],
+    "description": [],
     "hex_lines": [
-      "0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode",
       "2847E6BE FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen",
       "0047E6BF 00000YYY #Replace_with_Hexidecimal_Stage_ID_for_Desired_Stage_to_Load",
       "E2000001 00000000"
     ],
     "hex_words": [
-      "0416E7F4",
-      "386000XX",
       "2847E6BE",
       "FF0000XX",
       "0047E6BF",
@@ -8445,9 +8434,7 @@
       "00000000"
     ],
     "deprecated": false,
-    "addresses": [
-      "16E7F4"
-    ],
+    "addresses": [],
     "categories": []
   },
   {
@@ -8456,18 +8443,13 @@
     "authors": [
       "Achilles"
     ],
-    "description": [
-      "Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]"
-    ],
+    "description": [],
     "hex_lines": [
-      "0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode",
       "2847148E FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen",
       "0047148F 00000YYY #Replace_with_Hexidecimal_Stage_ID_for_Desired_Stage_to_Load",
       "E2000001 00000000"
     ],
     "hex_words": [
-      "0416E7F4",
-      "386000XX",
       "2847148E",
       "FF0000XX",
       "0047148F",
@@ -8476,9 +8458,7 @@
       "00000000"
     ],
     "deprecated": false,
-    "addresses": [
-      "16E7F4"
-    ],
+    "addresses": [],
     "categories": []
   },
   {
@@ -8487,9 +8467,7 @@
     "authors": [
       "djwang88"
     ],
-    "description": [
-      "Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]"
-    ],
+    "description": [],
     "hex_lines": [
       "0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode"
     ],
@@ -20599,8 +20577,7 @@
     ],
     "description": [
       "When playing online, nametag YOU will show above your character",
-      "Will not cause desyncs when playing online",
-      "These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1XBJmEtR5_fEZrMZ3osU/view This Google Sheet] listing of all of the Hexidecimal values that correspond to all of the available characters for custom nametags."
+      "Will not cause desyncs when playing online"
     ],
     "hex_lines": [
       "C20355B4 00000008 #Online/Optional/IndicateLocalPlayer/ForceLocalPlayerTag.asm",
@@ -34808,7 +34785,255 @@
     "authors": [
       "Achilles"
     ],
-    "description": [],
+    "description": [
+      "00 00    capsule",
+      "01 01    box",
+      "02 02    barrel",
+      "03 03    egg",
+      "04 04    partyball",
+      "05 05    cannon",
+      "06 06    bombomb",
+      "07 07    mr. saturn",
+      "08 08    heart",
+      "09 09    tomato",
+      "10 0A    star",
+      "11 0B    bat",
+      "12 0C    sword",
+      "13 0D    umbrella",
+      "14 0E    green shell",
+      "15 0F    red shell",
+      "16 10    gun",
+      "17 11    freezie",
+      "18 12    food",
+      "19 13    mine",
+      "20 14    bumper",
+      "21 15    super scope",
+      "22 16    star rod",
+      "23 17    lip stick",
+      "24 18    fan",
+      "25 19    fire flower",
+      "26 1A    big mushroom",
+      "27 1B    small mushroom",
+      "28 1C    hammer",
+      "29 1D    warp star",
+      "30 1E    screw attack",
+      "31 1F    rabbit hood",
+      "32 20    metal",
+      "33 21    cloak",
+      "34 22    pokeball",
+      "43 2B    goomba",
+      "44 2C    redead",
+      "45 2D    octarok",
+      "46 2E    otosea",
+      "A0 Null pokemon entry?",
+      "A1 Goldeen (Tosakinto)",
+      "A2 Chicorita",
+      "A3 Snorlax",
+      "A4 Blastoise",
+      "A5 Weezing (Matadogas)",
+      "A6 Charizard (Lizardon)",
+      "A7 Moltres",
+      "A8 Zapdos",
+      "A9 Articuno",
+      "AA Wobbuffet",
+      "AB Scizor",
+      "AC Unown",
+      "AD Entei",
+      "AE Raikou",
+      "AF Suicune",
+      "B0 Bellossom (Kireihana)",
+      "B1 Electrode (Marumine)",
+      "B2 Lugia",
+      "B3 Ho-oh",
+      "B4 Metamon",
+      "B5 Clefairy",
+      "B6 Togepi",
+      "B7 Mew",
+      "B8 Celebi",
+      "B9 Staryu (Hitodeman)",
+      "BA Chansey",
+      "BB Porygon2",
+      "BC Cyndaquil (Hinoarashi)",
+      "BD Marill",
+      "BE Venusaur (Fushigibana)",
+      "2F Stone",
+      "30 Mario's fire",
+      "31 Dr.Mario's Capsule",
+      "32 Kirby's Cutter beam",
+      "33 Kirby's Hammer",
+      "34 Raygun beam",
+      "35",
+      "36 Fox's laser",
+      "37 ? Falco's Laser ?",
+      "38 Fox's shadow",
+      "39 Falco's shadow",
+      "3A Link's bomb",
+      "3B Young Link's bomb",
+      "3C Link's boomerang",
+      "3D Young Link's boomerang",
+      "3E Link's Hookshot",
+      "3F Young Link's Hookshot",
+      "40 Arrow",
+      "41 Fire Arrow",
+      "42 PK Fire",
+      "43 PK Flash",
+      "44 PK Flash",
+      "45 PK Thunder",
+      "46 PK Thunder",
+      "47 PK Thunder",
+      "48 PK Thunder",
+      "49 PK Thunder",
+      "4A Fox's Blaster",
+      "4B Falco's Blaster",
+      "4C ? Link's Arrow ?",
+      "4D Young Link's arrow",
+      "4E PK Flash (explosion)",
+      "4F Needle(thrown)",
+      "50 Needle",
+      "51 Pikachu's Thunder",
+      "52 Pichu's Thunder",
+      "53 Mario's cape",
+      "54 Dr.Mario's cape",
+      "55 Smoke (Sheik)",
+      "56 Yoshi's egg(thrown)",
+      "57",
+      "58 Yoshi's Star",
+      "59 Pikachu's thunder",
+      "5A Pikachu's thunder",
+      "5B Pichu's thunder",
+      "5C Pichu's thunder",
+      "5D Samus's bomb",
+      "5E Samus's chargeshot",
+      "5F Missile",
+      "60 Grapple beam",
+      "61 Sheik's chain",
+      "62",
+      "63 Turnip",
+      "64 Bowser's flame",
+      "65 Ness's bat",
+      "66 Yoyo",
+      "67 Peach's parasol",
+      "68 Toad",
+      "69 Luigi's fire",
+      "6A Ice(Iceclimbers)",
+      "6B Blizzard",
+      "6C Zelda's fire",
+      "6D Zelda's fire (explosion)",
+      "6E",
+      "6F Toad's spore",
+      "70 Mewtwo's Shadowball",
+      "71 Iceclimbers' Up-B",
+      "72 Pesticide",
+      "73 Manhole",
+      "74 Fire(G&W)",
+      "75 Parashute",
+      "76 Turtle",
+      "77 Sperky",
+      "78 Judge",
+      "79",
+      "7A Sausage",
+      "7B Milk (Young Link)",
+      "7C Firefighter(G&W)",
+      "7D Masterhand's laser",
+      "7E Masterhand's bullet",
+      "7F",
+      "80",
+      "81 Crazyhand's Bomb",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "8A",
+      "8B",
+      "8C",
+      "8D",
+      "8E",
+      "8F",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97  (crashes with peach pulls out)",
+      "98",
+      "99",
+      "9A",
+      "9B",
+      "9C",
+      "9D",
+      "9E Coin",
+      "9F",
+      "BF Chikorita's Leaf",
+      "C0 Blastoise's Water",
+      "C1 Weezing's Gas",
+      "C2 Weezing's Gas",
+      "C3 Burn ??? Fire something",
+      "C4 Burn ??? Fire something",
+      "C5 Charizard's Breath",
+      "C6 Charizard's Breath",
+      "C7 Unowns",
+      "C8 Lugia's Aeroblast",
+      "C9 Lugia's Aeroblast",
+      "CA Lugia's Aeroblast",
+      "CB Ho-oh's Flame",
+      "CC Staryu's Star",
+      "CD Healing Egg",
+      "CE Cyndaquil's Fire",
+      "CF ??? invisible",
+      "D0",
+      "D1 Target",
+      "D2 Shyguy (Heiho)",
+      "D3 Koopa(Green) (Nokonoko)",
+      "D4 Koopa(Red) (PataPata)",
+      "D5 Likelile",
+      "D6 (old-lead)",
+      "D7 (old-octa)",
+      "D8 (old-otto)",
+      "D9 White Bear (whitebea)",
+      "DA klap",
+      "DB Paratroopa (Green) (zgshell)",
+      "DC Paratroopa (Red) (zrshell)",
+      "DD",
+      "DE",
+      "DF",
+      "E0 (crashes with peach pulls out)",
+      "E1 Apple",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6 Tool",
+      "E7",
+      "E8",
+      "EA Arwing Laser",
+      "EB Wolfen Laser",
+      "EC",
+      "ED",
+      "EE",
+      "EF",
+      "F0",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9 (crashes with peach pulls out)",
+      "FA",
+      "FB",
+      "FC",
+      "FD",
+      "FE",
+      "FF"
+    ],
     "hex_lines": [
       "04284860 000000XX"
     ],
@@ -34828,9 +35053,7 @@
     "authors": [
       "Nick Reynolds"
     ],
-    "description": [
-      "External Character ID goes inside the spots."
-    ],
+    "description": [],
     "hex_lines": [
       "04456ac4 000000XX #Change \"X\" to the character ID from the list.",
       "04456ac8 000000XX #Change \"X\" to the character ID from the list.",
@@ -55507,6 +55730,7 @@
       "EC210032 D03F00F0",
       "7FE3FB78 C01F0844",
       "FC000050 EC400072",
+      "3C008008 6000DC0C",
       "7C0803A6 4E800021",
       "38600000 907F18AC",
       "CBE10018 CBC10020",
@@ -55588,6 +55812,8 @@
       "C01F0844",
       "FC000050",
       "EC400072",
+      "3C008008",
+      "6000DC0C",
       "7C0803A6",
       "4E800021",
       "38600000",
