@@ -7,4 +7,7 @@ Beginner project for learning Rust: geckodoodad
 Regular Expressions curtesy of @ribbanya:
 https://github.com/MeleeWorkshop/wiki2gecko <= Being used as a general guide
 
-Inside ```fn extract_opcode_and_address```, there is a ```match``` statement to perform different writing operations based on the OpCode of a 4-Byte word. 
+Inside ```fn extract_opcode_and_address```, there is a ```match``` statement to perform different writing operations based on the OpCode of a 4-Byte word.
+
+NOTE: When updating the raw .md file from the Wiki, use ```Shift```+```Tab``` on the whole document to remove the leading whitespace from every line of text.
+
