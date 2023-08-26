@@ -1,6 +1,7 @@
 extern crate regex;
-
+extern crate rayon;
 use regex::Regex;
+use rayon::prelude::*;
 use serde::{Deserialize, Serialize};
 use serde_json;
 // use std::collections::HashMap;
@@ -19,7 +20,7 @@ pub enum GameVersion {
 pub enum Category {
     Gameplay,
     Aesthetics,
-    Features,
+    // etc.
 }
 
 #[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
@@ -28,10 +29,10 @@ pub struct GeckoCode {
     version: Option<GameVersion>,
     authors: Option<Vec<String>>,
     description: Option<Vec<String>>,
-    hex: Vec<String>,
+    hex_lines: Vec<String>,
+    hex_words: Vec<String>,
     deprecated: bool,
-    overwrite: Option<Vec<String>>,
-    injection: Option<Vec<String>>,
+    addresses: Option<Vec<String>>,
     categories: Option<Vec<String>>,
 }
 
@@ -64,6 +65,35 @@ impl GeckoCode {
                 .map(|caps| caps[1].split(',').map(|a| a.trim().to_string()).collect())
         }
 
+        fn extract_hex_words(hex_line: &str) -> Vec<String> {
+            let bytecode_pattern = Regex::new(r"^[\dA-Za-z]{8}$").unwrap();
+            hex_line
+                .split_whitespace()
+                .filter_map(|s| {
+                    if bytecode_pattern.is_match(s) {
+                        Some(s.to_string())
+                    } else {
+                        None
+                    }
+                })
+                .collect()
+        }
+
+        fn extract_opcode_and_address(hex_word: &str) -> Option<String> {
+            const VALID_OPCODES: &[&str] = &["04", "05", "C2", "C3"]; // Add/Modify this list based on valid opcodes
+
+            let opcode = if hex_word.len() >= 2 {
+                &hex_word[0..2]
+            } else {
+                return None;
+            };
+            if VALID_OPCODES.contains(&opcode) {
+                Some(hex_word[2..].to_string())
+            } else {
+                None
+            }
+        }
+
         let mut lines = s.lines();
 
         let mut gecko = GeckoCode {
@@ -71,10 +101,10 @@ impl GeckoCode {
             version: None,
             authors: None,
             description: Some(Vec::new()),
-            hex: Vec::new(),
+            hex_lines: Vec::new(),
+            hex_words: Vec::new(),
             deprecated: false,
-            overwrite: Some(Vec::new()),
-            injection: Some(Vec::new()),
+            addresses: Some(Vec::new()),
             categories: Some(Vec::new()),
         };
 
@@ -100,15 +130,25 @@ impl GeckoCode {
                     .as_mut()
                     .unwrap()
                     .push(line[1..].trim().to_string());
-            } else if Regex::new(r"^[\dA-Za-z]{8}\s?[\dA-Za-z]{8}")
+            } else if Regex::new(r"^[\dA-Za-z]{8}\s?[\dA-Za-z\?]{8}")
                 .unwrap()
                 .is_match(line)
             {
-                gecko.hex.push(line.trim().to_string());
+                let trimmed_line = line.trim().to_string();
+                gecko.hex_lines.push(trimmed_line.clone());
+
+                let words = extract_hex_words(&trimmed_line);
+                for word in &words {
+                    gecko.hex_words.push(word.to_string());
+
+                    if let Some(address) = extract_opcode_and_address(word) {
+                        gecko.addresses.as_mut().unwrap().push(address);
+                    }
+                }
             }
         }
 
-        if gecko.header.is_empty() || gecko.hex.is_empty() {
+        if gecko.header.is_empty() || gecko.hex_lines.is_empty() {
             None
         } else {
             Some(gecko)
@@ -117,65 +157,78 @@ impl GeckoCode {
 }
 
 fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
-    let mut gecko_codes = Vec::new();
-    let mut current_code_block = String::new();
-    let mut capturing = false;
+    let blocks: Vec<&str> = input.split("\n$").collect();
 
-    for line in input.lines() {
-        // Start capturing when a line starts with "$"
-        if line.starts_with("$") {
-            capturing = true;
+    println!("Total blocks found: {}", blocks.len());
+    for (index, block) in blocks.iter().enumerate() {
+        println!("Block {}: {}", index, block);
+    }
+
+    let mut gecko_codes: Vec<GeckoCode> = vec![];
+
+    // Handle the very first block, which might not start with "$"
+    if let Some(first_block) = blocks.first() {
+        if let Some(first_gecko_code) = GeckoCode::from_str(first_block) {
+            println!("First gecko code header: {:?}", first_gecko_code.header);
+            gecko_codes.push(first_gecko_code);
+        } else {
+            println!("Failed to create gecko code for the first block");
         }
+    }
 
-        // If currently capturing a Gecko Code block
-        if capturing {
-            current_code_block.push_str(line);
-            current_code_block.push('\n');
-
-            // If line is not a hex line, end capturing
-            if !Regex::new(r"^[\dA-Fa-fxyXY]{8} [\dA-Fa-fxyXY]{8}")
-                .unwrap()
-                .is_match(line)
-                && !line.starts_with("*")
-                && !line.starts_with("$")
-            {
-                capturing = false;
-                if let Some(gecko_code) = GeckoCode::from_str(&current_code_block) {
-                    println!("{:?} added;", gecko_code.header);
-                    gecko_codes.push(gecko_code);
-                }
-                current_code_block.clear();
+    // Process the rest in parallel
+    let remaining_gecko_codes = blocks.par_iter()
+        .skip(1) // Skip the first block as it has been processed
+        .filter_map(|&block| {
+            let block_with_prefix = format!("${}", block); // Prefixing with "$"
+            let code = GeckoCode::from_str(&block_with_prefix);
+            if let Some(ref gecko_code) = code {
+                println!("Parsed gecko code header: {:?}", gecko_code.header);
+            } else {
+                println!("Failed to create gecko code for block:\n{}", block_with_prefix);
             }
-        }
-    }
+            code
+        })
+        .collect::<Vec<GeckoCode>>();
 
-    // Handle the case where the last Gecko Code goes till the end of the file
-    if !current_code_block.is_empty() {
-        if let Some(gecko_code) = GeckoCode::from_str(&current_code_block) {
-            gecko_codes.push(gecko_code);
-        }
-    }
-
+    println!("Number of GeckoCodes after processing: {}", remaining_gecko_codes.len());
+    
+    gecko_codes.extend(remaining_gecko_codes);
     gecko_codes
 }
 
-fn main() {
-    env::set_var("RUST_BACKTRACE", "full"); // this method needs to be inside main() method
+#[derive(Debug, PartialEq)]
+pub enum HexAddress {
+    Address(String),
+}
 
-    let file_path = Path::new("geckoCodeWikiPage.md"); // Read the markdown file
-    let file_content = fs::read_to_string(&file_path).expect("Unable to read file");
-
-    let mut gecko_codes = extract_gecko_codes(&file_content); // Extract all Gecko Codes
-
-    if let Some(first_gecko_code) = GeckoCode::from_str(&file_content) {
-        // Since we split by "\n$", the very first Gecko Code (if it starts at the beginning of the file) will not be detected.
-        gecko_codes.insert(0, first_gecko_code); // So we handle the first Gecko Code separately here.
+impl HexAddress {
+    pub fn new(s: &str) -> Option<Self> {
+        if HexAddress::is_valid(s) {
+            Some(HexAddress::Address(s.to_string()))
+        } else {
+            None
+        }
     }
 
-    let json_output = serde_json::to_string_pretty(&gecko_codes) // Serialize the vector to JSON
+    fn is_valid(s: &str) -> bool {
+        let re = Regex::new(r"^[\dA-Fa-f]{6}$").unwrap();
+        re.is_match(s)
+    }
+}
+
+fn main() {
+    env::set_var("RUST_BACKTRACE", "full");
+
+    let file_path = Path::new("geckoCodeWikiPage.md");
+    let file_content = fs::read_to_string(&file_path).expect("Unable to read file");
+
+    let gecko_codes = extract_gecko_codes(&file_content);
+
+    let json_output = serde_json::to_string_pretty(&gecko_codes)
         .expect("Failed to serialize to JSON");
 
-    fs::write("RawUnfilteredGeckoCodes.json", json_output) // Save the JSON to "outputGeckoCodeBlob.json"
+    fs::write("RawUnfilteredGeckoCodes.json", json_output)
         .expect("Unable to write to file");
 
     println!("Successfully saved Gecko Codes to RawUnfilteredGeckoCodes.json");
