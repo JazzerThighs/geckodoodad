@@ -1,3 +1,5 @@
+INTERFACE FOR SEARCHING THROUGH PARSED JSON OF GECKO CODES: https://codepen.io/JazzerThighs/pen/xxmwypy
+
 Beginner project for learning Rust: geckodoodad
 
 *Goal: Extract all of the gecko codes from a text file and compile them, adding categorization based on mem-address references.
