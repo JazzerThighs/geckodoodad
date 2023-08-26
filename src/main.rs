@@ -260,7 +260,7 @@ impl HexAddress {
 fn main() {
     env::set_var("RUST_BACKTRACE", "full");
 
-    let file_path = Path::new("geckoCodeWikiPage.md");
+    let file_path = Path::new("geckoCodeWikiPage.md"); //NOTE: When updating the raw .md file from the Wiki, use Shift+Tab on the whole document to remove the leading whitespace from every line of text.
     let file_content = fs::read_to_string(&file_path).expect("Unable to read file");
 
     let gecko_codes = extract_gecko_codes(&file_content);
