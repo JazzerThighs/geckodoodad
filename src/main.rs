@@ -1,7 +1,7 @@
-extern crate regex;
 extern crate rayon;
-use regex::Regex;
+extern crate regex;
 use rayon::prelude::*;
+use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_json;
 // use std::collections::HashMap;
@@ -66,7 +66,7 @@ impl GeckoCode {
         }
 
         fn extract_hex_words(hex_line: &str) -> Vec<String> {
-            let bytecode_pattern = Regex::new(r"^[\dA-Za-z]{8}$").unwrap();
+            let bytecode_pattern = Regex::new(r"^[\dA-Fa-fXxYyZz/?]{8}$").unwrap();
             hex_line
                 .split_whitespace()
                 .filter_map(|s| {
@@ -80,17 +80,26 @@ impl GeckoCode {
         }
 
         fn extract_opcode_and_address(hex_word: &str) -> Option<String> {
-            const VALID_OPCODES: &[&str] = &["04", "05", "C2", "C3"]; // Add/Modify this list based on valid opcodes
+            let opcode = &hex_word[0..2];
 
-            let opcode = if hex_word.len() >= 2 {
-                &hex_word[0..2]
-            } else {
-                return None;
-            };
-            if VALID_OPCODES.contains(&opcode) {
-                Some(hex_word[2..].to_string())
-            } else {
-                None
+            match opcode {
+                "04" => {
+                    // Logic specific to opcode "04"
+                    Some(hex_word[2..].to_string())
+                }
+                "05" => {
+                    // Logic specific to opcode "05"
+                    Some(hex_word[2..].to_string())
+                }
+                "C2" => {
+                    // Logic specific to opcode "C2"
+                    Some(hex_word[2..].to_string())
+                }
+                "C3" => {
+                    // Logic specific to opcode "C3"
+                    Some(hex_word[2..].to_string())
+                }
+                _ => None, // No matching opcode
             }
         }
 
@@ -177,7 +186,8 @@ fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
     }
 
     // Process the rest in parallel
-    let remaining_gecko_codes = blocks.par_iter()
+    let remaining_gecko_codes = blocks
+        .par_iter()
         .skip(1) // Skip the first block as it has been processed
         .filter_map(|&block| {
             let block_with_prefix = format!("${}", block); // Prefixing with "$"
@@ -185,14 +195,20 @@ fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
             if let Some(ref gecko_code) = code {
                 println!("Parsed gecko code header: {:?}", gecko_code.header);
             } else {
-                println!("Failed to create gecko code for block:\n{}", block_with_prefix);
+                println!(
+                    "Failed to create gecko code for block:\n{}",
+                    block_with_prefix
+                );
             }
             code
         })
         .collect::<Vec<GeckoCode>>();
 
-    println!("Number of GeckoCodes after processing: {}", remaining_gecko_codes.len());
-    
+    println!(
+        "Number of GeckoCodes after processing: {}",
+        remaining_gecko_codes.len()
+    );
+
     gecko_codes.extend(remaining_gecko_codes);
     gecko_codes
 }
@@ -225,11 +241,10 @@ fn main() {
 
     let gecko_codes = extract_gecko_codes(&file_content);
 
-    let json_output = serde_json::to_string_pretty(&gecko_codes)
-        .expect("Failed to serialize to JSON");
+    let json_output =
+        serde_json::to_string_pretty(&gecko_codes).expect("Failed to serialize to JSON");
 
-    fs::write("RawUnfilteredGeckoCodes.json", json_output)
-        .expect("Unable to write to file");
+    fs::write("RawUnfilteredGeckoCodes.json", json_output).expect("Unable to write to file");
 
     println!("Successfully saved Gecko Codes to RawUnfilteredGeckoCodes.json");
 }
