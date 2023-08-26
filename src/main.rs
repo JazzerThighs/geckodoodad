@@ -79,25 +79,46 @@ impl GeckoCode {
                 .collect()
         }
 
-        fn extract_opcode_and_address(hex_word: &str) -> Option<String> {
-            let opcode = &hex_word[0..2];
+        fn extract_opcode_and_address(hex_words: &[&str], index: usize) -> Option<Vec<String>> {
+            let opcode = &hex_words[index][0..2];
 
             match opcode {
-                "04" => {
-                    // Logic specific to opcode "04"
-                    Some(hex_word[2..].to_string())
+                "04" | "05" => {
+                    let base_mem_address = if opcode == "04" {
+                        i64::from_str_radix(&hex_words[index][2..], 16).ok()?
+                    } else {
+                        // opcode "05"
+                        i64::from_str_radix(&hex_words[index][1..], 16).ok()?
+                    };
+
+                    Some(vec![format!("{:07X}", base_mem_address)])
                 }
-                "05" => {
-                    // Logic specific to opcode "05"
-                    Some(hex_word[2..].to_string())
-                }
-                "C2" => {
-                    // Logic specific to opcode "C2"
-                    Some(hex_word[2..].to_string())
-                }
-                "C3" => {
-                    // Logic specific to opcode "C3"
-                    Some(hex_word[2..].to_string())
+                "C2" | "C3" => {
+                    let base_mem_address = if opcode == "C2" {
+                        i64::from_str_radix(&hex_words[index][2..], 16).ok()?
+                    } else {
+                        // opcode "C3"
+                        i64::from_str_radix(&hex_words[index][1..], 16).ok()?
+                    };
+
+                    // If the next word is available
+                    if let Some(offset_word) = hex_words.get(index + 1) {
+                        // Convert XXXXXXXX to base 10 to get the offset
+                        let offset = i64::from_str_radix(offset_word, 16).ok()?;
+
+                        if offset > 1000 {
+                            return None; // or raise an error depending on desired behavior
+                        }
+
+                        // Compute the range of memory addresses for the injection
+                        let addresses: Vec<String> = (0..offset)
+                            .map(|i| format!("{:07X}", base_mem_address + i))
+                            .collect();
+
+                        Some(addresses)
+                    } else {
+                        None
+                    }
                 }
                 _ => None, // No matching opcode
             }
@@ -147,11 +168,14 @@ impl GeckoCode {
                 gecko.hex_lines.push(trimmed_line.clone());
 
                 let words = extract_hex_words(&trimmed_line);
-                for word in &words {
+                for (index, word) in words.iter().enumerate() {
                     gecko.hex_words.push(word.to_string());
 
-                    if let Some(address) = extract_opcode_and_address(word) {
-                        gecko.addresses.as_mut().unwrap().push(address);
+                    let str_slice: Vec<&str> = words.iter().map(AsRef::as_ref).collect();
+                    if let Some(addresses) = extract_opcode_and_address(&str_slice[..], index) {
+                        for address in addresses {
+                            gecko.addresses.as_mut().unwrap().push(address);
+                        }
                     }
                 }
             }
