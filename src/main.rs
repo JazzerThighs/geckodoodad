@@ -84,22 +84,24 @@ impl GeckoCode {
 
             match opcode {
                 "04" | "05" => {
-                    let base_mem_address = if opcode == "04" {
-                        i64::from_str_radix(&hex_words[index][2..], 16).ok()?
+                    let base_mem_address = i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
+
+                    // Add the overflow for opcode "05"
+                    let final_address = if opcode == "05" {
+                        base_mem_address + 0x1000000
                     } else {
-                        // opcode "05"
-                        i64::from_str_radix(&hex_words[index][1..], 16).ok()?
+                        base_mem_address
                     };
 
-                    Some(vec![format!("{:07X}", base_mem_address)])
+                    Some(vec![format!("{:07X}", final_address)])
                 }
                 "C2" | "C3" => {
-                    let base_mem_address = if opcode == "C2" {
-                        i64::from_str_radix(&hex_words[index][2..], 16).ok()?
-                    } else {
-                        // opcode "C3"
-                        i64::from_str_radix(&hex_words[index][1..], 16).ok()?
-                    };
+                    let mut base_mem_address = i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
+
+                    // Add the overflow for opcode "C3"
+                     if opcode == "C3" {
+                        base_mem_address += 0x1000000;
+                    }
 
                     // If the next word is available
                     if let Some(offset_word) = hex_words.get(index + 1) {
