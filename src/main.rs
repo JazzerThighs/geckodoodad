@@ -70,7 +70,7 @@ impl GeckoCode {
                         base_mem_address += 0x1000000;
                     }
 
-                    Some(vec![format!("{:07X}", base_mem_address)])
+                    Some(vec![format!("0x{:08X}", base_mem_address)])
                 }
                 _ => None, // No matching opcode
             }
