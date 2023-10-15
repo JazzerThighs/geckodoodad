@@ -8,14 +8,6 @@ use serde_json;
 use std::path::Path;
 use std::{env, fs};
 
-#[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
-pub enum GameVersion {
-    NTSC(f64),
-    KOR,
-    PAL,
-    Other, // to handle unexpected versions
-}
-
 #[derive(Debug, PartialEq, Clone, Serialize)]
 pub enum Category {
     Gameplay,
@@ -26,7 +18,7 @@ pub enum Category {
 #[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
 pub struct GeckoCode {
     header: String,
-    version: Option<GameVersion>,
+    version: String,
     authors: Option<Vec<String>>,
     description: Option<Vec<String>>,
     hex_lines: Vec<String>,
@@ -42,21 +34,6 @@ impl GeckoCode {
         fn parse_header(line: &str) -> Option<String> {
             let re = Regex::new(r"^\$(.*)").unwrap();
             re.captures(line).map(|caps| caps[1].trim().to_string())
-        }
-
-        fn parse_version(line: &str) -> Option<GameVersion> {
-            let re = Regex::new(r"\(([^)]+)\)").unwrap();
-            re.captures(line).and_then(|caps| match &caps[1] {
-                "1.0" | "1.00" | "v1.0" | "v1.00" => Some(GameVersion::NTSC(1.0)),
-                "1.01" | "v1.01" => Some(GameVersion::NTSC(1.01)),
-                "1.02" | "v1.02" => Some(GameVersion::NTSC(1.02)),
-                "KOR" => Some(GameVersion::KOR),
-                "PAL" => Some(GameVersion::PAL),
-                "20XX" | "20XXHP" | "Beyond" | "UPTM" | "UP" | "1.03" | "v1.03" | "Silly Melee" => {
-                    Some(GameVersion::Other)
-                }
-                _ => None,
-            })
         }
 
         fn parse_authors(line: &str) -> Option<Vec<String>> {
@@ -130,7 +107,7 @@ impl GeckoCode {
 
         let mut gecko = GeckoCode {
             header: String::new(),
-            version: None,
+            version: String::from(""),
             authors: None,
             description: Some(Vec::new()),
             hex_lines: Vec::new(),
@@ -141,9 +118,6 @@ impl GeckoCode {
         };
 
         if let Some(header) = lines.next().and_then(|line| parse_header(line)) {
-            if let Some(version) = parse_version(&header) {
-                gecko.version = Some(version);
-            }
             if let Some(authors) = parse_authors(&header) {
                 gecko.authors = Some(authors);
             }

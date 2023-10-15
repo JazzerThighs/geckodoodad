@@ -1,7 +1,7 @@
 [
   {
     "header": "Example Code Name (version) [Author 1, Author 2, etc.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Author 1",
       "Author 2",
@@ -27,7 +27,7 @@
   },
   {
     "header": "Polling Drift Fix - GameCube or Wii [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -71,7 +71,7 @@
   },
   {
     "header": "Polling Drift and Half Visual Buffer Fixes - GameCube or Wii [tauKhan, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan",
       "UnclePunch"
@@ -325,7 +325,7 @@
   },
   {
     "header": "Polling Drift and Full Visual Buffer Fixes - Wii Only [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -405,7 +405,7 @@
   },
   {
     "header": "Universal Controller Fix v0.8 (NTSC 1.02)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -951,9 +951,7 @@
   },
   {
     "header": "UCF Slippi v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Dan Salvato",
       "tauKhan",
@@ -1506,9 +1504,7 @@
   },
   {
     "header": "Stealth UCF v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Dan Salvato",
       "tauKhan",
@@ -1954,7 +1950,7 @@
   },
   {
     "header": "Stage Striking (Whites-out Struck Stages) [Sham Rock]",
-    "version": null,
+    "version": "",
     "authors": [
       "Sham Rock"
     ],
@@ -2121,7 +2117,7 @@
   },
   {
     "header": "Stage Striking (Transparent Struck Stages), Method 1 [Sham Rock, Achilles,]",
-    "version": null,
+    "version": "",
     "authors": [
       "Sham Rock",
       "Achilles",
@@ -2294,7 +2290,7 @@
   },
   {
     "header": "Stage Striking (Transparent Struck Stages), Method 2 [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -2437,7 +2433,7 @@
   },
   {
     "header": "X + Y Disables Start [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -2492,7 +2488,7 @@
   },
   {
     "header": "Full tournament codes [Achilles, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles",
       "UnclePunch"
@@ -3548,7 +3544,7 @@
   },
   {
     "header": "Stealth tournament codes [Achilles, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles",
       "UnclePunch"
@@ -4245,9 +4241,7 @@
   },
   {
     "header": "Neutral Spawns for 1v1 and 2v2 (1.02) [Achilles, Jorgasms]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles",
       "Jorgasms"
@@ -4568,7 +4562,7 @@
   },
   {
     "header": "Tournament safety codes [Fizzi]",
-    "version": null,
+    "version": "",
     "authors": [
       "Fizzi"
     ],
@@ -4628,7 +4622,7 @@
   },
   {
     "header": "Hold to Pause [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -4720,7 +4714,7 @@
   },
   {
     "header": "L+R+A+Start Resets Game While Pause Is Off [Sickolas]",
-    "version": null,
+    "version": "",
     "authors": [
       "Sickolas"
     ],
@@ -4795,7 +4789,7 @@
   },
   {
     "header": "Disable Wobbling [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -5070,7 +5064,7 @@
   },
   {
     "header": "Ledge Grab Limit [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -5526,9 +5520,7 @@
   },
   {
     "header": "Split Audio Channels 2.0 (v1.02) [UnclePunch]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -5625,9 +5617,7 @@
   },
   {
     "header": "Stock Control/Crew Battle (1.02) [Jorgasms]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Jorgasms"
     ],
@@ -5901,9 +5891,7 @@
   },
   {
     "header": "SSBM NTSC 1.02-to-PAL Game-play Converter (1.02) [UnclePunch]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -6957,7 +6945,7 @@
   },
   {
     "header": "Swap Z and X for Port 1 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -6999,7 +6987,7 @@
   },
   {
     "header": "Swap Z and Y for Port 1 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7041,7 +7029,7 @@
   },
   {
     "header": "Swap Z and X for Port 2 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7083,7 +7071,7 @@
   },
   {
     "header": "Swap Z and Y for Port 2 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7125,7 +7113,7 @@
   },
   {
     "header": "Swap Z and X for Port 3 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7167,7 +7155,7 @@
   },
   {
     "header": "Swap Z and Y for Port 3 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7209,7 +7197,7 @@
   },
   {
     "header": "Swap Z and X for Port 4 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7251,7 +7239,7 @@
   },
   {
     "header": "Swap Z and Y for Port 4 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7293,7 +7281,7 @@
   },
   {
     "header": "Swap X/Z - Netplay Safe [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7323,7 +7311,7 @@
   },
   {
     "header": "Swap Y/Z - Netplay Safe [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -7353,9 +7341,7 @@
   },
   {
     "header": "Enable OSReport Print on Crash (1.00) [UnclePunch]",
-    "version": {
-      "NTSC": 1.0
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -7375,9 +7361,7 @@
   },
   {
     "header": "Enable OSReport Print on Crash (1.01) [UnclePunch]",
-    "version": {
-      "NTSC": 1.01
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -7397,9 +7381,7 @@
   },
   {
     "header": "Enable OSReport Print on Crash (1.02) [UnclePunch]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -7419,7 +7401,7 @@
   },
   {
     "header": "Enable OSReport Print on Crash (PAL) [UnclePunch]",
-    "version": "PAL",
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -7439,9 +7421,7 @@
   },
   {
     "header": "Flush Cache on Scene Change (1.02) [Dan Salvato]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -7476,7 +7456,7 @@
   },
   {
     "header": "6-player match crash prevent [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -7597,7 +7577,7 @@
   },
   {
     "header": "Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -7626,7 +7606,7 @@
   },
   {
     "header": "Trophy Collector Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -7647,7 +7627,7 @@
   },
   {
     "header": "DUMMY / ICETOP Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -7676,9 +7656,7 @@
   },
   {
     "header": "Extra characters doesn't crash the game at Victory Screen (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -7733,7 +7711,7 @@
   },
   {
     "header": "Giga Bowser & Sandbag Always Fall On Match Start [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -7776,7 +7754,7 @@
   },
   {
     "header": "Break the Targets Intangibility Glitch Fix [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -7815,7 +7793,7 @@
   },
   {
     "header": "Fix Samus Extender Crash [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -7835,7 +7813,7 @@
   },
   {
     "header": "Extra Chars Don't Reset Port If Unavailable [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -7962,7 +7940,7 @@
   },
   {
     "header": "Clone (Nana Type) Down-B Freeze Fix [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -7993,7 +7971,7 @@
   },
   {
     "header": "Freeze glitch fix [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -8013,7 +7991,7 @@
   },
   {
     "header": "Invisible ceiling glitch fix [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -8033,7 +8011,7 @@
   },
   {
     "header": "Crazy Hand Tag Team Fix [Odante]",
-    "version": null,
+    "version": "",
     "authors": [
       "Odante"
     ],
@@ -8064,7 +8042,7 @@
   },
   {
     "header": "CrazyHand - Disable D-Pad Up+B  Attack [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -8084,7 +8062,7 @@
   },
   {
     "header": "Force Crash Mid-Match [UnclePunch, DRGN]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch",
       "DRGN"
@@ -8136,7 +8114,7 @@
   },
   {
     "header": "Character Data Struct Custom Flag Init [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -8175,7 +8153,7 @@
   },
   {
     "header": "Nana Always Throws Debug Option [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -8218,7 +8196,7 @@
   },
   {
     "header": "Lag Reduction [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -8246,7 +8224,7 @@
   },
   {
     "header": "Unrestricted Camera while Paused [strikebowler585]",
-    "version": null,
+    "version": "",
     "authors": [
       "strikebowler585"
     ],
@@ -8282,7 +8260,7 @@
   },
   {
     "header": "C-Stick Panning while Paused [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -8349,7 +8327,7 @@
   },
   {
     "header": "Disable Automatic Start Screen Transitions [achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "achilles"
     ],
@@ -8369,7 +8347,7 @@
   },
   {
     "header": "Disable Camera and Item Spawn Overlay",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -8391,7 +8369,7 @@
   },
   {
     "header": "Unrestricted Camera in Camera Mode [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -8453,7 +8431,7 @@
   },
   {
     "header": "Swap Z and X for Port 1 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8495,7 +8473,7 @@
   },
   {
     "header": "Swap Z and Y for Port 1 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8537,7 +8515,7 @@
   },
   {
     "header": "Swap Z and X for Port 2 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8579,7 +8557,7 @@
   },
   {
     "header": "Swap Z and Y for Port 2 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8621,7 +8599,7 @@
   },
   {
     "header": "Swap Z and X for Port 3 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8663,7 +8641,7 @@
   },
   {
     "header": "Swap Z and Y for Port 3 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8705,7 +8683,7 @@
   },
   {
     "header": "Swap Z and X for Port 4 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8747,7 +8725,7 @@
   },
   {
     "header": "Swap Z and Y for Port 4 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8789,7 +8767,7 @@
   },
   {
     "header": "Swap X/Z - Netplay Safe [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8819,7 +8797,7 @@
   },
   {
     "header": "Swap Y/Z - Netplay Safe [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -8849,7 +8827,7 @@
   },
   {
     "header": "Swap X/R [Altafen, Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen",
       "Altimor"
@@ -8877,7 +8855,7 @@
   },
   {
     "header": "Extended Name Entry [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -9093,7 +9071,7 @@
   },
   {
     "header": "Name Tag Shadow Box Automatically Scales to Tag Length [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -9188,7 +9166,7 @@
   },
   {
     "header": "Disable Rumble",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -9206,7 +9184,7 @@
   },
   {
     "header": "Change Rumble Settings from CSS - Color Mod [Sham Rock]",
-    "version": null,
+    "version": "",
     "authors": [
       "Sham Rock"
     ],
@@ -9349,7 +9327,7 @@
   },
   {
     "header": "Dpad up/down toggles rumble on CSS [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -9468,7 +9446,7 @@
   },
   {
     "header": "Ignore Nametag Rumble Setting [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -9488,7 +9466,7 @@
   },
   {
     "header": "D-Pad Down at Vs. Mode CSS Loads Rumble Select Screen [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -9605,7 +9583,7 @@
   },
   {
     "header": "Rumble on Missed L-Cancel [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -9688,7 +9666,7 @@
   },
   {
     "header": "Hold to Pause [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -9780,7 +9758,7 @@
   },
   {
     "header": "LRAStart Uses Held Buttons [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -9800,7 +9778,7 @@
   },
   {
     "header": "LRAStart Resets Game While Pause Is Off [Sickolas]",
-    "version": null,
+    "version": "",
     "authors": [
       "Sickolas"
     ],
@@ -9875,7 +9853,7 @@
   },
   {
     "header": "No Delay On Unpausing [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -9895,7 +9873,7 @@
   },
   {
     "header": "No Delay on Pausing [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -9915,7 +9893,7 @@
   },
   {
     "header": "No Delay on LRA Start Input [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -9935,7 +9913,7 @@
   },
   {
     "header": "CSS Hands Default to HMN Button [achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "achilles"
     ],
@@ -9978,7 +9956,7 @@
   },
   {
     "header": "Hold Start to Force SSS - Deluxe Edition [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -10089,7 +10067,7 @@
   },
   {
     "header": "No Delay on Start at CSS [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -10109,7 +10087,7 @@
   },
   {
     "header": "Disable Name Tag Reset After Closing Character Port (v2) [Ato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Ato"
     ],
@@ -10133,7 +10111,7 @@
   },
   {
     "header": "Disable Name Tag Reset After Exiting Character Select Screen [Todd Bonney]",
-    "version": null,
+    "version": "",
     "authors": [
       "Todd Bonney"
     ],
@@ -10153,9 +10131,7 @@
   },
   {
     "header": "Load Any Stage over Another SSS Icon in Vs. Mode (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -10179,9 +10155,7 @@
   },
   {
     "header": "Load Any Stage over Another SSS Icon in Vs. Mode (1.01) [Achilles]",
-    "version": {
-      "NTSC": 1.01
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -10205,9 +10179,7 @@
   },
   {
     "header": "Load Any Stage over Another SSS Icon in Vs. Mode (1.00) [Achilles]",
-    "version": {
-      "NTSC": 1.0
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -10231,7 +10203,7 @@
   },
   {
     "header": "Load Any Stage over Another SSS Icon in Vs. Mode (PAL) [Achilles]",
-    "version": "PAL",
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -10255,7 +10227,7 @@
   },
   {
     "header": "Load Specific Stage in Any Mode [djwang88]",
-    "version": null,
+    "version": "",
     "authors": [
       "djwang88"
     ],
@@ -10275,7 +10247,7 @@
   },
   {
     "header": "Hold L+R+A+Start During Stage Load to Return to the CSS [Jorgasms]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jorgasms"
     ],
@@ -10295,7 +10267,7 @@
   },
   {
     "header": "No Delay on Start at SSS [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -10315,7 +10287,7 @@
   },
   {
     "header": "'RANDOM' is Default Highlighted on Stage Select Screen [Jorgasms]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jorgasms"
     ],
@@ -10335,7 +10307,7 @@
   },
   {
     "header": "Random Stages Set to Illegal Stages Only [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -10380,7 +10352,7 @@
   },
   {
     "header": "Can't Pick Non-Legal Stages",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [
       "Prevents non-tournament legal stages from being selected",
@@ -10500,7 +10472,7 @@
   },
   {
     "header": "Can't Pick Non-Legal Stages or FoD",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [
       "Prevents non-tournament legal stages and FoD from being selected",
@@ -10624,7 +10596,7 @@
   },
   {
     "header": "Sheik on CSS [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -10644,9 +10616,7 @@
   },
   {
     "header": "Z button to toggle NPCs/alternate characters in CSS (1.02) [Achilles1515]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles1515"
     ],
@@ -10849,7 +10819,7 @@
   },
   {
     "header": "Press Z To Strike Characters on CSS",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -10882,7 +10852,7 @@
   },
   {
     "header": "Always access debug menu from title screen with Y [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -10906,9 +10876,7 @@
   },
   {
     "header": "Debug Menu Replaces Tournament Mode (1.02) [Magus, donny2112]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Magus",
       "donny2112"
@@ -10929,9 +10897,7 @@
   },
   {
     "header": "Debug Menu Replaces Tournament Mode (1.01) [Magus, donny2112]",
-    "version": {
-      "NTSC": 1.01
-    },
+    "version": "",
     "authors": [
       "Magus",
       "donny2112"
@@ -10952,9 +10918,7 @@
   },
   {
     "header": "Debug Menu Replaces Tournament Mode (1.00) [Magus, donny2112]",
-    "version": {
-      "NTSC": 1.0
-    },
+    "version": "",
     "authors": [
       "Magus",
       "donny2112"
@@ -10975,7 +10939,7 @@
   },
   {
     "header": "Debug Menu Replaces Tournament Mode (PAL) [Magus, donny2112]",
-    "version": "PAL",
+    "version": "",
     "authors": [
       "Magus",
       "donny2112"
@@ -10996,9 +10960,7 @@
   },
   {
     "header": "All Players Can Control the Debug Menu (1.02) [wParam]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -11107,9 +11069,7 @@
   },
   {
     "header": "Submenus Resemble Normal Menus (1.02) [Dan Salvato]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -11149,7 +11109,7 @@
   },
   {
     "header": "Additional Debug Background Colors [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -11224,9 +11184,7 @@
   },
   {
     "header": "Leaving Debug Menu Loads CSS (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -11246,7 +11204,7 @@
   },
   {
     "header": "Always Spawn Items in Debug",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -11264,7 +11222,7 @@
   },
   {
     "header": "Full Stage Selector (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -11290,7 +11248,7 @@
   },
   {
     "header": "Debug Menu - Floating Point Decimals [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -11310,7 +11268,7 @@
   },
   {
     "header": "Debug sound test menu",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -11326,7 +11284,7 @@
   },
   {
     "header": "Set Menu Music in Sound Test [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -11408,7 +11366,7 @@
   },
   {
     "header": "SSBM PAL - Enable Sound Test from Debug Menu (PAL)",
-    "version": "PAL",
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -11430,7 +11388,7 @@
   },
   {
     "header": "Full friendlies codes [Achilles, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles",
       "UnclePunch"
@@ -12762,7 +12720,7 @@
   },
   {
     "header": "Hold L+R+Y For Salty Runbacks [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -12817,7 +12775,7 @@
   },
   {
     "header": "Hold A+B For Salty Runbacks [Dan Salvato and Sham Rock]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato and Sham Rock"
     ],
@@ -12868,7 +12826,7 @@
   },
   {
     "header": "Always Skip the Result Screen, and Stock Count = Placement [Sham Rock]",
-    "version": null,
+    "version": "",
     "authors": [
       "Sham Rock"
     ],
@@ -12943,7 +12901,7 @@
   },
   {
     "header": "Skip Results Screen, and KO Stars = Games Won [Sham Rock, Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Sham Rock",
       "Achilles"
@@ -13031,7 +12989,7 @@
   },
   {
     "header": "Always Skip Results Screen, and KO Stars Function Normally [achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "achilles"
     ],
@@ -13106,7 +13064,7 @@
   },
   {
     "header": "Always Skip the Results Screen (no change to KO stars) [Sham Rock]",
-    "version": null,
+    "version": "",
     "authors": [
       "Sham Rock"
     ],
@@ -13137,7 +13095,7 @@
   },
   {
     "header": "Hold Start to Skip Results (2 Seconds) [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -13180,9 +13138,7 @@
   },
   {
     "header": "Neutral Spawns for 1v1 and 2v2 (1.02) [Achilles, Jorgasms]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles",
       "Jorgasms"
@@ -13503,7 +13459,7 @@
   },
   {
     "header": "Start Vs. With only 1 Player [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -13572,9 +13528,7 @@
   },
   {
     "header": "Spoof Controller Plugins (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -13611,7 +13565,7 @@
   },
   {
     "header": "Unlock All Characters, Stages, & Random Stage Select [standardtoaster]",
-    "version": null,
+    "version": "",
     "authors": [
       "standardtoaster"
     ],
@@ -13639,7 +13593,7 @@
   },
   {
     "header": "All 51 Event Matches Open But Not Completed [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -13663,7 +13617,7 @@
   },
   {
     "header": "Infinite Lotto Coins",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -13679,7 +13633,7 @@
   },
   {
     "header": "Skip Memcard Prompt [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -13714,9 +13668,7 @@
   },
   {
     "header": "Unlock All 293 Trophies (1.02) [Datel]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Datel"
     ],
@@ -13737,7 +13689,7 @@
   },
   {
     "header": "All 292 Trophies (PAL)",
-    "version": "PAL",
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -13756,7 +13708,7 @@
   },
   {
     "header": "Remove Special Messages [???]",
-    "version": null,
+    "version": "",
     "authors": [
       "???"
     ],
@@ -13811,7 +13763,7 @@
   },
   {
     "header": "Automatically Select Yes if coins are lower than the requirements [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -13847,7 +13799,7 @@
   },
   {
     "header": "Boot to In Game [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -13920,7 +13872,7 @@
   },
   {
     "header": "Polling Drift Fix [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -13963,7 +13915,7 @@
   },
   {
     "header": "Polling Drift + Half Visual Buffer Fixes [tauKhan, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan",
       "UnclePunch"
@@ -14216,7 +14168,7 @@
   },
   {
     "header": "Polling Drift + Full Visual Buffer Fixes [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -14295,7 +14247,7 @@
   },
   {
     "header": "Low-Poly v2 [UnclePunch,Yakult]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch",
       "Yakult"
@@ -14373,7 +14325,7 @@
   },
   {
     "header": "No Character Shadows [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -14393,7 +14345,7 @@
   },
   {
     "header": "Force Simple Background and Stage Geometry [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -14419,7 +14371,7 @@
   },
   {
     "header": "Disable Player Reflections on FoD [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -14490,7 +14442,7 @@
   },
   {
     "header": "Disable Pokemon Stadium Screen [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -14520,9 +14472,7 @@
   },
   {
     "header": "Disable Final Destination Background Transitions (1.02) [Achilles, Dan Salvato]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles",
       "Dan Salvato"
@@ -14543,7 +14493,7 @@
   },
   {
     "header": "Force 480p 4:3 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -14586,7 +14536,7 @@
   },
   {
     "header": "Widescreen 16:9 [Dan Salvato, mirrorbender, Achilles1515, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato",
       "mirrorbender",
@@ -14698,7 +14648,7 @@
   },
   {
     "header": "Ultrawide Moniter Hack",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -14754,7 +14704,7 @@
   },
   {
     "header": "Deflicker Off By Default [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -14776,9 +14726,7 @@
   },
   {
     "header": "Split Audio Channels 2.0 (v1.02) [UnclePunch]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -14875,7 +14823,7 @@
   },
   {
     "header": "Sound Slider Defaults to 100% Game Sounds [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -14897,7 +14845,7 @@
   },
   {
     "header": "Game Music ON [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -14919,7 +14867,7 @@
   },
   {
     "header": "Game Music OFF [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -14941,7 +14889,7 @@
   },
   {
     "header": "Music Plays at 25% Volume When All Controllers Are Idle For 1 Minute [UnclePunch, Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch",
       "Punkline"
@@ -15057,7 +15005,7 @@
   },
   {
     "header": "Mute In-Game Music [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -15098,7 +15046,7 @@
   },
   {
     "header": "Enable Develop Mode [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -15124,9 +15072,7 @@
   },
   {
     "header": "Normal C-Stick Functionality in DEVELOP Mode (1.02) [Magus, Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Magus",
       "Achilles"
@@ -15151,9 +15097,7 @@
   },
   {
     "header": "Enable Damage Staling in Develop Mode (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -15173,7 +15117,7 @@
   },
   {
     "header": "Display Animation Name For Special Moves In Develop Mode [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -15268,7 +15212,7 @@
   },
   {
     "header": "D-Pad Controls Damage [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -15407,7 +15351,7 @@
   },
   {
     "header": "Add Smash64 Fastfall Sparkle v1.2 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -15484,7 +15428,7 @@
   },
   {
     "header": "CSS Clone Icons Slide Into Place [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -15506,7 +15450,7 @@
   },
   {
     "header": "Disable Kill Explosions GFX [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -15538,7 +15482,7 @@
   },
   {
     "header": "No Electric SFX [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -15577,7 +15521,7 @@
   },
   {
     "header": "Disable Screen Shake [Achilles1515]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles1515"
     ],
@@ -15600,7 +15544,7 @@
   },
   {
     "header": "Disable Teams Subcolors [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -15630,7 +15574,7 @@
   },
   {
     "header": "Team Colors [flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -15846,9 +15790,7 @@
   },
   {
     "header": "Change Player Shield Colors (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -15910,7 +15852,7 @@
   },
   {
     "header": "Stock-Dependant Angel Platform Colors [Achilles1515]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles1515"
     ],
@@ -16051,7 +15993,7 @@
   },
   {
     "header": "Prevent Character Crowd Chants [Fizzi]",
-    "version": null,
+    "version": "",
     "authors": [
       "Fizzi"
     ],
@@ -16071,7 +16013,7 @@
   },
   {
     "header": "Disable CSS Announcer Voice: Game Type [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -16091,7 +16033,7 @@
   },
   {
     "header": "Disable CSS Announcer Voice: Character Selection [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -16111,7 +16053,7 @@
   },
   {
     "header": "Announcer Fanfares 2.0 [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -16439,9 +16381,7 @@
   },
   {
     "header": "Play MenuForwardSFX on Successful V-Cancel (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -16472,7 +16412,7 @@
   },
   {
     "header": "DI Draw - GX Call, v1.1 [Achilles, tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles",
       "tauKhan"
@@ -17024,7 +16964,7 @@
   },
   {
     "header": "DI Draw - Various DI Vert Writing [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -18078,7 +18018,7 @@
   },
   {
     "header": "RNG int makes a sound [212 Degrees]",
-    "version": null,
+    "version": "",
     "authors": [
       "212 Degrees"
     ],
@@ -18125,7 +18065,7 @@
   },
   {
     "header": "Display last RNG call [212 Degrees]",
-    "version": null,
+    "version": "",
     "authors": [
       "212 Degrees"
     ],
@@ -18171,7 +18111,7 @@
   },
   {
     "header": "Display Time at Top Right of CSS 1.1 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -18409,7 +18349,7 @@
   },
   {
     "header": "L Cancel % in Results Screen (version 1.02) [Wooggle]",
-    "version": null,
+    "version": "",
     "authors": [
       "Wooggle"
     ],
@@ -18528,7 +18468,7 @@
   },
   {
     "header": "L-Cancel Frame Timer Display v1.0 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -18899,7 +18839,7 @@
   },
   {
     "header": "Subseconds = Frames [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -18921,7 +18861,7 @@
   },
   {
     "header": "Nametag = Player's Percent v2.0 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -19016,9 +18956,7 @@
   },
   {
     "header": "Permanent Display Number = Nana % damage (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -19122,7 +19060,7 @@
   },
   {
     "header": "Debug Game-Side Latency (v2) [Fizzi]",
-    "version": null,
+    "version": "",
     "authors": [
       "Fizzi"
     ],
@@ -20407,7 +20345,7 @@
   },
   {
     "header": "Hitboxes Always On [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -20436,7 +20374,7 @@
   },
   {
     "header": "Display Ungrabbable Hurtboxes [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -20485,7 +20423,7 @@
   },
   {
     "header": "Hitbox Color Darkens Based On Damage [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -20570,7 +20508,7 @@
   },
   {
     "header": "Colored Hitbox IDs [UnclePunch,NeilHarbin0]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch",
       "NeilHarbin0"
@@ -20621,7 +20559,7 @@
   },
   {
     "header": "Hitboxes Display Knockback Angle v0.3 [rmn, PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "rmn",
       "PKFreeZZy"
@@ -21094,7 +21032,7 @@
   },
   {
     "header": "Reverse Hitbox ID Draw Order [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -21132,9 +21070,7 @@
   },
   {
     "header": "Hitbox Displays Do Not Interpolate (1.02) [Magus]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Magus"
     ],
@@ -21165,7 +21101,7 @@
   },
   {
     "header": "Hide Character's GFX When Collision Bubbles Enabled [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -21216,7 +21152,7 @@
   },
   {
     "header": "UnobscuredHitboxDisplay1.2 (Melee 1.02) [Punkline, Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline",
       "Achilles"
@@ -21270,9 +21206,7 @@
   },
   {
     "header": "Disable Vulnerable Hurtbox Display (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -21297,7 +21231,7 @@
   },
   {
     "header": "Disable Intagible & Invulnerable Hurtbox Display [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -21322,7 +21256,7 @@
   },
   {
     "header": "Disable Hitbox Displays [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -21346,7 +21280,7 @@
   },
   {
     "header": "Always Display Hitboxes Only [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -21374,7 +21308,7 @@
   },
   {
     "header": "Always Display Hitboxes [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -21394,7 +21328,7 @@
   },
   {
     "header": "Isolated ECB Display [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -21569,7 +21503,7 @@
   },
   {
     "header": "Frame Data Visualization Pack v.22 [rmn, UnclePunch, NeilHarbin0]",
-    "version": null,
+    "version": "",
     "authors": [
       "rmn",
       "UnclePunch",
@@ -22111,7 +22045,7 @@
   },
   {
     "header": "Character Models Invisible [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -22131,7 +22065,7 @@
   },
   {
     "header": "Make Specific Costume on Specific Character Invisible [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -22174,7 +22108,7 @@
   },
   {
     "header": "No Character Shadows [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -22194,7 +22128,7 @@
   },
   {
     "header": "Low-Poly v2 [UnclePunch,Yakult]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch",
       "Yakult"
@@ -22272,9 +22206,7 @@
   },
   {
     "header": "Character Model Turns white during shield stun (v1.02) [InternetExplorer]:",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "InternetExplorer"
     ],
@@ -22366,7 +22298,7 @@
   },
   {
     "header": "Turn Yellow During Shield Stun [Dan Salvato, standardtoaster, Stratocaster]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato",
       "standardtoaster",
@@ -22427,7 +22359,7 @@
   },
   {
     "header": "Turn Green When Actionable [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -22588,7 +22520,7 @@
   },
   {
     "header": "Turn Green when wasting frames (Wait, SquatWait, tumble (= DamageFall), CatchWaitCliffWait) [Kaze]",
-    "version": null,
+    "version": "",
     "authors": [
       "Kaze"
     ],
@@ -22659,7 +22591,7 @@
   },
   {
     "header": "Flash Red on Failed L-Cancel [Achilles1515, Fizzi]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles1515",
       "Fizzi"
@@ -22769,9 +22701,7 @@
   },
   {
     "header": "Flash Blue on Missed Smash Turn (v1.02) [Magus]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Magus"
     ],
@@ -22850,7 +22780,7 @@
   },
   {
     "header": "Flash Color when Fastfall is Available (simple) [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -22905,7 +22835,7 @@
   },
   {
     "header": "Flash Color when Subaction IASA is Available [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -22956,7 +22886,7 @@
   },
   {
     "header": "Turn Green When Pummel is Available [Cappy]",
-    "version": null,
+    "version": "",
     "authors": [
       "Cappy"
     ],
@@ -23042,7 +22972,7 @@
   },
   {
     "header": "Remove Classic Mode VS Screen HUD [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -23070,7 +23000,7 @@
   },
   {
     "header": "Disable \"Go!\" Text Graphic On Match Start [gadzook]",
-    "version": null,
+    "version": "",
     "authors": [
       "gadzook"
     ],
@@ -23120,7 +23050,7 @@
   },
   {
     "header": "Smaller \"Ready, GO!\" Text Graphics on Match Start [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -23191,7 +23121,7 @@
   },
   {
     "header": "Force 2P Center HUD [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -23213,7 +23143,7 @@
   },
   {
     "header": "PAL Stock Icons [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -23262,7 +23192,7 @@
   },
   {
     "header": "HUD Transparency v1.1 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -23911,9 +23841,7 @@
   },
   {
     "header": "Invisible Emblems Behind Percents (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -23933,7 +23861,7 @@
   },
   {
     "header": "Disable Magnifying-glass HUD [NeilHarbin0]",
-    "version": null,
+    "version": "",
     "authors": [
       "NeilHarbin0"
     ],
@@ -23953,7 +23881,7 @@
   },
   {
     "header": "Hide Nametags [Nikki]",
-    "version": null,
+    "version": "",
     "authors": [
       "Nikki"
     ],
@@ -23986,7 +23914,7 @@
   },
   {
     "header": "X+D-Pad Down (P1 Only) Toggles HUD On/Off [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -24019,7 +23947,7 @@
   },
   {
     "header": "Hide HUD [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -24049,7 +23977,7 @@
   },
   {
     "header": "Swap X/Z - Netplay Safe [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -24079,7 +24007,7 @@
   },
   {
     "header": "Swap Y/Z - Netplay Safe [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -24109,7 +24037,7 @@
   },
   {
     "header": "Hide Waiting For Game [Nikki, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "Nikki",
       "UnclePunch"
@@ -24133,7 +24061,7 @@
   },
   {
     "header": "Show Player Names [Fizzi, UnclePunch, Enzyme, jmlee337]",
-    "version": null,
+    "version": "",
     "authors": [
       "Fizzi",
       "UnclePunch",
@@ -24773,7 +24701,7 @@
   },
   {
     "header": "Display Teams Ally v1.1 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -24911,7 +24839,7 @@
   },
   {
     "header": "Force Nametag for Local Player [Fizzi]",
-    "version": null,
+    "version": "",
     "authors": [
       "Fizzi"
     ],
@@ -25025,7 +24953,7 @@
   },
   {
     "header": "99-Stock Online [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -25185,7 +25113,7 @@
   },
   {
     "header": "Rollback items [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -25254,7 +25182,7 @@
   },
   {
     "header": "Mango Axe Wednesday [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -25463,7 +25391,7 @@
   },
   {
     "header": "Online Break the Targets v.02 [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -25680,7 +25608,7 @@
   },
   {
     "header": "Force Simple Background and Stage Geometry [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -25706,7 +25634,7 @@
   },
   {
     "header": "Full Resolution FoD Reflection [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -25746,7 +25674,7 @@
   },
   {
     "header": "HQ Fountain of Dreams Reflections [UnclePunch, PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch",
       "PKFreeZZy"
@@ -25795,7 +25723,7 @@
   },
   {
     "header": "Disable Player Reflections on FoD [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -25815,7 +25743,7 @@
   },
   {
     "header": "Disable Stadium Screen [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -25845,7 +25773,7 @@
   },
   {
     "header": "Disable Battlefield Background + Particles [NeilHarbin0]",
-    "version": null,
+    "version": "",
     "authors": [
       "NeilHarbin0"
     ],
@@ -25873,9 +25801,7 @@
   },
   {
     "header": "Disable Final Destination Background Transitions (1.02) [Achilles, Dan Salvato]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles",
       "Dan Salvato"
@@ -25896,7 +25822,7 @@
   },
   {
     "header": "Mushroom Kingdom / Underground Maze crash prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -25925,7 +25851,7 @@
   },
   {
     "header": "Mushroom Kingdom / Underground Maze crash prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -25954,7 +25880,7 @@
   },
   {
     "header": "Trophy Collector Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -25975,7 +25901,7 @@
   },
   {
     "header": "DUMMY / ICETOP Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -26004,7 +25930,7 @@
   },
   {
     "header": "Unlock Stock Selection for All Star Mode (NTSC v1.02) [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -26032,9 +25958,7 @@
   },
   {
     "header": "Choose Any Character for Any Event Match (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -26058,7 +25982,7 @@
   },
   {
     "header": "Preserve Dash Momentum on Shield Interrupt [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -26082,7 +26006,7 @@
   },
   {
     "header": "DamageDown Knockback Condition [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -26129,7 +26053,7 @@
   },
   {
     "header": "Update TopN Location In ECB Calculation [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -26184,7 +26108,7 @@
   },
   {
     "header": "Box Glitch Fix [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -26225,7 +26149,7 @@
   },
   {
     "header": "Grab Infinite Removal v3 [Glook, Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Glook",
       "Punkline"
@@ -26293,7 +26217,7 @@
   },
   {
     "header": "Optional: Port Priority Fixes [Punkline, Achilles, PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline",
       "Achilles",
@@ -26690,7 +26614,7 @@
   },
   {
     "header": "Throw Hitstun Port Priority Fix v3 [Achilles, PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles",
       "PKFreeZZy"
@@ -26746,7 +26670,7 @@
   },
   {
     "header": "Bowser & Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -26774,7 +26698,7 @@
   },
   {
     "header": "Captain Falcon & Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -26794,7 +26718,7 @@
   },
   {
     "header": "Ledge Grab Port Priority Fix [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -27135,7 +27059,7 @@
   },
   {
     "header": "Grab Port-Priority Fix - Award Grab to Lower % Player [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -27412,7 +27336,7 @@
   },
   {
     "header": "Disable Phantom Hits [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -27436,9 +27360,7 @@
   },
   {
     "header": "Phantom Hit Fix (v1.02) [UnclePunch]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -27630,7 +27552,7 @@
   },
   {
     "header": "Disable Wobbling [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -27782,7 +27704,7 @@
   },
   {
     "header": "Ledge Grab Limit [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -28238,7 +28160,7 @@
   },
   {
     "header": "Swap Z and X for Port 1 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -28280,7 +28202,7 @@
   },
   {
     "header": "Swap Z and Y for Port 1 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -28322,7 +28244,7 @@
   },
   {
     "header": "Swap Z and X for Port 2 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -28364,7 +28286,7 @@
   },
   {
     "header": "Swap Z and Y for Port 2 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -28406,7 +28328,7 @@
   },
   {
     "header": "Swap Z and X for Port 3 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -28448,7 +28370,7 @@
   },
   {
     "header": "Swap Z and Y for Port 3 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -28490,7 +28412,7 @@
   },
   {
     "header": "Swap Z and X for Port 4 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -28532,7 +28454,7 @@
   },
   {
     "header": "Swap Z and Y for Port 4 on LAN [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -28574,7 +28496,7 @@
   },
   {
     "header": "Disable Tap Jump [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -28619,8 +28541,44 @@
     "categories": []
   },
   {
+    "header": "No Tap Jump [Altafen]",
+    "version": "",
+    "authors": [
+      "Altafen"
+    ],
+    "description": [],
+    "hex_lines": [
+      "040CB828 48000014 #tap_jump/firstmultijump.asm",
+      "040CB9A8 60000000 #tap_jump/jumpaerial.asm",
+      "040CAF24 4800000C #tap_jump/kneebend.asm",
+      "040D7430 60000000 #tap_jump/multijump.asm",
+      "040CAFD0 48000018 #tap_jump/oorun.asm"
+    ],
+    "hex_words": [
+      "040CB828",
+      "48000014",
+      "040CB9A8",
+      "60000000",
+      "040CAF24",
+      "4800000C",
+      "040D7430",
+      "60000000",
+      "040CAFD0",
+      "48000018"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "00CB828",
+      "00CB9A8",
+      "00CAF24",
+      "00D7430",
+      "00CAFD0"
+    ],
+    "categories": []
+  },
+  {
     "header": "No X / Y [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -28685,7 +28643,7 @@
   },
   {
     "header": "No Multi/Special Double Jumps [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -28733,7 +28691,7 @@
   },
   {
     "header": "Even More Jumps Disabled [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -28793,7 +28751,7 @@
   },
   {
     "header": "Disable Airdodges  [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -28817,7 +28775,7 @@
   },
   {
     "header": "Rolling Results in Immediate Death [Dan Salvato, standardtoaster]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato",
       "standardtoaster"
@@ -28838,7 +28796,7 @@
   },
   {
     "header": "Tap Jump from Grounded Jump means Death [flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -28889,7 +28847,7 @@
   },
   {
     "header": "Disable Star KOs [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -28909,7 +28867,7 @@
   },
   {
     "header": "Invisible ceiling glitch fix [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -28929,7 +28887,7 @@
   },
   {
     "header": "sushie's Ft/ItData Expansion v1.2.0 [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -29033,7 +28991,7 @@
   },
   {
     "header": "Special Hitbox Angle: 367 v2.1.0 [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -29344,7 +29302,7 @@
   },
   {
     "header": "Hitbox Extension v1.8.1 [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -31452,7 +31410,7 @@
   },
   {
     "header": "Enable 8 Hitbox Support v1.0.0 [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -32922,7 +32880,7 @@
   },
   {
     "header": "All Floors are Drop-through [DRGN]",
-    "version": null,
+    "version": "",
     "authors": [
       "DRGN"
     ],
@@ -32946,7 +32904,7 @@
   },
   {
     "header": "No Rapid Jabs - All Applicable Characters [achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "achilles"
     ],
@@ -32966,7 +32924,7 @@
   },
   {
     "header": "Fastfall Whenever [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -32986,7 +32944,7 @@
   },
   {
     "header": "All Characters Can Wavedash After Frame 2 of Jumpsquat [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -33037,7 +32995,7 @@
   },
   {
     "header": "All Characters are 2D [DRGN]",
-    "version": null,
+    "version": "",
     "authors": [
       "DRGN"
     ],
@@ -33057,7 +33015,7 @@
   },
   {
     "header": "All Players Are Completely Black",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -33082,7 +33040,7 @@
   },
   {
     "header": "Big Head Mode [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -33165,9 +33123,7 @@
   },
   {
     "header": "Enable Taunt Cancelling (v1.02) [InternetExplorer]:",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "InternetExplorer"
     ],
@@ -33193,7 +33149,7 @@
   },
   {
     "header": "Grab Items With Airdodge [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -33252,7 +33208,7 @@
   },
   {
     "header": "Air Grabs v3 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -33711,7 +33667,7 @@
   },
   {
     "header": "Aerials are Automatically L-Canceled [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -33731,7 +33687,7 @@
   },
   {
     "header": "L-Cancel Training Wheels [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -33812,7 +33768,7 @@
   },
   {
     "header": "Charge Smash Attacks with C-Stick [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -33874,7 +33830,7 @@
   },
   {
     "header": "Longer Moonwalks [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -33939,7 +33895,7 @@
   },
   {
     "header": "Meteor Cancelling Is Disabled [flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -33959,9 +33915,7 @@
   },
   {
     "header": "Can't Meteor Cancel when above 100% (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -34000,9 +33954,7 @@
   },
   {
     "header": "When over 75%, each 2 additional percents make meteor cancel 1 frame later (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -34057,9 +34009,7 @@
   },
   {
     "header": "Disable Shielding (1.02) [Achilles1515]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles1515"
     ],
@@ -34091,7 +34041,7 @@
   },
   {
     "header": "Everyone Can Firefox v1.0 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -35358,7 +35308,7 @@
   },
   {
     "header": "Everyone Can Float v1.1 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -36086,9 +36036,7 @@
   },
   {
     "header": "Every Character can Walljump (1.02) [Achilles, Geuse]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles",
       "Geuse"
@@ -36109,7 +36057,7 @@
   },
   {
     "header": "Zero-G Mode [DRGN]",
-    "version": null,
+    "version": "",
     "authors": [
       "DRGN"
     ],
@@ -36129,7 +36077,7 @@
   },
   {
     "header": "All Characters Have Yoshi Shield Mechanics v2 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -36226,7 +36174,7 @@
   },
   {
     "header": "Extended SH Jump Input Release Window [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -36323,7 +36271,7 @@
   },
   {
     "header": "Ledge Invincibility Attrition [_glook]",
-    "version": null,
+    "version": "",
     "authors": [
       "_glook"
     ],
@@ -36411,7 +36359,7 @@
   },
   {
     "header": "X = Always Short Hop / Y = Always Full Hop [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -36471,7 +36419,7 @@
   },
   {
     "header": "X = Always Full Hop / Y = Always Short Hop [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -36531,7 +36479,7 @@
   },
   {
     "header": "Reverse Aerial Moves [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -36600,9 +36548,7 @@
   },
   {
     "header": "Disable Capsule Explosions (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -36622,9 +36568,7 @@
   },
   {
     "header": "Disable Barrel Explosion (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -36644,9 +36588,7 @@
   },
   {
     "header": "Disable Box Explosions (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -36666,7 +36608,7 @@
   },
   {
     "header": "Disable Container Spawns [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -36697,7 +36639,7 @@
   },
   {
     "header": "Containers Spawn Containers [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -36728,7 +36670,7 @@
   },
   {
     "header": "No Items in Classic Mode [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -36748,7 +36690,7 @@
   },
   {
     "header": "Item Rain in Classic Mode [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -36768,7 +36710,7 @@
   },
   {
     "header": "500% Stamina Mode - All Players [achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "achilles"
     ],
@@ -36795,7 +36737,7 @@
   },
   {
     "header": "Normal C-Stick Functionality in 1P Mode [Zauron]",
-    "version": null,
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -36815,7 +36757,7 @@
   },
   {
     "header": "Always Have Bunny Hood WIP [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -37117,7 +37059,7 @@
   },
   {
     "header": "Spawn Lasting Bunny Hood When Resetting Player in Training Mode [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -37220,7 +37162,7 @@
   },
   {
     "header": "Ignore Item Drop RNG On Lasting Bunny Hood [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -37259,7 +37201,7 @@
   },
   {
     "header": "Disable Bunny Hood Pickup if Lasting Bunny Hood is Active [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -37318,7 +37260,7 @@
   },
   {
     "header": "Infinite Metal Box [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -37338,7 +37280,7 @@
   },
   {
     "header": "Pokemon don't spawn from Pokeball [Barry Barrows]",
-    "version": null,
+    "version": "",
     "authors": [
       "Barry Barrows"
     ],
@@ -37358,7 +37300,7 @@
   },
   {
     "header": "Random Hit Elements, every Non-projectile [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -37413,9 +37355,7 @@
   },
   {
     "header": "Wall Cancelling/Bracing (1.02) [_glook]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "_glook"
     ],
@@ -37465,7 +37405,7 @@
   },
   {
     "header": "Disable Homerun Timer [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -37489,9 +37429,7 @@
   },
   {
     "header": "Hot Mr. Saturn Potato (1.02) [wParam, Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "wParam",
       "Achilles"
@@ -37632,7 +37570,7 @@
   },
   {
     "header": "Taunt Battle (r2) [InternetExplorer]:",
-    "version": null,
+    "version": "",
     "authors": [
       "InternetExplorer"
     ],
@@ -38052,7 +37990,7 @@
   },
   {
     "header": "Capped (Tennis) Mode (1.02) [_glook]",
-    "version": null,
+    "version": "",
     "authors": [
       "_glook"
     ],
@@ -38213,7 +38151,7 @@
   },
   {
     "header": "Berserk Mode [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -38286,7 +38224,7 @@
   },
   {
     "header": "Hold Y for Climber Clone v1.2 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -38503,7 +38441,7 @@
   },
   {
     "header": "Single Button Mode - B Only [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -38668,7 +38606,7 @@
   },
   {
     "header": "Single Button Mode - B Only - 2 stocks 5 minutes [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -38963,7 +38901,7 @@
   },
   {
     "header": "Turbo Mode Replaces Single Button Mode v1.3 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -39822,7 +39760,7 @@
   },
   {
     "header": "Chess Melee Standalone [Achilles1515, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles1515",
       "UnclePunch"
@@ -40230,7 +40168,7 @@
   },
   {
     "header": "Dual 1v1 Mode [Achilles1515, Zauron]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles1515",
       "Zauron"
@@ -40333,7 +40271,7 @@
   },
   {
     "header": "CPU Takeover Minigame [Savestate]",
-    "version": null,
+    "version": "",
     "authors": [
       "Savestate"
     ],
@@ -40736,7 +40674,7 @@
   },
   {
     "header": "One Stock Rotations v1.1 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -41270,7 +41208,7 @@
   },
   {
     "header": "War Gamemode Over Lightning Melee [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -41331,7 +41269,7 @@
   },
   {
     "header": "Break the Targets Randomizer [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -42132,7 +42070,7 @@
   },
   {
     "header": "No Ego Mode [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -42292,9 +42230,7 @@
   },
   {
     "header": "Home-Run Contest Item Modifier (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -42562,7 +42498,7 @@
   },
   {
     "header": "2-Player Adventure Mode [Nick Reynolds]",
-    "version": null,
+    "version": "",
     "authors": [
       "Nick Reynolds"
     ],
@@ -42649,9 +42585,7 @@
   },
   {
     "header": "SSBM NTSC 1.00/1.01 - Attacks that Deal Less than 1 Damage Have No Hitlag or DI-ability (1.02) [Magus]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Magus"
     ],
@@ -42705,9 +42639,7 @@
   },
   {
     "header": "Bowser - Flame Cancel (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -42729,9 +42661,7 @@
   },
   {
     "header": "Enable Frozen Item Glitch (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -42757,7 +42687,7 @@
   },
   {
     "header": "Marth & Roy - Restore Whispy Blink Glitch [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -42964,9 +42894,7 @@
   },
   {
     "header": "SSBM NTSC 1.02-to-PAL Game-play Converter (1.02) [UnclePunch]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -44021,7 +43949,7 @@
   },
   {
     "header": "Freeze glitch fix [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -44041,7 +43969,7 @@
   },
   {
     "header": "PAL Stock Icons [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -44090,7 +44018,7 @@
   },
   {
     "header": "Detection Bubbles Continue Hurtbox Collision Check [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -44110,7 +44038,7 @@
   },
   {
     "header": "PAL Samus - Disable Extender [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -44145,7 +44073,7 @@
   },
   {
     "header": "PAL Samus - Disable Bomb Jump Grapple Cancel [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -44192,7 +44120,7 @@
   },
   {
     "header": "DK - Preserve Giant Punch if Hit During Up-B v2 (Fixed) [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -44228,7 +44156,7 @@
   },
   {
     "header": "Z-Cancelling from SSB64 [Achilles1515]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles1515"
     ],
@@ -44250,7 +44178,7 @@
   },
   {
     "header": "No Smash Charges [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -44281,7 +44209,7 @@
   },
   {
     "header": "Add Smash64 Fastfall Sparkle v1.2 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -44358,7 +44286,7 @@
   },
   {
     "header": "L = Brawl Airdodge / R = Melee Airdodge [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -44541,7 +44469,7 @@
   },
   {
     "header": "Brawl-style B Reverse 1.1 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -44887,7 +44815,7 @@
   },
   {
     "header": "ReverseAerialRush (MagicScrumpy)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -44916,7 +44844,7 @@
   },
   {
     "header": "Brawl Bury Mechanics v1.0.5 [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -44993,7 +44921,7 @@
   },
   {
     "header": "Moonwalk With C-Stick ala PM [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -45062,7 +44990,7 @@
   },
   {
     "header": "Stock dependent blastzone wrapping (NTSC 1.02) [anonymous]",
-    "version": null,
+    "version": "",
     "authors": [
       "anonymous"
     ],
@@ -45468,7 +45396,7 @@
   },
   {
     "header": "Perfect Shield ala Smash Ultimate [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -45742,7 +45670,7 @@
   },
   {
     "header": "X+Y=Short Hop Macro [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -45806,7 +45734,7 @@
   },
   {
     "header": "Wavedash Out of JumpSquat ROA-Style [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -45907,7 +45835,7 @@
   },
   {
     "header": "SUPERFOX [SinsOfApathy]",
-    "version": null,
+    "version": "",
     "authors": [
       "SinsOfApathy"
     ],
@@ -46028,7 +45956,7 @@
   },
   {
     "header": "Mario and Doc Hold B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46048,7 +45976,7 @@
   },
   {
     "header": "Mario and Doc Get Jump Back After Down B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46083,7 +46011,7 @@
   },
   {
     "header": "Mario and Doc Hold B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46103,7 +46031,7 @@
   },
   {
     "header": "Mario and Doc Get Jump Back After Down B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46138,7 +46066,7 @@
   },
   {
     "header": "Luigi's Fireball is influenced by his momentum [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46181,9 +46109,7 @@
   },
   {
     "header": "Luigi - Always Misfire (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -46201,7 +46127,7 @@
   },
   {
     "header": "Fully Charged Side B = Misfire [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46232,7 +46158,7 @@
   },
   {
     "header": "Luigi Hold B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46252,9 +46178,7 @@
   },
   {
     "header": "Bowser - Flame Cancel (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -46276,7 +46200,7 @@
   },
   {
     "header": "Bowser can mash for height during aerial upB [rmn]",
-    "version": null,
+    "version": "",
     "authors": [
       "rmn"
     ],
@@ -46331,7 +46255,7 @@
   },
   {
     "header": "Bowsers Flame Doesn't Diminish [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46355,7 +46279,7 @@
   },
   {
     "header": "Bowser - Limit Flame Breath [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -46450,9 +46374,7 @@
   },
   {
     "header": "Peach - Break the Targets Turnip Pull Strategies- Strategy 1 (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -46503,9 +46425,7 @@
   },
   {
     "header": "Peach - Break the Targets Turnip Pull Strategies- Strategy 2 (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -46564,9 +46484,7 @@
   },
   {
     "header": "Peach - Break the Targets Turnip Pull Strategies- Strategy 3 (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -46625,9 +46543,7 @@
   },
   {
     "header": "Peach - Always Pull Specific Turnip (1.00) [Anonymous]",
-    "version": {
-      "NTSC": 1.0
-    },
+    "version": "",
     "authors": [
       "Anonymous"
     ],
@@ -46651,9 +46567,7 @@
   },
   {
     "header": "Peach - Always Pull Specific Turnip (1.01) [Anonymous]",
-    "version": {
-      "NTSC": 1.01
-    },
+    "version": "",
     "authors": [
       "Anonymous"
     ],
@@ -46677,9 +46591,7 @@
   },
   {
     "header": "Peach - Always Pull Specific Turnip (1.02) [Anonymous]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Anonymous"
     ],
@@ -46703,9 +46615,7 @@
   },
   {
     "header": "Peach - Infinite Float (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -46729,7 +46639,7 @@
   },
   {
     "header": "Peach - FSmash Angles Determine FSmash Type [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46832,7 +46742,7 @@
   },
   {
     "header": "Peach Aerial Down B and Neutral B Swap [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46864,7 +46774,7 @@
   },
   {
     "header": "Peach - Peach Bomber vs. Shield Fix [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -46884,9 +46794,7 @@
   },
   {
     "header": "Enable Frozen Item Glitch (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -46912,7 +46820,7 @@
   },
   {
     "header": "Press B to Explode Yoshi Egg [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -46951,7 +46859,7 @@
   },
   {
     "header": "Press B to Explode Yoshi Egg and Teleport w/ Momentum Based on Angle+Distance From Egg [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47201,7 +47109,7 @@
   },
   {
     "header": "Press B to Explode Yoshi Egg and Teleport w/ No Momentum [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47391,7 +47299,7 @@
   },
   {
     "header": "Smash 4 Yoshi Up B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47509,7 +47417,7 @@
   },
   {
     "header": "Yoshi Aerial Neutral B Grab Gives Jump Back [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47540,7 +47448,7 @@
   },
   {
     "header": "Yoshi - Jump Out of Shield v2 [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -47587,9 +47495,7 @@
   },
   {
     "header": "DK - Always Full Giant Punch (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -47609,7 +47515,7 @@
   },
   {
     "header": "DK - Preserve Giant Punch if Hit During Up-B v2 (Fixed) [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -47645,7 +47551,7 @@
   },
   {
     "header": "DK Hold B for Down B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47665,7 +47571,7 @@
   },
   {
     "header": "Skip DK Down B Startup [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47685,7 +47591,7 @@
   },
   {
     "header": "Falcon and Ganondorf do not Regain Jump after Down-B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47705,9 +47611,7 @@
   },
   {
     "header": "Captain Falcon - Raptor Boost Enters \"Fall\" Action State Instead of \"FallSpecial\" (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -47738,7 +47642,7 @@
   },
   {
     "header": "Walljump Out of Falcon Side B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47783,7 +47687,7 @@
   },
   {
     "header": "Walljump Out of Falcon Up B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47824,7 +47728,7 @@
   },
   {
     "header": "Falcon Turnaround Up B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47873,7 +47777,7 @@
   },
   {
     "header": "Falcon Grab Ledge on Side B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47914,7 +47818,7 @@
   },
   {
     "header": "Aerial Raptor Boost Popup + Midair Control [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -47961,7 +47865,7 @@
   },
   {
     "header": "Captain Falcon - No Rapid Jabs [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -47992,7 +47896,7 @@
   },
   {
     "header": "CPU - Disable Rapid Jabs for C. Falcon [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -48047,7 +47951,7 @@
   },
   {
     "header": "Captain Falcon - No Rapid Jabs (CPU only) [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -48094,7 +47998,7 @@
   },
   {
     "header": "Falcon Punch Takes 2 Stocks [Todd Bonney]",
-    "version": null,
+    "version": "",
     "authors": [
       "Todd Bonney"
     ],
@@ -48141,7 +48045,7 @@
   },
   {
     "header": "Ganon Float v1.0 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -48401,7 +48305,7 @@
   },
   {
     "header": "Falcon and Ganondorf do not Regain Jump after Down-B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -48421,7 +48325,7 @@
   },
   {
     "header": "Falco/Fox - Hold Z While *Aerial* Laser Emits to Fire at Half Speed [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -48460,7 +48364,7 @@
   },
   {
     "header": "Falco Side-B Walljump [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -48548,7 +48452,7 @@
   },
   {
     "header": "Falco Up-B Walljump [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -48597,7 +48501,7 @@
   },
   {
     "header": "Fox Falco Hold B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -48621,7 +48525,7 @@
   },
   {
     "header": "Fox/Falco - Fall Instead of FallSpecial after Side-B [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -48641,7 +48545,7 @@
   },
   {
     "header": "Special Move Master Code v3 (fix console crash) [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -48764,7 +48668,7 @@
   },
   {
     "header": "Fox and Falco Enter Fall After Side B and Retains Jump (a la Smash 4) v2[UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -48817,7 +48721,7 @@
   },
   {
     "header": "Falco/Fox - Hold Z While *Aerial* Laser Emits to Fire at Half Speed [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -48856,7 +48760,7 @@
   },
   {
     "header": "Mash Firefox to Increase Length [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -48989,7 +48893,7 @@
   },
   {
     "header": "Invisible Firefox [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49042,7 +48946,7 @@
   },
   {
     "header": "Fox Falco Hold B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49066,7 +48970,7 @@
   },
   {
     "header": "Fox/Falco - Fall Instead of FallSpecial after Side-B [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -49086,7 +48990,7 @@
   },
   {
     "header": "Special Move Master Code v3 (fix console crash) [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49209,7 +49113,7 @@
   },
   {
     "header": "Fox and Falco Enter Fall After Side B and Retains Jump (a la Smash 4) v2[UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49262,9 +49166,7 @@
   },
   {
     "header": "PK Thunder Does Not Disappear on Hit or Death (1.02) [_glook]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "_glook"
     ],
@@ -49290,7 +49192,7 @@
   },
   {
     "header": "PKT Doesn't Disappear When Hitting Projectiles [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49334,7 +49236,7 @@
   },
   {
     "header": "PKT Only Disappears When Hitting Players [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49381,7 +49283,7 @@
   },
   {
     "header": "PKT2 Trajectory = Analog Stick Angle [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49413,7 +49315,7 @@
   },
   {
     "header": "Ness - Up-B Once After Hitting A Wall v2 [UnclePunch, PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch",
       "PKFreeZZy"
@@ -49519,9 +49421,7 @@
   },
   {
     "header": "Solo Popo Up-B Gives Increased Vertical Velocity (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -49543,7 +49443,7 @@
   },
   {
     "header": "Nana and Popo Can Share Ledge [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49637,7 +49537,7 @@
   },
   {
     "header": "Nana Respawns After 20 Seconds [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49806,7 +49706,7 @@
   },
   {
     "header": "Nana direction update bug fix (ICs can dd together etc.) (NTSC 1.02) [tauKhan]",
-    "version": null,
+    "version": "",
     "authors": [
       "tauKhan"
     ],
@@ -49845,7 +49745,7 @@
   },
   {
     "header": "IC Hold B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -49865,7 +49765,7 @@
   },
   {
     "header": "Disable Synced Nana Special Action State Functions",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -49883,7 +49783,7 @@
   },
   {
     "header": "Nana is always Lvl 9 AI",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -49901,7 +49801,7 @@
   },
   {
     "header": "Nana Always Throws Debug Option [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -49944,7 +49844,7 @@
   },
   {
     "header": "Kirbys Taunt Without Ability Gives Random Ability v1.1 [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50069,7 +49969,7 @@
   },
   {
     "header": "Kirby - Preserve Copy Ability Charge if Hit Out of Non-Copied Specials [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -50112,7 +50012,7 @@
   },
   {
     "header": "Kirby Uses Non-Special Dash Attack [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50132,7 +50032,7 @@
   },
   {
     "header": "Kirby Always Has Ganon/Falcon Punch [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50156,7 +50056,7 @@
   },
   {
     "header": "Kirby Always Has DK Punch [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50180,7 +50080,7 @@
   },
   {
     "header": "Kirby Always Has Bat Swing? [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50204,7 +50104,7 @@
   },
   {
     "header": "Kirby Always Has Zelda Reflect [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50228,9 +50128,7 @@
   },
   {
     "header": "Kirby Can Jump After Up Throw and Forward Throw (1.02) [UnclePunch]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50268,7 +50166,7 @@
   },
   {
     "header": "Cannot Escape Kirby Throws [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50288,7 +50186,7 @@
   },
   {
     "header": "Kirby Throws retain one mid air jump [The Cape]",
-    "version": null,
+    "version": "",
     "authors": [
       "The Cape"
     ],
@@ -50308,7 +50206,7 @@
   },
   {
     "header": "Kirby - Land on Platforms During Up Throw Drop [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -50358,9 +50256,7 @@
   },
   {
     "header": "Samus - Always Full Charge Shot (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -50384,7 +50280,7 @@
   },
   {
     "header": "Samus - Always Have Extended Grapple [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -50404,7 +50300,7 @@
   },
   {
     "header": "Samus - Preserve Charge Shot if Hit During Up-B (Fixed) [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -50436,7 +50332,7 @@
   },
   {
     "header": "Samus Shoots Random Item [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50582,7 +50478,7 @@
   },
   {
     "header": "PAL Samus - Disable Extender [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -50617,7 +50513,7 @@
   },
   {
     "header": "PAL Samus - Disable Bomb Jump Grapple Cancel [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -50664,7 +50560,7 @@
   },
   {
     "header": "Fix Samus Extender Crash [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50684,7 +50580,7 @@
   },
   {
     "header": "Instant Zelda/Shiek Transform [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50724,7 +50620,7 @@
   },
   {
     "header": "Sheik/Zelda CPU Disable Transformations [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -50838,7 +50734,7 @@
   },
   {
     "header": "Instant Zelda/Shiek Transform [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50878,7 +50774,7 @@
   },
   {
     "header": "Sheik - Preserve Needles if Hit During Side-B v2 [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -50930,7 +50826,7 @@
   },
   {
     "header": "Shiek Up B Edge Cancel [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50965,7 +50861,7 @@
   },
   {
     "header": "Aerial Control and Fastfall Shiek UpB [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -50985,7 +50881,7 @@
   },
   {
     "header": "Less Landing Lag on Sheik Up B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51005,7 +50901,7 @@
   },
   {
     "header": "Sheik/Zelda CPU Disable Transformations [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -51119,7 +51015,7 @@
   },
   {
     "header": "Link's Shield Reflects [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51202,7 +51098,7 @@
   },
   {
     "header": "Link Shield Always Active [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51257,7 +51153,7 @@
   },
   {
     "header": "Link/Y. Link - Boomerang Hookshot Cancel [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -51289,7 +51185,7 @@
   },
   {
     "header": "Link - Buffed Hylian Shield [UnclePunch, DRGN]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch",
       "DRGN"
@@ -51377,7 +51273,7 @@
   },
   {
     "header": "Link/Y. Link - Boomerang Hookshot Cancel [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -51409,9 +51305,7 @@
   },
   {
     "header": "Mewtwo - Always Full Shadow Ball (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -51435,7 +51329,7 @@
   },
   {
     "header": "Mewtwo Can Actually Reflect Stuff [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51455,7 +51349,7 @@
   },
   {
     "header": "Special Move Master Code v3 (fix console crash) [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51578,7 +51472,7 @@
   },
   {
     "header": "Mewtwo Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51638,9 +51532,7 @@
   },
   {
     "header": "3D Mr. Game and Watch (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -51660,9 +51552,7 @@
   },
   {
     "header": "Mr. Game and Watch - Always Specific Hammer Value (1.02) [Wooggle]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Wooggle"
     ],
@@ -51682,7 +51572,7 @@
   },
   {
     "header": "GaW Bucket Fill Amount Based on Damage of Projectile [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51733,7 +51623,7 @@
   },
   {
     "header": "GaW Hold B [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51757,7 +51647,7 @@
   },
   {
     "header": "GaW Modulo 10 Hammer [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -51816,7 +51706,7 @@
   },
   {
     "header": "Mr. Game & Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]",
-    "version": null,
+    "version": "",
     "authors": [
       "Magus"
     ],
@@ -51880,7 +51770,7 @@
   },
   {
     "header": "Special Move Master Code v3 (fix console crash) [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -52003,7 +51893,7 @@
   },
   {
     "header": "G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -52067,9 +51957,7 @@
   },
   {
     "header": "Costume Dependent Marth Sword Swing Colors (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -52148,7 +52036,7 @@
   },
   {
     "header": "Giga Bowser & Sandbag Always Fall On Match Start [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -52191,7 +52079,7 @@
   },
   {
     "header": "If character selected is Giga Bowser, set scale to 0.5 [flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -52234,9 +52122,7 @@
   },
   {
     "header": "Giga Bowser Can Be Grabbed (1.02) [Achilles]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -52256,7 +52142,7 @@
   },
   {
     "header": "MasterHand & CrazyHand Controlled By All Ports [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -52280,7 +52166,7 @@
   },
   {
     "header": "MasterHand & CrazyHand Controlled By All Ports [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -52304,7 +52190,7 @@
   },
   {
     "header": "CrazyHand - Disable D-Pad Up+B  Attack [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -52324,7 +52210,7 @@
   },
   {
     "header": "Crazy Hand Tag Team Fix [Odante]",
-    "version": null,
+    "version": "",
     "authors": [
       "Odante"
     ],
@@ -52355,7 +52241,7 @@
   },
   {
     "header": "Toggle Frozen Stages with Y",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -52579,9 +52465,7 @@
   },
   {
     "header": "Disable Switches and Bullets on Princess Peach's Castle (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -52601,7 +52485,7 @@
   },
   {
     "header": "Disable barrel from Kongo Jungle (Melee) (1.02)[flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -52621,7 +52505,7 @@
   },
   {
     "header": "Destroy Randall [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -52649,7 +52533,7 @@
   },
   {
     "header": "Cannot Enter Wait from CliffWait (Randall Fix) [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -52669,7 +52553,7 @@
   },
   {
     "header": "Grounded Getup Attack Fix (Randall Fix) [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -52689,9 +52573,7 @@
   },
   {
     "header": "Disable Shy Guys on Yoshi's Story (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -52711,9 +52593,7 @@
   },
   {
     "header": "Shy Guys drop food even if items are at off on Yoshi's Story (1.02)[flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -52733,9 +52613,7 @@
   },
   {
     "header": "Disable Rising Platforms and Water Jets on Fountain of Dreams (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -52759,9 +52637,7 @@
   },
   {
     "header": "Disable Initial Bricks on Green Greens (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -52781,7 +52657,7 @@
   },
   {
     "header": "Blocks initially in the stage can't have bombs on Green Greens [flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -52869,7 +52745,7 @@
   },
   {
     "header": "Disable blocks, falling from the sky [flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -52889,9 +52765,7 @@
   },
   {
     "header": "Disable Tree Wind and Apples on Green Greens (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -52911,9 +52785,7 @@
   },
   {
     "header": "Disable Ship Spawn on Corneria (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -52933,7 +52805,7 @@
   },
   {
     "header": "Disable Great Fox's Gun (starts out dead) on Corneria (1.02) [Zauron]",
-    "version": null,
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -52953,9 +52825,7 @@
   },
   {
     "header": "Disable Rising Lava on Brinstar (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -52975,9 +52845,7 @@
   },
   {
     "header": "Disable cars on Onett (1.02)[flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -52997,9 +52865,7 @@
   },
   {
     "header": "Remove Drug Store Platforms from Onett (1.02)[flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53019,9 +52885,7 @@
   },
   {
     "header": "Disable cars on Mute City (1.02)[flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53041,7 +52905,7 @@
   },
   {
     "header": "Mute City - Racers no longer affect the match [??]",
-    "version": null,
+    "version": "",
     "authors": [
       "??"
     ],
@@ -53061,9 +52925,7 @@
   },
   {
     "header": "Disable Stage Transformations on Pokemon Stadium (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -53083,7 +52945,7 @@
   },
   {
     "header": "Always Certain Pokemon Stadium Transformation [flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53105,9 +52967,7 @@
   },
   {
     "header": "Pokemon Stadium Transformation lasts for 9 minutes (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53131,9 +52991,7 @@
   },
   {
     "header": "Remove levers from Mushroom Kingdom I (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53153,9 +53011,7 @@
   },
   {
     "header": "Blocks no longer respawn on Mushroom Kingdom I (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53175,9 +53031,7 @@
   },
   {
     "header": "Disable Birdo on Mushroom Kingdom II (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53197,9 +53051,7 @@
   },
   {
     "header": "Disable Pidgit (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53219,9 +53071,7 @@
   },
   {
     "header": "Disable Wood Logs (1.02) [flieskiller]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "flieskiller"
     ],
@@ -53241,9 +53091,7 @@
   },
   {
     "header": "Disable Logs, Pidgit, and Birdo on Mushroom Kingdom II (1.02)  [Jorgasms]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Jorgasms"
     ],
@@ -53263,9 +53111,7 @@
   },
   {
     "header": "Disable Tree Blow on Dreamland (1.02) [Zauron]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "Zauron"
     ],
@@ -53285,7 +53131,7 @@
   },
   {
     "header": "Dreamland - Disable Wind if P1's nametag is !WND [Wooggle]",
-    "version": null,
+    "version": "",
     "authors": [
       "Wooggle"
     ],
@@ -53356,7 +53202,7 @@
   },
   {
     "header": "Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -53385,7 +53231,7 @@
   },
   {
     "header": "Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -53414,7 +53260,7 @@
   },
   {
     "header": "Disable Trophy Spawn on Snag the Trophies Stage (FigureGet) (1.02) [wparam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wparam"
     ],
@@ -53434,7 +53280,7 @@
   },
   {
     "header": "Trophy Collector Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -53455,7 +53301,7 @@
   },
   {
     "header": "Target Test Never Ends [Link Master]",
-    "version": null,
+    "version": "",
     "authors": [
       "Link Master"
     ],
@@ -53477,7 +53323,7 @@
   },
   {
     "header": "Target Test Never Ends [Link Master]",
-    "version": null,
+    "version": "",
     "authors": [
       "Link Master"
     ],
@@ -53499,9 +53345,7 @@
   },
   {
     "header": "Target Test Never Ends (1.02) [donny2112]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -53521,9 +53365,7 @@
   },
   {
     "header": "Target Test Ends After 9 Targets (1.02) [djwang88]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "djwang88"
     ],
@@ -53554,9 +53396,7 @@
   },
   {
     "header": "Target Counter Starts With 9 Targets (1.02) [djwang88]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "djwang88"
     ],
@@ -53576,9 +53416,7 @@
   },
   {
     "header": "Load Specfic Stage for Target Test (1.02) [djwang88]",
-    "version": {
-      "NTSC": 1.02
-    },
+    "version": "",
     "authors": [
       "djwang88"
     ],
@@ -53626,7 +53464,7 @@
   },
   {
     "header": "Target Test - Broken Targets Don't Count [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -53646,7 +53484,7 @@
   },
   {
     "header": "Break the Targets - Disable Targets and/or Flippers [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -53670,7 +53508,7 @@
   },
   {
     "header": "Break the Targets Intangibility Glitch Fix [UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "UnclePunch"
     ],
@@ -53709,7 +53547,7 @@
   },
   {
     "header": "DUMMY / ICETOP Crash Prevent (Debug Mode)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -53738,7 +53576,7 @@
   },
   {
     "header": "Disable All-Star Heal Portal from Ending Match [Achilles]",
-    "version": null,
+    "version": "",
     "authors": [
       "Achilles"
     ],
@@ -53758,7 +53596,7 @@
   },
   {
     "header": "Disable Homerun Timer [Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Punkline"
     ],
@@ -53782,7 +53620,7 @@
   },
   {
     "header": "Hide Invisible Intangible Hurtboxes [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -53817,7 +53655,7 @@
   },
   {
     "header": "Rishi's Jungle Jam [Krohnos]",
-    "version": null,
+    "version": "",
     "authors": [
       "Krohnos"
     ],
@@ -53977,7 +53815,7 @@
   },
   {
     "header": "Big Light Shield Only (L) [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -54008,7 +53846,7 @@
   },
   {
     "header": "Big Light Shield Only (R) [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -54039,7 +53877,7 @@
   },
   {
     "header": "Hold Ledges Forever [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -54059,7 +53897,7 @@
   },
   {
     "header": "Unfreeze Game End (from 20XXTE) [Altafen, Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen",
       "Dan Salvato"
@@ -54142,7 +53980,7 @@
   },
   {
     "header": "Custom Hitbox/Hurtbox Colors [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -54277,7 +54115,7 @@
   },
   {
     "header": "SDI Overlay [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -54405,7 +54243,7 @@
   },
   {
     "header": "Turn Green When Actionable After Throw [Altafen, UnclePunch]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen",
       "UnclePunch"
@@ -54501,7 +54339,7 @@
   },
   {
     "header": "Clock Shows Current Time [Eon]",
-    "version": null,
+    "version": "",
     "authors": [
       "Eon"
     ],
@@ -54556,7 +54394,7 @@
   },
   {
     "header": "Hide Name Tags and Port Tags [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -54576,7 +54414,7 @@
   },
   {
     "header": "Override Inverse Kinematics Behavior with Type 4 [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -54602,7 +54440,7 @@
   },
   {
     "header": "Zero Lag on L-Cancel [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -54631,7 +54469,7 @@
   },
   {
     "header": "Zero Lag on Aerial Landing [Altafen, walz]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen",
       "walz"
@@ -54666,7 +54504,7 @@
   },
   {
     "header": "Fix Environment Collision Drawing Over Hitboxes [Altimor]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altimor"
     ],
@@ -54700,7 +54538,7 @@
   },
   {
     "header": "Get Hit = Die [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -54747,7 +54585,7 @@
   },
   {
     "header": "Fast Fall Overlay [Altafen, Punkline]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen",
       "Punkline"
@@ -54846,7 +54684,7 @@
   },
   {
     "header": "Rumble on Missed L-Cancel v2 [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -54950,7 +54788,7 @@
   },
   {
     "header": "Every Sound is now Mr. Saturn [Savestate]",
-    "version": null,
+    "version": "",
     "authors": [
       "Savestate"
     ],
@@ -54979,7 +54817,7 @@
   },
   {
     "header": "Disable Rumble When Controller is Unplugged [Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Dan Salvato"
     ],
@@ -55032,7 +54870,7 @@
   },
   {
     "header": "\"Random\" Always Selects Specific Character [Jorgasms]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jorgasms"
     ],
@@ -55054,7 +54892,7 @@
   },
   {
     "header": "Lottery Coin Modifier [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55080,7 +54918,7 @@
   },
   {
     "header": "Always Use First Victory Theme [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55106,7 +54944,7 @@
   },
   {
     "header": "Always Use Second Victory Theme [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55132,7 +54970,7 @@
   },
   {
     "header": "Automatically Advance after Completing a Level [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55154,7 +54992,7 @@
   },
   {
     "header": "Set Lose Screen to Game Over [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55176,7 +55014,7 @@
   },
   {
     "header": "Set Lose Screen to Game Over Alternate [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55198,7 +55036,7 @@
   },
   {
     "header": "\"Continue\" Text Doesn't Appear [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55220,7 +55058,7 @@
   },
   {
     "header": "Continue Doesn't Subtract Coins [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55246,7 +55084,7 @@
   },
   {
     "header": "Don't Load Animations upon Game Over [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55276,7 +55114,7 @@
   },
   {
     "header": "Don't Load Continue Sound Effect [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55318,7 +55156,7 @@
   },
   {
     "header": "Continue Amount Equals Current Coin Count [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55340,7 +55178,7 @@
   },
   {
     "header": "Game Over Duration Modifier [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55362,7 +55200,7 @@
   },
   {
     "header": "Game Over Restores Game Point [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55384,7 +55222,7 @@
   },
   {
     "header": "Loss Rewards Coins [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55406,7 +55244,7 @@
   },
   {
     "header": "Victory Screen even During Loss [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55428,7 +55266,7 @@
   },
   {
     "header": "High Coin Count Leads to Loss [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55458,7 +55296,7 @@
   },
   {
     "header": "Instant Game Over [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55480,7 +55318,7 @@
   },
   {
     "header": "No Music on Continue Screen [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55500,7 +55338,7 @@
   },
   {
     "header": "Continue Possible Regardless of Balance [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55534,7 +55372,7 @@
   },
   {
     "header": "Continue Possible Regardless of Balance (Short Version) [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55560,7 +55398,7 @@
   },
   {
     "header": "Continue - Trophy Instantly Gets Back Up [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55582,7 +55420,7 @@
   },
   {
     "header": "Camera is Far Out [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55604,7 +55442,7 @@
   },
   {
     "header": "FOV Modifier [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55626,7 +55464,7 @@
   },
   {
     "header": "FOV Modifier 2 [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55648,7 +55486,7 @@
   },
   {
     "header": "Smeared Camera and Hitboxes [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55670,7 +55508,7 @@
   },
   {
     "header": "Skewed Camera [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55692,7 +55530,7 @@
   },
   {
     "header": "Very Tiny Display [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55718,7 +55556,7 @@
   },
   {
     "header": "Vertical Stretch Modifier [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55740,7 +55578,7 @@
   },
   {
     "header": "Brighter Particle Effects [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55762,7 +55600,7 @@
   },
   {
     "header": "Miscellaneous Alpha Blending (Destination) [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55784,7 +55622,7 @@
   },
   {
     "header": "Miscellaneous Alpha Blending (Source) [Brandondorf9999]",
-    "version": null,
+    "version": "",
     "authors": [
       "Brandondorf9999"
     ],
@@ -55806,7 +55644,7 @@
   },
   {
     "header": "P1 - Enter Battle with 1 Player [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -55830,7 +55668,7 @@
   },
   {
     "header": "Immediate KO upon Receiving Damage [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -55898,7 +55736,7 @@
   },
   {
     "header": "All Items/Projectiles Invisible [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -55934,7 +55772,7 @@
   },
   {
     "header": "Obtain Hidden Trophies (Z-button at Lottery Screen) [donny2112/JasonHaffner/cloakedguy]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112/JasonHaffner/cloakedguy"
     ],
@@ -55975,7 +55813,7 @@
   },
   {
     "header": "All Special Messages",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -55991,7 +55829,7 @@
   },
   {
     "header": "All Bonuses",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -56007,7 +55845,7 @@
   },
   {
     "header": "All Event Matches Open and Completed [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -56027,7 +55865,7 @@
   },
   {
     "header": "Infinite Time",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -56045,7 +55883,7 @@
   },
   {
     "header": "Time Switch [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -56077,7 +55915,7 @@
   },
   {
     "header": "1,048,576 Vs Matches Played",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -56093,7 +55931,7 @@
   },
   {
     "header": "All Damage Deals 999%",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -56111,7 +55949,7 @@
   },
   {
     "header": "Physical Attacks Hit Opponents from Anywhere [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -56131,7 +55969,7 @@
   },
   {
     "header": "Ground Jump goes Very High",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -56149,7 +55987,7 @@
   },
   {
     "header": "Mushrooms Last Forever and Stack [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -56173,7 +56011,7 @@
   },
   {
     "header": "Must be On from 1P Stamina Mode to 1P Giga Bowser",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -56220,7 +56058,7 @@
   },
   {
     "header": "1P Stamina Mode [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56248,7 +56086,7 @@
   },
   {
     "header": "1P Low Gravity [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56276,7 +56114,7 @@
   },
   {
     "header": "1P Invisibility [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56304,7 +56142,7 @@
   },
   {
     "header": "1P Metal [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56332,7 +56170,7 @@
   },
   {
     "header": "1P Giant Player [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56360,7 +56198,7 @@
   },
   {
     "header": "1P Tiny Player [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56388,7 +56226,7 @@
   },
   {
     "header": "1P Extremely Fast Melee (3x) [Tornado9797]",
-    "version": null,
+    "version": "",
     "authors": [
       "Tornado9797"
     ],
@@ -56416,7 +56254,7 @@
   },
   {
     "header": "1P Lightning (1.25x) Speed [makewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "makewokherd"
     ],
@@ -56444,7 +56282,7 @@
   },
   {
     "header": "1P Slo-mo (.5x) Speed [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56472,7 +56310,7 @@
   },
   {
     "header": "1P Fighting Polygon Male [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56504,7 +56342,7 @@
   },
   {
     "header": "1P Fighting Polygon Female [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56536,7 +56374,7 @@
   },
   {
     "header": "1P Sopo [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56568,7 +56406,7 @@
   },
   {
     "header": "1P Giga Bowser [madewokherd]",
-    "version": null,
+    "version": "",
     "authors": [
       "madewokherd"
     ],
@@ -56612,7 +56450,7 @@
   },
   {
     "header": "Master Control Debug Menu (Activates upon Viewing CSS) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -56630,7 +56468,7 @@
   },
   {
     "header": "Debug Menu - Level Select Extension [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -56658,7 +56496,7 @@
   },
   {
     "header": "All Players become Mario (Debug Menu Required to Prevent Freeze) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -56679,7 +56517,7 @@
   },
   {
     "header": "Debug Menu - Scale Extension [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -56711,7 +56549,7 @@
   },
   {
     "header": "Debug Menu - Item Drop Rate Extension [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -56739,7 +56577,7 @@
   },
   {
     "header": "Add 2 CPU Ice Climbers to Every Melee [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -56771,7 +56609,7 @@
   },
   {
     "header": "Add 2 CPU Ice Climbers to Every Melee with Proper Score Keeping [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -56807,7 +56645,7 @@
   },
   {
     "header": "Stamina Mode/Status Modifier (Debug Required, VIBRATION SELECT becomes mode select. DAMAGE SET becomes HP) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -56919,7 +56757,7 @@
   },
   {
     "header": "Speed Mod/Team Damage (Debug Required, VIBRATION becomes match speed, also toggles team attack) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57023,7 +56861,7 @@
   },
   {
     "header": "One CPU Buddy per Player (Buddies stay KOed) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57071,7 +56909,7 @@
   },
   {
     "header": "Two CPU Buddies per Player (Buddies stay KOed) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57127,7 +56965,7 @@
   },
   {
     "header": "Three CPU Buddies per Player (Buddies stay KOed) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57191,7 +57029,7 @@
   },
   {
     "header": "One CPU Mirror per Player (Mirrors stay KOed) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57239,7 +57077,7 @@
   },
   {
     "header": "Two CPU Mirrors per Player (Mirrors stay KOed) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57295,7 +57133,7 @@
   },
   {
     "header": "Three CPU Mirrors per Player (Mirrors stay KOed) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57359,7 +57197,7 @@
   },
   {
     "header": "Picking up a Metal Box Deals 999% to Opponents [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57447,7 +57285,7 @@
   },
   {
     "header": "Infinite Bunny Hood [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57467,7 +57305,7 @@
   },
   {
     "header": "Items Never Disappear [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57487,7 +57325,7 @@
   },
   {
     "header": "Infinite Starman [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57507,7 +57345,7 @@
   },
   {
     "header": "Bunny Hood Duration Modifier [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57531,7 +57369,7 @@
   },
   {
     "header": "Cloaking Device Duration Modifier [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57551,7 +57389,7 @@
   },
   {
     "header": "Metal Box Duration Modifier [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57571,7 +57409,7 @@
   },
   {
     "header": "Starman Duration Modifier [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57591,7 +57429,7 @@
   },
   {
     "header": "D-Pad Down Drops an Item [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57631,7 +57469,7 @@
   },
   {
     "header": "Item Modifier for \"D-Pad Drops Down an Item\" [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57651,7 +57489,7 @@
   },
   {
     "header": "Peach Item Pull Modifier [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57671,7 +57509,7 @@
   },
   {
     "header": "Pokémon Modifier [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57707,7 +57545,7 @@
   },
   {
     "header": "P1 Almost No Bonuses [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57725,7 +57563,7 @@
   },
   {
     "header": "P2 Almost No Bonuses [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57743,7 +57581,7 @@
   },
   {
     "header": "P3 Almost No Bonuses [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57761,7 +57599,7 @@
   },
   {
     "header": "P4 Almost No Bonuses [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57779,7 +57617,7 @@
   },
   {
     "header": "P1 Almost All Bonuses [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57797,7 +57635,7 @@
   },
   {
     "header": "P2 Almost All Bonuses [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57815,7 +57653,7 @@
   },
   {
     "header": "P3 Almost All Bonuses [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57833,7 +57671,7 @@
   },
   {
     "header": "P4 Almost All Bonuses [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -57851,7 +57689,7 @@
   },
   {
     "header": "Jump out of Helpless Falling [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57871,7 +57709,7 @@
   },
   {
     "header": "Helpless Falling Wears Off [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -57891,7 +57729,7 @@
   },
   {
     "header": "Kirby - Invisible Head/Body [ASPD0796]",
-    "version": null,
+    "version": "",
     "authors": [
       "ASPD0796"
     ],
@@ -57909,7 +57747,7 @@
   },
   {
     "header": "Donkey Kong - Instant Charge Neutral B [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -57929,7 +57767,7 @@
   },
   {
     "header": "Luigi - Side B 99% Misfire Chance [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -57953,7 +57791,7 @@
   },
   {
     "header": "Sheik - Game Crash on Hit while Charging Neutral B [Tornado9797]",
-    "version": null,
+    "version": "",
     "authors": [
       "Tornado9797"
     ],
@@ -57977,7 +57815,7 @@
   },
   {
     "header": "Samus - Neutral B Instant Charge [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58001,7 +57839,7 @@
   },
   {
     "header": "P1 Hold Jump while Gaining Height to Gain More [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -58022,7 +57860,7 @@
   },
   {
     "header": "P2 Hold Jump while Gaining Height to Gain More [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -58043,7 +57881,7 @@
   },
   {
     "header": "P3 Hold Jump while Gaining Height to Gain More [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -58064,7 +57902,7 @@
   },
   {
     "header": "P4 Hold Jump while Gaining Height to Gain More [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -58085,7 +57923,7 @@
   },
   {
     "header": "P1 Kirby Body Appearance Modifier [TheLuckyDucky]",
-    "version": null,
+    "version": "",
     "authors": [
       "TheLuckyDucky"
     ],
@@ -58103,7 +57941,7 @@
   },
   {
     "header": "P2 Kirby Body Appearance Modifier [TheLuckyDucky]",
-    "version": null,
+    "version": "",
     "authors": [
       "TheLuckyDucky"
     ],
@@ -58121,7 +57959,7 @@
   },
   {
     "header": "P3 Kirby Body Appearance Modifier [TheLuckyDucky]",
-    "version": null,
+    "version": "",
     "authors": [
       "TheLuckyDucky"
     ],
@@ -58139,7 +57977,7 @@
   },
   {
     "header": "P4 Kirby Body Appearance Modifier [TheLuckyDucky]",
-    "version": null,
+    "version": "",
     "authors": [
       "TheLuckyDucky"
     ],
@@ -58157,7 +57995,7 @@
   },
   {
     "header": "P1 Instant Charged Smash [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58175,7 +58013,7 @@
   },
   {
     "header": "P2 Instant Charged Smash [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58193,7 +58031,7 @@
   },
   {
     "header": "P3 Instant Charged Smash [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58211,7 +58049,7 @@
   },
   {
     "header": "P4 Instant Charged Smash [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58229,7 +58067,7 @@
   },
   {
     "header": "P1 Infinite Shield [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58247,7 +58085,7 @@
   },
   {
     "header": "P2 Infinite Shield [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58265,7 +58103,7 @@
   },
   {
     "header": "P3 Infinite Shield [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58283,7 +58121,7 @@
   },
   {
     "header": "P4 Infinite Shield [JAY007]",
-    "version": null,
+    "version": "",
     "authors": [
       "JAY007"
     ],
@@ -58301,7 +58139,7 @@
   },
   {
     "header": "P1 Ganondorf Carries Sword (Cosmetic Only) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -58322,7 +58160,7 @@
   },
   {
     "header": "P2 Ganondorf Carries Sword (Cosmetic Only) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -58343,7 +58181,7 @@
   },
   {
     "header": "P3 Ganondorf Carries Sword (Cosmetic Only) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -58364,7 +58202,7 @@
   },
   {
     "header": "P4 Ganondorf Carries Sword (Cosmetic Only) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -58385,7 +58223,7 @@
   },
   {
     "header": "P1 Invincible and Deals 999% on Every Hit [Akuryu/TheLuckyDucky]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu/TheLuckyDucky"
     ],
@@ -58413,7 +58251,7 @@
   },
   {
     "header": "P2 Invincible and Deals 999% on Every Hit [Akuryu/TheLuckyDucky]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu/TheLuckyDucky"
     ],
@@ -58441,7 +58279,7 @@
   },
   {
     "header": "P3 Invincible and Deals 999% on Every Hit [Akuryu/TheLuckyDucky]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu/TheLuckyDucky"
     ],
@@ -58469,7 +58307,7 @@
   },
   {
     "header": "P4 Invincible and Deals 999% on Every Hit [Akuryu/TheLuckyDucky]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu/TheLuckyDucky"
     ],
@@ -58497,7 +58335,7 @@
   },
   {
     "header": "P1 Invincible",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58519,7 +58357,7 @@
   },
   {
     "header": "P2 Invincible",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58541,7 +58379,7 @@
   },
   {
     "header": "P3 Invincible",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58563,7 +58401,7 @@
   },
   {
     "header": "P4 Invincible",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58585,7 +58423,7 @@
   },
   {
     "header": "P1 Infinite Stock",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58603,7 +58441,7 @@
   },
   {
     "header": "P2 Infinite Stock",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58621,7 +58459,7 @@
   },
   {
     "header": "P3 Infinite Stock",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58639,7 +58477,7 @@
   },
   {
     "header": "P4 Infinite Stock",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58657,7 +58495,7 @@
   },
   {
     "header": "P1 No Stocks",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58675,7 +58513,7 @@
   },
   {
     "header": "P2 No Stocks",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58693,7 +58531,7 @@
   },
   {
     "header": "P3 No Stocks",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58711,7 +58549,7 @@
   },
   {
     "header": "P4 No Stocks",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58729,7 +58567,7 @@
   },
   {
     "header": "Force Port 1 Control",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58747,7 +58585,7 @@
   },
   {
     "header": "Force Port 2 Control",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58765,7 +58603,7 @@
   },
   {
     "header": "Force Port 3 Control",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58783,7 +58621,7 @@
   },
   {
     "header": "Force Port 4 Control",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -58801,7 +58639,7 @@
   },
   {
     "header": "Port 1 Master Control (L+D-Pad Left - HMN, L+D-Pad Right - CPU) [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -58831,7 +58669,7 @@
   },
   {
     "header": "Port 2 Master Control (R+D-Pad Left - HMN, R+D-Pad Right - CPU)[Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -58861,7 +58699,7 @@
   },
   {
     "header": "Port 3 Master Control (Z+D-Pad Left - HMN, Z+D-Pad Right - CPU)[Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -58891,7 +58729,7 @@
   },
   {
     "header": "Port 4 Master Control (Y+D-Pad Left - HMN, Y+D-Pad Right - CPU)[Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -58921,7 +58759,7 @@
   },
   {
     "header": "P1 999% Respawn [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -58941,7 +58779,7 @@
   },
   {
     "header": "P2 999% Respawn [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -58961,7 +58799,7 @@
   },
   {
     "header": "P3 999% Respawn [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -58981,7 +58819,7 @@
   },
   {
     "header": "P4 999% Respawn [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59001,7 +58839,7 @@
   },
   {
     "header": "P1 320 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59021,7 +58859,7 @@
   },
   {
     "header": "P2 320 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59041,7 +58879,7 @@
   },
   {
     "header": "P3 320 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59061,7 +58899,7 @@
   },
   {
     "header": "P4 320 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59081,7 +58919,7 @@
   },
   {
     "header": "P1 999 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59101,7 +58939,7 @@
   },
   {
     "header": "P2 999 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59121,7 +58959,7 @@
   },
   {
     "header": "P3 999 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59141,7 +58979,7 @@
   },
   {
     "header": "P4 999 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59161,7 +58999,7 @@
   },
   {
     "header": "P1 1 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59181,7 +59019,7 @@
   },
   {
     "header": "P2 1 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59201,7 +59039,7 @@
   },
   {
     "header": "P3 1 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59221,7 +59059,7 @@
   },
   {
     "header": "P4 1 HP [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -59241,7 +59079,7 @@
   },
   {
     "header": "P1 White Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59259,7 +59097,7 @@
   },
   {
     "header": "P1 Dark Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59277,7 +59115,7 @@
   },
   {
     "header": "P1 All Black [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59295,7 +59133,7 @@
   },
   {
     "header": "P1 All Gray [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59313,7 +59151,7 @@
   },
   {
     "header": "P2 White Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59331,7 +59169,7 @@
   },
   {
     "header": "P2 Dark Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59349,7 +59187,7 @@
   },
   {
     "header": "P2 All Black [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59367,7 +59205,7 @@
   },
   {
     "header": "P2 All Gray [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59385,7 +59223,7 @@
   },
   {
     "header": "P3 White Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59403,7 +59241,7 @@
   },
   {
     "header": "P3 Dark Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59421,7 +59259,7 @@
   },
   {
     "header": "P3 All Black [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59439,7 +59277,7 @@
   },
   {
     "header": "P3 All Gray [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59457,7 +59295,7 @@
   },
   {
     "header": "P4 White Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59475,7 +59313,7 @@
   },
   {
     "header": "P4 Dark Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59493,7 +59331,7 @@
   },
   {
     "header": "P4 All Black [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59511,7 +59349,7 @@
   },
   {
     "header": "P4 All Gray [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59529,7 +59367,7 @@
   },
   {
     "header": "P1-P4 White Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59550,7 +59388,7 @@
   },
   {
     "header": "P1-P4 Dark Tone [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59571,7 +59409,7 @@
   },
   {
     "header": "P1-P4 All Black [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59592,7 +59430,7 @@
   },
   {
     "header": "P1-P4 All Gray [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59613,7 +59451,7 @@
   },
   {
     "header": "P1 5.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59633,7 +59471,7 @@
   },
   {
     "header": "P1 3.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59653,7 +59491,7 @@
   },
   {
     "header": "P1 2.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59673,7 +59511,7 @@
   },
   {
     "header": "P1 0.5 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59693,7 +59531,7 @@
   },
   {
     "header": "P1 0.1 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59713,7 +59551,7 @@
   },
   {
     "header": "P2 5.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59733,7 +59571,7 @@
   },
   {
     "header": "P2 3.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59753,7 +59591,7 @@
   },
   {
     "header": "P2 2.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59773,7 +59611,7 @@
   },
   {
     "header": "P2 0.5 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59793,7 +59631,7 @@
   },
   {
     "header": "P2 0.1 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59813,7 +59651,7 @@
   },
   {
     "header": "P3 5.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59833,7 +59671,7 @@
   },
   {
     "header": "P3 3.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59853,7 +59691,7 @@
   },
   {
     "header": "P3 2.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59873,7 +59711,7 @@
   },
   {
     "header": "P3 0.5 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59893,7 +59731,7 @@
   },
   {
     "header": "P3 0.1 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59913,7 +59751,7 @@
   },
   {
     "header": "P4 5.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59933,7 +59771,7 @@
   },
   {
     "header": "P4 3.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59953,7 +59791,7 @@
   },
   {
     "header": "P4 2.0 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59973,7 +59811,7 @@
   },
   {
     "header": "P4 0.5 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -59993,7 +59831,7 @@
   },
   {
     "header": "P4 0.1 x Size [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60013,7 +59851,7 @@
   },
   {
     "header": "Level Modifier (VS Mode, Special Melees, and HRC only) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60033,7 +59871,7 @@
   },
   {
     "header": "Target Test Level Access Part 1 (LRZY + D-pad) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60161,7 +59999,7 @@
   },
   {
     "header": "Target Test Level Access Part 2 (LRZ + D-pad) [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60247,7 +60085,7 @@
   },
   {
     "header": "Adventure/Event Level Access (LRZ + D-pad)[donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60347,7 +60185,7 @@
   },
   {
     "header": "Miscellaneous Level Access (LR + D-pad)[donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60398,7 +60236,7 @@
   },
   {
     "header": "Button Stage Select (DPad + AY) [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -60470,7 +60308,7 @@
   },
   {
     "header": "P1 Always Metal [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60488,7 +60326,7 @@
   },
   {
     "header": "P1 Metal and Low Gravity [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60506,7 +60344,7 @@
   },
   {
     "header": "P1 Low Gravity [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60524,7 +60362,7 @@
   },
   {
     "header": "P1 Stamina [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60542,7 +60380,7 @@
   },
   {
     "header": "P2 Always Metal [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60560,7 +60398,7 @@
   },
   {
     "header": "P2 Metal and Low Gravity [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60578,7 +60416,7 @@
   },
   {
     "header": "P2 Low Gravity [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60596,7 +60434,7 @@
   },
   {
     "header": "P2 Stamina [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60614,7 +60452,7 @@
   },
   {
     "header": "P3 Always Metal [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60632,7 +60470,7 @@
   },
   {
     "header": "P3 Metal and Low Gravity [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60650,7 +60488,7 @@
   },
   {
     "header": "P3 Low Gravity [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60668,7 +60506,7 @@
   },
   {
     "header": "P3 Stamina [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60686,7 +60524,7 @@
   },
   {
     "header": "P4 Always Metal [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60704,7 +60542,7 @@
   },
   {
     "header": "P4 Metal and Low Gravity [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60722,7 +60560,7 @@
   },
   {
     "header": "P4 Low Gravity [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60740,7 +60578,7 @@
   },
   {
     "header": "P4 Stamina [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60758,7 +60596,7 @@
   },
   {
     "header": "Elevated Victor [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60778,7 +60616,7 @@
   },
   {
     "header": "Super-Sized Victor [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60798,7 +60636,7 @@
   },
   {
     "header": "Super-Sized Victor in all Boxes [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60818,7 +60656,7 @@
   },
   {
     "header": "Only Victor's Box Shows [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60838,7 +60676,7 @@
   },
   {
     "header": "Must Be On - Effects Modifier [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -60918,7 +60756,7 @@
   },
   {
     "header": "Samus: Ice Missile (-->B) [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -60942,7 +60780,7 @@
   },
   {
     "header": "Samus: Dark Missile (->B) [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -60966,7 +60804,7 @@
   },
   {
     "header": "Samus: Ice Beam (Full Charge Shot) [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -60990,7 +60828,7 @@
   },
   {
     "header": "Link: Ice Arrow [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -61015,7 +60853,7 @@
   },
   {
     "header": "Link: Dark Arrow [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -61040,7 +60878,7 @@
   },
   {
     "header": "Fox: Fire Blaster [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -61064,7 +60902,7 @@
   },
   {
     "header": "Mewtwo: DownB Forces Taunt [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -61084,7 +60922,7 @@
   },
   {
     "header": "Instantly Charged Pikachu/Pichu [bopie64]",
-    "version": null,
+    "version": "",
     "authors": [
       "bopie64"
     ],
@@ -61112,7 +60950,7 @@
   },
   {
     "header": "Jump off Ground State Modifier [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -61132,7 +60970,7 @@
   },
   {
     "header": "After Third Jump State Modifier [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -61152,7 +60990,7 @@
   },
   {
     "header": "Receive Damage State Modifier [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -61172,7 +61010,7 @@
   },
   {
     "header": "Up-Smash Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61192,7 +61030,7 @@
   },
   {
     "header": "Combo Hit 1 Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61212,7 +61050,7 @@
   },
   {
     "header": "Combo Hit 2 Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61232,7 +61070,7 @@
   },
   {
     "header": "Dash Attack Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61252,7 +61090,7 @@
   },
   {
     "header": "Forward Tilt Up Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61272,7 +61110,7 @@
   },
   {
     "header": "Forward Smash Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61292,7 +61130,7 @@
   },
   {
     "header": "Pick Up Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61312,7 +61150,7 @@
   },
   {
     "header": "Screw Ball Use Animation [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61332,7 +61170,7 @@
   },
   {
     "header": "Screw Ball Receive Animation [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61352,7 +61190,7 @@
   },
   {
     "header": "Stationary Grab Animation [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61372,7 +61210,7 @@
   },
   {
     "header": "Mewtwo's ->B Reaction Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61392,7 +61230,7 @@
   },
   {
     "header": "Barrel Cannon Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61412,7 +61250,7 @@
   },
   {
     "header": "Reaction being Captured by Kirby-Yoshi Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61432,7 +61270,7 @@
   },
   {
     "header": "Animation inside of Kirby-Yoshi's Egg Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61452,7 +61290,7 @@
   },
   {
     "header": "Receiving Ice Damage Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61472,7 +61310,7 @@
   },
   {
     "header": "Super Mushroom Grow Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61496,7 +61334,7 @@
   },
   {
     "header": "Super Mushroom Shrink Back Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61520,7 +61358,7 @@
   },
   {
     "header": "Poison Mushroom Shrink Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61544,7 +61382,7 @@
   },
   {
     "header": "Poison Mushroom Grow Back Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61568,7 +61406,7 @@
   },
   {
     "header": "Warp Star Going Up Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61588,7 +61426,7 @@
   },
   {
     "header": "Warp Star Coming Down Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61608,7 +61446,7 @@
   },
   {
     "header": "Kirby Vacuum Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61628,7 +61466,7 @@
   },
   {
     "header": "In Kirby's Mouth Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61648,7 +61486,7 @@
   },
   {
     "header": "Spit from Kirby Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61668,7 +61506,7 @@
   },
   {
     "header": "Swallowed by Kirby Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61688,7 +61526,7 @@
   },
   {
     "header": "Breaking out of Kirby Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61708,7 +61546,7 @@
   },
   {
     "header": "Kirby's Hammer Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61728,7 +61566,7 @@
   },
   {
     "header": "Peach's Umbrella Animation Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61748,7 +61586,7 @@
   },
   {
     "header": "Arwing Projectile Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61768,7 +61606,7 @@
   },
   {
     "header": "Flatzone Tool Drop Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61788,7 +61626,7 @@
   },
   {
     "header": "Green Greens Apple Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61808,7 +61646,7 @@
   },
   {
     "header": "Lip's Stick Flower Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61828,7 +61666,7 @@
   },
   {
     "header": "Kirby Cutter Beam Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61848,7 +61686,7 @@
   },
   {
     "header": "Ness' PK Thunder Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61868,7 +61706,7 @@
   },
   {
     "header": "Samus' Grapple Beam Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61888,7 +61726,7 @@
   },
   {
     "header": "Chikorita Projectile Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61908,7 +61746,7 @@
   },
   {
     "header": "Blastoise Projectile Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61928,7 +61766,7 @@
   },
   {
     "header": "Octorok Projectile Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61948,7 +61786,7 @@
   },
   {
     "header": "Mini - Unowns Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61968,7 +61806,7 @@
   },
   {
     "header": "Staryu Projectile Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -61988,7 +61826,7 @@
   },
   {
     "header": "Cyndaquil Fire Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -62008,7 +61846,7 @@
   },
   {
     "header": "Wolfen Projectile Modifier [heinermann]",
-    "version": null,
+    "version": "",
     "authors": [
       "heinermann"
     ],
@@ -62028,7 +61866,7 @@
   },
   {
     "header": "Luigi Projectile Modifier [bopie64]",
-    "version": null,
+    "version": "",
     "authors": [
       "bopie64"
     ],
@@ -62048,7 +61886,7 @@
   },
   {
     "header": "Mewtwo Projectile Modifier [bopie64]",
-    "version": null,
+    "version": "",
     "authors": [
       "bopie64"
     ],
@@ -62068,7 +61906,7 @@
   },
   {
     "header": "Mewtwo Projectile Modifier 2 [bopie64]",
-    "version": null,
+    "version": "",
     "authors": [
       "bopie64"
     ],
@@ -62088,7 +61926,7 @@
   },
   {
     "header": "Damage Knockback Replaced with Poison Mushroom Effects [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62108,7 +61946,7 @@
   },
   {
     "header": "Damage Knockback Replaced with Super Mushroom Effects [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62128,7 +61966,7 @@
   },
   {
     "header": "Mewtwo - DownB Shrinks Opponents [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62148,7 +61986,7 @@
   },
   {
     "header": "Samus - Neutral B Always Fires Left with No Animation Lag [ethNargy]",
-    "version": null,
+    "version": "",
     "authors": [
       "ethNargy"
     ],
@@ -62168,7 +62006,7 @@
   },
   {
     "header": "Peach - Infinite Double Jumps [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62188,7 +62026,7 @@
   },
   {
     "header": "Mewtwo - Infinite Double Jumps [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62208,7 +62046,7 @@
   },
   {
     "header": "Kirby/Jigglypuff - Infinite Jumps [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62228,7 +62066,7 @@
   },
   {
     "header": "Yoshi - Infinite Doubles Jumps [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62248,7 +62086,7 @@
   },
   {
     "header": "Ness - Infinite Double Jumps [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62268,7 +62106,7 @@
   },
   {
     "header": "Infinite Double Jumps [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62308,7 +62146,7 @@
   },
   {
     "header": "Super Mario/Dr. Mario (Special Moves Enhanced) [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -62340,7 +62178,7 @@
   },
   {
     "header": "Super Captain Falcon/Ganondorf  (Special Moves Enhanced)[Akuryu]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu"
     ],
@@ -62372,7 +62210,7 @@
   },
   {
     "header": "Super Fox/Falco (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62394,7 +62232,7 @@
   },
   {
     "header": "Fox/Falco Invisible Guns [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -62414,7 +62252,7 @@
   },
   {
     "header": "Fox/Falco Huge Guns [Bazza]",
-    "version": null,
+    "version": "",
     "authors": [
       "Bazza"
     ],
@@ -62434,7 +62272,7 @@
   },
   {
     "header": "Super Link/Young Link (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62464,7 +62302,7 @@
   },
   {
     "header": "Super Kirby (Special Moves Enhanced) [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -62496,7 +62334,7 @@
   },
   {
     "header": "Super Kirby's Stolen B-moves  (Stolen Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62550,7 +62388,7 @@
   },
   {
     "header": "Super Donkey Kong (Special Moves Enhanced) [donny2112/Bazza/Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112/Bazza/Jupiter_"
     ],
@@ -62586,7 +62424,7 @@
   },
   {
     "header": "Super Zelda/Sheik (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62623,7 +62461,7 @@
   },
   {
     "header": "Super Ness (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62649,7 +62487,7 @@
   },
   {
     "header": "Super Peach (Special Moves Enhanced) [Jupiter_/donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_/donny2112"
     ],
@@ -62689,7 +62527,7 @@
   },
   {
     "header": "Ice Climbers Rapid Fire",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62707,7 +62545,7 @@
   },
   {
     "header": "Super Pikachu/Pichu (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62733,7 +62571,7 @@
   },
   {
     "header": "Samus Rapid Homing Missiles",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62751,7 +62589,7 @@
   },
   {
     "header": "Super Yoshi (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62773,7 +62611,7 @@
   },
   {
     "header": "Super Bowser/Giga Bowser (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62798,7 +62636,7 @@
   },
   {
     "header": "Marth/Roy Infinite Jumps via Side B",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62816,7 +62654,7 @@
   },
   {
     "header": "Super Jigglypuff (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62846,7 +62684,7 @@
   },
   {
     "header": "Super Luigi (Special Moves Enhanced) [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -62874,7 +62712,7 @@
   },
   {
     "header": "Super Mewtwo (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62896,7 +62734,7 @@
   },
   {
     "header": "Super Mr. Game and Watch (Special Moves Enhanced)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -62922,7 +62760,7 @@
   },
   {
     "header": "Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -62998,7 +62836,7 @@
   },
   {
     "header": "Move Swap Repair",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -63016,7 +62854,7 @@
   },
   {
     "header": "Move Swap Fix 2 [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -63052,7 +62890,7 @@
   },
   {
     "header": "Mr. Game and Watch as Mario Fix [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -63072,7 +62910,7 @@
   },
   {
     "header": "Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]",
-    "version": null,
+    "version": "",
     "authors": [
       "Y.S."
     ],
@@ -63224,7 +63062,7 @@
   },
   {
     "header": "Unpredictable Hitboxes and Models (Pausing Causes Freeze) [bopie64]",
-    "version": null,
+    "version": "",
     "authors": [
       "bopie64"
     ],
@@ -63244,7 +63082,7 @@
   },
   {
     "header": "Cannot Perform First Ground Jump [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -63264,7 +63102,7 @@
   },
   {
     "header": "Grounded First Jump Becomes Down Smash [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -63284,7 +63122,7 @@
   },
   {
     "header": "Black Floors with Occasionally Disappearing Models [Akuryu]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu"
     ],
@@ -63302,7 +63140,7 @@
   },
   {
     "header": "Invisible Stage Geometry [Akuryu]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu"
     ],
@@ -63320,7 +63158,7 @@
   },
   {
     "header": "No Textures for Stages, Projectiles, or Items [Akuryu]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu"
     ],
@@ -63340,7 +63178,7 @@
   },
   {
     "header": "All Battle Visuals Render as Tiny Triangles [Akuryu]",
-    "version": null,
+    "version": "",
     "authors": [
       "Akuryu"
     ],
@@ -63358,7 +63196,7 @@
   },
   {
     "header": "Crowd Cheers Loudly on Every Hit [ChunkyTiger]",
-    "version": null,
+    "version": "",
     "authors": [
       "ChunkyTiger"
     ],
@@ -63378,7 +63216,7 @@
   },
   {
     "header": "Mildly Broken Stage Geometry [Rune]",
-    "version": null,
+    "version": "",
     "authors": [
       "Rune"
     ],
@@ -63398,7 +63236,7 @@
   },
   {
     "header": "Fighters Face Wrong Direction",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -63416,7 +63254,7 @@
   },
   {
     "header": "Fighters Face Forward",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -63434,7 +63272,7 @@
   },
   {
     "header": "Fighters Stuck in T-Pose",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -63452,7 +63290,7 @@
   },
   {
     "header": "Camera Controls Outside of Pausing (Pause and Unpause When Fight Starts)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -63470,7 +63308,7 @@
   },
   {
     "header": "Faster Walking",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -63488,7 +63326,7 @@
   },
   {
     "header": "Bouncy Items with Torn Graphics (Enables Far Zoom)",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -63506,7 +63344,7 @@
   },
   {
     "header": "Big Blue - Whole Stage Does Flips, Eventually Disappears [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63526,7 +63364,7 @@
   },
   {
     "header": "Mute City - Invisible Platforms [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63547,7 +63385,7 @@
   },
   {
     "header": "Brinstar Depths - No Kraid and Fourside - Weird Rotation [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63568,7 +63406,7 @@
   },
   {
     "header": "Low Flying Great Fox [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -63588,7 +63426,7 @@
   },
   {
     "header": "Poison Mushrooms KO Upon Contact [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -63612,7 +63450,7 @@
   },
   {
     "header": "Super Mushrooms KO Upon Contact[wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -63636,7 +63474,7 @@
   },
   {
     "header": "Taunting Causes Self-Destruct [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -63656,7 +63494,7 @@
   },
   {
     "header": "Top of Screen KO Always Makes Fighters Hit Screen [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -63676,7 +63514,7 @@
   },
   {
     "header": "Top of Screen KO Always Star KOs [wParam]",
-    "version": null,
+    "version": "",
     "authors": [
       "wParam"
     ],
@@ -63696,7 +63534,7 @@
   },
   {
     "header": "Master Hand in Extra 1P Modes (Need 3P) [Rune]",
-    "version": null,
+    "version": "",
     "authors": [
       "Rune"
     ],
@@ -63716,7 +63554,7 @@
   },
   {
     "header": "Fighters get Stuck Trying to Walk [Rune]",
-    "version": null,
+    "version": "",
     "authors": [
       "Rune"
     ],
@@ -63736,7 +63574,7 @@
   },
   {
     "header": "Stage will Rain Bob-ombs after 20 Seconds [Someguyxg3]",
-    "version": null,
+    "version": "",
     "authors": [
       "Someguyxg3"
     ],
@@ -63754,7 +63592,7 @@
   },
   {
     "header": "Very Distorted Menus, GUI, and HUD [MASTERLINKX]",
-    "version": null,
+    "version": "",
     "authors": [
       "MASTERLINKX"
     ],
@@ -63774,7 +63612,7 @@
   },
   {
     "header": "Game and Watch - Kirby Rapid Fire Neutral B [Bazza]",
-    "version": null,
+    "version": "",
     "authors": [
       "Bazza"
     ],
@@ -63794,7 +63632,7 @@
   },
   {
     "header": "Donkey Kong - Infinite Height through Side B [Bazza]",
-    "version": null,
+    "version": "",
     "authors": [
       "Bazza"
     ],
@@ -63814,7 +63652,7 @@
   },
   {
     "header": "Donkey Kong - Fast Neutral B [Jupiter_]",
-    "version": null,
+    "version": "",
     "authors": [
       "Jupiter_"
     ],
@@ -63834,7 +63672,7 @@
   },
   {
     "header": "Enemy Name's Sound Modifier [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63854,7 +63692,7 @@
   },
   {
     "header": "1P Force Character Selection [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63874,7 +63712,7 @@
   },
   {
     "header": "Slot 1 CPU Type/Level Modifier [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63892,7 +63730,7 @@
   },
   {
     "header": "Slot 2 CPU Type/Level Modifier [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63910,7 +63748,7 @@
   },
   {
     "header": "Slot 3 CPU Type/Level Modifier [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63928,7 +63766,7 @@
   },
   {
     "header": "Slot 4 CPU Type/Level Modifier [donny2112]",
-    "version": null,
+    "version": "",
     "authors": [
       "donny2112"
     ],
@@ -63946,7 +63784,7 @@
   },
   {
     "header": "Peach Wears No Skirt [Ralf]",
-    "version": null,
+    "version": "",
     "authors": [
       "Ralf"
     ],
@@ -63970,7 +63808,7 @@
   },
   {
     "header": "Zelda Wears No Skirt [Ralf]",
-    "version": null,
+    "version": "",
     "authors": [
       "Ralf"
     ],
@@ -63994,7 +63832,7 @@
   },
   {
     "header": "No Default Color Overlays [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -64023,7 +63861,7 @@
   },
   {
     "header": "Dash Grab Overlay [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -64102,7 +63940,7 @@
   },
   {
     "header": "MH/CH Improvements [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -64780,7 +64618,7 @@
   },
   {
     "header": "MH/CH Control with Any Port [sushie, Achilles1515]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie",
       "Achilles1515"
@@ -64818,7 +64656,7 @@
   },
   {
     "header": "MH/CH Vibrate on Hit [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -64863,7 +64701,7 @@
   },
   {
     "header": "All Hits are Windboxes [sushie]",
-    "version": null,
+    "version": "",
     "authors": [
       "sushie"
     ],
@@ -65054,7 +64892,7 @@
   },
   {
     "header": "Hide Invisible Intangible Hurtboxes [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -65089,7 +64927,7 @@
   },
   {
     "header": "Custom Hitbox/Hurtbox Colors [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -65224,7 +65062,7 @@
   },
   {
     "header": "Unfreeze Game End (from 20XXTE) [Altafen, Dan Salvato]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen",
       "Dan Salvato"
@@ -65307,7 +65145,7 @@
   },
   {
     "header": "Hold Ledges Forever [PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "PKFreeZZy"
     ],
@@ -65327,7 +65165,7 @@
   },
   {
     "header": "Big Light Shield Only (L) [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -65358,7 +65196,7 @@
   },
   {
     "header": "Big Light Shield Only (R) [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -65389,7 +65227,7 @@
   },
   {
     "header": "Green Overlay during Landing IASA [Altafen]",
-    "version": null,
+    "version": "",
     "authors": [
       "Altafen"
     ],
@@ -65460,7 +65298,7 @@
   },
   {
     "header": "Brawl-style Team Colors [Flieskiller]",
-    "version": null,
+    "version": "",
     "authors": [
       "Flieskiller"
     ],
@@ -65674,7 +65512,7 @@
   },
   {
     "header": "Red Menu [Anycard]",
-    "version": null,
+    "version": "",
     "authors": [
       "Anycard"
     ],
@@ -65694,7 +65532,7 @@
   },
   {
     "header": "Partially Invisible Techs v1.1 [Clown, PKFreeZZy]",
-    "version": null,
+    "version": "",
     "authors": [
       "Clown",
       "PKFreeZZy"
@@ -65738,7 +65576,7 @@
   },
   {
     "header": "Disable F-Zero Grand Prix Cars",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -65756,7 +65594,7 @@
   },
   {
     "header": "Frozon Camera on Mushroom Kingdom I",
-    "version": null,
+    "version": "",
     "authors": null,
     "description": [],
     "hex_lines": [
@@ -65769,6 +65607,463 @@
     "deprecated": false,
     "addresses": [
       "0207C88"
+    ],
+    "categories": []
+  },
+  {
+    "header": "Tilt Stick [Altafen]",
+    "version": "",
+    "authors": [
+      "Altafen"
+    ],
+    "description": [],
+    "hex_lines": [
+      "C20DF3A8 00000002 #tilt_stick/dsmash.asm",
+      "38600000 4E800020",
+      "60000000 00000000",
+      "C208BB68 00000008 #tilt_stick/dtilt.asm",
+      "808DAEB4 C0030644",
+      "C02400D4 FC000840",
+      "40810024 C003063C",
+      "FC000840 4C401382",
+      "40820014 3D808008",
+      "618CBBA4 7D8903A6",
+      "4E800420 801F0668",
+      "540005EF 00000000",
+      "C20DF1C8 00000002 #tilt_stick/fsmash.asm",
+      "38600000 4E800020",
+      "60000000 00000000",
+      "C208B67C 00000011 #tilt_stick/ftilt.asm",
+      "C0230640 C0029758",
+      "FC010040 40800008",
+      "FC200850 808DAEB4",
+      "C044003C FC011040",
+      "4080005C C0230638",
+      "C0029758 FC010040",
+      "40800008 FC200850",
+      "FC011040 4C411382",
+      "4082003C C01F002C",
+      "C03F0638 EC210032",
+      "C0028950 FC010040",
+      "4C401382 40820010",
+      "C01F002C FC000050",
+      "D01F002C 3D808008",
+      "618CB6E0 7D8903A6",
+      "4E800420 801F0668",
+      "540005EF 00000000",
+      "C208B7B8 00000007 #tilt_stick/ftilt_angle.asm",
+      "80030668 540005EF",
+      "41820018 3D808007",
+      "618CD964 7D8903A6",
+      "4E800421 48000014",
+      "3D808007 618CD99C",
+      "7D8903A6 4E800421",
+      "60000000 00000000",
+      "C20DF2D8 00000002 #tilt_stick/usmash.asm",
+      "38600000 4E800020",
+      "60000000 00000000",
+      "C208B9A4 00000008 #tilt_stick/utilt.asm",
+      "808DAEB4 C0030644",
+      "C02400CC FC000840",
+      "40800024 C003063C",
+      "FC000840 4C411382",
+      "40820014 3D808008",
+      "618CB9DC 7D8903A6",
+      "4E800420 801F0668",
+      "540005EF 00000000"
+    ],
+    "hex_words": [
+      "C20DF3A8",
+      "00000002",
+      "38600000",
+      "4E800020",
+      "60000000",
+      "00000000",
+      "C208BB68",
+      "00000008",
+      "808DAEB4",
+      "C0030644",
+      "C02400D4",
+      "FC000840",
+      "40810024",
+      "C003063C",
+      "FC000840",
+      "4C401382",
+      "40820014",
+      "3D808008",
+      "618CBBA4",
+      "7D8903A6",
+      "4E800420",
+      "801F0668",
+      "540005EF",
+      "00000000",
+      "C20DF1C8",
+      "00000002",
+      "38600000",
+      "4E800020",
+      "60000000",
+      "00000000",
+      "C208B67C",
+      "00000011",
+      "C0230640",
+      "C0029758",
+      "FC010040",
+      "40800008",
+      "FC200850",
+      "808DAEB4",
+      "C044003C",
+      "FC011040",
+      "4080005C",
+      "C0230638",
+      "C0029758",
+      "FC010040",
+      "40800008",
+      "FC200850",
+      "FC011040",
+      "4C411382",
+      "4082003C",
+      "C01F002C",
+      "C03F0638",
+      "EC210032",
+      "C0028950",
+      "FC010040",
+      "4C401382",
+      "40820010",
+      "C01F002C",
+      "FC000050",
+      "D01F002C",
+      "3D808008",
+      "618CB6E0",
+      "7D8903A6",
+      "4E800420",
+      "801F0668",
+      "540005EF",
+      "00000000",
+      "C208B7B8",
+      "00000007",
+      "80030668",
+      "540005EF",
+      "41820018",
+      "3D808007",
+      "618CD964",
+      "7D8903A6",
+      "4E800421",
+      "48000014",
+      "3D808007",
+      "618CD99C",
+      "7D8903A6",
+      "4E800421",
+      "60000000",
+      "00000000",
+      "C20DF2D8",
+      "00000002",
+      "38600000",
+      "4E800020",
+      "60000000",
+      "00000000",
+      "C208B9A4",
+      "00000008",
+      "808DAEB4",
+      "C0030644",
+      "C02400CC",
+      "FC000840",
+      "40800024",
+      "C003063C",
+      "FC000840",
+      "4C411382",
+      "40820014",
+      "3D808008",
+      "618CB9DC",
+      "7D8903A6",
+      "4E800420",
+      "801F0668",
+      "540005EF",
+      "00000000"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "00DF3A8",
+      "00DF3A9",
+      "008BB68",
+      "008BB69",
+      "008BB6A",
+      "008BB6B",
+      "008BB6C",
+      "008BB6D",
+      "008BB6E",
+      "008BB6F",
+      "00DF1C8",
+      "00DF1C9",
+      "008B67C",
+      "008B67D",
+      "008B67E",
+      "008B67F",
+      "008B680",
+      "008B681",
+      "008B682",
+      "008B683",
+      "008B684",
+      "008B685",
+      "008B686",
+      "008B687",
+      "008B688",
+      "008B689",
+      "008B68A",
+      "008B68B",
+      "008B68C",
+      "008B7B8",
+      "008B7B9",
+      "008B7BA",
+      "008B7BB",
+      "008B7BC",
+      "008B7BD",
+      "008B7BE",
+      "00DF2D8",
+      "00DF2D9",
+      "008B9A4",
+      "008B9A5",
+      "008B9A6",
+      "008B9A7",
+      "008B9A8",
+      "008B9A9",
+      "008B9AA",
+      "008B9AB"
+    ],
+    "categories": []
+  },
+  {
+    "header": "Tech Window Display [Altafen]",
+    "version": "",
+    "authors": [
+      "Altafen"
+    ],
+    "description": [
+      "Could benefit from being used with the \"No Default Color Overlays\" Gecko Code"
+    ],
+    "hex_lines": [
+      "C2080E30 00000017 #main.asm",
+      "83C3002C 3FE08048",
+      "83FF9D30 57FF443E",
+      "2C1F0208 40820018",
+      "83EDB61C 8BFF0000",
+      "881E000C 7C00F800",
+      "40820088 3D808009",
+      "618C86B0 7D8903A6",
+      "4E800421 2C030000",
+      "4082001C 887E0680",
+      "808DAEB4 8084001C",
+      "7C032000 40800054",
+      "38600000 3CA0437F",
+      "3CC042EE 3CE00000",
+      "90FE04C8 90FE04CC",
+      "90FE04D0 90FE04D4",
+      "38000091 981E0504",
+      "90DE04C0 90DE04C4",
+      "2C030000 41820010",
+      "90FE04B8 90BE04BC",
+      "48000018 90BE04B8",
+      "90FE04BC 4800000C",
+      "38000000 981E0504",
+      "60000000 00000000"
+    ],
+    "hex_words": [
+      "C2080E30",
+      "00000017",
+      "83C3002C",
+      "3FE08048",
+      "83FF9D30",
+      "57FF443E",
+      "2C1F0208",
+      "40820018",
+      "83EDB61C",
+      "8BFF0000",
+      "881E000C",
+      "7C00F800",
+      "40820088",
+      "3D808009",
+      "618C86B0",
+      "7D8903A6",
+      "4E800421",
+      "2C030000",
+      "4082001C",
+      "887E0680",
+      "808DAEB4",
+      "8084001C",
+      "7C032000",
+      "40800054",
+      "38600000",
+      "3CA0437F",
+      "3CC042EE",
+      "3CE00000",
+      "90FE04C8",
+      "90FE04CC",
+      "90FE04D0",
+      "90FE04D4",
+      "38000091",
+      "981E0504",
+      "90DE04C0",
+      "90DE04C4",
+      "2C030000",
+      "41820010",
+      "90FE04B8",
+      "90BE04BC",
+      "48000018",
+      "90BE04B8",
+      "90FE04BC",
+      "4800000C",
+      "38000000",
+      "981E0504",
+      "60000000",
+      "00000000"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "0080E30",
+      "0080E31",
+      "0080E32",
+      "0080E33",
+      "0080E34",
+      "0080E35",
+      "0080E36",
+      "0080E37",
+      "0080E38",
+      "0080E39",
+      "0080E3A",
+      "0080E3B",
+      "0080E3C",
+      "0080E3D",
+      "0080E3E",
+      "0080E3F",
+      "0080E40",
+      "0080E41",
+      "0080E42",
+      "0080E43",
+      "0080E44",
+      "0080E45",
+      "0080E46"
+    ],
+    "categories": []
+  },
+  {
+    "header": "No Default Color Overlays [Altafen]",
+    "version": "",
+    "authors": [
+      "Altafen"
+    ],
+    "description": [],
+    "hex_lines": [
+      "C20BFFD0 00000002 #overlay.asm",
+      "38600001 4E800020",
+      "60000000 00000000"
+    ],
+    "hex_words": [
+      "C20BFFD0",
+      "00000002",
+      "38600001",
+      "4E800020",
+      "60000000",
+      "00000000"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "00BFFD0",
+      "00BFFD1"
+    ],
+    "categories": []
+  },
+  {
+    "header": "No Voice (Local Player Only) [Altafen]",
+    "version": "",
+    "authors": [
+      "Altafen"
+    ],
+    "description": [],
+    "hex_lines": [
+      "C20682E0 00000007 #Player_SpawnInit.asm",
+      "3C808048 88849D30",
+      "2C040008 40820018",
+      "808DB61C 88840000",
+      "88BB000C 7C042800",
+      "4182000C 5063FFBC",
+      "48000008 60630002",
+      "60000000 00000000",
+      "C208047C 00000006 #MetalOff.asm",
+      "3CA08048 88A59D30",
+      "2C050008 40820018",
+      "80ADB61C 88A50000",
+      "88C3000C 7C053000",
+      "41820008 98832225",
+      "60000000 00000000"
+    ],
+    "hex_words": [
+      "C20682E0",
+      "00000007",
+      "3C808048",
+      "88849D30",
+      "2C040008",
+      "40820018",
+      "808DB61C",
+      "88840000",
+      "88BB000C",
+      "7C042800",
+      "4182000C",
+      "5063FFBC",
+      "48000008",
+      "60630002",
+      "60000000",
+      "00000000",
+      "C208047C",
+      "00000006",
+      "3CA08048",
+      "88A59D30",
+      "2C050008",
+      "40820018",
+      "80ADB61C",
+      "88A50000",
+      "88C3000C",
+      "7C053000",
+      "41820008",
+      "98832225",
+      "60000000",
+      "00000000"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "00682E0",
+      "00682E1",
+      "00682E2",
+      "00682E3",
+      "00682E4",
+      "00682E5",
+      "00682E6",
+      "008047C",
+      "008047D",
+      "008047E",
+      "008047F",
+      "0080480",
+      "0080481"
+    ],
+    "categories": []
+  },
+  {
+    "header": "Land-Cancel Zelda Neutral B",
+    "version": "",
+    "authors": null,
+    "description": [],
+    "hex_lines": [
+      "0413aa14 38600000",
+      "0413ac70 4BF47EAD"
+    ],
+    "hex_words": [
+      "0413AA14",
+      "38600000",
+      "0413AC70",
+      "4BF47EAD"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "013AA14",
+      "013AC70"
     ],
     "categories": []
   }
