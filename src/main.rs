@@ -61,44 +61,16 @@ impl GeckoCode {
             let opcode = &hex_words[index][0..2];
 
             match opcode {
-                "04" | "05" => {
-                    let base_mem_address = i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
+                "04" | "05" | "C2" | "C3" => {
+                    let mut base_mem_address =
+                        i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
 
-                    // Add the overflow for opcode "05"
-                    let final_address = if opcode == "05" {
-                        base_mem_address + 0x1000000
-                    } else {
-                        base_mem_address
-                    };
-
-                    Some(vec![format!("0x{:08X}", final_address)])
-                }
-                "C2" | "C3" => {
-                    let mut base_mem_address = i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
-
-                    // Add the overflow for opcode "C3"
-                     if opcode == "C3" {
+                    // Adjusting the address based on opcode type
+                    if opcode == "05" || opcode == "C3" {
                         base_mem_address += 0x1000000;
                     }
 
-                    // If the next word is available
-                    if let Some(offset_word) = hex_words.get(index + 1) {
-                        // Convert XXXXXXXX to base 10 to get the offset
-                        let offset = i64::from_str_radix(offset_word, 16).ok()?;
-
-                        if offset > 1000 {
-                            return None; // or raise an error depending on desired behavior
-                        }
-
-                        // Compute the range of memory addresses for the injection
-                        let addresses: Vec<String> = (0..offset)
-                            .map(|i| format!("0x{:08X}", base_mem_address + i))
-                            .collect();
-
-                        Some(addresses)
-                    } else {
-                        None
-                    }
+                    Some(vec![format!("{:07X}", base_mem_address)])
                 }
                 _ => None, // No matching opcode
             }
@@ -241,17 +213,24 @@ fn parse_duplicate_addresses_md(file_content: &str) -> HashMap<String, Vec<Strin
 
     for line in lines {
         if line.starts_with("## Duplicate address:") {
-            current_address = line.trim_start_matches("## Duplicate address: ").to_string();
+            current_address = line
+                .trim_start_matches("## Duplicate address: ")
+                .to_string();
         } else if line.starts_with("- Found in code:") {
             let code_name = line.trim_start_matches("- Found in code: ").to_string();
-            result.entry(current_address.clone()).or_insert_with(Vec::new).push(code_name);
+            result
+                .entry(current_address.clone())
+                .or_insert_with(Vec::new)
+                .push(code_name);
         }
     }
 
     result
 }
 
-fn group_by_code_headers(address_map: HashMap<String, Vec<String>>) -> HashMap<Vec<String>, Vec<String>> {
+fn group_by_code_headers(
+    address_map: HashMap<String, Vec<String>>,
+) -> HashMap<Vec<String>, Vec<String>> {
     let mut result: HashMap<Vec<String>, Vec<String>> = HashMap::new();
 
     for (address, codes) in address_map.iter() {
@@ -261,7 +240,10 @@ fn group_by_code_headers(address_map: HashMap<String, Vec<String>>) -> HashMap<V
             sorted_codes
         };
 
-        result.entry(codes_sorted).or_insert_with(Vec::new).push(address.clone());
+        result
+            .entry(codes_sorted)
+            .or_insert_with(Vec::new)
+            .push(address.clone());
     }
 
     result
@@ -283,8 +265,10 @@ fn main() {
     println!("Successfully saved Gecko Codes to RawUnfilteredGeckoCodes.json");
 
     // Deserialize the stored JSON file
-    let json_content = fs::read_to_string("RawUnfilteredGeckoCodes.json").expect("Unable to read JSON file");
-    let deserialized_gecko_codes: Vec<GeckoCode> = serde_json::from_str(&json_content).expect("Failed to deserialize JSON");
+    let json_content =
+        fs::read_to_string("RawUnfilteredGeckoCodes.json").expect("Unable to read JSON file");
+    let deserialized_gecko_codes: Vec<GeckoCode> =
+        serde_json::from_str(&json_content).expect("Failed to deserialize JSON");
 
     // Identify duplicate addresses
     let mut address_map: HashMap<String, Vec<String>> = HashMap::new();
@@ -292,7 +276,8 @@ fn main() {
     for gecko_code in &deserialized_gecko_codes {
         if let Some(addresses) = &gecko_code.addresses {
             for address in addresses {
-                address_map.entry(address.clone())
+                address_map
+                    .entry(address.clone())
                     .or_insert_with(Vec::new)
                     .push(gecko_code.header.clone());
             }
@@ -301,7 +286,7 @@ fn main() {
 
     // Post-process the address_map
     address_map.retain(|_, headers| {
-        headers.sort();  // Sort the headers for consistent comparison
+        headers.sort(); // Sort the headers for consistent comparison
         headers.dedup(); // Remove duplicate headers
 
         // Only retain the address if there's more than one unique header
@@ -320,17 +305,21 @@ fn main() {
             for header in code_headers {
                 md_content += &format!("- Found in code: {}\n", header);
             }
-            md_content += "\n";  // Add an extra newline for spacing
+            md_content += "\n"; // Add an extra newline for spacing
         }
     }
 
     // Save the results to a markdown file
-    fs::write("DuplicateAddresses.md", md_content).expect("Unable to write to DuplicateAddresses.md");
+    fs::write("DuplicateAddresses.md", md_content)
+        .expect("Unable to write to DuplicateAddresses.md");
 
-    println!("Successfully saved sorted and cleaned-up duplicate addresses to DuplicateAddresses.md");
+    println!(
+        "Successfully saved sorted and cleaned-up duplicate addresses to DuplicateAddresses.md"
+    );
 
     // Parse DuplicateAddresses.md and consolidate entries
-    let md_content = fs::read_to_string("DuplicateAddresses.md").expect("Unable to read DuplicateAddresses.md");
+    let md_content =
+        fs::read_to_string("DuplicateAddresses.md").expect("Unable to read DuplicateAddresses.md");
     let parsed_data = parse_duplicate_addresses_md(&md_content);
     let grouped_data = group_by_code_headers(parsed_data);
 
@@ -347,7 +336,8 @@ fn main() {
         new_md_content += "\n";
     }
 
-    fs::write("ConsolidatedAddresses.md", new_md_content).expect("Unable to write to ConsolidatedAddresses.md");
+    fs::write("ConsolidatedAddresses.md", new_md_content)
+        .expect("Unable to write to ConsolidatedAddresses.md");
 
     println!("Successfully saved consolidated addresses to ConsolidatedAddresses.md");
 }
