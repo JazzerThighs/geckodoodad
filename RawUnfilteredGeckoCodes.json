@@ -12988,7 +12988,7 @@
     "categories": []
   },
   {
-    "header": "Team Colors [flieskiller]",
+    "header": "Brawl-Style Team Colors [flieskiller]",
     "version": "",
     "authors": [
       "flieskiller"
@@ -56011,12 +56011,14 @@
     "categories": []
   },
   {
-    "header": "Brawl-style Team Colors [Flieskiller]",
+    "header": "Brawl-Style Team Colors [flieskiller]",
     "version": "",
     "authors": [
-      "Flieskiller"
+      "flieskiller"
     ],
-    "description": [],
+    "description": [
+      "More Available Team Color Options for Specific Characters"
+    ],
     "hex_lines": [
       "C225EBA0 00000016",
       "8AF303BE 3DE08042",

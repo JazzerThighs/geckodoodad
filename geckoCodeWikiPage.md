@@ -5105,7 +5105,7 @@ C2033354 00000002
 <div class="mw-collapsible mw-collapsed" data-expandtext="More Team Costume Options" data-collapsetext="Click to collapse">
 
 
-$Team Colors [flieskiller]
+$Brawl-Style Team Colors [flieskiller]
 *More Available Team Color Options for Specific Characters
 C225EBA0 00000016
 8AF303BE 3DE08042
@@ -20790,7 +20790,8 @@ C20D5DB8 0000000D #main.asm
 987E0504 7FA3EB78
 60000000 00000000
 
-$Brawl-style Team Colors [Flieskiller]
+$Brawl-Style Team Colors [flieskiller]
+*More Available Team Color Options for Specific Characters
 C225EBA0 00000016
 8AF303BE 3DE08042
 61EFB460 7DF17B78

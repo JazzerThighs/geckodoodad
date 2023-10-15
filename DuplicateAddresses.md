@@ -196,10 +196,6 @@
 - Found in code: Game Music ON [UnclePunch]
 - Found in code: Mute In-Game Music [Krohnos]
 
-## Duplicate address: 0x00030000
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
 ## Duplicate address: 0x00031BCC
 - Found in code: One CPU Buddy per Player (Buddies stay KOed) [wParam]
 - Found in code: One CPU Mirror per Player (Mirrors stay KOed) [wParam]
@@ -634,30 +630,6 @@
 - Found in code: Polling Drift + Half Visual Buffer Fixes [tauKhan, UnclePunch]
 - Found in code: Polling Drift and Half Visual Buffer Fixes - GameCube or Wii [tauKhan, UnclePunch]
 
-## Duplicate address: 0x001B0374
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
-## Duplicate address: 0x001B0378
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
-## Duplicate address: 0x001B03C4
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
-## Duplicate address: 0x001B03C8
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
-## Duplicate address: 0x001B0414
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
-## Duplicate address: 0x001B0418
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
 ## Duplicate address: 0x001B3333
 - Found in code: Full friendlies codes [Achilles, UnclePunch]
 - Found in code: Full tournament codes [Achilles, UnclePunch]
@@ -731,14 +703,6 @@
 - Found in code: Stage Striking (Transparent Struck Stages), Method 1 [Sham Rock, Achilles,]
 - Found in code: Stage Striking (Whites-out Struck Stages) [Sham Rock]
 
-## Duplicate address: 0x0025EBA0
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
-## Duplicate address: 0x0025EDDC
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
 ## Duplicate address: 0x002605FC
 - Found in code: Full friendlies codes [Achilles, UnclePunch]
 - Found in code: Full tournament codes [Achilles, UnclePunch]
@@ -765,14 +729,6 @@
 - Found in code: Full friendlies codes [Achilles, UnclePunch]
 - Found in code: Full tournament codes [Achilles, UnclePunch]
 - Found in code: Stealth tournament codes [Achilles, UnclePunch]
-
-## Duplicate address: 0x00261BD8
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
-
-## Duplicate address: 0x00261BDC
-- Found in code: Brawl-style Team Colors [Flieskiller]
-- Found in code: Team Colors [flieskiller]
 
 ## Duplicate address: 0x002662D0
 - Found in code: UCF Slippi v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]
