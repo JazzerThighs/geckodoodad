@@ -65,7 +65,7 @@ impl GeckoCode {
                     let mut base_mem_address =
                         i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
 
-                    // Adjusting the address based on opcode type
+                    // Account for if the memory address overflows into the OpCode hex
                     if opcode == "05" || opcode == "C3" {
                         base_mem_address += 0x1000000;
                     }
