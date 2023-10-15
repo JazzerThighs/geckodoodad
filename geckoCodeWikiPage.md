@@ -9664,7 +9664,7 @@ $Disable Player Reflections on FoD [UnclePunch]
 <div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
 
 
-$Disable Stadium Screen [UnclePunch]
+$Disable Pokemon Stadium Screen [UnclePunch]
 *Makes the Jumbotron on Pokemon Stadium Invisible
 041D2AC8 38800000 #0 Chance for Close-up View.asm
 041D2AC0 38A00000 #0 Chance for Full View.asm

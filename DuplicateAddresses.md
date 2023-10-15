@@ -684,18 +684,6 @@
 - Found in code: Full Resolution FoD Reflection [UnclePunch]
 - Found in code: HQ Fountain of Dreams Reflections [UnclePunch, PKFreeZZy]
 
-## Duplicate address: 0x001D2AC0
-- Found in code: Disable Pokemon Stadium Screen [UnclePunch]
-- Found in code: Disable Stadium Screen [UnclePunch]
-
-## Duplicate address: 0x001D2AC8
-- Found in code: Disable Pokemon Stadium Screen [UnclePunch]
-- Found in code: Disable Stadium Screen [UnclePunch]
-
-## Duplicate address: 0x001D2B98
-- Found in code: Disable Pokemon Stadium Screen [UnclePunch]
-- Found in code: Disable Stadium Screen [UnclePunch]
-
 ## Duplicate address: 0x001F0188
 - Found in code: Disable cars on Mute City (1.02)[flieskiller]
 - Found in code: Mute City - Racers no longer affect the match [??]
