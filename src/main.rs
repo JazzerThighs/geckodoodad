@@ -4,6 +4,7 @@ use rayon::prelude::*;
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_json;
+use std::collections::HashMap;
 // use std::collections::HashMap;
 use std::path::Path;
 use std::{env, fs};
@@ -70,7 +71,7 @@ impl GeckoCode {
                         base_mem_address
                     };
 
-                    Some(vec![format!("{:07X}", final_address)])
+                    Some(vec![format!("0x{:08X}", final_address)])
                 }
                 "C2" | "C3" => {
                     let mut base_mem_address = i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
@@ -91,7 +92,7 @@ impl GeckoCode {
 
                         // Compute the range of memory addresses for the injection
                         let addresses: Vec<String> = (0..offset)
-                            .map(|i| format!("{:07X}", base_mem_address + i))
+                            .map(|i| format!("0x{:08X}", base_mem_address + i))
                             .collect();
 
                         Some(addresses)
@@ -247,4 +248,51 @@ fn main() {
     fs::write("RawUnfilteredGeckoCodes.json", json_output).expect("Unable to write to file");
 
     println!("Successfully saved Gecko Codes to RawUnfilteredGeckoCodes.json");
+
+    // Deserialize the stored JSON file
+    let json_content = fs::read_to_string("RawUnfilteredGeckoCodes.json").expect("Unable to read JSON file");
+    let deserialized_gecko_codes: Vec<GeckoCode> = serde_json::from_str(&json_content).expect("Failed to deserialize JSON");
+
+    // Identify duplicate addresses
+    let mut address_map: HashMap<String, Vec<String>> = HashMap::new();
+
+    for gecko_code in &deserialized_gecko_codes {
+        if let Some(addresses) = &gecko_code.addresses {
+            for address in addresses {
+                address_map.entry(address.clone())
+                    .or_insert_with(Vec::new)
+                    .push(gecko_code.header.clone());
+            }
+        }
+    }
+
+    // Post-process the address_map
+    address_map.retain(|_, headers| {
+        headers.sort();  // Sort the headers for consistent comparison
+        headers.dedup(); // Remove duplicate headers
+
+        // Only retain the address if there's more than one unique header
+        headers.len() > 1
+    });
+
+    // Sort the addresses
+    let mut sorted_addresses: Vec<String> = address_map.keys().cloned().collect();
+    sorted_addresses.sort();
+
+    // Store results in a markdown formatted string
+    let mut md_content = String::new();
+    for address in sorted_addresses {
+        if let Some(code_headers) = address_map.get(&address) {
+            md_content += &format!("## Duplicate address: {}\n", address);
+            for header in code_headers {
+                md_content += &format!("- Found in code: {}\n", header);
+            }
+            md_content += "\n";  // Add an extra newline for spacing
+        }
+    }
+
+    // Save the results to a markdown file
+    fs::write("DuplicateAddresses.md", md_content).expect("Unable to write to DuplicateAddresses.md");
+
+    println!("Successfully saved sorted and cleaned-up duplicate addresses to DuplicateAddresses.md");
 }
