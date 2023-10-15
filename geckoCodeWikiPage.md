@@ -1982,10 +1982,10 @@ C21A4B70 00000004
 </div>
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="6-player match crash prevent" data-collapsetext="Click to collapse">
+<div class="mw-collapsible mw-collapsed" data-expandtext="6-player match Crash Prevent" data-collapsetext="Click to collapse">
 
 
-$6-player match crash prevent [wParam]
+$6-player match Crash Prevent [wParam]
 *Debug Required. P5+6 are CPU, 5 - Char from ALL_CHAR, kind from ALL_KIND, 6 - Char from Publicity, kind from ALL_KIND
 01C43642 08000000
 0430009C 38000003
@@ -9760,7 +9760,7 @@ $Disable Final Destination Background Transitions (1.02) [Achilles, Dan Salvato]
 <div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
 
 
-$Mushroom Kingdom / Underground Maze crash prevent (Debug Mode)
+$Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
 01C415E2 08000000
 0446B4A4 3F800000
 0446B4A0 3F800000
@@ -9774,7 +9774,7 @@ $Mushroom Kingdom / Underground Maze crash prevent (Debug Mode)
 <div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
 
 
-$Mushroom Kingdom / Underground Maze crash prevent (Debug Mode)
+$Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
 01C415E2 08000000
 0446B4A4 3F800000
 0446B4A0 3F800000

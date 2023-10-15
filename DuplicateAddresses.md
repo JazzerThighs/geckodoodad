@@ -503,7 +503,7 @@
 - Found in code: Add 2 CPU Ice Climbers to Every Melee with Proper Score Keeping [wParam]
 
 ## Duplicate address: 0167A84
-- Found in code: 6-player match crash prevent [wParam]
+- Found in code: 6-player match Crash Prevent [wParam]
 - Found in code: Add 2 CPU Ice Climbers to Every Melee with Proper Score Keeping [wParam]
 
 ## Duplicate address: 016B480
@@ -536,12 +536,12 @@
 - Found in code: Single Button Mode - B Only - 2 stocks 5 minutes [Krohnos]
 
 ## Duplicate address: 016EA2C
-- Found in code: 6-player match crash prevent [wParam]
+- Found in code: 6-player match Crash Prevent [wParam]
 - Found in code: Add 2 CPU Ice Climbers to Every Melee [wParam]
 - Found in code: Add 2 CPU Ice Climbers to Every Melee with Proper Score Keeping [wParam]
 
 ## Duplicate address: 0179188
-- Found in code: 6-player match crash prevent [wParam]
+- Found in code: 6-player match Crash Prevent [wParam]
 - Found in code: Add 2 CPU Ice Climbers to Every Melee [wParam]
 - Found in code: Add 2 CPU Ice Climbers to Every Melee with Proper Score Keeping [wParam]
 
@@ -1007,18 +1007,6 @@
 ## Duplicate address: 0455CBC
 - Found in code: P4 Infinite Stock
 - Found in code: P4 No Stocks
-
-## Duplicate address: 046B49C
-- Found in code: Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
-- Found in code: Mushroom Kingdom / Underground Maze crash prevent (Debug Mode)
-
-## Duplicate address: 046B4A0
-- Found in code: Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
-- Found in code: Mushroom Kingdom / Underground Maze crash prevent (Debug Mode)
-
-## Duplicate address: 046B4A4
-- Found in code: Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
-- Found in code: Mushroom Kingdom / Underground Maze crash prevent (Debug Mode)
 
 ## Duplicate address: 046B6CA
 - Found in code: Infinite Time
