@@ -234,6 +234,39 @@ impl HexAddress {
     }
 }
 
+fn parse_duplicate_addresses_md(file_content: &str) -> HashMap<String, Vec<String>> {
+    let mut result = HashMap::new();
+    let lines: Vec<&str> = file_content.lines().collect();
+    let mut current_address = String::new();
+
+    for line in lines {
+        if line.starts_with("## Duplicate address:") {
+            current_address = line.trim_start_matches("## Duplicate address: ").to_string();
+        } else if line.starts_with("- Found in code:") {
+            let code_name = line.trim_start_matches("- Found in code: ").to_string();
+            result.entry(current_address.clone()).or_insert_with(Vec::new).push(code_name);
+        }
+    }
+
+    result
+}
+
+fn group_by_code_headers(address_map: HashMap<String, Vec<String>>) -> HashMap<Vec<String>, Vec<String>> {
+    let mut result: HashMap<Vec<String>, Vec<String>> = HashMap::new();
+
+    for (address, codes) in address_map.iter() {
+        let codes_sorted = {
+            let mut sorted_codes = codes.clone();
+            sorted_codes.sort();
+            sorted_codes
+        };
+
+        result.entry(codes_sorted).or_insert_with(Vec::new).push(address.clone());
+    }
+
+    result
+}
+
 fn main() {
     env::set_var("RUST_BACKTRACE", "full");
 
@@ -295,4 +328,26 @@ fn main() {
     fs::write("DuplicateAddresses.md", md_content).expect("Unable to write to DuplicateAddresses.md");
 
     println!("Successfully saved sorted and cleaned-up duplicate addresses to DuplicateAddresses.md");
+
+    // Parse DuplicateAddresses.md and consolidate entries
+    let md_content = fs::read_to_string("DuplicateAddresses.md").expect("Unable to read DuplicateAddresses.md");
+    let parsed_data = parse_duplicate_addresses_md(&md_content);
+    let grouped_data = group_by_code_headers(parsed_data);
+
+    let mut new_md_content = String::new();
+    for (code_names, addresses) in grouped_data.iter() {
+        new_md_content += &format!("## Codes:\n");
+        for code_name in code_names {
+            new_md_content += &format!("- {}\n", code_name);
+        }
+        new_md_content += "### Shared addresses:\n";
+        for address in addresses {
+            new_md_content += &format!("- {}\n", address);
+        }
+        new_md_content += "\n";
+    }
+
+    fs::write("ConsolidatedAddresses.md", new_md_content).expect("Unable to write to ConsolidatedAddresses.md");
+
+    println!("Successfully saved consolidated addresses to ConsolidatedAddresses.md");
 }
