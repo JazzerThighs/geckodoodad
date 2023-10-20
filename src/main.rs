@@ -61,12 +61,51 @@ impl GeckoCode {
             let opcode = &hex_words[index][0..2];
 
             match opcode {
-                "04" | "05" | "C2" | "C3" => {
+                "00" | "01" | // Direct RAM Writes: 8 bit Write & Fill
+                "02" | "03" | // Direct RAM Writes: 16 bit Write & Fill
+                "04" | "05" | // Direct RAM Writes: 32 bits Write
+                "06" | "07" | // Direct RAM Writes: String Write (Patch Code)
+                "08" | "09" | // Direct RAM Writes: Slider/Multi Skip (Serial)
+                "20" | "21" | // If Codes: 32 bits (endif, then) If equal
+                "22" | "23" | // If Codes: 32 bits (endif, then) If not equal
+                "24" | "25" | // If Codes: 32 bits (endif, then) If greater than (unsigned)
+                "26" | "27" | // If Codes: 32 bits (endif, then) If lower than (unsigned)
+                "28" | "29" | // If Codes: 16 bits (endif, then) If equal
+                "2A" | "2B" | // If Codes: 16 bits (endif, then) If not equal
+                "2C" | "2D" | // If Codes: 16 bits (endif, then) If greater than
+                "2E" | "2F" | // If Codes: 16 bits (endif, then) If lower than
+                "A0" | "A1" | // Gecko Register: 16 bits (endif, then) If equal
+                "A2" | "A3" | // Gecko Register: 16 bits (endif, then) If not equal
+                "A4" | "A5" | // Gecko Register: 16 bits (endif, then) If greater
+                "A6" | "A7" | // Gecko Register: 16 bits (endif, then) If lower
+                "C2" | "C3" | // ASM Codes: Insert ASM
+                "C6" | "C7" | // ASM Codes: Create a branch
+                "F2" | "F3"   // Gecko 1.8+ Only: Insert ASM With 16 bit XOR Checksum
+                => {
                     let mut base_mem_address =
                         i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
 
                     // Account for if the memory address overflows into the OpCode hex
-                    if opcode == "05" || opcode == "C3" {
+                    if opcode == "01" || 
+                    opcode == "03" ||
+                    opcode == "05" ||
+                    opcode == "07" ||
+                    opcode == "09" ||
+                    opcode == "21" ||
+                    opcode == "23" ||
+                    opcode == "25" ||
+                    opcode == "27" ||
+                    opcode == "29" ||
+                    opcode == "2B" ||
+                    opcode == "2D" ||
+                    opcode == "2F" ||
+                    opcode == "A1" ||
+                    opcode == "A3" ||
+                    opcode == "A5" ||
+                    opcode == "A7" ||
+                    opcode == "C3" ||
+                    opcode == "C7" || 
+                    opcode == "F3" {
                         base_mem_address += 0x1000000;
                     }
 
