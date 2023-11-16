@@ -60859,9 +60859,11 @@
     "categories": []
   },
   {
-    "header": "Land-Cancel Zelda Neutral B",
+    "header": "Land-Cancel Zelda Neutral B [UnclePunch]",
     "version": "",
-    "authors": null,
+    "authors": [
+      "UnclePunch"
+    ],
     "description": [],
     "hex_lines": [
       "0413aa14 38600000",
@@ -60877,6 +60879,81 @@
     "addresses": [
       "0x0013AA14",
       "0x0013AC70"
+    ],
+    "categories": []
+  },
+  {
+    "header": "Powershield Only [UnclePunch]",
+    "version": "",
+    "authors": [
+      "UnclePunch"
+    ],
+    "description": [
+      "it kind of removes shield dropping altogether"
+    ],
+    "hex_lines": [
+      "04099274 80040668 #NoBufferRollForwardFromDash.asm",
+      "C2093E2C 00000005 #NoHoldShield.asm",
+      "7FC3F378 3C008009",
+      "60002C54 7C0903A6",
+      "4E800421 3C008009",
+      "60003EA4 7C0903A6",
+      "4E800420 00000000",
+      "04091AFC 41820078 #NoBufferShield/Dash.asm",
+      "04091A64 41820060 #NoBufferShield/Wait.asm",
+      "04091B10 60000000 #NoLightShield/Dash.asm",
+      "04091A78 60000000 #NoLightShield/Wait.asm",
+      "04093F14 48000084 #NoShieldBubble/NoCheckShieldFlag.asm",
+      "04091EB8 60000000 #NoShieldBubble/NoCheckShieldFlag2.asm",
+      "04093B20 60000000 #NoShieldBubble/NoShieldBubble1.asm",
+      "04093D84 60000000 #NoShieldBubble/NoShieldBubble2.asm"
+    ],
+    "hex_words": [
+      "04099274",
+      "80040668",
+      "C2093E2C",
+      "00000005",
+      "7FC3F378",
+      "3C008009",
+      "60002C54",
+      "7C0903A6",
+      "4E800421",
+      "3C008009",
+      "60003EA4",
+      "7C0903A6",
+      "4E800420",
+      "00000000",
+      "04091AFC",
+      "41820078",
+      "04091A64",
+      "41820060",
+      "04091B10",
+      "60000000",
+      "04091A78",
+      "60000000",
+      "04093F14",
+      "48000084",
+      "04091EB8",
+      "60000000",
+      "04093B20",
+      "60000000",
+      "04093D84",
+      "60000000"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "0x00099274",
+      "0x00093E2C",
+      "0x00000005",
+      "0x00000000",
+      "0x00091AFC",
+      "0x00091A64",
+      "0x00091B10",
+      "0x00091A78",
+      "0x00093F14",
+      "0x00091EB8",
+      "0x00093B20",
+      "0x00093D84"
     ],
     "categories": []
   }

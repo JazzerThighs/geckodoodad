@@ -240,6 +240,7 @@
 - Found in code: Port 2 Master Control (R+D-Pad Left - HMN, R+D-Pad Right - CPU)[Jupiter_]
 - Found in code: Port 3 Master Control (Z+D-Pad Left - HMN, Z+D-Pad Right - CPU)[Jupiter_]
 - Found in code: Port 4 Master Control (Y+D-Pad Left - HMN, Y+D-Pad Right - CPU)[Jupiter_]
+- Found in code: Powershield Only [UnclePunch]
 - Found in code: Press B to Explode Yoshi Egg [UnclePunch]
 - Found in code: Press B to Explode Yoshi Egg and Teleport w/ Momentum Based on Angle+Distance From Egg [UnclePunch]
 - Found in code: Press B to Explode Yoshi Egg and Teleport w/ No Momentum [UnclePunch]
@@ -576,6 +577,7 @@
 - Found in code: No Electric SFX [Altafen]
 - Found in code: Polling Drift + Full Visual Buffer Fixes [tauKhan]
 - Found in code: Polling Drift and Full Visual Buffer Fixes - Wii Only [tauKhan]
+- Found in code: Powershield Only [UnclePunch]
 - Found in code: Press B to Explode Yoshi Egg [UnclePunch]
 - Found in code: Stock Control/Crew Battle (1.02) [Jorgasms]
 - Found in code: Swap Z and X for Port 1 on LAN [Altimor]
@@ -1982,6 +1984,18 @@
 - Found in code: Stealth UCF v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]
 - Found in code: UCF Slippi v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]
 - Found in code: Universal Controller Fix v0.8 (NTSC 1.02)
+
+## Duplicate address: 0x00091A64
+- Found in code: Disable Shielding (1.02) [Achilles1515]
+- Found in code: Powershield Only [UnclePunch]
+
+## Duplicate address: 0x00091AFC
+- Found in code: Disable Shielding (1.02) [Achilles1515]
+- Found in code: Powershield Only [UnclePunch]
+
+## Duplicate address: 0x00093B20
+- Found in code: All Characters Have Yoshi Shield Mechanics v2 [UnclePunch]
+- Found in code: Powershield Only [UnclePunch]
 
 ## Duplicate address: 0x0009694C
 - Found in code: After Third Jump State Modifier [wParam]
