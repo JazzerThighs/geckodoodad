@@ -1,34 +1,5 @@
 [
   {
-    "header": "Example Code Name (version) [Author 1, Author 2, etc.]",
-    "version": "",
-    "authors": [
-      "Author 1",
-      "Author 2",
-      "etc."
-    ],
-    "description": [
-      "Description of the code's purpose.",
-      "Description may also contain complimentary information such as Code Options, etc."
-    ],
-    "hex_lines": [
-      "01234567 89ABCDEF #Developer Comments",
-      "01234567 89abxxyy #Developer Comments may also contain pointers to XX, YY, etc."
-    ],
-    "hex_words": [
-      "01234567",
-      "89ABCDEF",
-      "01234567",
-      "89ABXXYY"
-    ],
-    "deprecated": false,
-    "addresses": [
-      "0x01234567",
-      "0x01234567"
-    ],
-    "categories": []
-  },
-  {
     "header": "Polling Drift Fix - GameCube or Wii [Dan Salvato]",
     "version": "",
     "authors": [

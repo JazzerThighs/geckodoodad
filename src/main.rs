@@ -177,7 +177,45 @@ impl GeckoCode {
     }
 }
 
-fn extract_gecko_codes(input: &str) -> Vec<GeckoCode> {
+fn extract_and_save_whole_gecko_codes(file_content: &str) {
+    let blocks: Vec<&str> = file_content.split("\n$").collect();
+    let mut whole_gecko_codes = String::new();
+
+    for block in blocks.iter() {
+        if let Some(end_index) = block.find("\n</pre>") {
+            let formatted_block = format!("${}\n\n", &block[..end_index]);
+            whole_gecko_codes.push_str(&formatted_block);
+        }
+    }
+
+    fs::write("RawWholeGeckoCodes.txt", whole_gecko_codes)
+        .expect("Unable to write to RawWholeGeckoCodes.txt");
+
+    println!("Successfully saved whole Gecko Codes to RawWholeGeckoCodes.txt");
+
+    // Read back the file just written
+    let written_content = fs::read_to_string("RawWholeGeckoCodes.txt")
+        .expect("Unable to read RawWholeGeckoCodes.txt");
+
+    // Identify and remove duplicate blocks
+    let mut block_set = std::collections::HashSet::new();
+    let mut unique_blocks = String::new();
+
+    for block in written_content.split("\n\n") {
+        if !block.trim().is_empty() && block_set.insert(block) {
+            unique_blocks.push_str(block);
+            unique_blocks.push_str("\n\n");
+        }
+    }
+
+    // Rewrite the file without duplicates
+    fs::write("RawWholeGeckoCodes.txt", unique_blocks.trim_end())
+        .expect("Unable to rewrite RawWholeGeckoCodes.txt without duplicates");
+
+    println!("Successfully removed duplicates and saved to RawWholeGeckoCodes.txt");
+}
+
+fn extract_and_destructure_gecko_codes(input: &str) -> Vec<GeckoCode> {
     let blocks: Vec<&str> = input.split("\n$").collect();
 
     println!("Total blocks found: {}", blocks.len());
@@ -294,18 +332,20 @@ fn main() {
     let file_path = Path::new("geckoCodeWikiPage.md"); //NOTE: When updating the raw .md file from the Wiki, use Shift+Tab on the whole document to remove the leading whitespace from every line of text.
     let file_content = fs::read_to_string(&file_path).expect("Unable to read file");
 
-    let gecko_codes = extract_gecko_codes(&file_content);
+    extract_and_save_whole_gecko_codes(&file_content);
+
+    let gecko_codes = extract_and_destructure_gecko_codes(&file_content);
 
     let json_output =
         serde_json::to_string_pretty(&gecko_codes).expect("Failed to serialize to JSON");
 
-    fs::write("RawUnfilteredGeckoCodes.json", json_output).expect("Unable to write to file");
+    fs::write("RawDestructuredGeckoCodes.json", json_output).expect("Unable to write to file");
 
-    println!("Successfully saved Gecko Codes to RawUnfilteredGeckoCodes.json");
+    println!("Successfully saved Gecko Codes to RawDestructuredGeckoCodes.json");
 
     // Deserialize the stored JSON file
     let json_content =
-        fs::read_to_string("RawUnfilteredGeckoCodes.json").expect("Unable to read JSON file");
+        fs::read_to_string("RawDestructuredGeckoCodes.json").expect("Unable to read JSON file");
     let deserialized_gecko_codes: Vec<GeckoCode> =
         serde_json::from_str(&json_content).expect("Failed to deserialize JSON");
 
