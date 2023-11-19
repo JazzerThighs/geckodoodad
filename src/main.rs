@@ -208,11 +208,11 @@ fn extract_and_save_whole_gecko_codes(file_content: &str) {
         }
     }
 
-    // Rewrite the file without duplicates
-    fs::write("RawWholeGeckoCodes.txt", unique_blocks.trim_end())
-        .expect("Unable to rewrite RawWholeGeckoCodes.txt without duplicates");
+    // Write the new file without duplicates
+    fs::write("FilteredWholeGeckoCodes.txt", unique_blocks.trim_end())
+        .expect("Unable to write FilteredWholeGeckoCodes.txt");
 
-    println!("Successfully removed duplicates and saved to RawWholeGeckoCodes.txt");
+    println!("Successfully removed duplicates and saved to FilteredWholeGeckoCodes.txt");
 }
 
 fn extract_and_destructure_gecko_codes(input: &str) -> Vec<GeckoCode> {
