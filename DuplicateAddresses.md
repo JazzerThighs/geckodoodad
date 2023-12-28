@@ -115,6 +115,7 @@
 - Found in code: G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 - Found in code: GaW Bucket Fill Amount Based on Damage of Projectile [UnclePunch]
 - Found in code: GaW Modulo 10 Hammer [UnclePunch]
+- Found in code: Game! Splash is Half-Sized [Altafen, Dan Salvato]
 - Found in code: Ganon Float v1.0 [UnclePunch]
 - Found in code: Get Hit = Die [Altafen]
 - Found in code: Giga Bowser & Sandbag Always Fall On Match Start [Achilles]
@@ -1384,6 +1385,10 @@
 - Found in code: Polling Drift Fix - GameCube or Wii [Dan Salvato]
 - Found in code: Polling Drift Fix [Dan Salvato]
 - Found in code: Polling Drift and Full Visual Buffer Fixes - Wii Only [tauKhan]
+
+## Duplicate address: 0x00020004
+- Found in code: Game! Splash is Half-Sized [Altafen, Dan Salvato]
+- Found in code: Unfreeze Game End (from 20XXTE) [Altafen, Dan Salvato]
 
 ## Duplicate address: 0x00023FFC
 - Found in code: Game Music OFF [UnclePunch]
@@ -2908,6 +2913,10 @@
 ## Duplicate address: 0x003E0F48
 - Found in code: Full Resolution FoD Reflection [UnclePunch]
 - Found in code: HQ Fountain of Dreams Reflections [UnclePunch, PKFreeZZy]
+
+## Duplicate address: 0x003F9704
+- Found in code: Game! Splash is Half-Sized [Altafen, Dan Salvato]
+- Found in code: Unfreeze Game End (from 20XXTE) [Altafen, Dan Salvato]
 
 ## Duplicate address: 0x003FB2E8
 - Found in code: Debug Menu - Level Select Extension [donny2112]

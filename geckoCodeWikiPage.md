@@ -21711,6 +21711,15 @@ C2093E2C 00000005 #NoHoldShield.asm
 04093B20 60000000 #NoShieldBubble/NoShieldBubble1.asm
 04093D84 60000000 #NoShieldBubble/NoShieldBubble2.asm
 </pre>
+<pre>
+$Game! Splash is Half-Sized [Altafen, Dan Salvato]
+223f9704 00000000 # makes the "Game!" text half size (from here to the end)
+82200000 803f9704
+48001000 00000000
+18000020 3f000000
+20020004 00000000
+e2000001 00000000
+</pre>
 
 </div>
 

@@ -60927,5 +60927,46 @@
       "0x00093D84"
     ],
     "categories": []
+  },
+  {
+    "header": "Game! Splash is Half-Sized [Altafen, Dan Salvato]",
+    "version": "",
+    "authors": [
+      "Altafen",
+      "Dan Salvato"
+    ],
+    "description": [],
+    "hex_lines": [
+      "223f9704 00000000 # makes the \"Game!\" text half size (from here to the end)",
+      "82200000 803f9704",
+      "48001000 00000000",
+      "18000020 3f000000",
+      "20020004 00000000",
+      "e2000001 00000000"
+    ],
+    "hex_words": [
+      "223F9704",
+      "00000000",
+      "82200000",
+      "803F9704",
+      "48001000",
+      "00000000",
+      "18000020",
+      "3F000000",
+      "20020004",
+      "00000000",
+      "E2000001",
+      "00000000"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "0x003F9704",
+      "0x00000000",
+      "0x00000000",
+      "0x00020004",
+      "0x00000000",
+      "0x00000000"
+    ],
+    "categories": []
   }
 ]
