@@ -7,13 +7,13 @@ All codes are for ''SSBM NTSC 1.02'' (the Tournament Standard revision of ''SSBM
 *[https://web.archive.org/web/20191001120524/https://www.geckocodes.org/index.php?arsenal=1 Gecko Codetype Documentation]: Archived List of Gecko Codetypes for ''GameCube'' and ''Wii'' games.
 *[https://www.cs.uaf.edu/2011/fall/cs301/lecture/11_21_PowerPC.html GCC PowerPC Assembly Quick Reference ("Cheat Sheet")]: Handy Guide to PowerPC Assembly syntax specifically for the ''GameCube'''s programming environment.
 
-To learn more about Gecko Codes and Basic GameCube ASM, visit [https://www.youtube.com/watch?v=8eOGRZrJ4CU&ab_channel=LittleCoaks this video].
+To learn more about Gecko Codes and Basic GameCube ASM, visit [https://www.youtube.com/watch?v=8eOGRZrJ4CU&amp;ab_channel=LittleCoaks this video].
 *[https://github.com/JLaferri/gecko Gecko] is a program to assist in the creation of Gecko Codes. 
 *[https://smashboards.com/threads/melee-code-manager-v4-4-1-easily-add-mods-to-your-game.416437/ Melee Code Manager] by DRGN is a program for converting codes, and installing them into a ''SSBM'' ISO.
 *[https://smashboards.com/threads/melee-modding-wizard-beta-v0-9-3.517823/ Melee Modding Wizard] by DRGN is a more updated program that combines the features of DAT Texture Wizard and Melee Code Manager.
 *[https://github.com/AltimorTASDK/cpp2gecko CPP2Gecko] by Altimor is a C/C++ to gecko code build system created for Super Smash Bros. Melee.
 *[https://github.com/MeleeWorkshop/wiki2gecko Wiki2Gecko] by ribbanya, made to parse this page and output a list of the present Gecko Codes.
-*[https://github.com/JazzerThighs/geckodoodad geckodoodad] & [https://codepen.io/JazzerThighs/pen/xxmwypy geckovioodad] by JazzerThighs, made to parse this page and output a list of every Memory Address that each Gecko Code Injects/Overwrites on the ''SSBM'' Disc, and an accompanying interface to search for all Gecko Codes by Memory Address used, in order to determine conflicting allocations. Used ''Wiki2Gecko'' as a guide.
+*[https://github.com/JazzerThighs/geckodoodad geckodoodad] &amp; [https://codepen.io/JazzerThighs/pen/xxmwypy geckovioodad] by JazzerThighs, made to parse this page and output a list of every Memory Address that each Gecko Code Injects/Overwrites on the ''SSBM'' Disc, and an accompanying interface to search for all Gecko Codes by Memory Address used, in order to determine conflicting allocations. Used ''Wiki2Gecko'' as a guide.
 
 ====== Gecko Code Standard Format ======
 
@@ -24,12 +24,12 @@ To learn more about Gecko Codes and Basic GameCube ASM, visit [https://www.youtu
  01234567 89abxxyy #Developer Comments may also contain pointers to XX, YY, etc.
 
 
-=== <big><big><big>⚠</big></big> ''It should be noted that '''Gecko Codes''' may or may not cause '''De-synchronizations''' when playing Online. Use with Caution!'' <big><big>⚠</big></big></big> ===
+=== &lt;big&gt;&lt;big&gt;&lt;big&gt;⚠&lt;/big&gt;&lt;/big&gt; ''It should be noted that '''Gecko Codes''' may or may not cause '''De-synchronizations''' when playing Online. Use with Caution!'' &lt;big&gt;&lt;big&gt;⚠&lt;/big&gt;&lt;/big&gt;&lt;/big&gt; ===
 
 == Codes for a Competitive Setting ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Visual Buffer & Polling Drift Fixes (Lag Reduction Codes)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Visual Buffer &amp; Polling Drift Fixes (Lag Reduction Codes)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Polling Drift Fix - GameCube or Wii [Dan Salvato]
 *Only have 1 "Visual Buffer and/or Polling Drift Fix" code enabled at a time.
 *For Use on a GameCube or Wii with a CRT Screen.
@@ -41,8 +41,8 @@ C21A4DA0 00000003 #Polling Drift Fix [Dan Salvato]
 4E800421 00000000
 041A4DB4 60000000
 04019860 4BFFFD9D
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Polling Drift and Half Visual Buffer Fixes - GameCube or Wii [tauKhan, UnclePunch]
 *Only have 1 "Visual Buffer and/or Polling Drift Fix" code enabled at a time.
 *For Use on a GameCube or Wii with a Non-CRT Screen.
@@ -108,10 +108,10 @@ C21A4570 00000006 #External/Lag Reduction/Force HD/480pDeflickerOff.asm
 618CF588 7D8903A6
 4E800421 38600000
 60000000 00000000 
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Polling Drift and Full Visual Buffer Fixes - Wii Only [tauKhan]
-*Only have 1 "Visual Buffer & Polling Drift Fix" code enabled at a time.
+*Only have 1 "Visual Buffer &amp; Polling Drift Fix" code enabled at a time.
 *For Use on a Wii with a Non-CRT Screen.
 *Removes polling drift phenomenon causing variable input lag.
 *Prevents visual buffer from accruing a full frame of lag.
@@ -131,13 +131,13 @@ C21A5018 00000005
 4D820420 00000000
 04218D68 C8228000
 04397878 4800020C
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Universal Controller Fix v0.80 (Console)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Universal Controller Fix v0.80 (Console)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Universal Controller Fix v0.8 (NTSC 1.02)
 C20C9A44 0000002B
 D01F002C 7C0802A6
@@ -273,12 +273,12 @@ FC011040 40800074
 BA810008 80010104
 38210100 7C0803A6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Universal Controller Fix v0.80 (Slippi)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Universal Controller Fix v0.80 (Slippi)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $UCF Slippi v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]
 *Non-Stealth - Indicator of UCF version on Character Select Screen
 C20C9A44 0000002B #External/UCF 0.8/Logic/UCF DB.asm
@@ -415,12 +415,12 @@ C3898000 3EE66666
 BA8100B0 800100E4
 382100E0 7C0803A6
 38980000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Stealth Universal Controller Fix v0.80 (Slippi)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Stealth Universal Controller Fix v0.80 (Slippi)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Stealth UCF v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]
 *Stealth - Does not show indicator of UCF on Character Select Screen
 C20C9A44 0000002B #External/UCF 0.8/Logic/UCF DB.asm
@@ -530,13 +530,13 @@ FC011040 40800074
 BA8100B0 800100E4
 382100E0 7C0803A6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Stage Striking Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Stage Striking Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Stage Striking (Whites-out Struck Stages) [Sham Rock]
 C225A3BC 00000025
 39E00001 3E008046
@@ -576,8 +576,8 @@ C225A3BC 00000025
 41A0FF4C 39EF0001
 2C0F0005 41A0FEE8
 C022C9E8 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Stage Striking (Transparent Struck Stages), Method 1 [Sham Rock, Achilles,]
 C225A3BC 00000026
 39E00001 3E008046
@@ -618,8 +618,8 @@ C225A3BC 00000026
 39EF0001 2C0F0005
 41A0FEE4 C022C9E8
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Stage Striking (Transparent Struck Stages), Method 2 [Dan Salvato]
 C2259C40 0000001F
 39600000 3D408045
@@ -653,13 +653,13 @@ C2259C40 0000001F
 4182000C 38630001
 4BFFFF4C 28000000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="X+Y Disables Start (For Controller Reset)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="X+Y Disables Start (For Controller Reset)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $X + Y Disables Start [Dan Salvato]
 C2376BB4 00000009
 38A00000 38C1002C
@@ -671,13 +671,13 @@ C2376BB4 00000009
 38A50001 2C050003
 4081FFD0 8081002C
 80010030 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Tournament QoL" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Tournament QoL" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Full tournament codes [Achilles, UnclePunch]
 *Tournament mods to improve fair competition
 C216E510 00000098 #External/NeutralSpawn/NeutralSpawn.asm
@@ -941,8 +941,8 @@ C2259C40 0000001F #External/Stage Striking/Stage_Striking.asm
 4182000C 38630001
 4BFFFF4C 28000000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Stealth tournament codes [Achilles, UnclePunch]
 *Tournament mods to improve fair competition
 C216E510 00000098 #External/NeutralSpawn/NeutralSpawn.asm
@@ -1115,12 +1115,12 @@ C22FCCD8 0000000D #External/Hide Nametag When Invisible/Hide Nametag When Invisi
 04261B1C 60000000 #External/Closing CSS Door Preserves Nametag/On Window Close/Skip Nametag ID Reset.asm
 04261B30 60000000 #External/Closing CSS Door Preserves Nametag/On Window Close/Skip isUsingNametag Bool Reset.asm
 042605FC 38C00003 #External/Unplugging Closes CSS Door/Unplugging Closes CSS Door.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Neutral Spawns for 1v1 and 2v2" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Neutral Spawns for 1v1 and 2v2" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Neutral Spawns for 1v1 and 2v2 (1.02) [Achilles, Jorgasms]
 *All players/teams spawn in Neutral Stage Positions regardless of Port Permutations.
 C2263058 00000030
@@ -1199,13 +1199,13 @@ C21C0A48 0000001A
 960F4748 924F0004
 962F0040 924F0004
 7D8803A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Tournament Safety Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Tournament Safety Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Tournament safety codes [Fizzi]
 *Codes to ensure integrity of tournament matches
 C222F958 00000004 #External/FixedDamageRatio/SkipInputHandling.asm
@@ -1219,12 +1219,12 @@ C2167F40 00000005 #External/PreventPauseSoftLocks/ForcePauseOn.asm
 2C000004 4181000C
 881E000A 48000008
 38000001 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hold Start to Pause" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hold Start to Pause" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hold to Pause [UnclePunch]
 *Hold start for 30 frames to pause
 C21A12A4 00000002
@@ -1246,12 +1246,12 @@ C216BDEC 0000000F
 3D808016 618CBE54
 7D8903A6 4E800420
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="LRAStart Resets Game While Pause Off" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="LRAStart Resets Game While Pause Off" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $L+R+A+Start Resets Game While Pause Is Off [Sickolas]
 C2050D68 0000000E
 3E808045 6294BF18
@@ -1268,13 +1268,13 @@ C2050D68 0000000E
 3D80801A 618C4510
 7D8903A6 4E800421
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Wobbling" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Wobbling" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Wobbling [UnclePunch]
 *Breaks Popo's grab after four pummels if the victim has not left hitstun since the first pummel.
 C20DB880 00000003 #External/PreventWobbling/Init Wobble Count Air.asm
@@ -1342,12 +1342,12 @@ BA8100B0 800100E4
 3D808008 618CF0C8
 7D8903A6 4E800420
 801B0010 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Ledge-Grab Limit" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Ledge-Grab Limit" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Ledge Grab Limit [UnclePunch]
 *Enforces ledge grab limit
 C21A5E90 00000002 #Ledge Grab Limit
@@ -1460,13 +1460,13 @@ D8210080 83A10084
 80010104 38210100
 7C0803A6 8803000F
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Split Audio Channels 2.0" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Split Audio Channels 2.0" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Split Audio Channels 2.0 (v1.02) [UnclePunch]
 *This code splits the game music onto the left channel, and the game sounds onto right channel.
 *Game must be set to Mono to take effect, stereo is preserved
@@ -1490,13 +1490,13 @@ B07F0230 B07F0238
 B07F0224 B07F022C
 B07F0234 807A000C
 389F0224 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Stock Control/ Crew Battle Replaces Handicap Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Stock Control/ Crew Battle Replaces Handicap Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Stock Control/Crew Battle (1.02) [Jorgasms]
 *Essentially, the hack gets rid of damage modifier for handicap and replaces it with controllable stocks so that one player can spawn with say 6 stocks and another can spawn with 4.
 *When handicap is set to "ON" you can set custom stocks per player (1 stock - 9 stocks).
@@ -1566,13 +1566,13 @@ C2033CC4 0000000A
 9A4E1D20 8A4F006C
 9A4E2BB0 48000008
 98A3008E 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="PAL Toggle" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="PAL Toggle" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $SSBM NTSC 1.02-to-PAL Game-play Converter (1.02) [UnclePunch]
 *Includes all character balances, Samus Cannot Bomb Jump Out of Zair, Remove Extender, DK Keeps Charge When Hit During Up B, Detection Bubbles Do Not Skip Hurtbox Collision Check, Freeze Glitch Fix, PAL Stock Icons and PAL CSS Indicator
 C2068F30 0000009B #External/PAL/Core/Character DAT Patcher.asm
@@ -1832,13 +1832,13 @@ FFFFFB00 00000000
 3EFB8888 387F0718
 60000000 00000000
 044DEC14 01000000 #External/PAL/Toggle/PALToggleEnable.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Offline Only)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Offline Only)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 1 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -1848,8 +1848,8 @@ C23775C0 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190002
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 1 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -1859,8 +1859,8 @@ C23775C0 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190002
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 2 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -1870,8 +1870,8 @@ C23775C8 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190003
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 2 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -1881,8 +1881,8 @@ C23775C8 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190003
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 3 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -1892,8 +1892,8 @@ C23775D0 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 3 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -1903,8 +1903,8 @@ C23775D0 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 4 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -1914,8 +1914,8 @@ C23775D8 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190005
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 4 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -1925,52 +1925,52 @@ C23775D8 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190005
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Online Only)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Online Only)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Swap X/Z - Netplay Safe [Altimor]
 *Online only - does nothing in VS. Mode
 *Swaps the X and the Z Buttons for the local player only
 C234E2AC 00000002
 5000843E 5000B56A
 500056F6 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Y/Z - Netplay Safe [Altimor]
 *Online only - does nothing in VS. Mode
 *Swaps the Y and the Z Buttons for the local player only
 C234E2AC 00000002
 5000843E 5000BD28
 50004EF6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Crash-Prevent/Niche Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Enable OSReport Print on Crash" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Enable OSReport Print on Crash" data-collapsetext="Click to collapse"&gt;
 
 This will print onscreen exactly why the game crashed! Gone are the days of being in the dark. This functionality was present in Melee, just locked behind a button combo.
-<pre>
+&lt;pre&gt;
 $Enable OSReport Print on Crash (1.00) [UnclePunch]
 043959B4 4800020C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Enable OSReport Print on Crash (1.01) [UnclePunch]
 04396B98 4800020C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Enable OSReport Print on Crash (1.02) [UnclePunch]
 04397878 4800020C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Enable OSReport Print on Crash (PAL) [UnclePunch]
 043977A0 4800020C
-</pre>
+&lt;/pre&gt;
 
 Button combo to display in vanilla melee:
 ZRL
@@ -1980,24 +1980,24 @@ B + Pad left
 X + pad right
 
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Flush Cache on Scene Change" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Flush Cache on Scene Change" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Flush Cache on Scene Change (1.02) [Dan Salvato]
 C21A4B70 00000004
 3C608000 3C80003C
 3D808000 618C543C
 7D8903A6 4E800420
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="6-player match Crash Prevent" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="6-player match Crash Prevent" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $6-player match Crash Prevent [wParam]
 *Debug Required. P5+6 are CPU, 5 - Char from ALL_CHAR, kind from ALL_KIND, 6 - Char from Publicity, kind from ALL_KIND
 01C43642 08000000
@@ -2026,47 +2026,47 @@ $6-player match Crash Prevent [wParam]
 043FA578 42080000
 043FA564 00000000
 043FA5B0 803FA154
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Mushroom Kingdom / Underground Maze Crash Prevent" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Mushroom Kingdom / Underground Maze Crash Prevent" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
 01C415E2 08000000
 0446B4A4 3F800000
 0446B4A0 3F800000
 0446B49C 3F800000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Trophy Collector Crash Prevent" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Trophy Collector Crash Prevent" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Trophy Collector Crash Prevent (Debug Mode)
 01C43D24 08000000
 042199FC 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="DUMMY / ICETOP Crash Prevent" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="DUMMY / ICETOP Crash Prevent" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $DUMMY / ICETOP Crash Prevent (Debug Mode)
 01C41CBD 08000000
 041C2AAC 48000018
 041C284C 38600000
 041C2850 48000048
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Extra Characters on Victory Screen Crash Prevent" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Extra Characters on Victory Screen Crash Prevent" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Extra characters doesn't crash the game at Victory Screen (1.02) [flieskiller]
 C21776C0 00000009
 7C630774 2C03001B
@@ -2078,14 +2078,14 @@ C21776C0 00000009
 48000010 2C030020
 40820008 3860000E
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Giga Bowser & Sandbag Always Fall On Match Start" data-collapsetext="Click to collapse">
-<pre>
-$Giga Bowser & Sandbag Always Fall On Match Start [Achilles]
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Giga Bowser &amp; Sandbag Always Fall On Match Start" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
+$Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]
 C2069328 00000006
 807E0004 2C03001F
 4182000C 2C030020
@@ -2093,13 +2093,13 @@ C2069328 00000006
 60639350 7C6903A6
 4E800420 887E000C
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="BTT Intangibility Glitch Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="BTT Intangibility Glitch Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Break the Targets Intangibility Glitch Fix [UnclePunch]
 C21B65AC 00000005
 9003000C 3C608046
@@ -2107,22 +2107,22 @@ C21B65AC 00000005
 3D808000 618CC160
 7D8903A6 4E800421
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Fix Samus Extender Crash" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Fix Samus Extender Crash" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Fix Samus Extender Crash [UnclePunch]
 042B9D28 48000078
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Extra Chars Don't Reset Port If Unavailable" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Extra Chars Don't Reset Port If Unavailable" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Extra Chars Don't Reset Port If Unavailable [Achilles]
 C2264EEC 0000001B
 7C801A14 88840001
@@ -2152,64 +2152,64 @@ C2264EEC 0000001B
 60844F14 7C8803A6
 4E800020 3880001A
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Clone (Nana Type) Down-B Freeze Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Clone (Nana Type) Down-B Freeze Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Clone (Nana Type) Down-B Freeze Fix [Achilles]
 C20B0BAC 00000003
 38000000 80A30004
 2C05000B 40820008
 38000001 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Freeze Glitch Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Freeze Glitch Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Freeze glitch fix [tauKhan]
 041239A8 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Invisible Ceiling Glitch Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Invisible Ceiling Glitch Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Invisible ceiling glitch fix [tauKhan]
 0406BB14 D01D0004
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Crazy Hand Tag Team Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Crazy Hand Tag Team Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Crazy Hand Tag Team Fix [Odante]
 C215C2F8 00000003
 28030000 40820008
 38000000 28000001
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Crazy Hand Disable DPadUp+B Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Crazy Hand Disable DPadUp+B Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $CrazyHand - Disable D-Pad Up+B  Attack [Achilles]
 04156CE0 4800006c
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Force Crash Mid-Match" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Force Crash Mid-Match" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Force Crash Mid-Match [UnclePunch, DRGN]
 C21A507C 00000008
 3DE08047 61EF9D30
@@ -2220,13 +2220,13 @@ C21A507C 00000008
 41A0000C 8000000C
 48000008 8019000C
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Character Data Struct Custom Flag Init" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Character Data Struct Custom Flag Init" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Character Data Struct Custom Flag Init [Achilles]
 C2068EEC 00000005
 38800000 909F0020
@@ -2234,13 +2234,13 @@ C2068EEC 00000005
 B083000E 988321FD
 B08321FE 3C808046
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Nana Always Throws Debug Option" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Nana Always Throws Debug Option" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Nana Always Throws Debug Option [Achilles]
 C20DD368 00000006
 389E0000 83DF0004
@@ -2249,41 +2249,41 @@ C20DD368 00000006
 2C1E0000 4182000C
 388000DA 7C84F214
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="TAS QoL Lag Reduction" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="TAS QoL Lag Reduction" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Lag Reduction [tauKhan]
 *TAS QoL
 *Use in tandem with [https://github.com/SwareJonge/Dolphin-Lua-Core Lua Core Dolphin]
 *https://twitter.com/PracticalTAS/status/1349569326794362882 
 04376238 48000018
 043761F8 38600000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Camera Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Unrestricted Camera while Paused" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Unrestricted Camera while Paused" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Unrestricted Camera while Paused [strikebowler585]
 04452F54 42000000
 04452F58 42000000
 04452F5C 42000000
 04452F60 40200000
 04452F64 47000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="C-Stick Panning while Paused" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="C-Stick Panning while Paused" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $C-Stick Panning while Paused [Achilles]
 C202CB34 0000000C
 7C040774 3E00804C
@@ -2298,32 +2298,32 @@ FC0F0840 4081000C
 FC0F8840 41800010
 C21F0318 FE0F802A
 D21F0318 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Automatic Start Screen Transitions" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Automatic Start Screen Transitions" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Automatic Start Screen Transitions [achilles]
 041A1C58 38000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Camera and Item Spawn Overlay" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Camera and Item Spawn Overlay" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Camera and Item Spawn Overlay
 040304c4 60000000
 0405a634 48000094
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Unrestricted Camera in Camera Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Unrestricted Camera in Camera Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Unrestricted Camera in Camera Mode [UnclePunch]
 C202FE24 00000005
 38600000 907E02F8
@@ -2337,15 +2337,15 @@ BB610014 00000000
 0402c6bc 60000000
 0402c600 60000000
 0402c6a8 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == QoL Game-Play Customization Options ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Offline Only)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Offline Only)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 1 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -2355,8 +2355,8 @@ C23775C0 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190002
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 1 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -2366,8 +2366,8 @@ C23775C0 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190002
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 2 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -2377,8 +2377,8 @@ C23775C8 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190003
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 2 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -2388,8 +2388,8 @@ C23775C8 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190003
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 3 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -2399,8 +2399,8 @@ C23775D0 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 3 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -2410,8 +2410,8 @@ C23775D0 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 4 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -2421,8 +2421,8 @@ C23775D8 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190005
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 4 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -2432,45 +2432,45 @@ C23775D8 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190005
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Online Only)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Online Only)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Swap X/Z - Netplay Safe [Altimor]
 *Online only - does nothing in VS. Mode
 *Swaps the X and the Z Buttons for the local player only
 C234E2AC 00000002
 5000843E 5000B56A
 500056F6 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Y/Z - Netplay Safe [Altimor]
 *Online only - does nothing in VS. Mode
 *Swaps the Y and the Z Buttons for the local player only
 C234E2AC 00000002
 5000843E 5000BD28
 50004EF6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Swap X/R" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Swap X/R" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Swap X/R [Altafen, Altimor]
 C234E2AC 00000002
 5000843E 5000AD6A
 50005EB4 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Extended Name Entry" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Extended Name Entry" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Extended Name Entry [Dan Salvato]
 C223C718 00000004
 1CC30003 7CC6F214
@@ -2529,13 +2529,13 @@ C223C5A0 0000000F
 817b0000 41000000
 4b000000 55000000
 30000000 817c0000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Nametag Background Scales to Size" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Nametag Background Scales to Size" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Name Tag Shadow Box Automatically Scales to Tag Length [Achilles]
 C22FCCE8 00000013
 3C608003 6063556C
@@ -2557,22 +2557,22 @@ C9E1FFEC EDEF8028
 EDEF8824 807E0010
 D1E3002C 807E0010
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Rumble" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Rumble" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Rumble
 043D4A70 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Rumble Setting Toggle Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Rumble Setting Toggle Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Change Rumble Settings from CSS - Color Mod [Sham Rock]
 C226304C 0000001F
 8803000E 3DC08045
@@ -2606,8 +2606,8 @@ C226304C 0000001F
 92500004 3A940001
 2C140008 41A0FF70
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Dpad up/down toggles rumble on CSS [Dan Salvato]
 C22608D8 00000019
 887F0007 2C030000
@@ -2635,17 +2635,17 @@ FC032040 41810010
 38800000 909F0014
 989F0007 889F0004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Ignore Nametag Rumble Setting [Dan Salvato]
 04167810 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="D-Pad Down at CSS Loads Rumble Menu" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="D-Pad Down at CSS Loads Rumble Menu" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $D-Pad Down at Vs. Mode CSS Loads Rumble Select Screen [Achilles]
 C2263250 0000000C
 3DE08047 61EF9D30
@@ -2673,13 +2673,13 @@ C222D5C0 00000005
 3DE08022 61EFD190
 7DE903A6 4E800421
 546006F7 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Rumble on Missed L-Cancel" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Rumble on Missed L-Cancel" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Rumble on Missed L-Cancel [Altafen]
 C208D690 00000010 #rumble.asm
 7C0802A6 90010004
@@ -2698,14 +2698,14 @@ C208D690 00000010 #rumble.asm
 B8610008 80010104
 38210100 7C0803A6
 88A5067F 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 == QoL Pause Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hold Start to Pause" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hold Start to Pause" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hold to Pause [UnclePunch]
 *Hold start for 30 frames to pause
 C21A12A4 00000002
@@ -2727,22 +2727,22 @@ C216BDEC 0000000F
 3D808016 618CBE54
 7D8903A6 4E800420
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="LRA Start Uses Held Buttons" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="LRA Start Uses Held Buttons" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $LRAStart Uses Held Buttons [UnclePunch]
 0416D1C0 480364C1
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="LRAStart Resets Game While Pause Off" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="LRAStart Resets Game While Pause Off" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $LRAStart Resets Game While Pause Is Off [Sickolas]
 C2050D68 0000000E
 3E808045 6294BF18
@@ -2759,42 +2759,42 @@ C2050D68 0000000E
 3D80801A 618C4510
 7D8903A6 4E800421
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Delay On Unpausing" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Delay On Unpausing" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Delay On Unpausing [UnclePunch]
 0416cc10 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Delay on Pausing" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Delay on Pausing" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Delay on Pausing [UnclePunch]
 0416ca90 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Delay on LRA Start Input" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Delay on LRA Start Input" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Delay on LRA Start Input [UnclePunch]
 0416d1ac 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == QoL CSS/SSS Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="CSS Hands Default to HMN Button" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="CSS Hands Default to HMN Button" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $CSS Hands Default to HMN Button [achilles]
 044DC47C c0200000
 C2261A6C 00000005
@@ -2803,13 +2803,13 @@ C2261A6C 00000005
 61EF1B6C 7DE903A6
 4E800420 1C130024
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hold Start to Force SSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hold Start to Force SSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hold Start to Force SSS - Deluxe Edition [Achilles]
 C2262614 00000017
 3C60801A 60634340
@@ -2835,76 +2835,76 @@ C2262614 00000017
 3A200001 9A2DB656
 4200FFB4 BA6100B4
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Delay on Start at CSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Delay on Start at CSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Delay on Start at CSS [UnclePunch]
 042641B0 38000001
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Name Tag Reset After Closing CSS Port" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Name Tag Reset After Closing CSS Port" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Name Tag Reset After Closing Character Port (v2) [Ato]
 04261B1C 60000000
 04261B30 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Name Tag Reset After Exiting CSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Name Tag Reset After Exiting CSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Name Tag Reset After Exiting Character Select Screen [Todd Bonney]
 041A55EC 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Load Any Stage over Another SSS Icon in Vs. Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Load Any Stage over Another SSS Icon in Vs. Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Load Any Stage over Another SSS Icon in Vs. Mode (1.02) [Achilles]
 28480686 FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen
 00480687 00000YYY #Replace_with_Hexidecimal_Stage_ID_for_Desired_Stage_to_Load
 E2000001 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Load Any Stage over Another SSS Icon in Vs. Mode (1.01) [Achilles]
 2847F9A6 FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen
 0047F9A7 00000YYY
 E2000001 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Load Any Stage over Another SSS Icon in Vs. Mode (1.00) [Achilles]
 2847E6BE FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen
 0047E6BF 00000YYY #Replace_with_Hexidecimal_Stage_ID_for_Desired_Stage_to_Load
 E2000001 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Load Any Stage over Another SSS Icon in Vs. Mode (PAL) [Achilles]
 2847148E FF0000XX #Replace_with_Hexidecimal_Stage_ID_for_Stage_on_the_Stage_Select_Screen
 0047148F 00000YYY #Replace_with_Hexidecimal_Stage_ID_for_Desired_Stage_to_Load
 E2000001 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Load Specific Stage in Any Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Load Specific Stage in Any Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Load Specific Stage in Any Mode [djwang88]
 0416E7F4 386000XX #Replace XX with the desired Stage ID to load that stage in any mode
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Stage ID List" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Stage ID List" data-collapsetext="Click to collapse"&gt;
 
 
 Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]
@@ -3042,7 +3042,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |055 [037] // Target Test // Zelda (TZelda)
 |-
-|056 [038] // Target Test // Mr. Game & Watch (TGamewat)
+|056 [038] // Target Test // Mr. Game &amp; Watch (TGamewat)
 |-
 |057 [039] // Target Test // Roy (TEmblem)
 |-
@@ -3054,7 +3054,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |059 [03B] // 1 //1 Kinoko (Mushroom Kingdom Adventure)
 |-
-|060 [03C] // 1 //2 Castle (vs Peach & Mario [or luigi])
+|060 [03C] // 1 //2 Castle (vs Peach &amp; Mario [or luigi])
 |-
 |061 [03D] // 2 //1 Kongo (vs 2 mini Donkey Kongs)
 |-
@@ -3092,7 +3092,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |078 [04E] // 11 //1 Battle (vs Fighting Wireframe team, low gravity)
 |-
-|079 [04F] // 11 //2 Battle (vs Metal Mario [& Metal Luigi if unlocked])
+|079 [04F] // 11 //2 Battle (vs Metal Mario [&amp; Metal Luigi if unlocked])
 |-
 |080 [050] // 12 //1 Last (vs Bowser)
 |-
@@ -3196,63 +3196,63 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |CLASSIC (VS TWO CHARACTERS)
 |-
-|125 [07D] // Battlefield (Plays Mario Theme) (vs Team Mario & Bowser)
+|125 [07D] // Battlefield (Plays Mario Theme) (vs Team Mario &amp; Bowser)
 |-
-|126 [07E] // Mushroom Kingdom II (vs Team Mario & Peach)
+|126 [07E] // Mushroom Kingdom II (vs Team Mario &amp; Peach)
 |-
-|127 [07F] // Kongo Jungle (vs Team DK & Fox)
+|127 [07F] // Kongo Jungle (vs Team DK &amp; Fox)
 |-
-|128 [080] // Temple (vs Team Link & Zelda)
+|128 [080] // Temple (vs Team Link &amp; Zelda)
 |-
-|129 [081] // Great Bay (vs Team Link & Young Link)
+|129 [081] // Great Bay (vs Team Link &amp; Young Link)
 |-
-|130 [082] // Mushroom Kingdom I (vs Team Link & Luigi)
+|130 [082] // Mushroom Kingdom I (vs Team Link &amp; Luigi)
 |-
-|131 [083] // Great Bay (Saria's Song) (vs Team Marth & Link)
+|131 [083] // Great Bay (Saria's Song) (vs Team Marth &amp; Link)
 |-
-|132 [084] // Big Blue (vs Team Samus & Captain Falcon)
+|132 [084] // Big Blue (vs Team Samus &amp; Captain Falcon)
 |-
-|133 [085] // Brinstar (vs Team Samus & Fox)
+|133 [085] // Brinstar (vs Team Samus &amp; Fox)
 |-
-|134 [086] // Yoshi's Story (vs Team Yoshi & Luigi)
+|134 [086] // Yoshi's Story (vs Team Yoshi &amp; Luigi)
 |-
-|135 [087] // Yoshi's Island (vs Team Yoshi & Ness)
+|135 [087] // Yoshi's Island (vs Team Yoshi &amp; Ness)
 |-
-|136 [088] // Green Greens (vs Team Kirby & Pikachu)
+|136 [088] // Green Greens (vs Team Kirby &amp; Pikachu)
 |-
-|137 [089] // Fountain of Dreams (vs Team Kirby & Pichu)
+|137 [089] // Fountain of Dreams (vs Team Kirby &amp; Pichu)
 |-
-|138 [08A] // Green Greens (vs Team Kirby & Jigglypuff)
+|138 [08A] // Green Greens (vs Team Kirby &amp; Jigglypuff)
 |-
-|139 [08B] // Icicle Mountain (vs Team Kirby & Ice Climbers)
+|139 [08B] // Icicle Mountain (vs Team Kirby &amp; Ice Climbers)
 |-
-|140 [08C] // Corneria (vs Team Fox & Falco)
+|140 [08C] // Corneria (vs Team Fox &amp; Falco)
 |-
-|141 [08D] // Mute City (vs Team Fox & Captain Falcon)
+|141 [08D] // Mute City (vs Team Fox &amp; Captain Falcon)
 |-
-|142 [08E] // Pokémon Stadium (vs Team Pikachu & Pichu)
+|142 [08E] // Pokémon Stadium (vs Team Pikachu &amp; Pichu)
 |-
-|143 [08F] // Pokémon Stadium (vs Team Pikachu & Jigglypuff)
+|143 [08F] // Pokémon Stadium (vs Team Pikachu &amp; Jigglypuff)
 |-
-|144 [090] // Mushroom Kingdom I (vs Team Luigi & Dr. Mario)
+|144 [090] // Mushroom Kingdom I (vs Team Luigi &amp; Dr. Mario)
 |-
-|145 [091] // Onett (alt music) (vs Team Ness & Peach)
+|145 [091] // Onett (alt music) (vs Team Ness &amp; Peach)
 |-
-|146 [092] // Fourside (vs Team Ness & Mewtwo)
+|146 [092] // Fourside (vs Team Ness &amp; Mewtwo)
 |-
-|147 [093] // Big Blue (mRider song) (vs Team Captain Falcon & Falco)
+|147 [093] // Big Blue (mRider song) (vs Team Captain Falcon &amp; Falco)
 |-
-|148 [094] // Battlefield (vs Team Bowser & Mewtwo)
+|148 [094] // Battlefield (vs Team Bowser &amp; Mewtwo)
 |-
-|149 [095] // Battlefield (vs Team Bowser & Peach)
+|149 [095] // Battlefield (vs Team Bowser &amp; Peach)
 |-
-|150 [096] // Battlefield (vs Team Bowser & Zelda)
+|150 [096] // Battlefield (vs Team Bowser &amp; Zelda)
 |-
-|151 [097] // Temple (vs Team Peach & Zelda)
+|151 [097] // Temple (vs Team Peach &amp; Zelda)
 |-
-|152 [098] // Great Bay (Saria's Song) (vs Team Zelda & Young Link)
+|152 [098] // Great Bay (Saria's Song) (vs Team Zelda &amp; Young Link)
 |-
-|153 [099] // Temple (Emblem) (vs Team Zelda & Marth)
+|153 [099] // Temple (Emblem) (vs Team Zelda &amp; Marth)
 |-
 |154 [09A] // Great Bay (Unused)
 |-
@@ -3300,7 +3300,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |172 [0AC] // Pokémon Stadium (vs Team Pichu)
 |-
-|173 [0AD] // Flat Zone (vs Team Game & Watch)
+|173 [0AD] // Flat Zone (vs Team Game &amp; Watch)
 |-
 |174 [0AE] // Mute City (vs Team Captain Falcon)
 |-
@@ -3362,7 +3362,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |199 [0C7] // Final Destination (Emblem Music) (vs Roy)
 |-
-|200 [0C8] // Flat Zone (vs Team Game & Watch)
+|200 [0C8] // Flat Zone (vs Team Game &amp; Watch)
 |-
 |201 [0C9] // Brinstar Depths (vs Gannondorf)
 |-
@@ -3500,7 +3500,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |266 [10A] // Final Destination (All-Star Match 4-4 /vs Mewtwo)
 |-
-|267 [10B] // Flat Zone (All-Star Match 4-5 /vs Mr Game & Watch)
+|267 [10B] // Flat Zone (All-Star Match 4-5 /vs Mr Game &amp; Watch)
 |-
 |268 [10C] // Venom (All-Star Match Deluxe 5-2 /vs Falco)
 |-
@@ -3547,38 +3547,38 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |285 [11D] // Battlefield (Multi-Man Melee)
 |}
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="LRAStart During Stage Load for CSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="LRAStart During Stage Load for CSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hold L+R+A+Start During Stage Load to Return to the CSS [Jorgasms]
 0425B8BC 38600002
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Delay on Start at SSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Delay on Start at SSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Delay on Start at SSS [UnclePunch]
 0425AA18 38000001
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Default RANDOM on SSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Default RANDOM on SSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $'RANDOM' is Default Highlighted on Stage Select Screen [Jorgasms]
 0425AA10 38E0001D
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Random Stages Set to Tournament Illegal Stages Only" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Random Stages Set to Tournament Illegal Stages Only" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Random Stages Set to Illegal Stages Only [Krohnos]
 043D4A48 00340101
 043D4A4C 04000A00
@@ -3587,13 +3587,13 @@ $Random Stages Set to Illegal Stages Only [Krohnos]
 043D4A70 00000000
 043D4A74 3C010000
 043D4A78 F8FFFF4F
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Can't Pick Non-Legal Stages" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Can't Pick Non-Legal Stages" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Can't Pick Non-Legal Stages
 *Prevents non-tournament legal stages from being selected
 *Does not prevent selection from random
@@ -3623,13 +3623,13 @@ C2259C3C 00000019
 38840070 98040000
 3884001C 98040000
 800DB604 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Can't Pick Non-Legal Stages or FoD" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Can't Pick Non-Legal Stages or FoD" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Can't Pick Non-Legal Stages or FoD
 *Prevents non-tournament legal stages and FoD from being selected
 *Does not prevent selection from random
@@ -3660,22 +3660,22 @@ C2259C3C 0000001A
 38840070 98040000
 3884001C 98040000
 800DB604 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Sheik on CSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Sheik on CSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Sheik on CSS [UnclePunch]
 043f0cc8 12130200
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Toggle NPCs/Alternate characters in CSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Toggle NPCs/Alternate characters in CSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Z button to toggle NPCs/alternate characters in CSS (1.02) [Achilles1515]
 C2262F48 0000002E
 3E008048 62100830
@@ -3724,59 +3724,59 @@ B2B60C74 39E0000A
 99F00000 2C110004
 4180FEB8 3CA0804A
 60000000 00000000 
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Strike Characters on CSS" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Strike Characters on CSS" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Press Z To Strike Characters on CSS
 C2260C14 00000003 # Injection
 73800010 88030002
 41A2000C 68000002
 98030002 00000000
 04264808 60000000 # NOP
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Debug Menu Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Always access debug menu from title screen with Y" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Always access debug menu from title screen with Y" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Always access debug menu from title screen with Y [UnclePunch]
 041a1cc4 60000000
 041b08b4 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Debug Menu Replaces Tournament Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Debug Menu Replaces Tournament Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Debug Menu Replaces Tournament Mode (1.02) [Magus, donny2112]
 0422D638 38000006
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Debug Menu Replaces Tournament Mode (1.01) [Magus, donny2112]
 0422CEB0 38000006
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Debug Menu Replaces Tournament Mode (1.00) [Magus, donny2112]
 0422C340 38000006
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Debug Menu Replaces Tournament Mode (PAL) [Magus, donny2112]
 0422F4A4 38000006
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="All Players Can Control the Debug Menu" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="All Players Can Control the Debug Menu" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $All Players Can Control the Debug Menu (1.02) [wParam]
 *Hold R or use C-Stick to turbo menu selections.
 C23039A4 00000016
@@ -3802,13 +3802,13 @@ C23039A4 00000016
 38600000 986DB7AC
 7D034378 4E800020
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Submenus Resemble Normal Menus" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Submenus Resemble Normal Menus" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Submenus Resemble Normal Menus (1.02) [Dan Salvato]
 0430425c 38A00006
 04304254 38600000
@@ -3816,13 +3816,13 @@ $Submenus Resemble Normal Menus (1.02) [Dan Salvato]
 04303158 3C000000
 043031d4 3C000000
 04303244 3C000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Additional Debug Background Colors" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Additional Debug Background Colors" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Additional Debug Background Colors [UnclePunch]
 C2227784 0000000D
 2C000003 4081005C
@@ -3839,60 +3839,60 @@ C2227784 0000000D
 7D8903A6 4E800420
 60000000 00000000
 0422877c 2C000006
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Submenus Resemble Normal Menus" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Submenus Resemble Normal Menus" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Leaving Debug Menu Loads CSS (1.02) [Achilles]
 041b0a14 38600002
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Always Spawn Items in Debug" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Always Spawn Items in Debug" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Always Spawn Items in Debug
 0422632c 48000010
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Full Stage Selector in Debug Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Full Stage Selector in Debug Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Full Stage Selector (Debug Mode)
 043FB2E8 00000003
 043FB300 438E8000
 043FB304 3F800000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Debug Menu Floating Point Decimals" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Debug Menu Floating Point Decimals" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Debug Menu - Floating Point Decimals [Achilles]
 044D5A34 25332E35
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Debug sound test menu" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Debug sound test menu" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Debug sound test menu
 024D68BC 00000702
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Set Menu Music in Sound Test" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Set Menu Music in Sound Test" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Set Menu Music in Sound Test [Dan Salvato]
 C224B4D8 00000007
 7C7C002E 2C030000
@@ -3911,25 +3911,25 @@ C222E934 00000008
 3D808002 618C3F28
 7D8903A6 4E800421
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Enable Sound Test in PAL from Debug Menu" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Enable Sound Test in PAL from Debug Menu" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $SSBM PAL - Enable Sound Test from Debug Menu (PAL)
 041B08F8 38000004
 041B08FC 900D9388
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == QoL Friendlies/Practice Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Friendlies QoL" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Friendlies QoL" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Full friendlies codes [Achilles, UnclePunch]
 *Friendlies mods to improve fair competition and speed up sessions
 C216E510 00000098 #External/NeutralSpawn/NeutralSpawn.asm
@@ -4263,13 +4263,13 @@ C216EBAC 0000000C #Common/CSS KO Stars/Asign KO Stars Upon Exiting Dairantou.asm
 7D8903A6 4E800421
 8001001C 83E10014
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Salty Runbacks Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Salty Runbacks Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hold L+R+Y For Salty Runbacks [Dan Salvato]
 C21A4160 00000009
 39C00000 3DE08046
@@ -4281,8 +4281,8 @@ C21A4160 00000009
 2C0E0004 4080000C
 39EF0008 4BFFFFD0
 981F0003 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Hold A+B For Salty Runbacks [Dan Salvato and Sham Rock]
 C21A4160 00000008
 39C00000 3DE08046
@@ -4293,13 +4293,13 @@ C21A4160 00000008
 2C0E0004 4080000C
 39EF000C 4BFFFFD8
 981F0003 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Result Screen Skip Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Result Screen Skip Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Always Skip the Result Screen, and Stock Count = Placement [Sham Rock]
 C21A415C 0000000E
 3803FFFF 2C000004
@@ -4316,8 +4316,8 @@ C21A415C 0000000E
 3A200000 3A800000
 3AA00000 38000000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Skip Results Screen, and KO Stars = Games Won [Sham Rock, Achilles]
 C21A415C 00000011
 3803FFFF 2C0B0020
@@ -4337,8 +4337,8 @@ C21A415C 00000011
 9AB00000 2C120004
 41A0FFC4 38000000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Always Skip Results Screen, and KO Stars Function Normally [achilles]
 C21A415C 0000000E
 3803FFFF 2C0B0020
@@ -4355,15 +4355,15 @@ C21A415C 0000000E
 9A320000 3AD60001
 2C160004 41A0FFC4
 38000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Always Skip the Results Screen (no change to KO stars) [Sham Rock]
 C21A415C 00000003
 3803FFFF 2C000004
 40820008 38000000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Hold Start to Skip Results (2 Seconds) [Achilles]
 C21795B8 00000006
 38ADB4EF 38800004
@@ -4372,13 +4372,13 @@ C21795B8 00000006
 3C808048 90A49D64
 4200FFEC 901F0008
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Neutral Spawns for 1v1 and 2v2" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Neutral Spawns for 1v1 and 2v2" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Neutral Spawns for 1v1 and 2v2 (1.02) [Achilles, Jorgasms]
 *All players/teams spawn in Neutral Stage Positions regardless of Port Permutations.
 C2263058 00000030
@@ -4457,13 +4457,13 @@ C21C0A48 0000001A
 960F4748 924F0004
 962F0040 924F0004
 7D8803A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Start Vs. With only 1 Player" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Start Vs. With only 1 Player" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Start Vs. With only 1 Player [UnclePunch]
 *set TIME to NONE
 c2263064 0000000c
@@ -4479,13 +4479,13 @@ c2263064 0000000c
 ba810008 80010104
 38210100 7c0803a6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Spoof Controller Plugins" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Spoof Controller Plugins" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Spoof Controller Plugins (1.02) [Achilles] 
 *This makes the game think there are additional controller plugged in.
 *By default, all ports are spoofed, but you can comment out lines for the 
@@ -4495,73 +4495,73 @@ $Spoof Controller Plugins (1.02) [Achilles]
 04376BDC 38000000 #(spoof P2)
 04376BF0 380000D8 #(spoof P3)
 04376C04 38000001 #(spoof P4)
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Game Completion/Prompt-Skip Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Unlock All Characters, Stages, & Random Stage Select" data-collapsetext="Click to collapse">
-<pre>
-$Unlock All Characters, Stages, & Random Stage Select [standardtoaster]
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Unlock All Characters, Stages, &amp; Random Stage Select" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
+$Unlock All Characters, Stages, &amp; Random Stage Select [standardtoaster]
 041648C8 38A007FF
 041644BC 38A007FF
 04173580 38A007FF 
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="All 51 Event Matches Open But Not Completed" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="All 51 Event Matches Open But Not Completed" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $All 51 Event Matches Open But Not Completed [Achilles]
 0424cec4 48000058
 04162ee8 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Infinite Lotto Coins" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Infinite Lotto Coins" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Infinite Lotto Coins
 0245A142 00002706
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Skip Memcard Prompt" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Skip Memcard Prompt" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Skip Memcard Prompt [UnclePunch]
 C21AF6F4 00000004
 2C1D000F 40820014
 3D80801B 618C01AC
 7D8903A6 4E800420
 2C1D0000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Unlock All Trophies" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Unlock All Trophies" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Unlock All 293 Trophies (1.02) [Datel]
 0245C390 00000125
 0245C395 01266363
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All 292 Trophies (PAL)
 0244D198 00000124
 0244D19C 0125FFFF
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Remove Special Messages" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Remove Special Messages" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Remove Special Messages [???]
 C21BFA20 00000009
 3E408045 6252C20C
@@ -4573,26 +4573,26 @@ C21BFA20 00000009
 3E00803F 6210A25C
 39E00000 99F0008A
 887F0004 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Auto YES if Coins Too Low" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Auto YES if Coins Too Low" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Automatically Select Yes if coins are lower than the requirements [Brandondorf9999]
 041A0A84 38000001
 041A09D8 40820018
 0419F7C4 4800000c
 0419F76C 4800001C
 0419F788 38000009
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Boot to In-Game" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Boot to In-Game" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Boot to In Game [UnclePunch]
 *Check Player and Stage IDs for Custom Match to boot into.
 041a45c0 3860000E #Boot to In Game
@@ -4609,15 +4609,15 @@ C216DD6C 00000005
 906E0000 3C60C300
 906E0004 887F24C8
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Graphics/Audio Configuration Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Visual Buffer & Polling Drift Fixes (Lag Reduction Codes)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Visual Buffer &amp; Polling Drift Fixes (Lag Reduction Codes)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Polling Drift Fix [Dan Salvato]
 *Only have 1 "Visual Buffer and/or Polling Drift Fix" code enabled at a time.
 *Removes polling drift phenomenon causing variable input lag.
@@ -4628,8 +4628,8 @@ C21A4DA0 00000003 #Polling Drift Fix [Dan Salvato]
 4E800421 00000000
 041A4DB4 60000000
 04019860 4BFFFD9D
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Polling Drift + Half Visual Buffer Fixes [tauKhan, UnclePunch]
 *Only have 1 "Visual Buffer and/or Polling Drift Fix" code enabled at a time.
 *Removes polling drift phenomenon causing variable input lag.
@@ -4694,10 +4694,10 @@ C21A4570 00000006 #External/Lag Reduction/Force HD/480pDeflickerOff.asm
 618CF588 7D8903A6
 4E800421 38600000
 60000000 00000000 
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Polling Drift + Full Visual Buffer Fixes [tauKhan]
-*Only have 1 "Visual Buffer & Polling Drift Fix" code enabled at a time.
+*Only have 1 "Visual Buffer &amp; Polling Drift Fix" code enabled at a time.
 *Removes polling drift phenomenon causing variable input lag.
 *Prevents visual buffer from accruing a full frame of lag.
 *Video Lag reduced by ~20.83 milliseconds.
@@ -4716,13 +4716,13 @@ C21A5018 00000005
 4D820420 00000000
 04218D68 C8228000
 04397878 4800020C
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Graphics-Downgrade-for-Performance Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Graphics-Downgrade-for-Performance Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Low-Poly v2 [UnclePunch,Yakult]
 *Makes the Character Models into the Low-Poly Models from the Off-Screen Bubbles to save Processing Power
 C20748DC 0000000E
@@ -4740,18 +4740,18 @@ C20748DC 0000000E
 39EFFFF8 7DDF782E
 39EFFFFC 7DDF792E
 7C1F202E 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $No Character Shadows [Altimor]
 040872f8 38600000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Force Simple Background and Stage Geometry [Punkline]
 *Makes the Stages only show Collision Geometry to save Processing Power
 04028d64 60000010
 0405a2e8 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Player Reflections on FoD [UnclePunch]
 04081148 38000000
 C21CBB90 00000005 #Lagless FoD [Achilles, Myougi, Dan Salvato]
@@ -4767,24 +4767,24 @@ C21CBB90 00000005 #Lagless FoD [Achilles, Myougi, Dan Salvato]
 04390838 60000000
 041CD250 60000000
 041CCDCC 480000B4
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Pokemon Stadium Screen [UnclePunch]
 *Makes the Jumbotron on Pokemon Stadium Invisible
 041D2AC8 38800000 #0 Chance for Close-up View.asm
 041D2AC0 38A00000 #0 Chance for Full View.asm
 041D2B98 48000018 #Allow Duplicate Screen States.asm
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Final Destination Background Transitions (1.02) [Achilles, Dan Salvato]
 0421AAE4 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Force 480p" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Force 480p" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Force 480p 4:3 [UnclePunch]
 C21A4570 00000006 
 3C608046 6063B0F0
@@ -4793,12 +4793,12 @@ C21A4570 00000006
 618CF588 7D8903A6
 4E800421 38600000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Force Widescreen 16:9" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Force Widescreen 16:9" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Widescreen 16:9 [Dan Salvato, mirrorbender, Achilles1515, UnclePunch]
 *Set Aspect Ratio to "Force 16:9" in Graphics for 16:9 monitors
 *Will not cause desyncs when playing online
@@ -4825,12 +4825,12 @@ C0030000 4800000C
 4E800021 40DC7AE1
 60000000 00000000
 044DDB84 3E89FEFA #External/Widescreen/Nametag Fixes/Adjust Nametag Text X Scale.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Force Ultrawidescreen 21:9" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Force Ultrawidescreen 21:9" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Ultrawide Moniter Hack
 C2021ABC 00000002
 39C00001 38600006
@@ -4843,23 +4843,23 @@ C03F0034 2C0E0001
 EC210032 C0010034
 EC210024 39C00000
 281E0000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Deflicker Off By Default" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Deflicker Off By Default" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Deflicker Off By Default [UnclePunch]
 *Only overrides default settings (no memcard / create save file)
 043d4a74 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Split Audio Channels 2.0" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Split Audio Channels 2.0" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Split Audio Channels 2.0 (v1.02) [UnclePunch]
 *This code splits the game music onto the left channel, and the game sounds onto right channel.
 *Game must be set to Mono to take effect, stereo is preserved
@@ -4883,41 +4883,41 @@ B07F0230 B07F0238
 B07F0224 B07F022C
 B07F0234 807A000C
 389F0224 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Sound Slider Defaults to 100% Game Sounds" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Sound Slider Defaults to 100% Game Sounds" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Sound Slider Defaults to 100% Game Sounds [UnclePunch]
 *Also lets the Slider be adjusted to turn back on the music in the menus
 043D4A74 64000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Game Music ON" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Game Music ON" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Game Music ON [UnclePunch]
 *Keep checked if you want music ON. Uncheck "Game Music OFF".
 04023FFC 3880007F
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Game Music OFF" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Game Music OFF" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Game Music OFF [UnclePunch]
 *Keep checked if you want music OFF. Uncheck "Game Music ON".
 04023FFC 38800000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Lower Music Volume When Idle" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Lower Music Volume When Idle" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Music Plays at 25% Volume When All Controllers Are Idle For 1 Minute [UnclePunch, Punkline]
 C237793C 00000018
 7DC802A6 480000A5
@@ -4944,13 +4944,13 @@ B1EE0002 39E00001
 4E800021 00000000
 00000000 00000000
 7C600279 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Mute In-Game Music" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Mute In-Game Music" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mute In-Game Music [Krohnos]
 *Mutes in-game music. Music in other scenes is unaffected. Not compatible with Slippi Online.  v1.0
 C2023FFC 00000005
@@ -4959,44 +4959,44 @@ C2023FFC 00000005
 4182000C 3880007F
 48000008 38800000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div><br />
+&lt;/div&gt;&lt;br /&gt;
 
 == DEVELOP Mode Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Enable Develop Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Enable Develop Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Enable Develop Mode [UnclePunch]
 *Turns develop (debug) mode on. Allows access to frame advance, hit/hurtbox display, and alternate camera angles
 0415FDBC 480000AC #External/Enable Develop Mode/Enable Develop Mode.asm
 04089250 48000008 #External/Enable Develop Mode/Enable Stale Moves.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Normal C-Stick Functionality in Develop Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Normal C-Stick Functionality in Develop Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Normal C-Stick Functionality in DEVELOP Mode (1.02) [Magus, Achilles]
 0406AE90 38000000
 040300A4 38000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Enable Damage Staling in Develop Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Enable Damage Staling in Develop Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Enable Damage Staling in Develop Mode (1.02) [Achilles]
 0408924C 2C000005
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Display Animation Name For Special Moves In Develop Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Display Animation Name For Special Moves In Develop Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Display Animation Name For Special Moves In Develop Mode [UnclePunch]
 C2226ACC 00000013
 7F83E378 809C0014
@@ -5018,13 +5018,13 @@ C2226ACC 00000013
 00000000 00000000
 00000000 7FE3FB78
 4CC63182 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="D-Pad Controls Damage" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="D-Pad Controls Damage" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $D-Pad Controls Damage [Dan Salvato]
 C206D1EC 0000001E
 3DE08047 61EF9C3F
@@ -5057,15 +5057,15 @@ C0130004 FC010000
 81EF0008 2C0F0000
 41820008 4BFFFFCC
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Other Cosmetic/Audio Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Add Smash64 Fastfall Sparkle v1.2" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Add Smash64 Fastfall Sparkle v1.2" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Add Smash64 Fastfall Sparkle v1.2 [UnclePunch]
 *Adds the Sparkle GFX from SSB(64) when initiating a FastFall
 C207D5A0 0000000E
@@ -5083,34 +5083,34 @@ C207D5A0 0000000E
 61CEF834 7DC903A6
 4E800421 3821006C
 38600001 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="CSS Clone Icons Slide Into Place" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="CSS Clone Icons Slide Into Place" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $CSS Clone Icons Slide Into Place [UnclePunch]
 *Enables the Forgotten Animation of the Clone Character's Icons on the Character Select Screen
 044dc578 00000000
  
-</div>
-</pre>
+&lt;/div&gt;
+&lt;/pre&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Kill Explosions" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Kill Explosions" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Kill Explosions GFX [UnclePunch]
 040d4040 60000000
 040d3b50 60000000
 040d3dc8 60000000
 040d3880 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Electric SFX" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Electric SFX" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Electric SFX [Altafen]
 C238D010 00000005 #sfx.asm
 2C030090 40820018
@@ -5118,36 +5118,36 @@ C238D010 00000005 #sfx.asm
 618CD2A0 7D8903A6
 4E800420 7C00B896
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Screen Shake" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Screen Shake" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Screen Shake [Achilles1515]
 *Will prevent screen from shaking on hits, KOs, collisions, etc.
 *Will not cause desyncs when playing online
 04030E44 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Teams Subcolors" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Teams Subcolors" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Teams Subcolors [UnclePunch]
 *Light and Dark Shade Colors disabled
 *All players playing the same character will have the same default skin based on team color
 C2033354 00000002
 3BE00000 9BE30046
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="More Team Costume Options" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="More Team Costume Options" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Brawl-Style Team Colors [flieskiller]
 *More Available Team Color Options for Specific Characters
 C225EBA0 00000016
@@ -5202,13 +5202,13 @@ C225EDDC 00000008
 11040105 16030004
 16040100 18030104
 02030301 02030103
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Change Player Shield Colors" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Change Player Shield Colors" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Change Player Shield Colors (1.02) [Achilles]
 *replace RRGGBB with colors
 *Note: Dolphin ONLY for now
@@ -5228,13 +5228,13 @@ E2000001 80008000
 DE000000 80008180
 1400000C RRGGBB00 #Change here for P4
 E2000001 80008000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Stock-Dependant Angel Platform Colors" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Stock-Dependant Angel Platform Colors" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Stock-Dependant Angel Platform Colors [Achilles1515]
 *Color of Angel Platform is determined by number of Stocks Left for that Player
 C20D5008 0000001E
@@ -5268,34 +5268,34 @@ C20D5008 0000001E
 92500AF0 92300B90
 92300CE0 92300D18
 7FC3F378 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Prevent Character Crowd Chants" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Prevent Character Crowd Chants" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Prevent Character Crowd Chants [Fizzi]
 04321D70 38600000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable CSS Announcer Voice Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable CSS Announcer Voice Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable CSS Announcer Voice: Game Type [Punkline]
 040243F4 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable CSS Announcer Voice: Character Selection [Punkline]
 04264124 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Announcer Fanfares 2.0" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Announcer Fanfares 2.0" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Announcer Fanfares 2.0 [Punkline]
 042F7358 C8228000
 042F72D0 C8228000
@@ -5377,27 +5377,27 @@ C2180E94 00000003
 3882AA54 7C8803A6
 4E800021 3880007F
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 == Information Display Codes ==
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="SFX on Successful V-Cancel" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="SFX on Successful V-Cancel" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Play MenuForwardSFX on Successful V-Cancel (1.02) [Achilles]
 C208DEF0 00000003
 3C608017 60634338
 7C6803A6 4E800021
 806DAEB4 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="DI Draw Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="DI Draw Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $DI Draw - GX Call, v1.1 [Achilles, tauKhan]
 C20304C8 00000085
 9421FFC0 BE810008
@@ -5533,8 +5533,8 @@ BA810008 38210040
 3D808036 618C8608
 7D8803A6 4E800021
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $DI Draw - Various DI Vert Writing [Achilles]
 C208E500 0000001F
 9421FFF4 90610008
@@ -5797,13 +5797,13 @@ C021001C FC010040
 4200FE98 382100D8
 BA810008 38210040
 8001005C 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="RNG int makes a sound" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="RNG int makes a sound" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $RNG int makes a sound [212 Degrees]
 C23805A0 00000007
 7C0802A6 90010004
@@ -5814,12 +5814,12 @@ C23805A0 00000007
 3821000C 7C0803A6
 808DA8F4 00000000
  
-</div>
-</pre>
+&lt;/div&gt;
+&lt;/pre&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Display last RNG call" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Display last RNG call" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Display last RNG call [212 Degrees]
 0416CE0C 38630000
 C23805AC 00000002
@@ -5829,13 +5829,13 @@ C23805B8 00000003
 7CC61A14 3CE08046
 60E7B6C8 90C70000
 4E800020 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Display Time at Top Right of CSS 1.1" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Display Time at Top Right of CSS 1.1" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Display Time at Top Right of CSS 1.1 [UnclePunch]
 C225C00C 00000004
 2C05004C 4082000C
@@ -5893,13 +5893,13 @@ B0E6001E 38E00020
 20E92004 20052019
 20160000 8001001C
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="L Cancel % in Results Screen" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="L Cancel % in Results Screen" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $L Cancel % in Results Screen (version 1.02) [Wooggle]
 C208D600 00000009
 8A830678 3DC08000
@@ -5929,13 +5929,13 @@ EC010024 00000000
 1A210300 00000000
 020045D0 000F0000
 E2000001 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="L-Cancel Frame Timer Display v1.0" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="L-Cancel Frame Timer Display v1.0" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $L-Cancel Frame Timer Display v1.0 [UnclePunch]
 C208D770 00000058
 9421FF00 BC610008
@@ -6026,23 +6026,23 @@ C1A80000 41100000
 800100FC 7C0803A6
 B8610008 38210100
 80010034 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Subseconds = Frames" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Subseconds = Frames" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Subseconds = Frames [UnclePunch]
 *Turns the subseconds part of the Timer into the Number of Frames Elapsed
 044DA298 426C0000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Nametag = Player's Percent v2.0" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Nametag = Player's Percent v2.0" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Nametag = Player's Percent v2.0 [UnclePunch]
 C22FCEEC 00000013
 3C608045 60633080
@@ -6064,13 +6064,13 @@ A88E0060 38A000FF
 4E800021 25642081
 93000000 889F0000
 60000000 00000000 
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Permanent Display Number = Nana % damage" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Permanent Display Number = Nana % damage" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Permanent Display Number = Nana % damage (1.02) [flieskiller]
 *Adds a number display of each Player's Nana's Percent on the HUD
 044ddc28 40c00000
@@ -6095,13 +6095,13 @@ C22F65CC 00000006
 4082000C 38000080
 48000008 38000000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Debug Game-Side Latency v2" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Debug Game-Side Latency v2" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Debug Game-Side Latency (v2) [Fizzi]
 *Shows latency information on screen while in-game
 C216E774 00000093 #External/Debug Inputs/InitOnGameStart.asm
@@ -6422,27 +6422,27 @@ BE810008 3D808034
 800100B4 382100B0
 7C0803A6 80010024
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Collision Bubble Visualization Codes (Hitbox/Hurtbox/Shieldbox) ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hitboxes Always On" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hitboxes Always On" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hitboxes Always On [UnclePunch]
 *Activates Display of Collision Bubbles and Character Models
 C2068C6C 00000002
 38600003 987F21FC
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Highlight Ungrabbable Hurtboxes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Highlight Ungrabbable Hurtboxes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Display Ungrabbable Hurtboxes [UnclePunch]
 *Ungrabbable Hurtboxes will be Purple, Grabbable Hurtboxes are Yellow
 C200A284 00000006
@@ -6453,13 +6453,13 @@ C200A284 00000006
 4E800021 AB27FF80
 80630000 00000000
 0406AE00 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hitbox Color Darkens Based On Damage" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hitbox Color Darkens Based On Damage" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hitbox Color Darkens Based On Damage [UnclePunch]
 *The More Damage a Particular Frame of a Hitbox incurs, the Darker the Shade of Red that Hitbox will Appear
 C2009FA4 00000010
@@ -6479,13 +6479,13 @@ FCA0401E D8A1FFF4
 48000014 4E800021
 43580000 40A00000
 41900000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Colored Hitbox IDs" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Colored Hitbox IDs" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Colored Hitbox IDs [UnclePunch,NeilHarbin0]
 *Hitboxes will display as a certain color depending on the Hitbox ID
 *ID 0 = Red, ID 1 = Green, ID 2 = Blue, ID 3 = Purple
@@ -6497,13 +6497,13 @@ C2009FA4 00000007
 FF313180 7CFC0080
 00FFFF80 9600FF80
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hitboxes Display Knockback Angle v0.3" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hitboxes Display Knockback Angle v0.3" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hitboxes Display Knockback Angle v0.3 [rmn, PKFreeZZy]
 *Stripped Down Version of the FDVP v0.21 to only have this one feature
 *Fixed "collision bubbles only" display mode
@@ -6623,13 +6623,13 @@ C2086AA0 00000007
 40820014 38800001
 881F221E 50803E30
 981F221E 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Reverse Hitbox ID Draw Order" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Reverse Hitbox ID Draw Order" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Reverse Hitbox ID Draw Order [UnclePunch]
 *0,1,2,3 becomes 3,2,1,0. This causes hitboxes to be drawn so that priority is intuitive (highest priority shown on top).
 04080600 3b200003
@@ -6637,26 +6637,26 @@ $Reverse Hitbox ID Draw Order [UnclePunch]
 0408062c 2C190000
 04080630 3B5AFEC8
 04080634 4080FFD8
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hitbox Displays Do Not Interpolate" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hitbox Displays Do Not Interpolate" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hitbox Displays Do Not Interpolate (1.02) [Magus]
 *Hitbox Displays do not Interpolate from one frame to the next, turning off the "smearing" effect in the Display. 
 *Hitboxes still Interpolate in practice.
 0400A008 80E3004C
 0400A00C 80030050
 0400A018 80030054
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hide Character's GFX When Collision Bubbles Enabled" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hide Character's GFX When Collision Bubbles Enabled" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hide Character's GFX When Collision Bubbles Enabled [UnclePunch]
 C205FE30 00000008
 2C040000 41820030
@@ -6667,12 +6667,12 @@ A1040000 2C080004
 618C1D40 7D8903A6
 4E800420 3B830000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Unobscured Hitbox Display 1.2" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Unobscured Hitbox Display 1.2" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $UnobscuredHitboxDisplay1.2 (Melee 1.02) [Punkline, Achilles]
 *Stop the display of GFX and textures when hitbox display is toggled on.
 C205FDDC 00000008
@@ -6684,70 +6684,70 @@ A1640000 2C0B0006
 896B21FC 2C0B0001
 41A20008 4E800020
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Vulnerable Hurtbox Display" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Vulnerable Hurtbox Display" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Vulnerable Hurtbox Display (1.02) [Achilles]
 *Character Models still enabled
-*hitboxes, invulnerable, & intangible hurtboxes display is still enabled
+*hitboxes, invulnerable, &amp; intangible hurtboxes display is still enabled
 *Intangibility granted by specific attacks Do Not Display
 *Shieldboxes still enabled
 040806F0 38000000 
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Intagible & Invulnerable Hurtbox Display" data-collapsetext="Click to collapse">
-<pre>
-$Disable Intagible & Invulnerable Hurtbox Display [Achilles]
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Intagible &amp; Invulnerable Hurtbox Display" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
+$Disable Intagible &amp; Invulnerable Hurtbox Display [Achilles]
 *Character Models still enabled
 *hitboxes, vulnerable hurtboxes display is still enabled
 *Intangibility granted by specific attacks still display
 *Shieldboxes still enabled
 04080764 38000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Hitbox Displays" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Hitbox Displays" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Hitbox Displays [Achilles]
 *Character Models still enabled
-*invulnerable & intangible hurtboxes, vulnerable hurtboxes display is still enabled
+*invulnerable &amp; intangible hurtboxes, vulnerable hurtboxes display is still enabled
 *Shieldboxes still enabled
 04009f54 4e800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Always Display Hitboxes Only" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Always Display Hitboxes Only" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Always Display Hitboxes Only [Altimor]
 *Character Models still enabled
 *All Hurtboxes Disabled
 *Shieldboxes disabled
 040805FC 60000000
 04080638 480001D4
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Always Display Hitboxes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Always Display Hitboxes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Always Display Hitboxes [Altimor]
 040805FC 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Isolated ECB Display" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Isolated ECB Display" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Isolated ECB Display [Punkline]
 042EF654 C8228000
 040808e4 60000000
@@ -6790,13 +6790,13 @@ C20808F0 0000000D
 4E800021 83E1000C
 38210010 80010004
 7C0803A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Frame Data Visualization Pack v.22" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Frame Data Visualization Pack v.22" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Frame Data Visualization Pack v.22 [rmn, UnclePunch, NeilHarbin0]
 *Hitboxes display knockback angle
 *Hitboxes are always drawn on top of hurtboxes
@@ -6936,24 +6936,24 @@ EC210032 38610020
 38ED8000 90070000
 38600001 38600001
 60000000 00000000 
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Character Model Display and Color Overlay Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="All Character Models Invisible" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="All Character Models Invisible" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Character Models Invisible [UnclePunch]
 04030384 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Make Specific Costume on Specific Character Invisible" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Make Specific Costume on Specific Character Invisible" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Make Specific Costume on Specific Character Invisible [Altafen]
 *When picked, the chosen character's specific costume becomes invisible
 *Replace "XX" with Hex of Character Internal ID
@@ -6964,22 +6964,22 @@ C2080F38 00000005
 2C00000Y 4082000C
 38000000 981E21FC
 801E05C8 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Character Shadows" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Character Shadows" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Character Shadows [Altimor]
 040872f8 38600000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Low-Poly v2" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Low-Poly v2" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Low-Poly v2 [UnclePunch,Yakult]
 *Makes the Character Models into the Low-Poly Models from the Off-Screen Bubbles to save Processing Power
 C20748DC 0000000E
@@ -6997,13 +6997,13 @@ C20748DC 0000000E
 39EFFFF8 7DDF782E
 39EFFFFC 7DDF792E
 7C1F202E 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Character Model Turns white during shield stun" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Character Model Turns white during shield stun" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Character Model Turns white during shield stun (v1.02) [InternetExplorer]:
 0406B80C 4853B9F4
 045A7200 7F03C378
@@ -7024,13 +7024,13 @@ $Character Model Turns white during shield stun (v1.02) [InternetExplorer]:
 045A723C 99E30564
 045A7240 8001007C
 045A7244 4BAC45CC
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Turn Yellow During Shield Stun" data-collapsetext="Click to collapse"> 
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Turn Yellow During Shield Stun" data-collapsetext="Click to collapse"&gt; 
+&lt;pre&gt;
 $Turn Yellow During Shield Stun [Dan Salvato, standardtoaster, Stratocaster]
 C206B80C 0000000A
 7F03C378 81C30070
@@ -7043,13 +7043,13 @@ C206B80C 0000000A
 91E30520 39E00091
 99E30564 8001007C
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Turn Green When Actionable" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Turn Green When Actionable" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Turn Green When Actionable [UnclePunch]
 *When playing online, this will only affect your character
 *Will not cause desyncs when playing online
@@ -7089,13 +7089,13 @@ C0250004 D03F04C4
 4E800021 437F0000
 43340000 8001002C
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Turn Green when wasting frames" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Turn Green when wasting frames" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Turn Green when wasting frames (Wait, SquatWait, tumble (= DamageFall), CatchWaitCliffWait) [Kaze]
 C206B80C 0000000D
 7F03C378 81C30070
@@ -7111,13 +7111,13 @@ C206B80C 0000000D
 91E30530 91E30534
 39E00091 99E30564
 8001007C 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Flash Red on Failed L-Cancel" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Flash Red on Failed L-Cancel" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Flash Red on Failed L-Cancel [Achilles1515, Fizzi]
 *When playing online, this will only affect your character
 *Will not cause desyncs when playing online
@@ -7144,13 +7144,13 @@ C208D690 00000009 #External/FlashRedFailedLCancel/TriggerColor.asm
 88A5067F 2C050007
 4180000C 39E000D4
 99E30564 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Flash Blue on Missed Smash Turn" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Flash Blue on Missed Smash Turn" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Flash Blue on Missed Smash Turn (v1.02) [Magus]
 C20C9B48 0000000F
 A11E0448 2C084000
@@ -7168,13 +7168,13 @@ A11E0448 2C084000
 911E0534 993E0564
 915E0514 801F2358
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Flash Color when Fastfall is Available" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Flash Color when Fastfall is Available" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Flash Color when Fastfall is Available (simple) [Punkline]
 C207D554 00000009
 88030504 2C000091
@@ -7186,13 +7186,13 @@ C207D554 00000009
 3C00C280 900304D4
 38000091 98030504
 C0230624 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Flash Color when Subaction IASA is Available" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Flash Color when Subaction IASA is Available" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Flash Color when Subaction IASA is Available [UnclePunch]
 C2071960 00000008
 98032218 3C00C200
@@ -7203,13 +7203,13 @@ C2071960 00000008
 3C00C280 901E04D4
 38000091 981E0504
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Turn Green When Pummel is Available" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Turn Green When Pummel is Available" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Turn Green When Pummel is Available [Cappy]
 *When playing online, this will only affect your character
 *Will not cause desyncs when playing online
@@ -7230,25 +7230,25 @@ C20DA3CC 00000010
 915F04D4 39400091
 995F0504 4E800020
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 == HUD Cosmetic Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Remove Classic Mode VS Screen HUD" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Remove Classic Mode VS Screen HUD" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Remove Classic Mode VS Screen HUD [UnclePunch]
 041869f8 60000000
 04186bb0 60000000
 04186ab4 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable GO! Text Graphic On Match Start" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable GO! Text Graphic On Match Start" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable "Go!" Text Graphic On Match Start [gadzook]
 C22F6EA8 00000002
 7C6E1B78 2C030008
@@ -7259,12 +7259,12 @@ C22F6FAC 00000005
 7D8903A6 4E800421
 60000000 39C00000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Smaller Ready, GO! Text Graphics on Match Start" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Smaller Ready, GO! Text Graphics on Match Start" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Smaller "Ready, GO!" Text Graphics on Match Start [UnclePunch]
 C22F71E0 0000000D
 4800004D 7D8802A6
@@ -7280,23 +7280,23 @@ C02C0008 D0240030
 3F19999A 3ECCCCCD
 41200000 80030010
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Force 2P Center HUD" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Force 2P Center HUD" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Force 2P Center HUD [UnclePunch]
 *HUD for Players occupy the P2 and P3 Positions on the Screen
 0416e9ac 38600002
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="PAL Stock Icons" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="PAL Stock Icons" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $PAL Stock Icons [UnclePunch]
 *Will not cause desyncs when playing online
 C22F9A3C 00000007 #External/PAL/Core/PAL Stock Icons.asm
@@ -7307,13 +7307,13 @@ C22F9A3C 00000007 #External/PAL/Core/PAL Stock Icons.asm
 4E800021 3F59999A
 C1A80000 801D0014
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="HUD Transparency v1.1" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="HUD Transparency v1.1" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $HUD Transparency v1.1 [UnclePunch]
 *When Player Characters Go Behind the HUD, the HUD will become transparent to assist game-play visual clarity
 C22F6690 0000009D
@@ -7474,44 +7474,44 @@ BA810008 80010104
 BA810008 80010104
 38210100 7C0803A6
 8001001C 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Invisible Emblems Behind Percents" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Invisible Emblems Behind Percents" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Invisible Emblems Behind Percents (1.02) [flieskiller]
 042f61fc 4e800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Magnifying-Glass HUD" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Magnifying-Glass HUD" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Magnifying-glass HUD [NeilHarbin0]
 042fb8c0 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hide Nametags" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hide Nametags" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hide Nametags [Nikki]
 *Hides the nametags over top player characters
 C22FCCD8 00000003 #External/Always Hide Nametag/Always Hide Nametag.asm
 3D80802F 618CCCC8
 7D8903A6 4E800420
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Toggle HUD On/Off" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Toggle HUD On/Off" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $X+D-Pad Down (P1 Only) Toggles HUD On/Off [Achilles]
 2846B108 00000404
 004D6D58 00000000
@@ -7519,60 +7519,60 @@ CC000000 00000000
 E2100000 00000000
 004D6D58 00000001
 E2000001 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hide HUD" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hide HUD" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hide HUD [UnclePunch]
 *Hides the timer and player percent HUD elements
 0416E9A4 60000000 #External/Hide Timer and Player HUD/Hide Timer HUD.asm
 0416BA80 48000014 #External/Hide Timer and Player HUD/Hide Percents/Skip Percent Anim During Stock Steal.asm
 0416E9B0 60000000 #External/Hide Timer and Player HUD/Hide Percents/Skip Player HUD Creation.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Cosmetic/QoL Codes for Use Online ==
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Online Only)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (Online Only)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Swap X/Z - Netplay Safe [Altimor]
 *Online only - does nothing in VS. Mode
 *Swaps the X and the Z Buttons for the local player only
 C234E2AC 00000002
 5000843E 5000B56A
 500056F6 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Y/Z - Netplay Safe [Altimor]
 *Online only - does nothing in VS. Mode
 *Swaps the Y and the Z Buttons for the local player only
 C234E2AC 00000002
 5000843E 5000BD28
 50004EF6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hide Waiting-For-Game Screen in Replays" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hide Waiting-For-Game Screen in Replays" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hide Waiting For Game [Nikki, UnclePunch]
 *Hides the waiting for game text and slippi.gg text and disables the SFX played before a replay starts
 *With this enabled, there will be no indication between matches that Melee is still running
 044DEC20 00000001 #Playback/Hide Waiting For Game/Hide Waiting For Game.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Show Player Names in Replays" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Show Player Names in Replays" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Show Player Names [Fizzi, UnclePunch, Enzyme, jmlee337]
 *Show players' Slippi Online display names as HUD elements when available
 C216E9B4 0000009A #Playback/Show Player Names/InitInGame.asm
@@ -7730,13 +7730,13 @@ D036002C 3A940001
 BA8100B0 800100E4
 382100E0 7C0803A6
 8001001C 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Display Teams Ally v1.1" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Display Teams Ally v1.1" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Display Teams Ally v1.1 [UnclePunch]
 *When playing online, teammate will always be indicated
 *Will not cause desyncs when playing online
@@ -7770,13 +7770,13 @@ C0230064 BA810008
 BA810008 800100B4
 382100B0 7C0803A6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Force Nametag for Local Player" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Force Nametag for Local Player" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Force Nametag for Local Player [Fizzi]
 *When playing online, nametag YOU will show above your character
 *Will not cause desyncs when playing online
@@ -7804,15 +7804,15 @@ XXXXXXXX XXXXXX00 #ChangeThisLineForCustomTag/LeaveLastTwoZeros (8278826E 827400
 3D808023 618C754C
 7D8903A6 4E800421
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hexidecimal Addresses of All Valid Characters" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hexidecimal Addresses of All Valid Characters" data-collapsetext="Click to collapse"&gt;
 
 
 These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1XBJmEtR5_fEZrMZ3osU/view This Google Sheet] listing of all of the Hexidecimal values that correspond to all of the available characters for custom nametags.
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Alphabet" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Alphabet" data-collapsetext="Click to collapse"&gt;
 
 
 {| class="wikitable" 
@@ -8061,10 +8061,10 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 | ｚ
 |}
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Numbers" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Numbers" data-collapsetext="Click to collapse"&gt;
 
 
 {| class="wikitable" 
@@ -8125,10 +8125,10 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 | ９
 |}
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hirigana" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hirigana" data-collapsetext="Click to collapse"&gt;
 
 
 {| class="wikitable" 
@@ -8470,10 +8470,10 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 | ！
 |}
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Katakana" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Katakana" data-collapsetext="Click to collapse"&gt;
 
 
 {| class="wikitable" 
@@ -8815,10 +8815,10 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 | ！
 |}
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Symbols" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Symbols" data-collapsetext="Click to collapse"&gt;
 
 
 {| class="wikitable" 
@@ -8978,10 +8978,10 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 | ＠
 |}
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="CHEAT CODE" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="CHEAT CODE" data-collapsetext="Click to collapse"&gt;
 
 
 {| class="wikitable" 
@@ -9297,18 +9297,18 @@ These tables are converted from [https://drive.google.com/file/d/1LGljYcGwInlH1X
 | 
 |}
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 [https://codepen.io/thedookmaster/project/full/DPQmqa This website] creates custom tags with up to four characters, and only using Capital letters, lowercase letters, and some punctuation.
 
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="99-Stock No-Timer Direct Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="99-Stock No-Timer Direct Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $99-Stock Online [Krohnos]
 *Overwrite the game rules to be 99-Stock with no time limit. Compatible with Slippi Direct. Does not take effect in Unranked. v1.0
 C216E91C 00000013 #External/99-Stock Online/Overwrite Game Rules.asm
@@ -9347,13 +9347,13 @@ C216E750 0000000F #External/99-Stock Online/Overwrite Timer.asm
 3E403001 6252864C
 92540000 3C808017
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Items for Rollback" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Items for Rollback" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Rollback items [Krohnos]
 *Enables all items in-game on the "Medium" setting. Compatible with Slippi Direct. Does not take effect in Unranked or Teams. v1.0
 C216E750 0000000C #External/Rollback Items/Overwrite Game Rules.asm
@@ -9369,12 +9369,12 @@ C216E750 0000000C #External/Rollback Items/Overwrite Game Rules.asm
 3A400002 3E808048
 6294053B 9A540000
 3C808017 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="'Mango Axe Wednesday' for Rollback" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="'Mango Axe Wednesday' for Rollback" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mango Axe Wednesday [Krohnos]
 *Mango Axe Wednesday for Rollback. 
 *No healing or cloaking items, spawn rate High. 
@@ -9427,13 +9427,13 @@ C22668BC 0000000B
 3E208045 6231C370
 3E00F8FF 6210FF4F
 92110018 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Online Break the Targets v0.2 WIP" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Online Break the Targets v0.2 WIP" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Online Break the Targets v.02 [Krohnos]
 *WIP code for playing BTT via Slippi Netplay. Extremely experimental. v0.2
 *Several known issues such as some stages having bad spawn points.
@@ -9488,112 +9488,112 @@ C216E91C 00000012
 3C808045 60845CBE
 98640000 80010024
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Stage Cosmetic Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Force Simple Background and Stage Geometry" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Force Simple Background and Stage Geometry" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Force Simple Background and Stage Geometry [Punkline]
 *Makes the Stages only show Collision Geometry to save Processing Power
 04028d64 60000010
 0405a2e8 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Icicle Mountain ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Princess Peach's Castle ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Rainbow Cruise ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Kongo Jungle (SSBM) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Jungle Japes ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Termina: Great Bay ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Hyrule Temple ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Yoshi's Story ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Yoshi's Island (SSBM) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Fountain of Dreams ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Full Resolution FoD Reflection [UnclePunch]
 043e0f3c 00000280  #cobj viewport right
 043e0f40 000001e0  #cobj viewport bottom
@@ -9601,8 +9601,8 @@ $Full Resolution FoD Reflection [UnclePunch]
 043e0f48 000001e0  #cobj proj height
 041cce4c 38800280  #texbuffer width
 041cce50 38a001e0  #texbuffer height
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $HQ Fountain of Dreams Reflections [UnclePunch, PKFreeZZy]
 043E0F3C 00000280  #cobj viewport right
 043E0F40 000001E0  #cobj viewport bottom
@@ -9612,348 +9612,348 @@ $HQ Fountain of Dreams Reflections [UnclePunch, PKFreeZZy]
 041CCE50 38A001E0  #texbuffer height
 041CCECC 60000000  #nop low-poly render switch
 041CD078 60000000  #nop hi-poly render switch
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Player Reflections on FoD [UnclePunch]
 04081148 38000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 === Green Greens ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Corneria ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Venom ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Flatzone ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Brinstar ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Brinstar Depths ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Onett ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Fourside ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Mute City ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Big Blue ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Pokemon Stadium ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Pokemon Stadium Screen [UnclePunch]
 *Makes the Jumbotron on Pokemon Stadium Invisible
 041D2AC8 38800000 #0 Chance for Close-up View.asm
 041D2AC0 38A00000 #0 Chance for Full View.asm
 041D2B98 48000018 #Allow Duplicate Screen States.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Pokefloats ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Mushroom Kingdom I ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Mushroom Kingdom II ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Battlefield ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Battlefield Background + Particles [NeilHarbin0]
 04219d10 60000000
 04219d1c 60000000
 04219d24 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Final Destination ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Final Destination Background Transitions (1.02) [Achilles, Dan Salvato]
 0421AAE4 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Dreamland (SSB64) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Yoshi's Island (SSB64) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Kongo Jungle (SSB64) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Adventure Stages ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 ==== Mushroom Kingdom (Adventure) ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
 01C415E2 08000000
 0446B4A4 3F800000
 0446B4A0 3F800000
 0446B49C 3F800000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== Underground Maze ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
 01C415E2 08000000
 0446B4A4 3F800000
 0446B4A0 3F800000
 0446B49C 3F800000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== Brinstar Escape ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 ==== F-Zero Grand Prix ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Trophy Stages ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 ==== Trophy Collector Stage ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Trophy Collector Crash Prevent (Debug Mode)
 01C43D24 08000000
 042199FC 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== Goomba Trophy Stage ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 ==== Entei Trophy Stage ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Target Test Stages ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Other Stages ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $DUMMY / ICETOP Crash Prevent (Debug Mode)
 01C41CBD 08000000
 041C2AAC 48000018
 041C284C 38600000
 041C2850 48000048
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Universal Game Altering Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Unlock Stock Selection for All Star Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Unlock Stock Selection for All Star Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Unlock Stock Selection for All Star Mode (NTSC v1.02) [Brandondorf9999]
 042612EC 38000000
 042615BC 38000000
 04265780 38000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Choose Any Character for Any Event Match" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Choose Any Character for Any Event Match" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Choose Any Character for Any Event Match (1.02) [Achilles]
 041BBFB0 38000021
 041BB1B0 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Alter ''SSBM's'' Existing Game Mechanics and Game Types ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Preserve Dash Momentum on Shield Interrupt" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Preserve Dash Momentum on Shield Interrupt" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Preserve Dash Momentum on Shield Interrupt [PKFreeZZy]
 040CA40C 40820118
 040CA4BC 48000068
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="DamageDown Knockback Condition" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="DamageDown Knockback Condition" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $DamageDown Knockback Condition [UnclePunch]
 *Knockback must be less than 100 units to enter DamageDown.
 *This affects high knockback/low percent moves sending the victim flying into a jab reset state (Falco 3x stale shine).
@@ -9964,13 +9964,13 @@ FC011040 4180001C
 3D808009 618CF170
 7D8903A6 4E800420
 4E800021 42C80000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Update TopN Location In ECB Calculation" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Update TopN Location In ECB Calculation" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Update TopN Location In ECB Calculation [tauKhan]
 C204250C 00000009
 7C7F1B78 7C9E2378
@@ -9982,13 +9982,13 @@ C204250C 00000009
 3D808037 618C32E8
 7D8903A6 4E800421
 7FE3FB78 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Box Glitch/ECB Squeezing Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Box Glitch/ECB Squeezing Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Box Glitch Fix [tauKhan]
 *"ECB Squeezing" Fix
 0404C98C 41800090
@@ -9997,13 +9997,13 @@ C204C988 00000004
 FC030040 C00285F0
 40800008 D0430008
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Grab Infinite Removal v3" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Grab Infinite Removal v3" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Grab Infinite Removal v3 [Glook, Punkline]
 C208EE48 0000000C
 807B0010 2C0300D9
@@ -10018,12 +10018,12 @@ C021FFF0 FC000840
 4C401382 40820008
 38000000 2C000000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Port Priority Fix Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Port Priority Fix Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Optional: Port Priority Fixes [Punkline, Achilles, PKFreeZZy]
 *DO NOT USE IN UNRANKED
 C206C3A8 0000003E #External/PortPriority/LedgeGrab/CheckLastGObj.asm
@@ -10121,11 +10121,11 @@ D01D2340 00000000
 04133A48 389D0000 #External/PortPriority/ThrowHitstun/SetPtrBowser2.asm
 04133B68 389D0000 #External/PortPriority/ThrowHitstun/SetPtrBowser3.asm
 040E52E8 389D0000 #External/PortPriority/ThrowHitstun/SetPtrFalconGanon.asm
-</pre>
+&lt;/pre&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Port Priority Throw Bug Fix v3" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Port Priority Throw Bug Fix v3" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Throw Hitstun Port Priority Fix v3 [Achilles, PKFreeZZy]
 C208E25C 00000009
 809D1198 28040000
@@ -10137,23 +10137,23 @@ C208E25C 00000009
 48000014 C03D2340
 C0028AF8 EC01002A
 D01D2340 00000000
-</pre>
-<pre>
-$Bowser & Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
+&lt;/pre&gt;
+&lt;pre&gt;
+$Bowser &amp; Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
 04132ECC 389D0000
 04133A48 389D0000
 04133B68 389D0000
-</pre>
-<pre>
-$Captain Falcon & Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]
+&lt;/pre&gt;
+&lt;pre&gt;
+$Captain Falcon &amp; Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]
 040E52E8 389D0000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Port Priority Ledge Grab Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Port Priority Ledge Grab Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Ledge Grab Port Priority Fix [Punkline]
 *In the instance that multiple players would grab the ledge on the same frame, whoever is closer to the ledge gets the ledgegrab
 *Tie Edgecases unknown
@@ -10238,13 +10238,13 @@ C2081388 00000011 #External/PortPriority/LedgeGrab/SkipAction.asm
 618C14EC 7D8903A6
 4E800420 8063002C
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Grab Port-Priority Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Grab Port-Priority Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Grab Port-Priority Fix - Award Grab to Lower % Player [PKFreeZZy]
 *Fixes port-priority on grabs by awarding it to the player with less damage, should they occur at the same time. If both players have the exact same damage, the winner is decided by a 50/50 random roll.
 C2078C04 00000040
@@ -10312,24 +10312,24 @@ C01E216C FC010040
 80010044 CBE10038
 38210040 7C0803A6
 4E800020 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Phantom Hits" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Phantom Hits" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Phantom Hits [PKFreeZZy]
 04076F70 38000000 #Fighters
 04077E1C 38000000 #Items vs Fighters
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Phantom Hits Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Phantom Hits Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Phantom Hit Fix (v1.02) [UnclePunch]
 *Checks the remaining hurtboxes when a phantom hit is detected.
 C2079A74 00000007
@@ -10377,12 +10377,12 @@ C2078ECC 00000002
 04079248 80010070
 04079250 3821006C
 04078C78 9421FF94
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Wobbling" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Wobbling" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Wobbling [UnclePunch]
 *Break out of grab after three Nana hits
 C20DA9DC 00000003 #External/PreventWobbling/1.asm
@@ -10419,12 +10419,12 @@ B07B2352 887B2350
 618CF0C8 7D8903A6
 4E800420 801B0010
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Ledge-Grab Limit" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Ledge-Grab Limit" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Ledge Grab Limit [UnclePunch]
 *Enforces ledge grab limit
 C21A5E90 00000002 #Ledge Grab Limit
@@ -10537,13 +10537,13 @@ D8210080 83A10084
 80010104 38210100
 7C0803A6 8803000F
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (LAN Only)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Z-Jump Codes (LAN Only)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 1 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -10553,8 +10553,8 @@ C23775C0 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190002
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 1 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -10564,8 +10564,8 @@ C23775C0 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190002
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 2 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -10575,8 +10575,8 @@ C23775C8 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190003
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 2 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -10586,8 +10586,8 @@ C23775C8 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190003
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 3 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -10597,8 +10597,8 @@ C23775D0 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 3 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -10608,8 +10608,8 @@ C23775D0 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and X for Port 4 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -10619,8 +10619,8 @@ C23775D8 00000005
 5060356A 5060D6F6 # X/Z
 901A0000 88190005
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swap Z and Y for Port 4 on LAN [Altimor]
 *Offline Only. Causes Desyncs Online
 *Only enable One "Swap Z" code per desired Z-Jump port.
@@ -10630,13 +10630,13 @@ C23775D8 00000005
 50603D28 5060CEF6 # Y/Z
 901A0000 88190005
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Tap Jump" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Tap Jump" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Tap Jump [Achilles]
 C20CBBC0 00000003
 89FD06BE 2C0F0004
@@ -10646,21 +10646,21 @@ C20CB4E0 00000003
 2C040001 40820008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $No Tap Jump [Altafen]
 040CB828 48000014 #tap_jump/firstmultijump.asm
 040CB9A8 60000000 #tap_jump/jumpaerial.asm
 040CAF24 4800000C #tap_jump/kneebend.asm
 040D7430 60000000 #tap_jump/multijump.asm
 040CAFD0 48000018 #tap_jump/oorun.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable X and Y Jump" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable X and Y Jump" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No X / Y [Krohnos]
 *Removes X and Y when in-game. Compatible with Slippi Direct. Does not take effect in Unranked. v1.0
 C2377B90 0000000B #External/No XY/Ignore Buttons.asm
@@ -10676,12 +10676,12 @@ C2377B90 0000000B #External/No XY/Ignore Buttons.asm
 7000F3FF 90050000
 60000000 00000000
  
-</div>
-</pre>
+&lt;/div&gt;
+&lt;/pre&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Multiple/Special Jumps Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Multiple/Special Jumps Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Multi/Special Double Jumps [PKFreeZZy]
 040CB8B4 60000000
 040CB8C4 60000000
@@ -10691,8 +10691,8 @@ $No Multi/Special Double Jumps [PKFreeZZy]
 0411C028 60000000
 0411BAB8 60000000
 0411BB4C 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Even More Jumps Disabled [PKFreeZZy]
 0406AC00 38600000
 0408FA0C 38600000
@@ -10705,31 +10705,31 @@ $Even More Jumps Disabled [PKFreeZZy]
 040D5E9C 38600000
 040EC7B0 38600000
 0414AF10 38600000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Airdodges" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Airdodges" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Airdodges  [Punkline]
 04099A7C 60000000
 04099A80 38600000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Rolling = Death" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Rolling = Death" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Rolling Results in Immediate Death [Dan Salvato, standardtoaster]
 04099244 4803A985
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Tap Jump from Grounded Jump = Death" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Tap Jump from Grounded Jump = Death" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Tap Jump from Grounded Jump means Death [flieskiller]
 040cb504 60000000
 C20CB514 00000007
@@ -10740,31 +10740,31 @@ C20CB514 00000007
 48000014 3E008006
 621093AC 7E0803A6
 4E800021 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Star KOs" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Star KOs" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Star KOs [Dan Salvato]
 040D3258 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Invisible Ceiling Glitch Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Invisible Ceiling Glitch Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Invisible ceiling glitch fix [tauKhan]
 0406BB14 D01D0004
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="sushie's Ft/ItData Expansion v1.2.0 Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="sushie's Ft/ItData Expansion v1.2.0 Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $sushie's Ft/ItData Expansion v1.2.0 [sushie]
 *https://smashboards.com/threads/sushies-shared-modules-for-shared-mods.516924/
 *Must be installed or enabled first
@@ -10790,14 +10790,14 @@ C2268754 00000005
 7D8803A6 4E800021
 7FA3EB78 7C661B79
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $ftData/itData Extension Slippi Fix [sushie, PKFreeZZy]
 C20679C4 00000002
 9421FFF0 388029D8
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Special Hitbox Angle: 367 v2.1.0 [sushie]
 *sushie's Ft/ItData Expansion v1.2.0 Must be installed or enabled first
 *Pulls victims towards the center of collided hitbox and adjusts launch speed
@@ -10875,8 +10875,8 @@ D01929D0 C0030084
 D01929D4 38600000
 881929C0 506026F6
 981929C0 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Hitbox Extension v1.8.1 [sushie]
 *sushie's Ft/ItData Expansion v1.2.0 Must be installed or enabled first
 *Allows you to modify hitlag, SDI, hitstun and more!
@@ -11414,8 +11414,8 @@ C2279ABC 00000009
 3D808027 618C9AD0
 7D8903A6 4E800420
 81830000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Enable 8 Hitbox Support v1.0.0 [sushie]
 *sushie's Ft/ItData Expansion v1.2.0 Must be installed or enabled first
 *Expands Melee's current hitbox system to support up to 8 hitboxes
@@ -11798,39 +11798,39 @@ C2080614 00000004
 3B5F24D4 7F43D378
 60000000 00000000
 0408062C 28190008
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="All Floors are Drop-through" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="All Floors are Drop-through" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $All Floors are Drop-through [DRGN]
 0404CBD4 38600100
 0404FD24 3B200000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable All Rapid Jabs" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable All Rapid Jabs" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Rapid Jabs - All Applicable Characters [achilles]
 040D6AEC 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Fastfall Whenever" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Fastfall Whenever" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Fastfall Whenever [UnclePunch]
 0407d54c 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="All Characters Can Wavedash After Frame 2 of Jumpsquat" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="All Characters Can Wavedash After Frame 2 of Jumpsquat" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $All Characters Can Wavedash After Frame 2 of Jumpsquat [UnclePunch]
 C20CB60C 00000008
 7C7F1B78 3DC04040 #Last 4 bits is the frame to start checking for wavedash input (first 4 digits of float value)
@@ -11841,32 +11841,32 @@ C20CB60C 00000008
 9001FFFC 4E800421
 8001FFFC 7C0803A6
 7FE3FB78 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="All Characters are 2D" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="All Characters are 2D" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $All Characters are 2D [DRGN]
 04068fe4 48000008
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="All Characters are Completely Black" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="All Characters are Completely Black" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $All Players Are Completely Black
 C2033354 00000002
 3BE00003 9BE30046
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Big Head Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Big Head Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Big Head Mode [UnclePunch]
 C206B80C 00000010
 7FE3FB78 38800023
@@ -11885,23 +11885,23 @@ D0830030 D0830034
 4800000C 4E800021
 40A00000 8001007C
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Enable Taunt Cancelling" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Enable Taunt Cancelling" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Enable Taunt Cancelling (v1.02) [InternetExplorer]:
 *Note: Do not use with "Taunt Battle (r2)" Code
 040DEE70 4BFA5411
 040CA4CC 40820058
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Grab Items With Airdodge" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Grab Items With Airdodge" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Grab Items With Airdodge [UnclePunch]
 C2099AC0 0000000A
 83E3002C 801F1974
@@ -11914,13 +11914,13 @@ C2099AC0 0000000A
 618C6F58 7D8903A6
 4E800421 7FA3EB78
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Air Grabs v3" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Air Grabs v3" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Air Grabs v3 [UnclePunch]
 C208CDF4 0000000F
 7C7E1B78 7F03C378
@@ -12035,22 +12035,22 @@ C20DD90C 00000007
 4E800421 3DC0800D
 61CED918 7DC903A6
 4E800420 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Aerials are Automatically L-Canceled" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Aerials are Automatically L-Canceled" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Aerials are Automatically L-Canceled [Dan Salvato]
 0406B620 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="L-Cancel Training Wheels" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="L-Cancel Training Wheels" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $L-Cancel Training Wheels [Dan Salvato]
 *This code automatically L-cancels all aerials, but your character will flash white if your input was correct.
 *This allows players to practice L-cancelingbut suffer no penalty if the L-cancel is missed, allowing the player to practice combos and mental game even without yet  having mastered L-canceling.
@@ -12070,13 +12070,13 @@ c20c0148 0000000c
 3de0800c 61ef0150
 7de903a6 4e800420
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Charge Smash Attacks with C-Stick" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Charge Smash Attacks with C-Stick" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Charge Smash Attacks with C-Stick [UnclePunch]
 C20DF108 00000005
 89DF065D 2C0E000F
@@ -12090,13 +12090,13 @@ C20DF17C 00000005
 61CEF1B0 7DC903A6
 4E800420 801F065C
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Longer Moonwalks" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Longer Moonwalks" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Longer Moonwalks [UnclePunch]
 *Moonwalking Always Gives 0.2 Dash Acceleration
 C20CA57C 0000000B
@@ -12111,21 +12111,21 @@ FC052040 41810008
 C001FFFC C04294B8
 C0230620 FC011040
 EC230032 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Meteor Cancelling Is Disabled" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Meteor Cancelling Is Disabled" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Meteor Cancelling Is Disabled [flieskiller]
 0408f970 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Can't Meteor Cancel when above 100%" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Can't Meteor Cancel when above 100%" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Can't Meteor Cancel when above 100% (1.02) [flieskiller]
 C208F970 00000005
 C21F1830 3E2042C8
@@ -12133,12 +12133,12 @@ C21F1830 3E2042C8
 FC108840 4181000C
 3803FFFF 48000008
 7C601B78 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="When over 75%, each 2 additional percents make meteor cancel 1 frame later" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="When over 75%, each 2 additional percents make meteor cancel 1 frame later" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $When over 75%, each 2 additional percents make meteor cancel 1 frame later (1.02) [flieskiller]
 C208D828 00000009
 800307F0 C21F1830
@@ -12150,25 +12150,25 @@ C2220020 FC108840
 EE108824 FE00801E
 DA020020 82020024
 7C100214 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Shielding" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Shielding" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Shielding (1.02) [Achilles1515]
 04091afc 48000024
 04091b28 4800000c
 04091a64 48000024
 04091a90 4800000c
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Everyone Can Firefox v1.0" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Everyone Can Firefox v1.0" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Everyone Can Firefox v1.0 [UnclePunch]
 040a96f4 38000001
 040181e8 48000028
@@ -12483,13 +12483,13 @@ BA810008 38210100
 7C0803A6 BA810008
 38210100 4E800020
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Everyone Can Float v1.1" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Everyone Can Float v1.1" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Everyone Can Float v1.1 [UnclePunch]
 0406992c 60000000
 04069934 981A2217
@@ -12670,31 +12670,31 @@ BE810008 7C0802A6
 7C0803A6 BA810008
 38210100 4E800020
 60000000 00000000 
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Every Character Can Walljump" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Every Character Can Walljump" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Every Character can Walljump (1.02) [Achilles, Geuse]
 040816c4 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Zero-G Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Zero-G Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Zero-G Mode [DRGN]
 04084DEC FC20F890
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Every Character Has Yoshi Shield Mechanics" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Every Character Has Yoshi Shield Mechanics" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $All Characters Have Yoshi Shield Mechanics v2 [UnclePunch]
 *Small initial light shield
 *No shield texture during guardOn
@@ -12722,13 +12722,13 @@ C2092584 00000004
 3DC08007 61CEB0C0
 7DC903A6 4E800421
 7FC3F378 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Extended Short Hop Input Release Window" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Extended Short Hop Input Release Window" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Extended SH Jump Input Release Window [tauKhan]
 *Jump Height Determined on First Aerial Frame, instead of Last Frame of JumpSquat
 040CB2CC 60000000
@@ -12751,13 +12751,13 @@ C20CB34C 00000010
 4182000C 8881FFF8
 989F0671 7FC3F378
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Ledge Invincibility Attrition" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Ledge Invincibility Attrition" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Ledge Invincibility Attrition [_glook]
 *This basically make ledge invincibility behave similarly to shields, in that after grabbing the ledge a few times in quick succession, subsequent grabs will reduces ledge invincibility. The ledge invincibility recovers over time, like shields, and is reset when you die, just like shields. I figure this is a better solution that the one PM has, not only because I feel it feels more natural, but also because of things like the haxdash that can circumvent it.
 C209A8AC 0000000A
@@ -12778,13 +12778,13 @@ C206A414 00000006
 2C030000 41A2000C
 3863FFFF 907F1068
 807F1990 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Dedicated Short Hop and Full Hop Jump Buttons" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Dedicated Short Hop and Full Hop Jump Buttons" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $X = Always Short Hop / Y = Always Full Hop [UnclePunch]
 *Tap jump unchanged
 C20CB518 00000003
@@ -12798,8 +12798,8 @@ C20CB170 00000006
 38000001 48000010
 38000000 48000008
 801F2340 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $X = Always Full Hop / Y = Always Short Hop [UnclePunch]
 *Tap jump unchanged
 C20CB518 00000003
@@ -12813,13 +12813,13 @@ C20CB170 00000006
 38000000 48000010
 38000001 48000008
 801F2340 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Reverse Aerial Moves" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Reverse Aerial Moves" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Reverse Aerial Moves [UnclePunch]
 *Enables Turnaround Input for Aerials
 C208CDE0 0000000C
@@ -12835,98 +12835,98 @@ C0028BE8 FC000800
 FC000850 D01F002C
 48000004 7FC3F378
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Capsule Explosion" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Capsule Explosion" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Capsule Explosions (1.02) [Achilles]
 0427CF8C 48000018
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Barrel Explosion" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Barrel Explosion" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Barrel Explosion (1.02) [Achilles]
 04288b28 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Box Explosions" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Box Explosions" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Box Explosions (1.02) [Achilles]
 0428639c 38600001
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Container Spawns" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Container Spawns" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Container Spawns [Punkline]
 C226C784 00000003
 609C0E34 7C03E040
 40820008 60830E50
 7C7C1B78 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Containers Spawn Containers" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Containers Spawn Containers" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Containers Spawn Containers [Punkline]
 C226C784 00000003
 609C0E50 7C03E040
 40820008 60830E34
 7C7C1B78 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Items in Classic Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Items in Classic Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Items in Classic Mode [Achilles]
 0417EB5C 386000ff
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Item Rain in Classic Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Item Rain in Classic Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Item Rain in Classic Mode [Achilles]
 0417EB5C 38600007
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="500% Stamina Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="500% Stamina Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $500% Stamina Mode - All Players [achilles]
 024530E4 000001F4
 02453F74 000001F4
 02454E04 000001F4
 02455C94 000001F4
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Normal C-Stick Functionality in 1P Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Normal C-Stick Functionality in 1P Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Normal C-Stick Functionality in 1P Mode [Zauron]
 0416B480 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Infinite Bunny Hood Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Infinite Bunny Hood Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Always Have Bunny Hood WIP [PKFreeZZy]
 C2069388 00000015
 9421FFB0 38600000
@@ -13000,8 +13000,8 @@ D0010040 B0610040
 38000000 90032014
 38210050 80010024
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Spawn Lasting Bunny Hood When Resetting Player in Training Mode [PKFreeZZy]
 C2087190 00000015
 9421FFB0 38600000
@@ -13025,8 +13025,8 @@ D0010040 B0610040
 4E800021 38000000
 901F2014 38210050
 8001001C 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Ignore Item Drop RNG On Lasting Bunny Hood [PKFreeZZy]
 C206CF08 00000005
 801D2014 2C000000
@@ -13034,8 +13034,8 @@ C206CF08 00000005
 398CCF3C 7D8803A6
 4E800020 806DAEB4
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Bunny Hood Pickup if Lasting Bunny Hood is Active [PKFreeZZy]
 C20947C8 0000000A
 8083002C 80040010
@@ -13048,31 +13048,31 @@ C20947C8 0000000A
 4E800020 3D808027
 398CB2B4 7D8803A6
 4E800021 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Infinite Metal Box" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Infinite Metal Box" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Infinite Metal Box [wParam]
 0406A60C 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Pokemon don't spawn from Pokeballs" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Pokemon don't spawn from Pokeballs" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Pokemon don't spawn from Pokeball [Barry Barrows]
 04297e04 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Random Hit Elements, every Non-projectile" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Random Hit Elements, every Non-projectile" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Random Hit Elements, every Non-projectile [Achilles]
 C20715B0 00000009
 7C0F0378 38600010
@@ -13084,13 +13084,13 @@ C20715B0 00000009
 2C03000B 41A2FFD0
 907E0030 7DE07B78
 28000009 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Wall Cancelling/Bracing (Anti-Infinite)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Wall Cancelling/Bracing (Anti-Infinite)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Wall Cancelling/Bracing (1.02) [_glook]
 *Its main purpose is to get rid of wall infinites.
 *If you are on the ground and you're moving into a wall (either by purposely walking/running into it or, more likely, if you're being shined into the wall), if you get hit by a non-launching attack, you can press the analog stick left or right to brace against the wall, which will make your feet leave the ground. The direction you press doesn't matter, and this was purposefully done to help with Smash DI (which is actually just a justification for my laziness).
@@ -13102,23 +13102,23 @@ C208DFAC 00000007
 4082000C 38600001
 48000008 38600000
 2C030000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Disable Homerun Timer" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Disable Homerun Timer" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Homerun Timer [Punkline]
 041B9AB8 60000000
 041B9ACC 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hot Mr. Saturn Potato" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hot Mr. Saturn Potato" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hot Mr. Saturn Potato (1.02) [wParam, Achilles]
 *If you are holding a Mr. Saturn when the seconds remaining in the match is a multiple of 5, you die. If you are hit with a Mr. Saturn while not holding another item, you are forced to catch it and are stunned for a second or so.
 C22839BC 00000011
@@ -13152,13 +13152,13 @@ C206A360 0000000C
 612940B8 7D2903A6
 4E800420 7C0802A6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Taunt Battle (r2)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Taunt Battle (r2)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Taunt Battle (r2) [InternetExplorer]:
 *Note: Do not use with "Enable Taunt Cancelling" Code
 C2261BE0 00000005
@@ -13265,13 +13265,13 @@ C216C348 00000008
 BB610024 00000000
 2845bf12 00FF0300
 004807c8 00000001
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Capped (Tennis) Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Capped (Tennis) Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Capped (Tennis) Mode (1.02) [_glook]
 *Essentially, it treats the Stock Match Time Limit as a points cap in Time mode and a coin cap in Coin Mode (coin cap is the minutes set times 100). It essentially ends the match immediately once one of the players has reached the point or coin limit/cap. Setting Stock Match Time Limit to None turns this off, so you can still play normally if you want to.
 C216CDAC 00000023
@@ -13310,13 +13310,13 @@ C216CDAC 00000023
 3880003A 3CA08046
 60A5B6CC B0850000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Taunt for Berserk Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Taunt for Berserk Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Berserk Mode [UnclePunch]
 *Taunting gives you 15% but adds 0.5 to your dash speed.
 C20DEBD0 0000000D
@@ -13333,13 +13333,13 @@ D1FF0154 80010000
 7C0803A6 38210004
 7FC3F378 7C0802A6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Hold Y for Climber Clone v1.2" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Hold Y for Climber Clone v1.2" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hold Y for Climber Clone v1.2 [UnclePunch]
 *Holding Y at the stage select screen gives that player a Clone of themselves as a Nana-esque Partner.
 C2031BD0 00000018
@@ -13393,13 +13393,13 @@ C20B119C 00000004
 4182000C 38600001
 48000004 2C030000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Single Button Mode - B Only" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Single Button Mode - B Only" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Single Button Mode - B Only [Krohnos]
 *Removes L, R, Z, A, X, Y, and the C-Stick from the game. Compatible with Slippi Direct. Does not take effect in Unranked. v1.0
 C2377B90 00000024 #External/B Single Button Mode/Ignore Buttons.asm
@@ -13439,8 +13439,8 @@ C2377B90 00000024 #External/B Single Button Mode/Ignore Buttons.asm
 3E00804C 621020AC
 91F00000 90050000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Single Button Mode - B Only - 2 stocks 5 minutes [Krohnos]
 *Removes L, R, Z, A, X, Y, and the C-Stick from the game. 2 stocks, 5 minutes. Compatible with Slippi Direct. Does not take effect in Unranked. v1.2
 C2377B90 00000024 #External/B Single Button Mode/Ignore Buttons.asm
@@ -13513,13 +13513,13 @@ C216E750 0000000C #External/B Single Button Mode/Overwrite Timer.asm
 3A40012C 3E808048
 62940540 92540000
 3C808017 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Turbo Mode Replaces Single Button Mode v1.3" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Turbo Mode Replaces Single Button Mode v1.3" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Turbo Mode Replaces Single Button Mode v1.3 [UnclePunch]
 043f0aa8 00000100
 0406b02c 38600000
@@ -13736,13 +13736,13 @@ C2079820 00000008
 38A00000 98A42293
 80A40010 B0A42290
 5460DFFF 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Chess Melee Replaces Super Sudden Death" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Chess Melee Replaces Super Sudden Death" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Chess Melee Standalone [Achilles1515, UnclePunch]
 *Replaces Super Sudden Death
 *Everytime a stock is taken, the game Resets all players to their Angel platforms with Zero Percent 
@@ -13844,13 +13844,13 @@ BA810008 80010104
 38210100 7C0803A6
 4E800020 38C00000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Dual 1v1 Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Dual 1v1 Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Dual 1v1 Mode [Achilles1515, Zauron]
 04078AA4 60000000
 04078d10 60000000
@@ -13875,13 +13875,13 @@ C216E5B4 00000005
 61EFDB69 9A0F0000
 9A0F0007 38210060
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="CPU Takeover Minigame" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="CPU Takeover Minigame" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $CPU Takeover Minigame [Savestate]
 *If d-pad left is held while the map loads, you start off a match where all players on the field are Level 9 CPUs for 5 seconds.
 *Once those 5 seconds are up (which are displayed in the milliseconds portion of the timer), you'll have control over your player for anywhere from 12-18 seconds (random, but not displayed).
@@ -13982,13 +13982,13 @@ C22F3B04 0000005F
 8061000C 7C6803A6
 80610008 38210014
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="One Stock Rotation Replaces Giant Melee" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="One Stock Rotation Replaces Giant Melee" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $One Stock Rotations v1.1 [UnclePunch]
 *Replaces Giant Melee
 *Despawns all but the first 2 present characters, and respawns the next available despawned character upon someone dying. The surviving player currently keeps their percent upon KO'ing a player.
@@ -14121,13 +14121,13 @@ BA810008 80010104
 80010104 38210100
 7C0803A6 4E800020
 38C00000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="War Gamemode Replaces Lightning Melee" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="War Gamemode Replaces Lightning Melee" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $War Gamemode Over Lightning Melee [UnclePunch]
 *When someone loses a stock, the victim's stock is added to the stock count of the player that took the stock.
 C20D3588 00000009
@@ -14141,13 +14141,13 @@ C20D3588 00000009
 38630001 9864008E
 807F18C4 00000000
 041ba7b0 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Break the Targets Randomizer" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Break the Targets Randomizer" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Break the Targets Randomizer [Punkline]
 C21C4228 000000A2
 93C10018 48000009
@@ -14343,13 +14343,13 @@ D0250060 80050014
 0415D94C 4E800020
 0415D984 4E800020
 0416B480 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Ego Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Ego Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Ego Mode [Krohnos]
 *Randomize stock counts as 1-6 and hide the stock icons. Compatible with Slippi Direct. Does not take effect in Unranked or Teams. v1.1
 C22F9994 00000009 #External/No Ego Mode/HideStockIcons.asm
@@ -14388,18 +14388,18 @@ C216E91C 00000019 #External/No Ego Mode/RandomizeStocks.asm
 3C808045 60845CBE
 98640000 80010024
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Home-Run Contest Item Modifier" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Home-Run Contest Item Modifier" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Home-Run Contest Item Modifier (1.02) [Achilles]
 04284860 000000XX
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Items (Decimal/Hexidecimal/Name)" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Items (Decimal/Hexidecimal/Name)" data-collapsetext="Click to collapse"&gt;
 
 
 Items (Decimal/Hex/Name)
@@ -14549,7 +14549,7 @@ Items (Decimal/Hex/Name)
 * 71 Iceclimbers' Up-B 
 * 72 Pesticide 
 * 73 Manhole 
-* 74 Fire(G&W) 
+* 74 Fire(G&amp;W) 
 * 75 Parashute 
 * 76 Turtle 
 * 77 Sperky 
@@ -14557,7 +14557,7 @@ Items (Decimal/Hex/Name)
 * 79 
 * 7A Sausage 
 * 7B Milk (Young Link) 
-* 7C Firefighter(G&W) 
+* 7C Firefighter(G&amp;W) 
 * 7D Masterhand's laser 
 * 7E Masterhand's bullet 
 * 7F 
@@ -14658,13 +14658,13 @@ Items (Decimal/Hex/Name)
 * FE 
 * FF
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="2-Player Adventure Mode" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="2-Player Adventure Mode" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $2-Player Adventure Mode [Nick Reynolds]
 04456ac4 000000XX #Change "X" to the character ID from the list.
 04456ac8 000000XX #Change "X" to the character ID from the list.
@@ -14684,9 +14684,9 @@ $2-Player Adventure Mode [Nick Reynolds]
 04832734 4b7ffff8
 04832738 7c605a14
 0483273c 4b7ffff0
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Character ID List" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Character ID List" data-collapsetext="Click to collapse"&gt;
 
 {| class="wikitable"
 |Character External ID
@@ -14699,7 +14699,7 @@ $2-Player Adventure Mode [Nick Reynolds]
 |-
 |0x02 // Fox
 |-
-|0x03 // Mr. Game & Watch
+|0x03 // Mr. Game &amp; Watch
 |-
 |0x04 // Kirby
 |-
@@ -14762,20 +14762,20 @@ $2-Player Adventure Mode [Nick Reynolds]
 |0x21 // User Select(Event) / None (Crashes)
 |}
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 === Version-Specific ''SSBM'' Mechanic Codes ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 ==== NTSC 1.00/1.01 ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="SSBM Version 1.00 Hitlag Behavior" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="SSBM Version 1.00 Hitlag Behavior" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $SSBM NTSC 1.00/1.01 - Attacks that Deal Less than 1 Damage Have No Hitlag or DI-ability (1.02) [Magus]
 *Reverts SSBM Version 1.02 to have SSBM Version 1.00 Hitlag Behavior
 040771E0 60000000
@@ -14787,35 +14787,35 @@ $SSBM NTSC 1.00/1.01 - Attacks that Deal Less than 1 Damage Have No Hitlag or DI
 04077B70 60000000
 04076D3C 60000000
 040776FC 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="SSBM Version 1.00 Bowser Flame Cancel" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="SSBM Version 1.00 Bowser Flame Cancel" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Bowser - Flame Cancel (1.02) [Achilles]
 *Enables Flame Cancel from SSBM version 1.00
 04135684 38800156
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Restore Frozen Item Glitch" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Restore Frozen Item Glitch" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Enable Frozen Item Glitch (1.02) [Achilles]
 *Also known as the Frozen Turnip Glitch from SSBM version 1.00
 0426B748 4D820020
 0426B758 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Restore Whispy Blink Glitch" data-collapsetext="Click to collapse">
-<pre>
-$Marth & Roy - Restore Whispy Blink Glitch [PKFreeZZy]
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Restore Whispy Blink Glitch" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
+$Marth &amp; Roy - Restore Whispy Blink Glitch [PKFreeZZy]
 C209E668 0000002E
 48000009 48000168
 7C0802A6 90010004
@@ -14864,13 +14864,13 @@ CBC10020 83E1001C
 38210030 7C0803A6
 4E800020 00000000
 0409E6D0 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 ==== ''PAL'' ====
-<div class="mw-collapsible mw-collapsed" data-expandtext="PAL Toggle" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="PAL Toggle" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $SSBM NTSC 1.02-to-PAL Game-play Converter (1.02) [UnclePunch]
 *Includes all character balances, Samus Cannot Bomb Jump Out of Zair, Remove Extender, DK Keeps Charge When Hit During Up B, Detection Bubbles Do Not Skip Hurtbox Collision Check, Freeze Glitch Fix, PAL Stock Icons and PAL CSS Indicator
 *For all changes, visit https://www.ssbwiki.com/List_of_regional_version_differences_(SSBM)
@@ -15131,21 +15131,21 @@ FFFFFB00 00000000
 3EFB8888 387F0718
 60000000 00000000
 044DEC14 01000000 #External/PAL/Toggle/PALToggleEnable.asm
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Freeze Glitch Fix" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Freeze Glitch Fix" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Freeze glitch fix [tauKhan]
 041239A8 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="PAL Stock Icons" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="PAL Stock Icons" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $PAL Stock Icons [UnclePunch]
 *Will not cause desyncs when playing online
 C22F9A3C 00000007 #External/PAL/Core/PAL Stock Icons.asm
@@ -15156,28 +15156,28 @@ C22F9A3C 00000007 #External/PAL/Core/PAL Stock Icons.asm
 4E800021 3F59999A
 C1A80000 801D0014
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Detection Bubbles Continue Hurtbox Collision Check" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Detection Bubbles Continue Hurtbox Collision Check" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Detection Bubbles Continue Hurtbox Collision Check [UnclePunch]
 040796E0 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="PAL Samus Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="PAL Samus Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $PAL Samus - Disable Extender [Achilles]
 C22B8110 00000004
 3FA0803D 8BBDE515
 2C1D0070 4082000C
 38000000 981C2240
 801C0010 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $PAL Samus - Disable Bomb Jump Grapple Cancel [Achilles]
 C2069B68 00000007
 3C80803D 8884E515
@@ -15187,58 +15187,58 @@ C2069B68 00000007
 3C800024 60840464
 48000008 80990004
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="PAL DK Codes" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="PAL DK Codes" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $DK - Preserve Giant Punch if Hit During Up-B v2 (Fixed) [PKFreeZZy]
 0410FB64 38030074
 0410FC44 38030074
 0410FEC8 38030074
 0410FF90 38030074
 0411000C 38030074
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 === Add Game Mechanics and Game Types from Other Video Games ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 ==== ''Super Smash Bros. (N64)'' ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="SSB64-style Z-Cancelling" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="SSB64-style Z-Cancelling" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Z-Cancelling from SSB64 [Achilles1515]
 *4 Frames of Lag for L-Canceled Aerials
 0408d6a4 FC000032
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="No Smash Charges" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="No Smash Charges" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $No Smash Charges [Punkline]
 C2073008 00000003
 80A40008 38A50008
 90A40008 4E800020
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Add Smash64 Fastfall Sparkle v1.2" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Add Smash64 Fastfall Sparkle v1.2" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Add Smash64 Fastfall Sparkle v1.2 [UnclePunch]
 *Adds the Sparkle GFX from SSB(64) when initiating a FastFall
 C207D5A0 0000000E
@@ -15256,20 +15256,20 @@ C207D5A0 0000000E
 61CEF834 7DC903A6
 4E800421 3821006C
 38600001 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== ''Super Smash Bros. Brawl'' ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="L = Brawl Airdodge / R = Melee Airdodge" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="L = Brawl Airdodge / R = Melee Airdodge" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $L = Brawl Airdodge / R = Melee Airdodge [UnclePunch]
 C206AEF8 00000004
 C0030030 FC000840
@@ -15314,12 +15314,12 @@ C05E0060 3DC08007
 80010000 7C0803A6
 38210004 4E800020
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Brawl-style B Reverse v1.1" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Brawl-style B Reverse v1.1" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Brawl-style B Reverse 1.1 [UnclePunch]
 C2068690 00000002
 3800FFFE 90062294
@@ -15405,25 +15405,25 @@ FDC07050 D1DF0080
 33B3B333 B3BBBB92
 B3B3333B 3BF00000
 4E800021 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Brawl-style Reverse Aerial Rush (RAR)" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Brawl-style Reverse Aerial Rush (RAR)" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $ReverseAerialRush (MagicScrumpy)
 C20C9EE8 00000003
 23030000 41820010
 C01E008C FC000050
 D01E008C 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Brawl Bury Mechanics v1.0.5" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Brawl Bury Mechanics v1.0.5" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Brawl Bury Mechanics v1.0.5 [sushie]
 *Strong  moves that deal more than 100 units of knockback cause the player to be freed from being buried and be launched as usual.
 040c1444 60000000
@@ -15441,20 +15441,20 @@ FC000840 40810008
 4E800420 4E800021
 42C80000 887D2220
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== ''Project M (Project +)'' ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Moonwalk With C-Stick ala PM" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Moonwalk With C-Stick ala PM" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Moonwalk With C-Stick ala PM [UnclePunch]
 *CStick Forward Inputs Dash Forward During Dash
 C20CA42C 0000000C
@@ -15470,13 +15470,13 @@ FC010040 41800014
 3DC0800C 61CEA484
 7DC903A6 4E800420
 C0240620 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Stock-Dependent Blastzone Wrapping" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Stock-Dependent Blastzone Wrapping" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Stock dependent blastzone wrapping (NTSC 1.02) [anonymous]
 C20679C0 00000002 #safe player block extend
 38802608 38A00005
@@ -15577,20 +15577,20 @@ EC217828 D0230000
 929E2604 3D80800D
 618C3268 7D8903A6
 4E800420 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== ''Super Smash Bros. Ultimate'' ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Perfect Shield ala Smash Ultimate" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Perfect Shield ala Smash Ultimate" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Perfect Shield ala Smash Ultimate [UnclePunch]
 C2092C98 00000037
 807F0000 48000099
@@ -15657,13 +15657,13 @@ EC211028 C04C0894
 FC011040 4082000C
 38600000 986C221B
 80010024 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="X + Y = Short Hop Macro" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="X + Y = Short Hop Macro" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $X+Y=Short Hop Macro [UnclePunch]
 *Having X+Y held at anytime during jumpsquat will enter a short hop.
 C20CB60C 00000005 #Check For Buttons During Jumpsquat.asm
@@ -15678,20 +15678,20 @@ C20CB500 00000005 #Init Flag.asm
 54E0056B 4182000C
 38E00001 90E62340
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== ''Rivals of Aether'' ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Wavedash Out of JumpSquat ROA-Style" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Wavedash Out of JumpSquat ROA-Style" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Wavedash Out of JumpSquat ROA-Style [UnclePunch]
 *Wavedash Input is Possible during JumpSquat
 C20CB634 00000014
@@ -15715,17 +15715,17 @@ EC010032 D01E0080
 618C9D70 7D8903A6
 4E800421 2C1F0000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== ''Other'' ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="SUPERHOT" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="SUPERHOT" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $SUPERFOX [SinsOfApathy]
 *From the game "SUPERHOT" - Time Moves Only When You Move
 C23762A0 00000019
@@ -15754,59 +15754,59 @@ C23762A0 00000019
 82E10018 82C10014
 82A10010 38210020
 38000001 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 == Character-Specific Game-Play Altering Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 === Dr. Mario ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mario and Doc Hold B [UnclePunch]
 040e253c 801F065C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mario and Doc Get Jump Back After Down B [UnclePunch]
 C20E2390 00000004
 7C832378 3DC08007
 61CED5D4 7DC903A6
 4E800421 7FC3F378
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Mario ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mario and Doc Hold B [UnclePunch]
 040e253c 801F065C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mario and Doc Get Jump Back After Down B [UnclePunch]
 C20E2390 00000004
 7C832378 3DC08007
 61CED5D4 7DC903A6
 4E800421 7FC3F378
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Luigi ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Luigi's Fireball is influenced by his momentum [UnclePunch]
 C22C02A0 00000006
 C0240000 39F80128
@@ -15815,35 +15815,35 @@ C10F0000 820F0000
 2C0F0000 4180000C
 FC21402A 48000008
 FC214028 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Luigi - Always Misfire (1.02) [Achilles]
 00142AFB 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fully Charged Side B = Misfire [UnclePunch]
 C2143544 00000003
 80032344 2C080018
 40820008 38000001
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Luigi Hold B [UnclePunch]
 04144ab0 801F065C
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Bowser ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Bowser - Flame Cancel (1.02) [Achilles]
 *Enables Flame Cancel from SSBM version 1.00
 04135684 38800156
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Bowser can mash for height during aerial upB [rmn]
 C2135E34 00000009
 48000010 4E800021
@@ -15855,13 +15855,13 @@ C0440004 3C008007
 6000D508 7C0903A6
 4E800421 80010024
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Bowsers Flame Doesn't Diminish [UnclePunch]
 041352a0 60000000
 0413527c 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Bowser - Limit Flame Breath [PKFreeZZy]
 C2134EB4 00000002
 93FE234C 93FE235C
@@ -15884,15 +15884,15 @@ C2135310 00000005
 C2134BF0 00000002
 38000001 901F235C
 801F2354 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Peach ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Peach - Break the Targets Turnip Pull Strategies- Strategy 1 (1.02) [Achilles]
 *Peach will pull turnip/bomb/beam sword based on how many targets are left
 *Peach will flash a color when pulling a coded turnip - The color she flashes is based on the last action that caused a color tint on her (ex. parasol fastfall)
@@ -15905,8 +15905,8 @@ C211D0A4 00000007
 9A320564 38C0000C
 48000008 7FE6FB78
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach - Break the Targets Turnip Pull Strategies- Strategy 2 (1.02) [Achilles]
 *Peach will pull turnip/bomb/beam sword based on how many targets are left
 *Peach will flash a color when pulling a coded turnip - The color she flashes is based on the last action that caused a color tint on her (ex. parasol fastfall)
@@ -15921,8 +15921,8 @@ C211D0A4 00000009
 3A200091 9A320564
 48000008 7FE6FB78
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach - Break the Targets Turnip Pull Strategies- Strategy 3 (1.02) [Achilles]
 *Peach will pull turnip/bomb/beam sword based on how many targets are left
 *Peach will flash a color when pulling a coded turnip - The color she flashes is based on the last action that caused a color tint on her (ex. parasol fastfall)
@@ -15937,24 +15937,24 @@ C211D0A4 00000009
 3A200091 9A320564
 48000008 7FE6FB78
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Peach - Always Pull Specific Turnip" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Peach - Always Pull Specific Turnip" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Peach - Always Pull Specific Turnip (1.00) [Anonymous]
 042BBDA0 3900000X
 0411CA54 48000010
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach - Always Pull Specific Turnip (1.01) [Anonymous]
 042BC988 3900000X
 0411CE04 48000010
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach - Always Pull Specific Turnip (1.02) [Anonymous]
 042BD410 3900000X
 0411D090 48000010
-</pre>
+&lt;/pre&gt;
 
 {| class="wikitable"
 |X Values:
@@ -15976,13 +15976,13 @@ $Peach - Always Pull Specific Turnip (1.02) [Anonymous]
 |7:Stitch Face
 |}
 
-</div>
-<pre>
+&lt;/div&gt;
+&lt;pre&gt;
 $Peach - Infinite Float (1.02) [Achilles]
 0411BBC4 3DE04A00
 0411BBC8 91FF2230
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach - FSmash Angles Determine FSmash Type [UnclePunch]
 *Nuetral = Racket
 *Up = Pan
@@ -16008,31 +16008,31 @@ C00300C4 FC1F0040
 3880015D 48000008
 3880015F C3E10000
 38210010 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach Aerial Down B and Neutral B Swap [UnclePunch]
 043c1514 8011e45c
 043c161c 8011d1c4
 043c16a0 8011d11c
 043c1724 8011e3d0
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach - Peach Bomber vs. Shield Fix [PKFreeZZy]
 0411C440 48000078
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Enable Frozen Item Glitch (1.02) [Achilles]
 *Also known as the Frozen Turnip Glitch from SSBM version NTSC 1.00
 0426B748 4D820020
 0426B758 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 === Yoshi ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Press B to Explode Yoshi Egg [UnclePunch]
 C22B2B74 00000005
 81DF0518 81CE002C
@@ -16040,8 +16040,8 @@ C22B2B74 00000005
 40820010 39C00000
 91C1FFFC C021FFFC
 FC010040 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Press B to Explode Yoshi Egg and Teleport w/ Momentum Based on Angle+Distance From Egg [UnclePunch]
 C22B2ABC 0000000B
 38600000 3D808002
@@ -16102,8 +16102,8 @@ D03D00B8 D03D00C4
 800100FC 7C0803A6
 BA810008 38210100
 C002D5E4 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Press B to Explode Yoshi Egg and Teleport w/ No Momentum [UnclePunch]
 C22B2ABC 0000000B
 38600000 3D808002
@@ -16149,8 +16149,8 @@ C03F0D44 800100FC
 7C0803A6 BA810008
 38210100 C002D5E4
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Smash 4 Yoshi Up B [UnclePunch]
 C212E3A0 00000009
 89C31969 39CE0001
@@ -16178,15 +16178,15 @@ C212E5C0 0000000F
 4E800421 80010000
 7C0803A6 38210004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Yoshi Aerial Neutral B Grab Gives Jump Back [UnclePunch]
 C212D110 00000003
 3DC08007 61CED5D4
 7DC903A6 4E800421
 8001001C 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Yoshi - Jump Out of Shield v2 [PKFreeZZy]
 C212C3FC 00000007
 7C7F1B78 3D80800D
@@ -16196,53 +16196,53 @@ C212C3FC 00000007
 398CC448 7D8903A6
 4E800420 7FE3FB78
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 === Donkey Kong ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $DK - Always Full Giant Punch (1.02) [Achilles]
 0410D98C 90A4002C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $DK - Preserve Giant Punch if Hit During Up-B v2 (Fixed) [PKFreeZZy]
 0410FB64 38030074
 0410FC44 38030074
 0410FEC8 38030074
 0410FF90 38030074
 0411000C 38030074
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $DK Hold B for Down B [UnclePunch]
 0410DDE0 80030660
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Skip DK Down B Startup [UnclePunch]
 043c170c 8010de88
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Captain Falcon ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Falcon and Ganondorf do not Regain Jump after Down-B [UnclePunch]
 040e431c 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Captain Falcon - Raptor Boost Enters "Fall" Action State Instead of "FallSpecial" (1.02) [Achilles]
 *For aerial hit and miss, and grounded Raptor Boost that travels offstage.
 *FallSpecial is the "helpless" fall state.
 040E39D0 4BFE8D61
 040E3AEC 4BFE8C45
 040E3CD0 4BFE8A61
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Walljump Out of Falcon Side B [UnclePunch]
 *Can only walljump if walljumps used = 0
 C20E3E28 00000006
@@ -16252,8 +16252,8 @@ C20E3E28 00000006
 61CE169C 7DC903A6
 4E800421 80010024
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Walljump Out of Falcon Up B [UnclePunch]
 *Can only walljump if walljumps used = 0
 C20E5114 00000005
@@ -16262,8 +16262,8 @@ C20E5114 00000005
 3DC08008 61CE169C
 7DC903A6 4E800421
 8001001C 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Falcon Turnaround Up B [UnclePunch]
 *Turns if control stick is pushed 25% in the opposite direction
 C20E52C4 00000007
@@ -16274,8 +16274,8 @@ EE0F0432 FC107040
 C1DF002C FDC07050
 D1DF002C C0429854
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Falcon Grab Ledge on Side B [UnclePunch]
 *Can only walljump if walljumps used = 0
 C20E3DFC 00000005
@@ -16284,8 +16284,8 @@ C20E3DFC 00000005
 7DC903A6 4E800421
 7FC3F378 809E002C
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Aerial Raptor Boost Popup + Midair Control [UnclePunch]
 C20E3BD0 00000007
 81DF0894 3DE03F80
@@ -16295,15 +16295,15 @@ C20E3BD0 00000007
 3DC08008 61CED5B4
 7DC903A6 4E800420
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Captain Falcon - No Rapid Jabs [Achilles]
 C20D6B8C 00000003
 81DE0064 2C0E0002
 40820008 4E800020
 7C0802A6 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $CPU - Disable Rapid Jabs for C. Falcon [Achilles]
 C20D6B8C 00000009
 80C3002C 80861A94
@@ -16315,8 +16315,8 @@ C20D6B8C 00000009
 2C040002 40820008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Captain Falcon - No Rapid Jabs (CPU only) [Achilles]
 C20D6B8C 00000007
 89DE0678 1DCE0E90
@@ -16326,8 +16326,8 @@ C20D6B8C 00000007
 2C0E0002 40820008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Falcon Punch Takes 2 Stocks [Todd Bonney]
 C2033D48 00000007
 81810014 816C1868
@@ -16337,15 +16337,15 @@ C2033D48 00000007
 2C0A0012 40820008
 3803FFFE 9804008E
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Ganondorf ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Ganon Float v1.0 [UnclePunch]
 C20E2C00 00000008
 801F0004 2C000019
@@ -16409,19 +16409,19 @@ EDCE782A D1DF0084
 80010000 7C0803A6
 38210004 4E800020
 7C0802A6 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Falcon and Ganondorf do not Regain Jump after Down-B [UnclePunch]
 040e431c 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Falco ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Falco/Fox - Hold Z While *Aerial* Laser Emits to Fire at Half Speed [Achilles]
 C20E6908 00000005
 80BD065C 54A506F7
@@ -16429,8 +16429,8 @@ C20E6908 00000005
 90A1FFF8 C1E1FFF8
 FC427824 80BF001C
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Falco Side-B Walljump [UnclePunch]
 *Can only walljump if walljumps used = 0
 C20EAC38 00000008
@@ -16451,8 +16451,8 @@ C20EA684 00000008
 3DC08008 61CE169C
 7DC903A6 4E800421
 80010024 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Falco Up-B Walljump [UnclePunch]
 *Can only walljump if walljumps used = 0
 C20E7A58 00000007
@@ -16463,19 +16463,19 @@ C20E7A58 00000007
 61CE169C 7DC903A6
 4E800421 80010044
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox Falco Hold B [UnclePunch]
 040e6aec 801F065C
 040e6b40 801F065C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox/Falco - Fall Instead of FallSpecial after Side-B [Achilles]
 040EA988 4BFE1DA9
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Fox/Falco UpB from SSB4" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Fox/Falco UpB from SSB4" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Special Move Master Code v3 (fix console crash) [UnclePunch]
 C20D5C08 00000002 #land
 39C00000 99C31878
@@ -16506,8 +16506,8 @@ C2099A9C 00000004 #airdodge flag
 41820008 48000008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox and Falco Enter Fall After Side B and Retains Jump (a la Smash 4) v2[UnclePunch]
 *Requires Special Move Master Code v3
 040ea988 4BFE1DA9
@@ -16519,17 +16519,17 @@ C20E9F6C 00000005 #check for side B used
 99DF1878 48000008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Fox ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Falco/Fox - Hold Z While *Aerial* Laser Emits to Fire at Half Speed [Achilles]
 C20E6908 00000005
 80BD065C 54A506F7
@@ -16537,8 +16537,8 @@ C20E6908 00000005
 90A1FFF8 C1E1FFF8
 FC427824 80BF001C
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mash Firefox to Increase Length [UnclePunch]
 C20E72B0 00000003
 3DC03F7A 61CEE148
@@ -16571,8 +16571,8 @@ EC4203F2 00000000
 C20E7DC8 00000002
 C01F0074 C1FD2354
 EC0003F2 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Invisible Firefox [UnclePunch]
 040e7150 60000000
 C20E7E1C 00000002
@@ -16584,19 +16584,19 @@ C20E7C78 00000002
 C20E7ADC 00000002
 38000098 981F221E
 80010024 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox Falco Hold B [UnclePunch]
 040e6aec 801F065C
 040e6b40 801F065C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox/Falco - Fall Instead of FallSpecial after Side-B [Achilles]
 040EA988 4BFE1DA9
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Fox/Falco UpB from SSB4" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Fox/Falco UpB from SSB4" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Special Move Master Code v3 (fix console crash) [UnclePunch]
 C20D5C08 00000002 #land
 39C00000 99C31878
@@ -16627,8 +16627,8 @@ C2099A9C 00000004 #airdodge flag
 41820008 48000008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox and Falco Enter Fall After Side B and Retains Jump (a la Smash 4) v2[UnclePunch]
 *Requires Special Move Master Code v3
 040ea988 4BFE1DA9
@@ -16640,23 +16640,23 @@ C20E9F6C 00000005 #check for side B used
 99DF1878 48000008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Ness ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $PK Thunder Does Not Disappear on Hit or Death (1.02) [_glook]
 *This is an SSBM version 1.00 game mechanic that was changed in SSBM version 1.02.
 042abcb0 4bfc7481
 042abcb4 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $PKT Doesn't Disappear When Hitting Projectiles [UnclePunch]
 C22AC05C 00000007
 81DE002C 81CE0CF4
@@ -16665,8 +16665,8 @@ C22AC05C 00000007
 61CEC064 7DC903A6
 4E800420 3DC0802A
 61CEB90C 7DC903A6
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $PKT Only Disappears When Hitting Players [UnclePunch]
 C22AC05C 00000007
 81DE002C 81CE0CF4
@@ -16676,15 +16676,15 @@ C22AC05C 00000007
 4E800420 3DC0802A
 61CEB90C 7DC903A6
 4E800421 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $PKT2 Trajectory = Analog Stick Angle [UnclePunch]
 04118c18 C03D0624
 04118bfc C05D0620
 041185bc C03E0624
 041185a0 C05E0620
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Ness - Up-B Once After Hitting A Wall v2 [UnclePunch, PKFreeZZy]
 C2118FA0 0000000F
 7C0802A6 90010004
@@ -16709,19 +16709,19 @@ C20D5B4C 00000003
 801F0004 2C000008
 4082000C 38600000
 907F2250 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 === Ice Climbers ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Solo Popo Up-B Gives Increased Vertical Velocity (1.02) [Achilles]
 *This code changes the self induced vertical value from 1.8 to 3.1.
 04121E7C C004013C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Nana and Popo Can Share Ledge [UnclePunch]
 C2082EA4 00000009
 887F000C 889E221F
@@ -16743,8 +16743,8 @@ C2082ED8 00000009
 3D808008 618C2EF4
 7D8903A6 4E800420
 809E0730 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Nana Respawns After 20 Seconds [UnclePunch]
 *You can change the amount of time for Nana to respawn by changing the codeline "386004B0" to any number where 3860XXXX is the number of frames in hexadecimal to wait.
 040d5378 60000000
@@ -16785,8 +16785,8 @@ C206A37C 00000024
 881F221F 50601F38
 981F221F 7FE3FB78
 8803221F 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Nana direction update bug fix (ICs can dd together etc.) (NTSC 1.02) [tauKhan]
 C20B0AE8 00000005
 38C40444 3863001C
@@ -16794,20 +16794,20 @@ C20B0AE8 00000005
 386400FC D0030018
 80640444 80C40444
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $IC Hold B [UnclePunch]
 04120554 801F065C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Synced Nana Special Action State Functions
 040b0bbc 4800001c
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Nana is always Lvl 9 AI
 040B10FC 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Nana Always Throws Debug Option [Achilles]
 C20DD368 00000006
 389E0000 83DF0004
@@ -16816,15 +16816,15 @@ C20DD368 00000006
 2C1E0000 4182000C
 388000DA 7C84F214
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Kirby ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Kirbys Taunt Without Ability Gives Random Ability v1.1 [UnclePunch]
 *Loads in all Kirby hats when Kirby is being played
 *Load times are increased when Kirby is being played
@@ -16855,8 +16855,8 @@ C20DEC2C 0000000D
 618CEC38 7D8903A6
 4E800420 387E0000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby - Preserve Copy Ability Charge if Hit Out of Non-Copied Specials [PKFreeZZy]
 040EE7D0 40810008
 040EE7D4 480032B9
@@ -16865,32 +16865,32 @@ C20EE7CC 00000003
 7C7E1B78 83E3002C
 801F0010 2C00018E
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Uses Non-Special Dash Attack [UnclePunch]
 0408b4b0 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Always Has Ganon/Falcon Punch [UnclePunch]
 040f1648 38800002
 040f1698 38800002
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Always Has DK Punch [UnclePunch]
 040f1648 38800003
 040f1698 38800003
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Always Has Bat Swing? [UnclePunch]
 040f1648 3880000A
 040f1698 3880000A
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Always Has Zelda Reflect [UnclePunch]
 040f1648 38800013
 040f1698 38800013
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Can Jump After Up Throw and Forward Throw (1.02) [UnclePunch]
 C20DDB70 00000002
 7FE3FB78 39C00001
@@ -16898,16 +16898,16 @@ C20DDB70 00000002
 C20DD910 00000002
 7FE3FB78 39C00001
 99C51968 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Cannot Escape Kirby Throws [UnclePunch]
 040DE490 48000010
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Throws retain one mid air jump [The Cape]
 0407D66C 981e1968
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby - Land on Platforms During Up Throw Drop [PKFreeZZy]
 060DD9B8 0000000C
 38800000 3CA0800E
@@ -16922,30 +16922,30 @@ $Kirby - Land on Platforms During Up Throw Drop [PKFreeZZy]
 38A5D568
 040DDC24 48000020
 0404779C 38A00001
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 === Samus ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Samus - Always Full Charge Shot (1.02) [Achilles]
 04128660 81E4009C
 04128664 91E32230
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Samus - Always Have Extended Grapple [donny2112]
 042B7D04 38000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Samus - Preserve Charge Shot if Hit During Up-B (Fixed) [PKFreeZZy]
 0412A6AC 3C608006
 0412A6B4 3803B880
 0412A778 3C608006
 0412A780 3803B880
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Samus Shoots Random Item [UnclePunch]
 C22B632C 00000012
 D3E10054 38600023
@@ -16980,16 +16980,16 @@ EC2100B2 D0230040
 3D80802B 618C63D0
 7D8903A6 4E800420
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $PAL Samus - Disable Extender [Achilles]
 C22B8110 00000004
 3FA0803D 8BBDE515
 2C1D0070 4082000C
 38000000 981C2240
 801C0010 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $PAL Samus - Disable Bomb Jump Grapple Cancel [Achilles]
 C2069B68 00000007
 3C80803D 8884E515
@@ -16999,19 +16999,19 @@ C2069B68 00000007
 3C800024 60840464
 48000008 80990004
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fix Samus Extender Crash [UnclePunch]
 042B9D28 48000078
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Zelda ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Instant Zelda/Shiek Transform [UnclePunch]
 04114184 C042A1DC
 0413b510 C042A1DC
@@ -17019,8 +17019,8 @@ $Instant Zelda/Shiek Transform [UnclePunch]
 04114790 C042A1DC
 04114248 C042A1DC
 0413afc8 C042A1DC
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Sheik/Zelda CPU Disable Transformations [Achilles]
 C20D68D8 0000000B
 3D808045 618C3088
@@ -17047,15 +17047,15 @@ C2096728 0000000C
 7C6903A6 38600000
 4E800420 387E0000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Sheik ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Instant Zelda/Shiek Transform [UnclePunch]
 04114184 C042A1DC
 0413b510 C042A1DC
@@ -17063,8 +17063,8 @@ $Instant Zelda/Shiek Transform [UnclePunch]
 04114790 C042A1DC
 04114248 C042A1DC
 0413afc8 C042A1DC 
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Sheik - Preserve Needles if Hit During Side-B v2 [PKFreeZZy]
 0411118C 38030E88
 0411149C 38030E88
@@ -17075,24 +17075,24 @@ $Sheik - Preserve Needles if Hit During Side-B v2 [PKFreeZZy]
 04111DB0 38030E88
 04111E5C 38030E88
 04111F18 38030E88
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Shiek Up B Edge Cancel [UnclePunch]
 041134f4 4BFB923D
 04113500 4BFB9231
 C21137E4 00000002
 38600040 987F0594
 7FE3FB78 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Aerial Control and Fastfall Shiek UpB [UnclePunch]
 043cc2d4 800e7f20
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Less Landing Lag on Sheik Up B [UnclePunch]
 04113e10 38800001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Sheik/Zelda CPU Disable Transformations [Achilles]
 C20D68D8 0000000B
 3D808045 618C3088
@@ -17119,15 +17119,15 @@ C2096728 0000000C
 7C6903A6 38600000
 4E800420 387E0000
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Link ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Link's Shield Reflects [UnclePunch]
 0400a9dc 60000000
 C20EB3EC 0000000F
@@ -17146,8 +17146,8 @@ D004001C 81C3002C
 7FC3F378 3DC08007
 61CEB23C 7DC903A6
 4E800421 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Link Shield Always Active [UnclePunch]
 04007c44 60000000
 0400a80c 60000000
@@ -17159,15 +17159,15 @@ C206A19C 00000007
 3DC0800E 61CEB3BC
 7DC903A6 4E800421
 800100A4 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Link/Y. Link - Boomerang Hookshot Cancel [Achilles]
 043C807C 00000000
 043C809C 00000000
 043D1204 00000000
 043D1224 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Link - Buffed Hylian Shield [UnclePunch, DRGN]
 C20EAE44 00000011
 3DE08023 81EF89C0
@@ -17187,67 +17187,67 @@ C20EAE44 00000011
 61CE0004 3DE08000
 61EFA80C 91CF0000
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Young Link ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Link/Y. Link - Boomerang Hookshot Cancel [Achilles]
 043C807C 00000000
 043C809C 00000000
 043D1204 00000000
 043D1224 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Pichu ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Pikachu ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Jigglypuff ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Mewtwo ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mewtwo - Always Full Shadow Ball (1.02) [Achilles]
 04144f90 89E2E423
 04144f94 91E32234
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mewtwo Can Actually Reflect Stuff [UnclePunch]
 04146c58 60000000
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Mewtwo UpB from PM" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Mewtwo UpB from PM" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Special Move Master Code v3 (fix console crash) [UnclePunch]
 C20D5C08 00000002 #land
 39C00000 99C31878
@@ -17278,8 +17278,8 @@ C2099A9C 00000004 #airdodge flag
 41820008 48000008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mewtwo Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 *Requires Special Move Master Code v3
 04145e30 4BF86901
@@ -17293,28 +17293,28 @@ C2145258 00000005 #ground up B lose up B
 C21451DC 00000002 #aerial up B lose up B
 39C00001 99C318D8
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
-=== Mr. Game & Watch ===
+=== Mr. Game &amp; Watch ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $3D Mr. Game and Watch (1.02) [Achilles]
 0414A410 C005048C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mr. Game and Watch - Always Specific Hammer Value (1.02) [Wooggle]
 0414C760 3BC0000? #Set Specific Hammer Value Here (where ? = X-1)
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $GaW Bucket Fill Amount Based on Damage of Projectile [UnclePunch]
-*If projectile dealt 1->8 damage, fill 1
-*If projectile dealt 9->12 damage, fill 2
+*If projectile dealt 1-&gt;8 damage, fill 1
+*If projectile dealt 9-&gt;12 damage, fill 2
 *If projectile dealt 13+ damage, fill 3
 C214D9D4 00000007
 801F1A44 2C000008
@@ -17324,13 +17324,13 @@ C214D9D4 00000007
 48000014 38000002
 4800000C 38000003
 48000004 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $GaW Hold B [UnclePunch]
 0414e934 8004065C
 0414e8b0 8004065C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $GaW Modulo 10 Hammer [UnclePunch]
 C214C784 0000000A
 48000041 7C6802A6
@@ -17343,9 +17343,9 @@ FC20081E D8210020
 907F222C 4800000C
 4E800021 41200000
 8001007C 00000000
-</pre>
-<pre>
-$Mr. Game & Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]
+&lt;/pre&gt;
+&lt;pre&gt;
+$Mr. Game &amp; Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]
 0414BAFC 38800041
 0414BB08 90830070
 0414BB0C C0230258
@@ -17358,10 +17358,10 @@ $Mr. Game & Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]
 0414BCD8 90830070
 0414BCDC C0230264
 0414BCE0 4BF4191D
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="G&W UpB from PM" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="G&amp;W UpB from PM" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Special Move Master Code v3 (fix console crash) [UnclePunch]
 C20D5C08 00000002 #land
 39C00000 99C31878
@@ -17392,9 +17392,9 @@ C2099A9C 00000004 #airdodge flag
 41820008 48000008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
-<pre>
-$G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
+&lt;/pre&gt;
+&lt;pre&gt;
+$G&amp;W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 *Requires Special Move Master Code v3
 0414e274 4BF7E4BD #enters fall
 0414e0d8 60000000 #doesnt lose jump after grounded up B
@@ -17408,17 +17408,17 @@ C214E158 00000005 #aerial up B
 C214E0AC 00000002 #ground up B
 39C00001 99C318D8
 7C0802A6 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Marth ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Costume Dependent Marth Sword Swing Colors (1.02) [Achilles]
 C2136510 0000000F
 3DC0FF00 61CEFFFF
@@ -17436,43 +17436,43 @@ C2136510 0000000F
 60637D77 3C00C800
 6000FFFF 94650008
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Roy ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Male Wireframe ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Female Wireframe ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Giga Bowser ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
-$Giga Bowser & Sandbag Always Fall On Match Start [Achilles]
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
+$Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]
 C2069328 00000006
 807E0004 2C03001F
 4182000C 2C030020
@@ -17480,8 +17480,8 @@ C2069328 00000006
 60639350 7C6903A6
 4E800420 887E000C
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $If character selected is Giga Bowser, set scale to 0.5 [flieskiller]
 C216DAD4 00000006
 3DE08045 61EF3084
@@ -17490,68 +17490,68 @@ C216DAD4 00000006
 4082000C 3E203F00
 923D0020 C03D0020
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Giga Bowser Can Be Grabbed (1.02) [Achilles]
 0414f704 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Master Hand ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
-$MasterHand & CrazyHand Controlled By All Ports [Achilles]
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
+$MasterHand &amp; CrazyHand Controlled By All Ports [Achilles]
 041508B8 80C4065C
 04156AFC 8006065C
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Crazy Hand ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
-$MasterHand & CrazyHand Controlled By All Ports [Achilles]
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
+$MasterHand &amp; CrazyHand Controlled By All Ports [Achilles]
 041508B8 80C4065C
 04156AFC 8006065C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $CrazyHand - Disable D-Pad Up+B  Attack [Achilles]
 04156CE0 4800006c
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Crazy Hand Tag Team Fix [Odante]
 C215C2F8 00000003
 28030000 40820008
 38000000 28000001
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Sandbag ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 == Stage Game-Play Altering Codes ==
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Toggle Frozen Stages with Y" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Toggle Frozen Stages with Y" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Toggle Frozen Stages with Y
 224d6c94 00000000
 04c8ee24 00000000
@@ -17609,136 +17609,136 @@ c2259c48 0000000a
 6a940001 9a930000
 3a80001e 9a8db60e
 886db60e 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Icicle Mountain ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Princess Peach's Castle ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Switches and Bullets on Princess Peach's Castle (1.02) [Zauron]
 041CD8A8 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Rainbow Cruise ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Kongo Jungle (SSBM) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable barrel from Kongo Jungle (Melee) (1.02)[flieskiller]
 041d5290 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Jungle Japes ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Termina: Great Bay ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Hyrule Temple ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Yoshi's Story ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Destroy Randall [sushie]
 041E338C 4BFE167D
 041E3390 48000030
 041E33E0 4E800020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Cannot Enter Wait from CliffWait (Randall Fix) [UnclePunch]
 040815f8 38600000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Grounded Getup Attack Fix (Randall Fix) [UnclePunch]
 0409adcc 38600000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Shy Guys on Yoshi's Story (1.02) [Zauron]
 041E3348 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Shy Guys drop food even if items are at off on Yoshi's Story (1.02)[flieskiller]
 0428fb1c 4800000c
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Yoshi's Island (SSBM) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Fountain of Dreams ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Rising Platforms and Water Jets on Fountain of Dreams (1.02) [Zauron]
 041CC8AC FC000028
 041CC8B4 4800013C
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Green Greens ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Initial Bricks on Green Greens (1.02) [Zauron]
 042146EC 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Blocks initially in the stage can't have bombs on Green Greens [flieskiller]
 04214c0c 60000000
 04214c40 60000000
@@ -17758,214 +17758,214 @@ $Blocks initially in the stage can't have bombs on Green Greens [flieskiller]
 04214f18 60000000
 04214f4c 60000000
 04214f80 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable blocks, falling from the sky [flieskiller]
 04216ABC 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Tree Wind and Apples on Green Greens (1.02) [Zauron]
 04213C10 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Corneria ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Ship Spawn on Corneria (1.02) [Zauron]
 041DDA48 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Great Fox's Gun (starts out dead) on Corneria (1.02) [Zauron]
 041E1390 40800430
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Venom ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Flatzone ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Brinstar ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Rising Lava on Brinstar (1.02) [Zauron]
 041D99E0 4E800020
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Brinstar Depths ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Onett ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable cars on Onett (1.02)[flieskiller]
 041e379c 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Remove Drug Store Platforms from Onett (1.02)[flieskiller]
 041e3794 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Fourside ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Mute City ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable cars on Mute City (1.02)[flieskiller]
 041f0188 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mute City - Racers no longer affect the match [??]
 041F0188 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Big Blue ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Pokemon Stadium ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Stage Transformations on Pokemon Stadium (1.02) [Zauron]
 041D1548 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Always Certain Pokemon Stadium Transformation [flieskiller]
 *Replace "X" with: 0 = fire, 1 = grass, 2 = rock, 3 = water
 041d463C 3860000X
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Pokemon Stadium Transformation lasts for 9 minutes (1.02) [flieskiller]
 041d4f84 3B807FFF
 041d4f88 48000044
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Pokefloats ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Mushroom Kingdom I ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Remove levers from Mushroom Kingdom I (1.02) [flieskiller]
 041fa918 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Blocks no longer respawn on Mushroom Kingdom I (1.02) [flieskiller]
 041fab7c 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Mushroom Kingdom II ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Birdo on Mushroom Kingdom II (1.02) [flieskiller]
 041fcfe8 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Pidgit (1.02) [flieskiller]
 041fcff0 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Wood Logs (1.02) [flieskiller]
 041fcfe0 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Logs, Pidgit, and Birdo on Mushroom Kingdom II (1.02)  [Jorgasms]
 041fcd84 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Battlefield ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Final Destination ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Dreamland (SSB64) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Tree Blow on Dreamland (1.02) [Zauron]
 04211444 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Dreamland - Disable Wind if P1's nametag is !WND [Wooggle]
 C2036D70 0000000D
 3E208021 62311444
@@ -17981,152 +17981,152 @@ C2036D70 0000000D
 7C0E8000 4082000C
 3E406000 92510000
 3BE00000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Yoshi's Island (SSB64) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Kongo Jungle (SSB64) ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 === Adventure Stages ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 ==== Mushroom Kingdom (Adventure) ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
 01C415E2 08000000
 0446B4A4 3F800000
 0446B4A0 3F800000
 0446B49C 3F800000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== Underground Maze ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Mushroom Kingdom / Underground Maze Crash Prevent (Debug Mode)
 01C415E2 08000000
 0446B4A4 3F800000
 0446B4A0 3F800000
 0446B49C 3F800000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== Brinstar Escape ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 ==== F-Zero Grand Prix ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Trophy Stages ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 ==== Trophy Collector Stage ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Disable Trophy Spawn on Snag the Trophies Stage (FigureGet) (1.02) [wparam]
 042199FC 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Trophy Collector Crash Prevent (Debug Mode)
 01C43D24 08000000
 042199FC 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 ==== Goomba Trophy Stage ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
 
 ==== Entei Trophy Stage ====
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
 
 
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Target Test Stages ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Target Test Never Ends [Link Master]
 *Unknown Version, code 1 of 2
 041C3374 38030000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Target Test Never Ends [Link Master]
 *Unknown version, code 2 of 2
 041C3CD8 38030000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Target Test Never Ends (1.02) [donny2112]
 041C4344 38030000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Target Test Ends After 9 Targets (1.02) [djwang88]
 C21C4344 00000003
 2C030002 40820008
 38600001 3803FFFF
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Target Counter Starts With 9 Targets (1.02) [djwang88]
 041C427C 38000009
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Load Specfic Stage for Target Test (1.02) [djwang88]
 *Used for Mismatched Target Test runs. Replace the indicated characters with the specified Target Test Stage, and select the desired Player Character on the Target Test CSS.
 *021 = TMario (Mario)
@@ -18152,13 +18152,13 @@ $Load Specfic Stage for Target Test (1.02) [djwang88]
 *035 = TSeak (Sheik)
 *036 = Tyoshi (Yoshi)
 *037 = TZelda (Zelda)
-*038 = TGamewat (Mr. Game & Watch)
+*038 = TGamewat (Mr. Game &amp; Watch)
 *039 = TEmblem (Roy)
 *03A = TGanon (Ganondorf)
 041B659C 38600XXX #Replace XXX with Hex ID of desired Stage
-</pre>
+&lt;/pre&gt;
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Stage ID List" data-collapsetext="Click to collapse">
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Stage ID List" data-collapsetext="Click to collapse"&gt;
 
 
 Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3Cs4wHQKLFegZe2jhbBuIhCG8/edit#gid=20 This Google Sheet]
@@ -18296,7 +18296,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |055 [037] // Target Test // Zelda (TZelda)
 |-
-|056 [038] // Target Test // Mr. Game & Watch (TGamewat)
+|056 [038] // Target Test // Mr. Game &amp; Watch (TGamewat)
 |-
 |057 [039] // Target Test // Roy (TEmblem)
 |-
@@ -18308,7 +18308,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |059 [03B] // 1 //1 Kinoko (Mushroom Kingdom Adventure)
 |-
-|060 [03C] // 1 //2 Castle (vs Peach & Mario [or luigi])
+|060 [03C] // 1 //2 Castle (vs Peach &amp; Mario [or luigi])
 |-
 |061 [03D] // 2 //1 Kongo (vs 2 mini Donkey Kongs)
 |-
@@ -18346,7 +18346,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |078 [04E] // 11 //1 Battle (vs Fighting Wireframe team, low gravity)
 |-
-|079 [04F] // 11 //2 Battle (vs Metal Mario [& Metal Luigi if unlocked])
+|079 [04F] // 11 //2 Battle (vs Metal Mario [&amp; Metal Luigi if unlocked])
 |-
 |080 [050] // 12 //1 Last (vs Bowser)
 |-
@@ -18450,63 +18450,63 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |CLASSIC (VS TWO CHARACTERS)
 |-
-|125 [07D] // Battlefield (Plays Mario Theme) (vs Team Mario & Bowser)
+|125 [07D] // Battlefield (Plays Mario Theme) (vs Team Mario &amp; Bowser)
 |-
-|126 [07E] // Mushroom Kingdom II (vs Team Mario & Peach)
+|126 [07E] // Mushroom Kingdom II (vs Team Mario &amp; Peach)
 |-
-|127 [07F] // Kongo Jungle (vs Team DK & Fox)
+|127 [07F] // Kongo Jungle (vs Team DK &amp; Fox)
 |-
-|128 [080] // Temple (vs Team Link & Zelda)
+|128 [080] // Temple (vs Team Link &amp; Zelda)
 |-
-|129 [081] // Great Bay (vs Team Link & Young Link)
+|129 [081] // Great Bay (vs Team Link &amp; Young Link)
 |-
-|130 [082] // Mushroom Kingdom I (vs Team Link & Luigi)
+|130 [082] // Mushroom Kingdom I (vs Team Link &amp; Luigi)
 |-
-|131 [083] // Great Bay (Saria's Song) (vs Team Marth & Link)
+|131 [083] // Great Bay (Saria's Song) (vs Team Marth &amp; Link)
 |-
-|132 [084] // Big Blue (vs Team Samus & Captain Falcon)
+|132 [084] // Big Blue (vs Team Samus &amp; Captain Falcon)
 |-
-|133 [085] // Brinstar (vs Team Samus & Fox)
+|133 [085] // Brinstar (vs Team Samus &amp; Fox)
 |-
-|134 [086] // Yoshi's Story (vs Team Yoshi & Luigi)
+|134 [086] // Yoshi's Story (vs Team Yoshi &amp; Luigi)
 |-
-|135 [087] // Yoshi's Island (vs Team Yoshi & Ness)
+|135 [087] // Yoshi's Island (vs Team Yoshi &amp; Ness)
 |-
-|136 [088] // Green Greens (vs Team Kirby & Pikachu)
+|136 [088] // Green Greens (vs Team Kirby &amp; Pikachu)
 |-
-|137 [089] // Fountain of Dreams (vs Team Kirby & Pichu)
+|137 [089] // Fountain of Dreams (vs Team Kirby &amp; Pichu)
 |-
-|138 [08A] // Green Greens (vs Team Kirby & Jigglypuff)
+|138 [08A] // Green Greens (vs Team Kirby &amp; Jigglypuff)
 |-
-|139 [08B] // Icicle Mountain (vs Team Kirby & Ice Climbers)
+|139 [08B] // Icicle Mountain (vs Team Kirby &amp; Ice Climbers)
 |-
-|140 [08C] // Corneria (vs Team Fox & Falco)
+|140 [08C] // Corneria (vs Team Fox &amp; Falco)
 |-
-|141 [08D] // Mute City (vs Team Fox & Captain Falcon)
+|141 [08D] // Mute City (vs Team Fox &amp; Captain Falcon)
 |-
-|142 [08E] // Pokémon Stadium (vs Team Pikachu & Pichu)
+|142 [08E] // Pokémon Stadium (vs Team Pikachu &amp; Pichu)
 |-
-|143 [08F] // Pokémon Stadium (vs Team Pikachu & Jigglypuff)
+|143 [08F] // Pokémon Stadium (vs Team Pikachu &amp; Jigglypuff)
 |-
-|144 [090] // Mushroom Kingdom I (vs Team Luigi & Dr. Mario)
+|144 [090] // Mushroom Kingdom I (vs Team Luigi &amp; Dr. Mario)
 |-
-|145 [091] // Onett (alt music) (vs Team Ness & Peach)
+|145 [091] // Onett (alt music) (vs Team Ness &amp; Peach)
 |-
-|146 [092] // Fourside (vs Team Ness & Mewtwo)
+|146 [092] // Fourside (vs Team Ness &amp; Mewtwo)
 |-
-|147 [093] // Big Blue (mRider song) (vs Team Captain Falcon & Falco)
+|147 [093] // Big Blue (mRider song) (vs Team Captain Falcon &amp; Falco)
 |-
-|148 [094] // Battlefield (vs Team Bowser & Mewtwo)
+|148 [094] // Battlefield (vs Team Bowser &amp; Mewtwo)
 |-
-|149 [095] // Battlefield (vs Team Bowser & Peach)
+|149 [095] // Battlefield (vs Team Bowser &amp; Peach)
 |-
-|150 [096] // Battlefield (vs Team Bowser & Zelda)
+|150 [096] // Battlefield (vs Team Bowser &amp; Zelda)
 |-
-|151 [097] // Temple (vs Team Peach & Zelda)
+|151 [097] // Temple (vs Team Peach &amp; Zelda)
 |-
-|152 [098] // Great Bay (Saria's Song) (vs Team Zelda & Young Link)
+|152 [098] // Great Bay (Saria's Song) (vs Team Zelda &amp; Young Link)
 |-
-|153 [099] // Temple (Emblem) (vs Team Zelda & Marth)
+|153 [099] // Temple (Emblem) (vs Team Zelda &amp; Marth)
 |-
 |154 [09A] // Great Bay (Unused)
 |-
@@ -18554,7 +18554,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |172 [0AC] // Pokémon Stadium (vs Team Pichu)
 |-
-|173 [0AD] // Flat Zone (vs Team Game & Watch)
+|173 [0AD] // Flat Zone (vs Team Game &amp; Watch)
 |-
 |174 [0AE] // Mute City (vs Team Captain Falcon)
 |-
@@ -18616,7 +18616,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |199 [0C7] // Final Destination (Emblem Music) (vs Roy)
 |-
-|200 [0C8] // Flat Zone (vs Team Game & Watch)
+|200 [0C8] // Flat Zone (vs Team Game &amp; Watch)
 |-
 |201 [0C9] // Brinstar Depths (vs Gannondorf)
 |-
@@ -18754,7 +18754,7 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |-
 |266 [10A] // Final Destination (All-Star Match 4-4 /vs Mewtwo)
 |-
-|267 [10B] // Flat Zone (All-Star Match 4-5 /vs Mr Game & Watch)
+|267 [10B] // Flat Zone (All-Star Match 4-5 /vs Mr Game &amp; Watch)
 |-
 |268 [10C] // Venom (All-Star Match Deluxe 5-2 /vs Falco)
 |-
@@ -18801,17 +18801,17 @@ Stage ID List from [https://docs.google.com/spreadsheets/d/1JX2w-r2fuvWuNgGb6D3C
 |285 [11D] // Battlefield (Multi-Man Melee)
 |}
 
-</div>
-<pre>
+&lt;/div&gt;
+&lt;pre&gt;
 $Target Test - Broken Targets Don't Count [donny2112]
 041C4344 38030000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Break the Targets - Disable Targets and/or Flippers [Achilles]
 041C4210 4E800020
 041C42AC 4E800020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Break the Targets Intangibility Glitch Fix [UnclePunch]
 C21B65AC 00000005
 9003000C 3C608046
@@ -18819,34 +18819,34 @@ C21B65AC 00000005
 3D808000 618CC160
 7D8903A6 4E800421
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 === Other Stages ===
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $DUMMY / ICETOP Crash Prevent (Debug Mode)
 01C41CBD 08000000
 041C2AAC 48000018
 041C284C 38600000
 041C2850 48000048
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable All-Star Heal Portal from Ending Match [Achilles]
 0421F474 4E800020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Homerun Timer [Punkline]
 041B9AB8 60000000
 041B9ACC 60000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
 
 .
@@ -18858,16 +18858,16 @@ $Disable Homerun Timer [Punkline]
 == To Be Categorized ==
 
 
-<div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse">
-<pre>
+&lt;div class="mw-collapsible mw-collapsed" data-expandtext="Click to expand" data-collapsetext="Click to collapse"&gt;
+&lt;pre&gt;
 $Hide Invisible Intangible Hurtboxes [Altafen]
 C2080764 00000004 #main.asm
 881F221E 70000080
 4182000C 38000000
 48000008 881F119E
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Rishi's Jungle Jam [Krohnos]
 *Loads games as Rishi's Jungle Jam. Compatible with Slippi Online. v1.0
 C216E750 00000010
@@ -18906,26 +18906,26 @@ C216E91C 00000012
 98640000 3C808045
 60845CBE 98640000
 80010024 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Big Light Shield Only (L) [Altafen]
 C234E67C 00000003 #l.asm
 2C050031 41800008
 38A00031 98A40006
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Big Light Shield Only (R) [Altafen]
 C234E698 00000003 #r.asm
 2C030031 41800008
 38600031 98640007
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Hold Ledges Forever [PKFreeZZy]
 0409A950 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Unfreeze Game End (from 20XXTE) [Altafen, Dan Salvato]
 *Modified to be a standalone gecko code
 0416d2f4 60000000
@@ -18946,8 +18946,8 @@ C216D880 00000005
 18000020 3f000000
 20020004 00000000
 e2000001 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Custom Hitbox/Hurtbox Colors [Altafen]
 C20805F4 0000001D
 7C7F1B78 8B03000C
@@ -18979,8 +18979,8 @@ C20805F4 0000001D
 631800FE 3F20804D #00FE is hitbox port 4 BBAA
 633936A0 93190000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $SDI Overlay [Altafen]
 *Flash yellow on 1 SDI, blue on 2 SDI, purple on 3+ SDI inputs
 C208E588 00000018 #sdi_input.asm
@@ -19011,8 +19011,8 @@ C208E588 00000018 #sdi_input.asm
 C208E734 00000002 #hitstun_end.asm
 83FE002C 38000000
 981F0505 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Turn Green When Actionable After Throw [Altafen, UnclePunch]
 C208A3F8 00000013 #main.asm
 3CA08048 80A59D30
@@ -19034,8 +19034,8 @@ C208A3F8 00000013 #main.asm
 98BF0504 38A01000
 48000008 38A00000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Clock Shows Current Time [Eon]
 C22F42C0 00000009
 9421FFD0 3D808034
@@ -19047,25 +19047,25 @@ C22F42C0 00000009
 8061000C 7F7B1A14
 83A10008 38210030
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Hide Name Tags and Port Tags [Altafen]
 042FCC44 4E800020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Override Inverse Kinematics Behavior with Type 4 [PKFreeZZy]
 *Attempt to make action states change the player's X rotation to match the angle of the surface below them.
 0408A1C0 38800004
 0408A1DC 48000010
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Zero Lag on L-Cancel [Altafen]
 *really more like 1 frame lag
 C208D6C8 00000002 #perfect_lcancel.asm
 38000001 6C008000 #change 0001 to whatever number of frames
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Zero Lag on Aerial Landing [Altafen, walz]
 *really more like 1 frame lag
 *l-cancel not needed
@@ -19073,16 +19073,16 @@ C208D6EC 00000003 #perfect_always.asm
 C0228AE4 3D808008
 618CD708 7D8903A6
 4E800421 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fix Environment Collision Drawing Over Hitboxes [Altimor]
 *fixes hitboxes not being visible on top of stage collision in develop mode
 04030498 48000010 # Skip original collision drawing
 041C5E6C 4BE94479 # bl from Stage_Draw to DevelopMode_DrawCollision
 0405A2E4 4D820020 # beqlr to return if collision draw not enabled
 0405A330 4816BC1C # Branch back to Stage_Draw epilogue
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Get Hit = Die [Altafen]
 C206AD34 00000007 #fragile.asm
 80031830 2C000000
@@ -19092,8 +19092,8 @@ C206AD34 00000007 #fragile.asm
 7D8903A6 4E800421
 807E002C 8803221F
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fast Fall Overlay [Altafen, Punkline]
 C207D550 0000000C #fastfall_available.asm
 3CC08048 80C69D30
@@ -19116,8 +19116,8 @@ C207D588 00000007 #fastfall_used.asm
 7C002000 4082000C
 38000000 98030504
 380000FE 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Rumble on Missed L-Cancel v2 [Altafen]
 *v2 disables all other sources of rumble
 C208D690 00000011 #rumble.asm
@@ -19142,15 +19142,15 @@ C2014574 00000003 #disable_other_rumble.asm
 7C630775 41800008
 4E800020 686300FF
 7C0802A6 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Every Sound is now Mr. Saturn [Savestate]
 *From https://www.youtube.com/watch?v=eAfs4fTVIac.
 C238CFF4 00000002
 7C0802A6 70630000
 3863010B 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Rumble When Controller is Unplugged [Dan Salvato]
 *If a player has rumble enabled and then takes his controller out, the next person who plugs into that slot will not have rumble enabled.
 C2376BB0 00000008
@@ -19162,64 +19162,64 @@ C2376BB0 00000008
 38A5000C 2C040004
 4180FFE4 8081002C
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $"Random" Always Selects Specific Character [Jorgasms]
 *#CSS icons from top left to bottom right, in order #?? can be replaced with 0x0 - 0x18 (0-24) which represents the 25 character icons #Replaces branch and link to the random function to li r3, 0x?? where r3 holds the
 0425fb74 38600000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Lottery Coin Modifier [Brandondorf9999]
 *Sets the amount of lottery coins the player has when the Continue screen comes up. Maximum is 999. Replace XXX in 38000XXX with amount in hex.
 041A0A60 60000000
 041A0A64 38000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Always Use First Victory Theme [Brandondorf9999]
 *In Classic, Adventure, and All-Star, the end-of-match victory screen will always play the first fanfare sound.
 041809D4 60000000
 041809D8 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Always Use Second Victory Theme [Brandondorf9999]
 *In Classic, Adventure, and All-Star, the end-of-match victory screen will always play the second fanfare sound.
 041809D4 60000000
 041809D8 4802000C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Automatically Advance after Completing a Level [Brandondorf9999]
 *Skips the end-of-match bonus screen during Classic, Adventure, and All-Star.
 04180ADC 38600001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Set Lose Screen to Game Over [Brandondorf9999]
 *Automatically causes Game Over upon losing all stocks in Classic, Adventure, and All-Star, regardless of coin count.
 041A0A84 38000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Set Lose Screen to Game Over Alternate [Brandondorf9999]
 *Does not seem to work. Assumed that it automatically causes Game Over upon losing all stocks in Classic, Adventure, and All-Star, regardless of coin count.
 041A0A90 38000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $"Continue" Text Doesn't Appear [Brandondorf9999]
 *The "Continue?" text during a Classic, Aventure, and All-Star lose screen does not appear.
 0419F854 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Continue Doesn't Subtract Coins [Brandondorf9999]
 *Continuing during Classic, Adventure, or All-Star does not cost any coins.
 041A0A70 60000000
 041A0A84 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Don't Load Animations upon Game Over [Brandondorf9999]
 *Assuming that this skips the Game Over animation, but causes Dolphin to crash.
 0419F550 4800001C
 0419F76C 4800001C
 0419F954 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Don't Load Continue Sound Effect [Brandondorf9999]
 *"Continue" sound effect doesn't play.
 0419F854 60000000
@@ -19228,125 +19228,125 @@ $Don't Load Continue Sound Effect [Brandondorf9999]
 0419FCE8 48000028
 041A09D4 60000000
 041A09D8 48000020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Continue Amount Equals Current Coin Count [Brandondorf9999]
 *On Classic, Adventure, and All-Star's lose screen, the cost to continue will be equal to how many coins the player currently has. Game may lockup if you have over 99 coins.
 041A0A6C 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Game Over Duration Modifier [Brandondorf9999]
 *Changes how long the "Game Over" screen lasts before moving back to the menu. 2C030XXX, change XXX to number of frames that the Game Over screen lasts.
 0419F978 2C03000F
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Game Over Restores Game Point [Brandondorf9999]
 *"Game Over" acts as a free Continue option, resuming the battle that was lost with full stocks/no damage. Especially helpful for All-Star.
 0419F990 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Loss Rewards Coins [Brandondorf9999]
 *Gives the player 999 lottery coins upon losing all stocks.
 041A0A60 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Victory Screen even During Loss [Brandondorf9999]
 *Losing all stocks during Classic, Adventure, or All-Star results in a victory screen before going to the continue screen.
 0416D6E0 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $High Coin Count Leads to Loss [Brandondorf9999]
 *Game will not allow continuation even if the player has a large amount of coins.
 0419F4DC 41810058
 041A0A84 38000001
 041A0A90 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Instant Game Over [Brandondorf9999]
 *Losing in Classic, Adventure, or All-Star results in an instant Game Over with no option to continue.
 0419F93C 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $No Music on Continue Screen [Brandondorf9999]
 041A09D8 48000020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Continue Possible Regardless of Balance [Brandondorf9999]
 *Game will take away coins, but a continue can still be bought even with insufficient funds. If this is the case, the coin count will underflow to 999.
 0419F4DC 60000000
 0419F764 60000000
 041A09D8 60000000
 041A0A80 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Continue Possible Regardless of Balance (Short Version) [Brandondorf9999]
 *Same effect as the above code, but shortened.
 0419F4DC 60000000
 041A0A90 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Continue - Trophy Instantly Gets Back Up [Brandondorf9999]
 *This was initially labeled as "Trophy Fall Down Animation Duration," but it instead seems to cause the trophy on the continue screen to pop back up before choosing an option.
 0419F74C 2C0303E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Camera is Far Out [Brandondorf9999]
 *Camera is more backward than normal everywhere in the game. All models also become distorted, making hitting fighters nearly impossible.
 043B9398 3F000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $FOV Modifier [Brandondorf9999]
 *Camera zoom-in modifier. XXXX0000 - Change XXXX to desired camera zoom.
 044DE328 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $FOV Modifier 2 [Brandondorf9999]
 *Camera zoom-in modifier. Seems to be opposite and inverse of the previous code. XXXX0000 - Change XXXX to desired camera zoom.
 044DE338 40200000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Smeared Camera and Hitboxes [Brandondorf9999]
 *Many 2D imagery becomes very smeared. Hitboxes also become unpredictable.
 044DE310 3FC00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Skewed Camera [Brandondorf9999]
 *All visuals become randomly distorted.
 043B9398 3F400000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Very Tiny Display [Brandondorf9999]
 *All visuals become incredibly small.
 044DE328 3F000000
 044DE338 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Vertical Stretch Modifier [Brandondorf9999]
 *XXXX0000 - Change XXXX to values to magnify vertical stretch.
 044DE340 42000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Brighter Particle Effects [Brandondorf9999]
 *Certain effects become brighter, most apparant with explosions.
 043A07BC 38A00001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Miscellaneous Alpha Blending (Destination) [Brandondorf9999]
 *0-Zero,1-One,2-Source Color,3-Inv. Source Color,4-Source Alpha,5-Inv. Source Alpha,6-Destination,7-Inv. Destination,8-Inverted Zero,9-One (Inverted Divide),A-Source Inverted,B-Inv. Source Inverted,C-Source Alpha Inverted,D-Inv. Source Alpha Inverted,E-Destination Inverted,F-Inv. Destination Inverted
 04361854 38A0000D
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Miscellaneous Alpha Blending (Source) [Brandondorf9999]
 *0-Zero,1-One,2-Source Color,3-Inv. Source Color,4-Source Alpha,5-Inv. Source Alpha,6-Destination,7-Inv. Destination,8-Inverted Zero,9-One (Inverted Divide),A-Source Inverted,B-Inv. Source Inverted,C-Source Alpha Inverted,D-Inv. Source Alpha Inverted,E-Destination Inverted,F-Inv. Destination Inverted
 04361850 3880000D
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 - Enter Battle with 1 Player [donny2112]
 00480845 00000003
 00480869 00000003
 0048088D 00000003
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Immediate KO upon Receiving Damage [wParam]
 04002F04 3CE08045
 04002F08 60E73080
@@ -19361,16 +19361,16 @@ $Immediate KO upon Receiving Damage [wParam]
 04002F2C 7C0802A6
 04002F30 48067434
 0406A360 4BF98BA4
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All Items/Projectiles Invisible [wParam]
 04002F50 38000000
 04002F54 9003001C
 04002F58 8001001C
 04002F5C 48265BF0
 04268B48 4BD9A408
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Obtain Hidden Trophies (Z-button at Lottery Screen) [donny2112/JasonHaffner/cloakedguy]
 8A46B108 00000010
 0B123456 00000000
@@ -19380,53 +19380,53 @@ $Obtain Hidden Trophies (Z-button at Lottery Screen) [donny2112/JasonHaffner/clo
 0245C5BE 00008001
 05123456 DEAD55B2
 00000000 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All Special Messages
 0045C200 000018FF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All Bonuses
 0045C348 00001FFF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All Event Matches Open and Completed [JAY007]
 0445C12C FFFFFFFF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Infinite Time
 0446B6CA 00000075
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Time Switch [Jupiter_]
 *L + Dpad Up to 1 sec, L + Dpad Down to 8 min, 32 sec
 0A46B108 00000048
 0446B6CA 000000FF
 0A46B108 00000044
 0446B6C8 00000200
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1,048,576 Vs Matches Played
 0245C0D8 00000010
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All Damage Deals 999%
 044D8260 40100000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Physical Attacks Hit Opponents from Anywhere [donny2112]
 04079108 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Ground Jump goes Very High
 044D8EBC 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mushrooms Last Forever and Stack [wParam]
 040D15FC 60000000
 040D1F98 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Must be On from 1P Stamina Mode to 1P Giga Bowser
 557E0000 60000000
 00000000 857E0000
@@ -19437,83 +19437,83 @@ $Must be On from 1P Stamina Mode to 1P Giga Bowser
 057E0030 90010004
 057E00FC 4A98E63C
 0416E734 496718FC
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Stamina Mode [madewokherd]
 057E0048 8803006C
 057E0050 60000001
 057E0064 9803006C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Low Gravity [madewokherd]
 057E0048 8803006C
 057E0054 60000004
 057E0064 9803006C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Invisibility [madewokherd]
 057E0048 8803006C
 057E0058 60000008
 057E0064 9803006C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Metal [madewokherd]
 057E0048 8803006C
 057E005C 60000030
 057E0064 9803006C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Giant Player [madewokherd]
 057E0068 38006666
 057E006C 3C003FE6
 057E0070 90030080
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Tiny Player [madewokherd]
 057E0068 38003333
 057E006C 3C003EB3
 057E0070 90030080
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Extremely Fast Melee (3x) [Tornado9797]
 057E0080 38000000
 057E0084 3C004040
 057E008C 90030034
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Lightning (1.25x) Speed [makewokherd]
 057E0080 38000000
 057E0084 3C003FA0
 057E008C 90030034
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Slo-mo (.5x) Speed [madewokherd]
 057E0080 38000000
 057E0084 3C003F00
 057E008C 90030034
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Fighting Polygon Male [madewokherd]
 057E0008 3800001B
 057E000C 981A0013
 057E0034 3800001B
 057E0038 98030060
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Fighting Polygon Female [madewokherd]
 057E0008 3800001C
 057E000C 981A0013
 057E0034 3800001C
 057E0038 98030060
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Sopo [madewokherd]
 057E0008 38000020
 057E000C 981A0013
 057E0034 38000020
 057E0038 98030060
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Giga Bowser [madewokherd]
 057E0008 3800001D
 057E000C 981A0013
@@ -19522,51 +19522,51 @@ $1P Giga Bowser [madewokherd]
 057E0048 8803006C
 057E004C 700000BF
 057E0064 9803006C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Master Control Debug Menu (Activates upon Viewing CSS) [donny2112]
 024D68BC 00000602
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Debug Menu - Level Select Extension [donny2112]
 043FB2E8 00000003
 043FB300 437F0000
 043FB304 3F800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All Players become Mario (Debug Menu Required to Prevent Freeze) [donny2112]
 00000000 84453084
 00000008 000403A4
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Debug Menu - Scale Extension [wParam]
 043FB760 447A0000
 043FB780 447A0000
 043FB7A0 447A0000
 043FB7C0 447A0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Debug Menu - Item Drop Rate Extension [wParam]
 043FA9C8 00000003
 043FA9E0 41000000
 043FA9E4 3F800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Add 2 CPU Ice Climbers to Every Melee [wParam]
 04179188 2C1B0004
 0416EA2C 38000007
 04167978 3800000E
 04167980 38000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Add 2 CPU Ice Climbers to Every Melee with Proper Score Keeping [wParam]
 04179188 2C1B0004
 0416EA2C 38000007
 04167978 3800000E
 04167980 38000001
 04167A84 38600006
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Stamina Mode/Status Modifier (Debug Required, VIBRATION SELECT becomes mode select. DAMAGE SET becomes HP) [wParam]
 043FA8C4 466C6167
 043FA8C8 73203E00
@@ -19592,8 +19592,8 @@ $Stamina Mode/Status Modifier (Debug Required, VIBRATION SELECT becomes mode sel
 043FAAC4 00000003
 043FAADC 437F0000
 043FAAE0 3F800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Speed Mod/Team Damage (Debug Required, VIBRATION becomes match speed, also toggles team attack) [wParam]
 043FA5E0 00000000
 043FA678 00000008
@@ -19617,8 +19617,8 @@ $Speed Mod/Team Damage (Debug Required, VIBRATION becomes match speed, also togg
 046A000C 981E0001
 046A0010 801F0138
 046A0014 4BC60058
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $One CPU Buddy per Player (Buddies stay KOed) [wParam]
 04031BCC 4BFD1334
 04002F00 907E00B0
@@ -19628,8 +19628,8 @@ $One CPU Buddy per Player (Buddies stay KOed) [wParam]
 04002F10 48065F89
 04002F14 907E00B4
 04002F18 4802ECB8
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Two CPU Buddies per Player (Buddies stay KOed) [wParam]
 04031BCC 4BFD1334
 04002F00 907E00B0
@@ -19641,8 +19641,8 @@ $Two CPU Buddies per Player (Buddies stay KOed) [wParam]
 04002F18 38610024
 04002F1C 48065F7D
 04002F20 4802ECB0
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Three CPU Buddies per Player (Buddies stay KOed) [wParam]
 04031BCC 4BFD1334
 04002F00 907E00B0
@@ -19656,8 +19656,8 @@ $Three CPU Buddies per Player (Buddies stay KOed) [wParam]
 04002F20 38610024
 04002F24 48065F75
 04002F28 4802ECA8
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $One CPU Mirror per Player (Mirrors stay KOed) [wParam]
 04031BCC 4BFD1334
 04002F00 907E00B0
@@ -19667,8 +19667,8 @@ $One CPU Mirror per Player (Mirrors stay KOed) [wParam]
 04002F10 48065F89
 04002F14 907E00B4
 04002F18 4802ECB8
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Two CPU Mirrors per Player (Mirrors stay KOed) [wParam]
 04031BCC 4BFD1334
 04002F00 907E00B0
@@ -19680,8 +19680,8 @@ $Two CPU Mirrors per Player (Mirrors stay KOed) [wParam]
 04002F18 38610024
 04002F1C 48065F7D
 04002F20 4802ECB0
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Three CPU Mirrors per Player (Mirrors stay KOed) [wParam]
 04031BCC 4BFD1334
 04002F00 907E00B0
@@ -19695,8 +19695,8 @@ $Three CPU Mirrors per Player (Mirrors stay KOed) [wParam]
 04002F20 38610024
 04002F24 48065F75
 04002F28 4802ECA8
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Picking up a Metal Box Deals 999% to Opponents [wParam]
 04002F04 8083002C
 04002F08 80A40518
@@ -19716,37 +19716,37 @@ $Picking up a Metal Box Deals 999% to Opponents [wParam]
 04002F40 4082FFE4
 04002F44 4E800020
 043F1C50 80002F04
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Infinite Bunny Hood [wParam]
 0406A5C8 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Items Never Disappear [wParam]
 04269638 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Infinite Starman [wParam]
 0406A4F8 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Bunny Hood Duration Modifier [wParam]
 0407FAAC 38000025
 0407FB70 38000025
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Cloaking Device Duration Modifier [wParam]
 04094654 38800025
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Metal Box Duration Modifier [wParam]
 0408721C 38800025
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Starman Duration Modifier [wParam]
 04077D1C 38800025
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $D-Pad Down Drops an Item [wParam]
 04225774 480001D8
 04225964 48000080
@@ -19754,527 +19754,527 @@ $D-Pad Down Drops an Item [wParam]
 04225594 60601FAC
 042255A8 3C60804C
 042255AC 60631FAC
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Item Modifier for "D-Pad Drops Down an Item" [wParam]
 0449FAB0 000000D1
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach Item Pull Modifier [donny2112]
 0411D0A4 38C000AB
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Pokémon Modifier [donny2112]
 0427A970 38A000BB
 0427A748 4BD88838
 04002F80 38E000BB
 04002F84 90E30E24
 04002F88 482777C4
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Almost No Bonuses [donny2112]
 02453A42 01AC0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Almost No Bonuses [donny2112]
 024548D2 01AC0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Almost No Bonuses [donny2112]
 02455762 01AC0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Almost No Bonuses [donny2112]
 024565F2 01AC0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Almost All Bonuses [donny2112]
 02453A42 01AC0001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Almost All Bonuses [donny2112]
 024548D2 01AC0001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Almost All Bonuses [donny2112]
 02455762 01AC0001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Almost All Bonuses [donny2112]
 024565F2 01AC0001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Jump out of Helpless Falling [wParam]
 0407D698 38000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Helpless Falling Wears Off [wParam]
 0409694C 3880001D
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby - Invisible Head/Body [ASPD0796]
 42453130 032A0007
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Donkey Kong - Instant Charge Neutral B [JAY007]
 0410E878 3800000A
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Luigi - Side B 99% Misfire Chance [JAY007]
 04142EDC 38000060
 04142AFC 38000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Sheik - Game Crash on Hit while Charging Neutral B [Tornado9797]
 04112074 38000006
 04112338 38600006
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Samus - Neutral B Instant Charge [JAY007]
 041294CC 60000000
 0412984C 38600007
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Hold Jump while Gaining Height to Gain More [Y.S.]
 3A46B108 00000C00
 42453130 00724000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Hold Jump while Gaining Height to Gain More [Y.S.]
 3A46B114 00000C00
 42453FC0 00724000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Hold Jump while Gaining Height to Gain More [Y.S.]
 3A46B120 00000C00
 42454E50 00724000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Hold Jump while Gaining Height to Gain More [Y.S.]
 3A46B12C 00000C00
 42455CE0 00724000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Kirby Body Appearance Modifier [TheLuckyDucky]
 42453130 032A0003
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Kirby Body Appearance Modifier [TheLuckyDucky]
 42453FC0 032A0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Kirby Body Appearance Modifier [TheLuckyDucky]
 42454E50 032A0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Kirby Body Appearance Modifier [TheLuckyDucky]
 42455CE0 032A0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Instant Charged Smash [JAY007]
 42453130 10BC4270
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Instant Charged Smash [JAY007]
 42453FC0 10BC4270
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Instant Charged Smash [JAY007]
 42454E50 10BC4270
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Instant Charged Smash [JAY007]
 42455CE0 10BC4270
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Infinite Shield [JAY007]
 42453130 0CFC4270
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Infinite Shield [JAY007]
 42453FC0 0CFC4270
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Infinite Shield [JAY007]
 42454E50 0CFC4270
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Infinite Shield [JAY007]
 42455CE0 0CFC4270
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Ganondorf Carries Sword (Cosmetic Only) [donny2112]
 14453130 00000000
 42453130 032B0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Ganondorf Carries Sword (Cosmetic Only) [donny2112]
 14453FC0 00000000
 42453FC0 032B0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Ganondorf Carries Sword (Cosmetic Only) [donny2112]
 14454E50 00000000
 42454E50 032B0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Ganondorf Carries Sword (Cosmetic Only) [donny2112]
 14455CE0 00000000
 42455CE0 032B0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Invincible and Deals 999% on Every Hit [Akuryu/TheLuckyDucky]
 044D8260 40100000
 044530D8 00000000
 044530E0 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Invincible and Deals 999% on Every Hit [Akuryu/TheLuckyDucky]
 044D8260 40100000
 04453F68 00000000
 04453F70 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Invincible and Deals 999% on Every Hit [Akuryu/TheLuckyDucky]
 044D8260 40100000
 04454DF8 00000000
 04454E00 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Invincible and Deals 999% on Every Hit [Akuryu/TheLuckyDucky]
 044D8260 40100000
 04455C88 00000000
 04455C90 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Invincible
 044530D8 00000000
 044530E0 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Invincible
 04453F68 00000000
 04453F70 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Invincible
 04454DF8 00000000
 04454E00 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Invincible
 04455C88 00000000
 04455C90 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Infinite Stock
 0445310C 00000300
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Infinite Stock
 04453F9C 00000300
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Infinite Stock
 04454E2C 00000300
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Infinite Stock
 04455CBC 00000300
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 No Stocks
 0445310C 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 No Stocks
 04453F9C 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 No Stocks
 04454E2C 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 No Stocks
 04455CBC 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Force Port 1 Control
 04453088 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Force Port 2 Control
 04453F18 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Force Port 3 Control
 04454DA8 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Force Port 4 Control
 04455C38 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Port 1 Master Control (L+D-Pad Left - HMN, L+D-Pad Right - CPU) [Jupiter_]
 0A46B108 00000041
 04453088 00000000
 0A46B108 00000042
 04453088 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Port 2 Master Control (R+D-Pad Left - HMN, R+D-Pad Right - CPU)[Jupiter_]
 0A46B108 00000021
 04453F18 00000000
 0A46B108 00000022
 04453F18 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Port 3 Master Control (Z+D-Pad Left - HMN, Z+D-Pad Right - CPU)[Jupiter_]
 0A46B108 00000011
 04454DA8 00000000
 0A46B108 00000012
 04454DA8 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Port 4 Master Control (Y+D-Pad Left - HMN, Y+D-Pad Right - CPU)[Jupiter_]
 0A46B108 00000801
 04455C38 00000000
 0A46B108 00000802
 04455C38 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 999% Respawn [Jupiter_]
 0446B6DC 000003E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 999% Respawn [Jupiter_]
 0446B6EA 000003E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 999% Respawn [Jupiter_]
 0446B6F8 000003E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 999% Respawn [Jupiter_]
 0446B706 000003E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 320 HP [Jupiter_]
 044530E2 00000140
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 320 HP [Jupiter_]
 04453F72 00000140
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 320 HP [Jupiter_]
 04454E02 00000140
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 320 HP [Jupiter_]
 04455C92 00000140
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 999 HP [Jupiter_]
 044530E2 000003E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 999 HP [Jupiter_]
 04453F72 000003E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 999 HP [Jupiter_]
 04454E02 000003E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 999 HP [Jupiter_]
 04455C92 000003E7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 1 HP [Jupiter_]
 044530E2 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 1 HP [Jupiter_]
 04453F72 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 1 HP [Jupiter_]
 04454E02 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 1 HP [Jupiter_]
 04455C92 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 White Tone [donny2112]
 00480827 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Dark Tone [donny2112]
 00480827 00000002
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 All Black [donny2112]
 00480827 00000003
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 All Gray [donny2112]
 00480827 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 White Tone [donny2112]
 0048084B 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Dark Tone [donny2112]
 0048084B 00000002
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 All Black [donny2112]
 0048084B 00000003
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 All Gray [donny2112]
 0048084B 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 White Tone [donny2112]
 0048086F 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Dark Tone [donny2112]
 0048086F 00000002
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 All Black [donny2112]
 0048086F 00000003
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 All Gray [donny2112]
 0048086F 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 White Tone [donny2112]
 00480893 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Dark Tone [donny2112]
 00480893 00000002
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 All Black [donny2112]
 00480893 00000003
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 All Gray [donny2112]
 00480893 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1-P4 White Tone [donny2112]
 00000000 80480827
 00000001 00040024
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1-P4 Dark Tone [donny2112]
 00000000 80480827
 00000002 00040024
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1-P4 All Black [donny2112]
 00000000 80480827
 00000003 00040024
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1-P4 All Gray [donny2112]
 00000000 80480827
 00000004 00040024
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 5.0 x Size [donny2112]
 044806F8 40A00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 3.0 x Size [donny2112]
 044807F8 40400000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 2.0 x Size [donny2112]
 044806F8 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 0.5 x Size [donny2112]
 044806F8 3F000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 0.1 x Size [donny2112]
 044806F8 3DCCCCDF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 5.0 x Size [donny2112]
 0448071C 40A00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 3.0 x Size [donny2112]
 0448071C 40400000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 2.0 x Size [donny2112]
 0448071C 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 0.5 x Size [donny2112]
 0448071C 3F000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 0.1 x Size [donny2112]
 0448071C 3DCCCCDF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 5.0 x Size [donny2112]
 04480740 40A00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 3.0 x Size [donny2112]
 04480740 40400000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 2.0 x Size [donny2112]
 04480740 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 0.5 x Size [donny2112]
 04480740 3F000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 0.1 x Size [donny2112]
 04480740 3DCCCCDF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 5.0 x Size [donny2112]
 04480764 40A00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 3.0 x Size [donny2112]
 04480764 40400000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 2.0 x Size [donny2112]
 04480764 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 0.5 x Size [donny2112]
 04480764 3F000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 0.1 x Size [donny2112]
 04480764 3DCCCCDF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Level Modifier (VS Mode, Special Melees, and HRC only) [donny2112]
 04480684 FF6E0001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Target Test Level Access Part 1 (LRZY + D-pad) [donny2112]
 0A46B108 00000048
 04480684 FF6E0021
@@ -20308,8 +20308,8 @@ $Target Test Level Access Part 1 (LRZY + D-pad) [donny2112]
 04480684 FF6E002F
 0A46B108 00000804
 04480684 FF6E0030
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Target Test Level Access Part 2 (LRZ + D-pad) [donny2112]
 0A46B108 00000048
 04480684 FF6E0031
@@ -20331,8 +20331,8 @@ $Target Test Level Access Part 2 (LRZ + D-pad) [donny2112]
 04480684 FF6E0039
 0A46B108 00000011
 04480684 FF6E003A
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Adventure/Event Level Access (LRZ + D-pad)[donny2112]
 0A46B108 00000048
 04480684 FF6E0001
@@ -20358,8 +20358,8 @@ $Adventure/Event Level Access (LRZ + D-pad)[donny2112]
 04480684 FF6E00E3
 0A46B108 00000014
 04480684 FF6E00F8
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Miscellaneous Level Access (LR + D-pad)[donny2112]
 0A46B108 00000048
 04480684 FF6E0053
@@ -20371,8 +20371,8 @@ $Miscellaneous Level Access (LR + D-pad)[donny2112]
 04480684 FF6E00EA
 0A46B108 00000028
 04480684 FF6E00F0
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Button Stage Select (DPad + AY) [Jupiter_]
 0A46B108 00000101
 044D6CAC 00002402
@@ -20390,88 +20390,88 @@ $Button Stage Select (DPad + AY) [Jupiter_]
 044D6CAC 0000C102
 0A46B108 00000808
 044D6CAC 0000A902
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Always Metal [donny2112]
 0045ACC4 00000030
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Metal and Low Gravity [donny2112]
 0045ACC4 00000034
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Low Gravity [donny2112]
 0045ACC4 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P1 Stamina [donny2112]
 0045ACC4 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Always Metal [donny2112]
 0045ACE8 00000030
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Metal and Low Gravity [donny2112]
 0045ACE8 00000034
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Low Gravity [donny2112]
 0045ACE8 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P2 Stamina [donny2112]
 0045ACE8 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Always Metal [donny2112]
 0045AD0C 00000030
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Metal and Low Gravity [donny2112]
 0045AD0C 00000034
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Low Gravity [donny2112]
 0045AD0C 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P3 Stamina [donny2112]
 0045AD0C 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Always Metal [donny2112]
 0045AD30 00000030
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Metal and Low Gravity [donny2112]
 0045AD30 00000034
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Low Gravity [donny2112]
 0045AD30 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $P4 Stamina [donny2112]
 0045AD30 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Elevated Victor [donny2112]
 044DA3DC 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super-Sized Victor [donny2112]
 044DA3E0 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super-Sized Victor in all Boxes [donny2112]
 044DA3C8 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Only Victor's Box Shows [donny2112]
 044DA3E4 00000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Must Be On - Effects Modifier [donny2112]
 057E8000 3C80817E
 057E8004 60848100
@@ -20489,280 +20489,280 @@ $Must Be On - Effects Modifier [donny2112]
 057E8034 4AA91304
 04279334 4956ECCC
 057E81F8 000000FF
-</pre>
-<pre>
-$Samus: Ice Missile (-->B) [Y.S.]
+&lt;/pre&gt;
+&lt;pre&gt;
+$Samus: Ice Missile (--&gt;B) [Y.S.]
 057E8100 0F060AA3
 057E8104 191600B7
-</pre>
-<pre>
-$Samus: Dark Missile (->B) [Y.S.]
+&lt;/pre&gt;
+&lt;pre&gt;
+$Samus: Dark Missile (-&gt;B) [Y.S.]
 057E8108 0C060223
 057E810C 193606A3
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Samus: Ice Beam (Full Charge Shot) [Y.S.]
 057E8110 190A069F
 057E8114 191600B7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Link: Ice Arrow [Y.S.]
 057E8118 040E000F
 057E811C 191600B7
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Link: Dark Arrow [Y.S.]
 057E8118 040E000F
 057E811C 193606A3
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox: Fire Blaster [Y.S.]
 057E8120 00000047
 057E8124 1E0400A3
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mewtwo: DownB Forces Taunt [wParam]
 040C45AC 38800108
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Instantly Charged Pikachu/Pichu [bopie64]
 04124E0C 3800005B
 04125200 386000B5
 041252A0 386000B5
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Jump off Ground State Modifier [wParam]
 040CB4FC 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $After Third Jump State Modifier [wParam]
 0409694C 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Receive Damage State Modifier [wParam]
 0408E244 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Up-Smash Animation Modifier [heinermann]
 0408CA60 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Combo Hit 1 Animation Modifier [heinermann]
 0408AC44 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Combo Hit 2 Animation Modifier [heinermann]
 0408AFDC 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Dash Attack Animation Modifier [heinermann]
 0408B4D8 38800069
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Forward Tilt Up Animation Modifier [heinermann]
 0408C42C 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Forward Smash Animation Modifier [heinermann]
 0408C4C4 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Pick Up Animation Modifier [heinermann]
 040947D8 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Screw Ball Use Animation [heinermann]
 040D2D80 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Screw Ball Receive Animation [heinermann]
 040D305C 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Stationary Grab Animation [heinermann]
 040D8A0C 38800000
-</pre>
-<pre>
-$Mewtwo's ->B Reaction Modifier [heinermann]
+&lt;/pre&gt;
+&lt;pre&gt;
+$Mewtwo's -&gt;B Reaction Modifier [heinermann]
 040BCFD8 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Barrel Cannon Animation Modifier [heinermann]
 040C90C0 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Reaction being Captured by Kirby-Yoshi Modifier [heinermann]
 0410A9B8 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Animation inside of Kirby-Yoshi's Egg Modifier [heinermann]
 0410ACC4 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Receiving Ice Damage Animation Modifier [heinermann]
 0409107C 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Mushroom Grow Animation Modifier [heinermann]
 040D1744 38800000
 040D1904 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Mushroom Shrink Back Animation Modifier [heinermann]
 040D1BD0 38800000
 040D1D40 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Poison Mushroom Shrink Animation Modifier [heinermann]
 040D2034 38800000
 040D21F4 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Poison Mushroom Grow Back Animation Modifier [heinermann]
 040D24C0 38800000
 040D2630 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Warp Star Going Up Animation Modifier [heinermann]
 040C47A8 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Warp Star Coming Down Animation Modifier [heinermann]
 040C4A6C 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Vacuum Animation Modifier [heinermann]
 040BD220 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $In Kirby's Mouth Animation Modifier [heinermann]
 040BD668 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Spit from Kirby Animation Modifier [heinermann]
 040BDBFC 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Swallowed by Kirby Animation Modifier [heinermann]
 040BE0A4 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Breaking out of Kirby Animation Modifier [heinermann]
 040BD668 38800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby's Hammer Animation Modifier [heinermann]
 042ADC5C 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach's Umbrella Animation Modifier [heinermann]
 042BDA70 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Arwing Projectile Modifier [heinermann]
 042E7394 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Flatzone Tool Drop Modifier [heinermann]
 042EEFB4 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Green Greens Apple Modifier [heinermann]
 042EE2D0 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Lip's Stick Flower Modifier [heinermann]
 0429A750 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby Cutter Beam Modifier [heinermann]
 0429BAC0 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Ness' PK Thunder Modifier [heinermann]
 042AB594 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Samus' Grapple Beam Modifier [heinermann]
 042B7C70 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Chikorita Projectile Modifier [heinermann]
 042C9B98 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Blastoise Projectile Modifier [heinermann]
 042CABD0 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Octorok Projectile Modifier [heinermann]
 042E8AE4 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mini - Unowns Modifier [heinermann]
 042CEE60 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Staryu Projectile Modifier [heinermann]
 042D4CEC 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Cyndaquil Fire Modifier [heinermann]
 042D64C0 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Wolfen Projectile Modifier [heinermann]
 042EAF68 38000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Luigi Projectile Modifier [bopie64]
 041429D8 38A00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mewtwo Projectile Modifier [bopie64]
 04147538 38C00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mewtwo Projectile Modifier 2 [bopie64]
 04148C20 38A00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Damage Knockback Replaced with Poison Mushroom Effects [wParam]
 0408E254 48043DA9
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Damage Knockback Replaced with Super Mushroom Effects [wParam]
 0408E254 480434B9
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mewtwo - DownB Shrinks Opponents [wParam]
 040C45BC 4800DA41
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Samus - Neutral B Always Fires Left with No Animation Lag [ethNargy]
 044D99B8 41FF0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach - Infinite Double Jumps [wParam]
 040CC1B0 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mewtwo - Infinite Double Jumps [wParam]
 040CC300 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Kirby/Jigglypuff - Infinite Jumps [wParam]
 040CBB48 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Yoshi - Infinite Doubles Jumps [wParam]
 040CBF38 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Ness - Infinite Double Jumps [wParam]
 040CBE00 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Infinite Double Jumps [wParam]
 040CC1B0 60000000
 040CC300 60000000
@@ -20770,49 +20770,49 @@ $Infinite Double Jumps [wParam]
 040CBC98 60000000
 040CBF38 60000000
 040CBE00 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Mario/Dr. Mario (Special Moves Enhanced) [Jupiter_]
 044D919C 41000000
 044D91A0 40000000
 044D91C4 40000000
 044D91E4 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Captain Falcon/Ganondorf  (Special Moves Enhanced)[Akuryu]
 044D9208 41000000
 044D9214 40010000
 044D9228 40000000
 044D9234 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Fox/Falco (Special Moves Enhanced)
 044D928F 42500000
 044D92A8 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox/Falco Invisible Guns [Jupiter_]
 044D9274 49CC0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fox/Falco Huge Guns [Bazza]
 044D9274 41FF0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Link/Young Link (Special Moves Enhanced)
 044D92F4 41000000
 044D92FC 40000000
 044D9338 41FF0000
 044D9348 41FF0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Kirby (Special Moves Enhanced) [Jupiter_]
 044D9370 41000000
 044D9394 41000000
 044D93AC 41000000
 044D93C0 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Kirby's Stolen B-moves  (Stolen Moves Enhanced)
 044D93CC 41000000
 044D93D4 41000000
@@ -20824,16 +20824,16 @@ $Super Kirby's Stolen B-moves  (Stolen Moves Enhanced)
 044D94F0 40000000
 044D9584 40000000
 044D95A8 41FF0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Donkey Kong (Special Moves Enhanced) [donny2112/Bazza/Jupiter_]
 044D95CC 40000000
 044D95D0 40000000
 044D95D4 40000000
 044D95E4 40000000
 044D95EC 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Zelda/Sheik (Special Moves Enhanced)
 024D9660 00234100
 044D96A8 41FF0000
@@ -20841,14 +20841,14 @@ $Super Zelda/Sheik (Special Moves Enhanced)
 044D9BE0 40000000
 044D9BF8 41FF0000
 044D9C04 41000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Ness (Special Moves Enhanced)
 044D971C 41FF0000
 044D9728 41000000
 044D97A0 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Peach (Special Moves Enhanced) [Jupiter_/donny2112]
 044D97C4 00000000
 044D97DC 41000000
@@ -20856,62 +20856,62 @@ $Super Peach (Special Moves Enhanced) [Jupiter_/donny2112]
 044D97FC 41FF0000
 044D9804 40000000
 044D9824 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Ice Climbers Rapid Fire
 044D983C 41000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Pikachu/Pichu (Special Moves Enhanced)
 044D9904 41000000
 044D992C 41000000
 044D9958 41000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Samus Rapid Homing Missiles
 044D99E4 41000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Yoshi (Special Moves Enhanced)
 044D9A3C 40000000
 044D9A5C 40B00000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Bowser/Giga Bowser (Special Moves Enhanced)
 024D9AD0 00054100
 044D9ADC 41000000
 044D9AE4 41000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Marth/Roy Infinite Jumps via Side B
 044D9B38 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Jigglypuff (Special Moves Enhanced)
 044D9C18 40000000
 044D9C38 40000000
 044D9C68 00000000
 044D9C70 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Luigi (Special Moves Enhanced) [Jupiter_]
 044D9CA4 41000000
 044D9CB4 40000000
 044D9CEC 41000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Mewtwo (Special Moves Enhanced)
 044D9D1C 41000000
 044D9D50 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Mr. Game and Watch (Special Moves Enhanced)
 044D9DE8 40000000
 044D9DF0 40000000
 044D9E50 41FF0000
-</pre>
-<pre>
-$Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
+&lt;/pre&gt;
+&lt;pre&gt;
+$Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
 04002F04 88E3006C
 04002F08 1CE70044
 04002F0C 3CC0804C
@@ -20927,24 +20927,24 @@ $Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 04002F34 7C0802A6
 04002F38 4806742C
 0406A360 4BF98BA4
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Move Swap Repair
 040704F0 4E800020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Move Swap Fix 2 [Y.S.]
 04070B88 4E800020
 0409C640 4E800020
 040C2FD8 4E800020
 0407AE68 60000000
 04388220 4E800020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mr. Game and Watch as Mario Fix [Y.S.]
 04388220 4E800020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
 04002F00 895F000C
 04002F04 3D608000
@@ -20980,177 +20980,177 @@ $Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
 04002F78 7C0802A6
 04002F7C 480673E8
 0406A360 4BF98BBC
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Unpredictable Hitboxes and Models (Pausing Causes Freeze) [bopie64]
 044D7AB8 2A100001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Cannot Perform First Ground Jump [wParam]
 040CB4FC 3880000E
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Grounded First Jump Becomes Down Smash [wParam]
 040CB4FC 38800040
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Black Floors with Occasionally Disappearing Models [Akuryu]
 00453000 00001001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Invisible Stage Geometry [Akuryu]
 00453000 0000100F
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $No Textures for Stages, Projectiles, or Items [Akuryu]
 04453000 40100000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All Battle Visuals Render as Tiny Triangles [Akuryu]
 00453000 00001BB1
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Crowd Cheers Loudly on Every Hit [ChunkyTiger]
 044D6501 10000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mildly Broken Stage Geometry [Rune]
 04453000 0000001E
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fighters Face Wrong Direction
 044D8270 40100000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fighters Face Forward
 044D8270 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fighters Stuck in T-Pose
 044D8278 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Camera Controls Outside of Pausing (Pause and Unpause When Fight Starts)
 04452C6C 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Faster Walking
 044D8E7C 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Bouncy Items with Torn Graphics (Enables Far Zoom)
 044D7AC0 40100000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Big Blue - Whole Stage Does Flips, Eventually Disappears [donny2112]
 044DB3D5 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Mute City - Invisible Platforms [donny2112]
 00000000 844DB3D5
 40000000 00100001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Brinstar Depths - No Kraid and Fourside - Weird Rotation [donny2112]
 00000000 844DB490
 40000000 00800001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Low Flying Great Fox [Jupiter_]
 044DB180 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Poison Mushrooms KO Upon Contact [wParam]
 040D21BC 48001EFC
 040D1FFC 480020BC
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Super Mushrooms KO Upon Contact[wParam]
 040D170C 480029AC
 040D18CC 480027EC
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Taunting Causes Self-Destruct [wParam]
 040DEBD0 4BFF4FF8
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Top of Screen KO Always Makes Fighters Hit Screen [wParam]
 040D40B8 480006C8
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Top of Screen KO Always Star KOs [wParam]
 040D4780 4BFFF938
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Master Hand in Extra 1P Modes (Need 3P) [Rune]
 044D6CB1 10000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fighters get Stuck Trying to Walk [Rune]
 044D8E7C 20800000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Stage will Rain Bob-ombs after 20 Seconds [Someguyxg3]
 0046DB6E 00000001
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Very Distorted Menus, GUI, and HUD [MASTERLINKX]
 0437A3F8 C0DC0008
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Game and Watch - Kirby Rapid Fire Neutral B [Bazza]
 044D95A8 41FF0000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Donkey Kong - Infinite Height through Side B [Bazza]
 044D95D0 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Donkey Kong - Fast Neutral B [Jupiter_]
 044D95E4 40000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Enemy Name's Sound Modifier [donny2112]
 04473699 00000002
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $1P Force Character Selection [donny2112]
 04470778 01000300
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Slot 1 CPU Type/Level Modifier [donny2112]
 0248082E 00000409
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Slot 2 CPU Type/Level Modifier [donny2112]
 02480852 00000409
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Slot 3 CPU Type/Level Modifier [donny2112]
 02480876 00000409
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Slot 4 CPU Type/Level Modifier [donny2112]
 0248089A 00000409
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Peach Wears No Skirt [Ralf]
 040DEC00 4800000C
 0411B574 38A0FFFF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Zelda Wears No Skirt [Ralf]
 040DEC14 4800000C
 0413930C 38A0FFFF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $No Default Color Overlays [Altafen]
 *Removes every color flash of any kind the base game applies on its own
 C20BFFD0 00000002 #overlay.asm
 38600001 4E800020
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Dash Grab Overlay [Altafen]
 C206A138 0000000F #dashgrab.asm
 807A0010 2C0300D6
@@ -21168,8 +21168,8 @@ C206A138 0000000F #dashgrab.asm
 901A04D0 901A04D4
 38000091 981A0504
 8079000C 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $MH/CH Improvements [sushie]
 C21508B8 00000003
 88C4000C 1CC60044
@@ -21341,17 +21341,17 @@ C2157B84 00000002
 041585B8 38E0007F
 041585EC 38E0007F
 04158620 38E0007F
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $MH/CH Control with Any Port [sushie, Achilles1515]
-*Control MH/CH with any port instead of being restricted to ports 3 & 4
+*Control MH/CH with any port instead of being restricted to ports 3 &amp; 4
 C21508B8 00000003
 88C4000C 1CC60044
 7CC61A14 80C60000
 60000000 00000000
 04156AFC 8006065C
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $MH/CH Vibrate on Hit [sushie]
 *Hands will vibrate on hit
 C208EB24 00000006
@@ -21361,8 +21361,8 @@ C208EB24 00000006
 3D808009 618C0594
 7D8803A6 4E800021
 2C1F0000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $All Hits are Windboxes [sushie]
 C208ED8C 0000002B #src/fun/windbox.asm
 881D2222 5400DFFF
@@ -21408,16 +21408,16 @@ CBA10028 BBE10010
 80010034 38210030
 7C0803A6 4E800020
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Hide Invisible Intangible Hurtboxes [Altafen]
 C2080764 00000004 #main.asm
 881F221E 70000080
 4182000C 38000000
 48000008 881F119E
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Custom Hitbox/Hurtbox Colors [Altafen]
 C20805F4 0000001D
 7C7F1B78 8B03000C
@@ -21449,8 +21449,8 @@ C20805F4 0000001D
 631800FE 3F20804D #00FE is hitbox port 4 BBAA
 633936A0 93190000
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Unfreeze Game End (from 20XXTE) [Altafen, Dan Salvato]
 *Modified to be a standalone gecko code
 0416d2f4 60000000
@@ -21471,26 +21471,26 @@ C216D880 00000005
 18000020 3f000000
 20020004 00000000
 e2000001 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Hold Ledges Forever [PKFreeZZy]
 0409A950 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Big Light Shield Only (L) [Altafen]
 C234E67C 00000003 #l.asm
 2C050031 41800008
 38A00031 98A40006
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Big Light Shield Only (R) [Altafen]
 C234E698 00000003 #r.asm
 2C030031 41800008
 38600031 98640007
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Green Overlay during Landing IASA [Altafen]
 C20D5DB8 0000000D #main.asm
 3C608048 80639D30
@@ -21506,8 +21506,8 @@ C20D5DB8 0000000D #main.asm
 907E04D4 38600080
 987E0504 7FA3EB78
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Brawl-Style Team Colors [flieskiller]
 *More Available Team Color Options for Specific Characters
 C225EBA0 00000016
@@ -21562,12 +21562,12 @@ C225EDDC 00000008
 11040105 16030004
 16040100 18030104
 02030301 02030103
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Red Menu [Anycard]
 050F8998 990019FF
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Partially Invisible Techs v1.1 [Clown, PKFreeZZy]
 C2080A30 00000006
 801F0010 280000C7
@@ -21576,16 +21576,16 @@ C2080A30 00000006
 2C800002 4C421182
 41860008 5460CFFF
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable F-Zero Grand Prix Cars
 0420c1f8 60000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Frozon Camera on Mushroom Kingdom I
 04207c88 4e800020
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Tilt Stick [Altafen]
 C20DF3A8 00000002 #tilt_stick/dsmash.asm
 38600000 4E800020
@@ -21640,8 +21640,8 @@ FC000840 4C411382
 618CB9DC 7D8903A6
 4E800420 801F0668
 540005EF 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Tech Window Display [Altafen]
 *Could benefit from being used with the "No Default Color Overlays" Gecko Code
 C2080E30 00000017 #main.asm
@@ -21668,14 +21668,14 @@ C2080E30 00000017 #main.asm
 90FE04BC 4800000C
 38000000 981E0504
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $No Default Color Overlays [Altafen]
 C20BFFD0 00000002 #overlay.asm
 38600001 4E800020
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $No Voice (Local Player Only) [Altafen]
 C20682E0 00000007 #Player_SpawnInit.asm
 3C808048 88849D30
@@ -21692,13 +21692,13 @@ C208047C 00000006 #MetalOff.asm
 88C3000C 7C053000
 41820008 98832225
 60000000 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Land-Cancel Zelda Neutral B [UnclePunch]
 0413aa14 38600000
 0413ac70 4BF47EAD
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Powershield Only [UnclePunch]
 *it kind of removes shield dropping altogether
 04099274 80040668 #NoBufferRollForwardFromDash.asm
@@ -21716,8 +21716,8 @@ C2093E2C 00000005 #NoHoldShield.asm
 04091EB8 60000000 #NoShieldBubble/NoCheckShieldFlag2.asm
 04093B20 60000000 #NoShieldBubble/NoShieldBubble1.asm
 04093D84 60000000 #NoShieldBubble/NoShieldBubble2.asm
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Game! Splash is Half-Sized [Altafen, Dan Salvato]
 223f9704 00000000 # makes the "Game!" text half size (from here to the end)
 82200000 803f9704
@@ -21725,21 +21725,21 @@ $Game! Splash is Half-Sized [Altafen, Dan Salvato]
 18000020 3f000000
 20020004 00000000
 e2000001 00000000
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Fixed Camera is Default [UnclePunch]
 0402f47c 38000004
-</pre>
-<pre>
+&lt;/pre&gt;
+&lt;pre&gt;
 $Disable Screen Shake for Teams [UnclePunch]
 C2030E44 00000004
 3CE08048 88E707C8
 2C070000 41820008
 4E800020 7C0802A6
 60000000 00000000
-</pre>
+&lt;/pre&gt;
 
-</div>
+&lt;/div&gt;
 
 
 {{Smash Melee}}

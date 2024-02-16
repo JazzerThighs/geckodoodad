@@ -4,10 +4,10 @@ use rayon::prelude::*;
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_json;
-use std::collections::HashMap;
-// use std::collections::HashMap;
-use std::path::Path;
-use std::{env, fs};
+use reqwest; // For making HTTP requests
+use scraper::{Html, Selector}; // For parsing HTML
+use tokio;
+use std::{collections::HashMap, path::Path, env, fs};
 
 #[derive(Debug, PartialEq, Clone, Serialize)]
 pub enum Category {
@@ -326,10 +326,30 @@ fn group_by_code_headers(
     result
 }
 
-fn main() {
+#[tokio::main]
+async fn main() {
     env::set_var("RUST_BACKTRACE", "full");
 
-    let file_path = Path::new("geckoCodeWikiPage.md"); //NOTE: When updating the raw .md file from the Wiki, use Shift+Tab on the whole document to remove the leading whitespace from every line of text.
+    // URL of the page to fetch
+    let url = "https://wiki.supercombo.gg/index.php?title=SSBM/Gecko_Codes&action=edit";
+
+    // Make an asynchronous GET request to fetch the page content
+    let response = reqwest::get(url).await.expect("Failed to fetch the page");
+    let body = response.text().await.expect("Failed to get response text");
+
+    // Parse the HTML to find the textarea element
+    let document = Html::parse_document(&body);
+    let selector = Selector::parse("#wpTextbox1").expect("Failed to parse selector");
+
+    // Extract the content of the textarea element
+    let textarea_element = document.select(&selector).next().expect("Textarea element not found");
+    let file_content = textarea_element.inner_html();
+
+    // Use `file_content` as before
+    // For example, to save it to a file:
+    let file_path = Path::new("geckoCodeWikiPage.md");
+    fs::write(&file_path, file_content).expect("Unable to write file");
+
     let file_content = fs::read_to_string(&file_path).expect("Unable to read file");
 
     extract_and_save_whole_gecko_codes(&file_content);

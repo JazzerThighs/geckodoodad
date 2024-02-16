@@ -276,7 +276,7 @@
       "tauKhan"
     ],
     "description": [
-      "Only have 1 \"Visual Buffer & Polling Drift Fix\" code enabled at a time.",
+      "Only have 1 \"Visual Buffer &amp; Polling Drift Fix\" code enabled at a time.",
       "For Use on a Wii with a Non-CRT Screen.",
       "Removes polling drift phenomenon causing variable input lag.",
       "Prevents visual buffer from accruing a full frame of lag.",
@@ -6826,7 +6826,7 @@
     "categories": []
   },
   {
-    "header": "Giga Bowser & Sandbag Always Fall On Match Start [Achilles]",
+    "header": "Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]",
     "version": "",
     "authors": [
       "Achilles"
@@ -12186,7 +12186,7 @@
     "categories": []
   },
   {
-    "header": "Unlock All Characters, Stages, & Random Stage Select [standardtoaster]",
+    "header": "Unlock All Characters, Stages, &amp; Random Stage Select [standardtoaster]",
     "version": "",
     "authors": [
       "standardtoaster"
@@ -12773,7 +12773,7 @@
       "tauKhan"
     ],
     "description": [
-      "Only have 1 \"Visual Buffer & Polling Drift Fix\" code enabled at a time.",
+      "Only have 1 \"Visual Buffer &amp; Polling Drift Fix\" code enabled at a time.",
       "Removes polling drift phenomenon causing variable input lag.",
       "Prevents visual buffer from accruing a full frame of lag.",
       "Video Lag reduced by ~20.83 milliseconds."
@@ -18885,7 +18885,7 @@
     ],
     "description": [
       "Character Models still enabled",
-      "hitboxes, invulnerable, & intangible hurtboxes display is still enabled",
+      "hitboxes, invulnerable, &amp; intangible hurtboxes display is still enabled",
       "Intangibility granted by specific attacks Do Not Display",
       "Shieldboxes still enabled"
     ],
@@ -18903,7 +18903,7 @@
     "categories": []
   },
   {
-    "header": "Disable Intagible & Invulnerable Hurtbox Display [Achilles]",
+    "header": "Disable Intagible &amp; Invulnerable Hurtbox Display [Achilles]",
     "version": "",
     "authors": [
       "Achilles"
@@ -18935,7 +18935,7 @@
     ],
     "description": [
       "Character Models still enabled",
-      "invulnerable & intangible hurtboxes, vulnerable hurtboxes display is still enabled",
+      "invulnerable &amp; intangible hurtboxes, vulnerable hurtboxes display is still enabled",
       "Shieldboxes still enabled"
     ],
     "hex_lines": [
@@ -23724,7 +23724,7 @@
     "categories": []
   },
   {
-    "header": "Bowser & Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]",
+    "header": "Bowser &amp; Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]",
     "version": "",
     "authors": [
       "PKFreeZZy"
@@ -23752,7 +23752,7 @@
     "categories": []
   },
   {
-    "header": "Captain Falcon & Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]",
+    "header": "Captain Falcon &amp; Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]",
     "version": "",
     "authors": [
       "PKFreeZZy"
@@ -37618,7 +37618,7 @@
       "71 Iceclimbers' Up-B",
       "72 Pesticide",
       "73 Manhole",
-      "74 Fire(G&W)",
+      "74 Fire(G&amp;W)",
       "75 Parashute",
       "76 Turtle",
       "77 Sperky",
@@ -37626,7 +37626,7 @@
       "79",
       "7A Sausage",
       "7B Milk (Young Link)",
-      "7C Firefighter(G&W)",
+      "7C Firefighter(G&amp;W)",
       "7D Masterhand's laser",
       "7E Masterhand's bullet",
       "7F",
@@ -37935,7 +37935,7 @@
     "categories": []
   },
   {
-    "header": "Marth & Roy - Restore Whispy Blink Glitch [PKFreeZZy]",
+    "header": "Marth &amp; Roy - Restore Whispy Blink Glitch [PKFreeZZy]",
     "version": "",
     "authors": [
       "PKFreeZZy"
@@ -46280,8 +46280,8 @@
       "UnclePunch"
     ],
     "description": [
-      "If projectile dealt 1->8 damage, fill 1",
-      "If projectile dealt 9->12 damage, fill 2",
+      "If projectile dealt 1-&gt;8 damage, fill 1",
+      "If projectile dealt 9-&gt;12 damage, fill 2",
       "If projectile dealt 13+ damage, fill 3"
     ],
     "hex_lines": [
@@ -46401,7 +46401,7 @@
     "categories": []
   },
   {
-    "header": "Mr. Game & Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]",
+    "header": "Mr. Game &amp; Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]",
     "version": "",
     "authors": [
       "Magus"
@@ -46596,7 +46596,7 @@
     "categories": []
   },
   {
-    "header": "G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]",
+    "header": "G&amp;W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]",
     "version": "",
     "authors": [
       "UnclePunch"
@@ -46731,7 +46731,7 @@
     "categories": []
   },
   {
-    "header": "Giga Bowser & Sandbag Always Fall On Match Start [Achilles]",
+    "header": "Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]",
     "version": "",
     "authors": [
       "Achilles"
@@ -46834,7 +46834,7 @@
     "categories": []
   },
   {
-    "header": "MasterHand & CrazyHand Controlled By All Ports [Achilles]",
+    "header": "MasterHand &amp; CrazyHand Controlled By All Ports [Achilles]",
     "version": "",
     "authors": [
       "Achilles"
@@ -46858,7 +46858,7 @@
     "categories": []
   },
   {
-    "header": "MasterHand & CrazyHand Controlled By All Ports [Achilles]",
+    "header": "MasterHand &amp; CrazyHand Controlled By All Ports [Achilles]",
     "version": "",
     "authors": [
       "Achilles"
@@ -48150,7 +48150,7 @@
       "035 = TSeak (Sheik)",
       "036 = Tyoshi (Yoshi)",
       "037 = TZelda (Zelda)",
-      "038 = TGamewat (Mr. Game & Watch)",
+      "038 = TGamewat (Mr. Game &amp; Watch)",
       "039 = TEmblem (Roy)",
       "03A = TGanon (Ganondorf)"
     ],
@@ -55717,7 +55717,7 @@
     "categories": []
   },
   {
-    "header": "Samus: Ice Missile (-->B) [Y.S.]",
+    "header": "Samus: Ice Missile (--&gt;B) [Y.S.]",
     "version": "",
     "authors": [
       "Y.S."
@@ -55741,7 +55741,7 @@
     "categories": []
   },
   {
-    "header": "Samus: Dark Missile (->B) [Y.S.]",
+    "header": "Samus: Dark Missile (-&gt;B) [Y.S.]",
     "version": "",
     "authors": [
       "Y.S."
@@ -56172,7 +56172,7 @@
     "categories": []
   },
   {
-    "header": "Mewtwo's ->B Reaction Modifier [heinermann]",
+    "header": "Mewtwo's -&gt;B Reaction Modifier [heinermann]",
     "version": "",
     "authors": [
       "heinermann"
@@ -57729,7 +57729,7 @@
     "categories": []
   },
   {
-    "header": "Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]",
+    "header": "Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]",
     "version": "",
     "authors": [
       "wParam"
@@ -59559,7 +59559,7 @@
       "Achilles1515"
     ],
     "description": [
-      "Control MH/CH with any port instead of being restricted to ports 3 & 4"
+      "Control MH/CH with any port instead of being restricted to ports 3 &amp; 4"
     ],
     "hex_lines": [
       "C21508B8 00000003",
