@@ -25808,6 +25808,35 @@
     "categories": []
   },
   {
+    "header": "ftData/itData Extension Slippi Fix [sushie, PKFreeZZy]",
+    "version": "",
+    "authors": [
+      "sushie",
+      "PKFreeZZy"
+    ],
+    "description": [],
+    "hex_lines": [
+      "C20679C4 00000002",
+      "9421FFF0 388029D8",
+      "60000000 00000000"
+    ],
+    "hex_words": [
+      "C20679C4",
+      "00000002",
+      "9421FFF0",
+      "388029D8",
+      "60000000",
+      "00000000"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "0x000679C4",
+      "0x00000002",
+      "0x00000000"
+    ],
+    "categories": []
+  },
+  {
     "header": "Special Hitbox Angle: 367 v2.1.0 [sushie]",
     "version": "",
     "authors": [
@@ -60986,6 +61015,41 @@
     "deprecated": false,
     "addresses": [
       "0x0002F47C"
+    ],
+    "categories": []
+  },
+  {
+    "header": "Disable Screen Shake for Teams [UnclePunch]",
+    "version": "",
+    "authors": [
+      "UnclePunch"
+    ],
+    "description": [],
+    "hex_lines": [
+      "C2030E44 00000004",
+      "3CE08048 88E707C8",
+      "2C070000 41820008",
+      "4E800020 7C0802A6",
+      "60000000 00000000"
+    ],
+    "hex_words": [
+      "C2030E44",
+      "00000004",
+      "3CE08048",
+      "88E707C8",
+      "2C070000",
+      "41820008",
+      "4E800020",
+      "7C0802A6",
+      "60000000",
+      "00000000"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "0x00030E44",
+      "0x00000004",
+      "0x00070000",
+      "0x00000000"
     ],
     "categories": []
   }

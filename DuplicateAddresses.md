@@ -67,6 +67,7 @@
 - Found in code: Disable Player Reflections on FoD [UnclePunch]
 - Found in code: Disable Rumble
 - Found in code: Disable Rumble When Controller is Unplugged [Dan Salvato]
+- Found in code: Disable Screen Shake for Teams [UnclePunch]
 - Found in code: Disable Tap Jump [Achilles]
 - Found in code: Disable Teams Subcolors [UnclePunch]
 - Found in code: Disable Wobbling [UnclePunch]
@@ -336,6 +337,7 @@
 - Found in code: Z button to toggle NPCs/alternate characters in CSS (1.02) [Achilles1515]
 - Found in code: Zero Lag on Aerial Landing [Altafen, walz]
 - Found in code: Zero Lag on L-Cancel [Altafen]
+- Found in code: ftData/itData Extension Slippi Fix [sushie, PKFreeZZy]
 - Found in code: sushie's Ft/ItData Expansion v1.2.0 [sushie]
 
 ## Duplicate address: 0x00000001
@@ -430,6 +432,7 @@
 - Found in code: Turbo Mode Replaces Single Button Mode v1.3 [UnclePunch]
 - Found in code: Ultrawide Moniter Hack
 - Found in code: Zero Lag on L-Cancel [Altafen]
+- Found in code: ftData/itData Extension Slippi Fix [sushie, PKFreeZZy]
 
 ## Duplicate address: 0x00000003
 - Found in code: 6-player match Crash Prevent [wParam]
@@ -502,6 +505,7 @@
 - Found in code: Always Skip the Results Screen (no change to KO stars) [Sham Rock]
 - Found in code: Box Glitch Fix [tauKhan]
 - Found in code: Brawl-Style Team Colors [flieskiller]
+- Found in code: Disable Screen Shake for Teams [UnclePunch]
 - Found in code: Display Time at Top Right of CSS 1.1 [UnclePunch]
 - Found in code: Dual 1v1 Mode [Achilles1515, Zauron]
 - Found in code: Elevated Victor [donny2112]
@@ -1627,6 +1631,10 @@
 - Found in code: Full tournament codes [Achilles, UnclePunch]
 - Found in code: Stealth tournament codes [Achilles, UnclePunch]
 
+## Duplicate address: 0x00030E44
+- Found in code: Disable Screen Shake [Achilles1515]
+- Found in code: Disable Screen Shake for Teams [UnclePunch]
+
 ## Duplicate address: 0x000315F9
 - Found in code: Stealth UCF v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]
 - Found in code: UCF Slippi v0.80 Slippi (1.02) [Dan Salvato, tauKhan, UnclePunch, Fizzi]
@@ -1839,6 +1847,7 @@
 
 ## Duplicate address: 0x00070000
 - Found in code: Announcer Fanfares 2.0 [Punkline]
+- Found in code: Disable Screen Shake for Teams [UnclePunch]
 - Found in code: Hot Mr. Saturn Potato (1.02) [wParam, Achilles]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
 

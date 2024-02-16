@@ -10792,6 +10792,12 @@ C2268754 00000005
 60000000 00000000
 </pre>
 <pre>
+$ftData/itData Extension Slippi Fix [sushie, PKFreeZZy]
+C20679C4 00000002
+9421FFF0 388029D8
+60000000 00000000
+</pre>
+<pre>
 $Special Hitbox Angle: 367 v2.1.0 [sushie]
 *sushie's Ft/ItData Expansion v1.2.0 Must be installed or enabled first
 *Pulls victims towards the center of collided hitbox and adjusts launch speed
@@ -21723,6 +21729,14 @@ e2000001 00000000
 <pre>
 $Fixed Camera is Default [UnclePunch]
 0402f47c 38000004
+</pre>
+<pre>
+$Disable Screen Shake for Teams [UnclePunch]
+C2030E44 00000004
+3CE08048 88E707C8
+2C070000 41820008
+4E800020 7C0802A6
+60000000 00000000
 </pre>
 
 </div>
