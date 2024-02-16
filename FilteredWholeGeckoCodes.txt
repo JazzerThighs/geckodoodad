@@ -77,7 +77,7 @@ C21A4570 00000006 #External/Lag Reduction/Force HD/480pDeflickerOff.asm
 60000000 00000000
 
 $Polling Drift and Full Visual Buffer Fixes - Wii Only [tauKhan]
-*Only have 1 "Visual Buffer &amp; Polling Drift Fix" code enabled at a time.
+*Only have 1 "Visual Buffer & Polling Drift Fix" code enabled at a time.
 *For Use on a Wii with a Non-CRT Screen.
 *Removes polling drift phenomenon causing variable input lag.
 *Prevents visual buffer from accruing a full frame of lag.
@@ -1882,7 +1882,7 @@ C21776C0 00000009
 40820008 3860000E
 60000000 00000000
 
-$Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]
+$Giga Bowser & Sandbag Always Fall On Match Start [Achilles]
 C2069328 00000006
 807E0004 2C03001F
 4182000C 2C030020
@@ -3026,7 +3026,7 @@ $Spoof Controller Plugins (1.02) [Achilles]
 04376BF0 380000D8 #(spoof P3)
 04376C04 38000001 #(spoof P4)
 
-$Unlock All Characters, Stages, &amp; Random Stage Select [standardtoaster]
+$Unlock All Characters, Stages, & Random Stage Select [standardtoaster]
 041648C8 38A007FF
 041644BC 38A007FF
 04173580 38A007FF
@@ -3166,7 +3166,7 @@ C21A4570 00000006 #External/Lag Reduction/Force HD/480pDeflickerOff.asm
 60000000 00000000
 
 $Polling Drift + Full Visual Buffer Fixes [tauKhan]
-*Only have 1 "Visual Buffer &amp; Polling Drift Fix" code enabled at a time.
+*Only have 1 "Visual Buffer & Polling Drift Fix" code enabled at a time.
 *Removes polling drift phenomenon causing variable input lag.
 *Prevents visual buffer from accruing a full frame of lag.
 *Video Lag reduced by ~20.83 milliseconds.
@@ -3426,8 +3426,6 @@ C207D5A0 0000000E
 $CSS Clone Icons Slide Into Place [UnclePunch]
 *Enables the Forgotten Animation of the Clone Character's Icons on the Character Select Screen
 044dc578 00000000
- 
-&lt;/div&gt;
 
 $Disable Kill Explosions GFX [UnclePunch]
 040d4040 60000000
@@ -4069,8 +4067,6 @@ C23805A0 00000007
 80610008 80010010
 3821000C 7C0803A6
 808DA8F4 00000000
- 
-&lt;/div&gt;
 
 $Display last RNG call [212 Degrees]
 0416CE0C 38630000
@@ -4842,12 +4838,12 @@ A1640000 2C0B0006
 
 $Disable Vulnerable Hurtbox Display (1.02) [Achilles]
 *Character Models still enabled
-*hitboxes, invulnerable, &amp; intangible hurtboxes display is still enabled
+*hitboxes, invulnerable, & intangible hurtboxes display is still enabled
 *Intangibility granted by specific attacks Do Not Display
 *Shieldboxes still enabled
 040806F0 38000000
 
-$Disable Intagible &amp; Invulnerable Hurtbox Display [Achilles]
+$Disable Intagible & Invulnerable Hurtbox Display [Achilles]
 *Character Models still enabled
 *hitboxes, vulnerable hurtboxes display is still enabled
 *Intangibility granted by specific attacks still display
@@ -4856,7 +4852,7 @@ $Disable Intagible &amp; Invulnerable Hurtbox Display [Achilles]
 
 $Disable Hitbox Displays [Achilles]
 *Character Models still enabled
-*invulnerable &amp; intangible hurtboxes, vulnerable hurtboxes display is still enabled
+*invulnerable & intangible hurtboxes, vulnerable hurtboxes display is still enabled
 *Shieldboxes still enabled
 04009f54 4e800020
 
@@ -6065,12 +6061,12 @@ C208E25C 00000009
 C0028AF8 EC01002A
 D01D2340 00000000
 
-$Bowser &amp; Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
+$Bowser & Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
 04132ECC 389D0000
 04133A48 389D0000
 04133B68 389D0000
 
-$Captain Falcon &amp; Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]
+$Captain Falcon & Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]
 040E52E8 389D0000
 
 $Ledge Grab Port Priority Fix [Punkline]
@@ -6346,8 +6342,6 @@ C2377B90 0000000B #External/No XY/Ignore Buttons.asm
 41820008 48000008
 7000F3FF 90050000
 60000000 00000000
- 
-&lt;/div&gt;
 
 $No Multi/Special Double Jumps [PKFreeZZy]
 040CB8B4 60000000
@@ -9727,7 +9721,7 @@ $Enable Frozen Item Glitch (1.02) [Achilles]
 0426B748 4D820020
 0426B758 4E800020
 
-$Marth &amp; Roy - Restore Whispy Blink Glitch [PKFreeZZy]
+$Marth & Roy - Restore Whispy Blink Glitch [PKFreeZZy]
 C209E668 0000002E
 48000009 48000168
 7C0802A6 90010004
@@ -11534,8 +11528,8 @@ $Mr. Game and Watch - Always Specific Hammer Value (1.02) [Wooggle]
 0414C760 3BC0000? #Set Specific Hammer Value Here (where ? = X-1)
 
 $GaW Bucket Fill Amount Based on Damage of Projectile [UnclePunch]
-*If projectile dealt 1-&gt;8 damage, fill 1
-*If projectile dealt 9-&gt;12 damage, fill 2
+*If projectile dealt 1->8 damage, fill 1
+*If projectile dealt 9->12 damage, fill 2
 *If projectile dealt 13+ damage, fill 3
 C214D9D4 00000007
 801F1A44 2C000008
@@ -11563,7 +11557,7 @@ FC20081E D8210020
 4E800021 41200000
 8001007C 00000000
 
-$Mr. Game &amp; Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]
+$Mr. Game & Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]
 0414BAFC 38800041
 0414BB08 90830070
 0414BB0C C0230258
@@ -11577,7 +11571,7 @@ $Mr. Game &amp; Watch - N/B/U-Aerials L-Cancelable, w/ U-Air Lag Bug Fix [Magus]
 0414BCDC C0230264
 0414BCE0 4BF4191D
 
-$G&amp;W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
+$G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 *Requires Special Move Master Code v3
 0414e274 4BF7E4BD #enters fall
 0414e0d8 60000000 #doesnt lose jump after grounded up B
@@ -11622,7 +11616,7 @@ C216DAD4 00000006
 $Giga Bowser Can Be Grabbed (1.02) [Achilles]
 0414f704 60000000
 
-$MasterHand &amp; CrazyHand Controlled By All Ports [Achilles]
+$MasterHand & CrazyHand Controlled By All Ports [Achilles]
 041508B8 80C4065C
 04156AFC 8006065C
 
@@ -11857,7 +11851,7 @@ $Load Specfic Stage for Target Test (1.02) [djwang88]
 *035 = TSeak (Sheik)
 *036 = Tyoshi (Yoshi)
 *037 = TZelda (Zelda)
-*038 = TGamewat (Mr. Game &amp; Watch)
+*038 = TGamewat (Mr. Game & Watch)
 *039 = TEmblem (Roy)
 *03A = TGanon (Ganondorf)
 041B659C 38600XXX #Replace XXX with Hex ID of desired Stage
@@ -13254,11 +13248,11 @@ $Must Be On - Effects Modifier [donny2112]
 04279334 4956ECCC
 057E81F8 000000FF
 
-$Samus: Ice Missile (--&gt;B) [Y.S.]
+$Samus: Ice Missile (-->B) [Y.S.]
 057E8100 0F060AA3
 057E8104 191600B7
 
-$Samus: Dark Missile (-&gt;B) [Y.S.]
+$Samus: Dark Missile (->B) [Y.S.]
 057E8108 0C060223
 057E810C 193606A3
 
@@ -13325,7 +13319,7 @@ $Screw Ball Receive Animation [heinermann]
 $Stationary Grab Animation [heinermann]
 040D8A0C 38800000
 
-$Mewtwo's -&gt;B Reaction Modifier [heinermann]
+$Mewtwo's ->B Reaction Modifier [heinermann]
 040BCFD8 38800000
 
 $Barrel Cannon Animation Modifier [heinermann]
@@ -13586,7 +13580,7 @@ $Super Mr. Game and Watch (Special Moves Enhanced)
 044D9DF0 40000000
 044D9E50 41FF0000
 
-$Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+$Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 04002F04 88E3006C
 04002F08 1CE70044
 04002F0C 3CC0804C
@@ -13972,7 +13966,7 @@ C2157B84 00000002
 04158620 38E0007F
 
 $MH/CH Control with Any Port [sushie, Achilles1515]
-*Control MH/CH with any port instead of being restricted to ports 3 &amp; 4
+*Control MH/CH with any port instead of being restricted to ports 3 & 4
 C21508B8 00000003
 88C4000C 1CC60044
 7CC61A14 80C60000

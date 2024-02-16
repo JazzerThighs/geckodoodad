@@ -212,7 +212,22 @@ fn extract_and_save_whole_gecko_codes(file_content: &str) {
         }
     }
 
-    fs::write("RawWholeGeckoCodes.txt", &whole_gecko_codes.trim_end())
+    whole_gecko_codes = whole_gecko_codes
+        .replace("&amp;", "&")
+        .replace("\n&lt;/div&gt;\n", "")
+        .replace("\n\n\n", "\n\n")
+        .replace("&lt;", "<")
+        .replace("&gt;", ">")
+        .replace("&quot;", "\"")
+        .replace("&apos;", "'")
+        .replace("&cent;", "¢")
+        .replace("&pound;", "£")
+        .replace("&yen;", "¥")
+        .replace("&euro;", "€")
+        .replace("&copy;", "©")
+        .replace("&reg;", "®");
+
+    fs::write("RawWholeGeckoCodes.txt", &whole_gecko_codes)
         .expect("Unable to write to RawWholeGeckoCodes.txt");
     
     println!("Successfully saved whole Gecko Codes to RawWholeGeckoCodes.txt");
