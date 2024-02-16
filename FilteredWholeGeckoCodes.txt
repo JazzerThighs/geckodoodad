@@ -14237,3 +14237,6 @@ $Game! Splash is Half-Sized [Altafen, Dan Salvato]
 18000020 3f000000
 20020004 00000000
 e2000001 00000000
+
+$Fixed Camera is Default [UnclePunch]
+0402f47c 38000004

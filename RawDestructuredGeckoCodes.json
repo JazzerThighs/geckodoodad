@@ -60968,5 +60968,25 @@
       "0x00000000"
     ],
     "categories": []
+  },
+  {
+    "header": "Fixed Camera is Default [UnclePunch]",
+    "version": "",
+    "authors": [
+      "UnclePunch"
+    ],
+    "description": [],
+    "hex_lines": [
+      "0402f47c 38000004"
+    ],
+    "hex_words": [
+      "0402F47C",
+      "38000004"
+    ],
+    "deprecated": false,
+    "addresses": [
+      "0x0002F47C"
+    ],
+    "categories": []
   }
 ]
