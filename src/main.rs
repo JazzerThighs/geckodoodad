@@ -7,7 +7,7 @@ use serde_json;
 use reqwest; // For making HTTP requests
 use scraper::{Html, Selector}; // For parsing HTML
 use tokio;
-use std::{collections::HashMap, path::Path, env, fs};
+use std::{io, collections::{HashMap, HashSet}, path::Path, env, fs};
 
 #[derive(Debug, PartialEq, Clone, Serialize)]
 pub enum Category {
@@ -176,41 +176,71 @@ impl GeckoCode {
         }
     }
 }
-
+// \n&lt;/pre&gt;
 fn extract_and_save_whole_gecko_codes(file_content: &str) {
-    let blocks: Vec<&str> = file_content.split("\n$").collect();
-    let mut whole_gecko_codes = String::new();
+    // Normalize line endings first
+    let normalized_content = file_content.replace("\r\n", "\n");
+
+    // Check if the content starts with a code block and adjust accordingly
+    let content_to_split = if normalized_content.trim_start().starts_with("$") {
+        // Prepend a newline for consistent processing
+        format!("\n{}", normalized_content)
+    } else {
+        normalized_content.clone() // Clone is needed to match types, could optimize by avoiding this
+    };
+
+    // Now perform the split, ensuring the content lives long enough
+    let blocks: Vec<&str> = content_to_split.split("\n$").collect();
+
+    // If skipping non-code text before the first "$", adjust the blocks vector as needed
+    let blocks: Vec<&str> = if !normalized_content.trim_start().starts_with("$") {
+        blocks.into_iter().skip(1).collect()
+    } else {
+        blocks
+    };
+
+    let mut whole_gecko_codes: String = String::new();
 
     for block in blocks.iter() {
-        if let Some(end_index) = block.find("\n</pre>") {
+        if let Some(end_index) = block.find("\n&lt;/pre&gt;") {
             let formatted_block = format!("${}\n\n", &block[..end_index]);
+            whole_gecko_codes.push_str(&formatted_block);
+        } else if !block.trim().is_empty() {
+            // Handle blocks without "\n&lt;/pre&gt;"
+            let formatted_block = format!("${}\n\n", block.trim_end());
             whole_gecko_codes.push_str(&formatted_block);
         }
     }
 
-    fs::write("RawWholeGeckoCodes.txt", whole_gecko_codes)
+    fs::write("RawWholeGeckoCodes.txt", &whole_gecko_codes.trim_end())
         .expect("Unable to write to RawWholeGeckoCodes.txt");
-
+    
     println!("Successfully saved whole Gecko Codes to RawWholeGeckoCodes.txt");
 
-    // Read back the file just written
-    let written_content = fs::read_to_string("RawWholeGeckoCodes.txt")
-        .expect("Unable to read RawWholeGeckoCodes.txt");
+    // deduplication logic
+    whole_gecko_codes = format!("\n{}", whole_gecko_codes);
+    let mut block_set: HashSet<&str> = HashSet::new();
+    let mut unique_blocks: String = String::new();
+    let mut is_first_block: bool = true;
 
-    // Identify and remove duplicate blocks
-    let mut block_set = std::collections::HashSet::new();
-    let mut unique_blocks = String::new();
-
-    for block in written_content.split("\n\n") {
-        if !block.trim().is_empty() && block_set.insert(block) {
-            unique_blocks.push_str(block);
-            unique_blocks.push_str("\n\n");
+    for block in whole_gecko_codes.split("\n$") {
+        let trimmed_block = block.trim();
+        if !trimmed_block.is_empty() && !block_set.contains(trimmed_block) {
+            block_set.insert(trimmed_block);
+            if !is_first_block {
+                unique_blocks.push_str("\n$");
+            } else {
+                is_first_block = false;
+            }
+            unique_blocks.push_str(trimmed_block);
+            unique_blocks.push_str("\n");
         }
     }
 
-    // Write the new file without duplicates
+    unique_blocks = format!("${}", unique_blocks);
+
     fs::write("FilteredWholeGeckoCodes.txt", unique_blocks.trim_end())
-        .expect("Unable to write FilteredWholeGeckoCodes.txt");
+        .expect("Unable to write deduplicated blocks to FilteredWholeGeckoCodes.txt");
 
     println!("Successfully removed duplicates and saved to FilteredWholeGeckoCodes.txt");
 }
@@ -330,33 +360,43 @@ fn group_by_code_headers(
 async fn main() {
     env::set_var("RUST_BACKTRACE", "full");
 
-    // URL of the page to fetch
-    let url = "https://wiki.supercombo.gg/index.php?title=SSBM/Gecko_Codes&action=edit";
+    let mut input: String = String::new();
+    let file_content: String;
 
-    // Make an asynchronous GET request to fetch the page content
-    let response = reqwest::get(url).await.expect("Failed to fetch the page");
-    let body = response.text().await.expect("Failed to get response text");
+    println!("Type 'custom' to parse Gecko Codes from the file \"PLACE_GECKO_CODES_HERE.txt\", or 'wiki' to fetch the Hoard from the <https://wiki.supercombo.gg/w/SSBM/Gecko_Codes> web page:");
+    
+    io::stdin().read_line(&mut input).expect("Failed to read line");
 
-    // Parse the HTML to find the textarea element
-    let document = Html::parse_document(&body);
-    let selector = Selector::parse("#wpTextbox1").expect("Failed to parse selector");
+    let choice: &str = input.trim();
 
-    // Extract the content of the textarea element
-    let textarea_element = document.select(&selector).next().expect("Textarea element not found");
-    let file_content = textarea_element.inner_html();
+    match choice {
+        "custom" => {
+            let file_path = Path::new("PLACE_GECKO_CODES_HERE.txt");
+            file_content = fs::read_to_string(&file_path)
+                .expect("Unable to read file \"PLACE_GECKO_CODES_HERE.txt\".");
+        },
+        "wiki" => {
+            let url = "https://wiki.supercombo.gg/index.php?title=SSBM/Gecko_Codes&action=edit";
 
-    // Use `file_content` as before
-    // For example, to save it to a file:
-    let file_path = Path::new("geckoCodeWikiPage.md");
-    fs::write(&file_path, file_content).expect("Unable to write file");
+            let response = reqwest::get(url).await.expect("Failed to fetch the page");
+            let body = response.text().await.expect("Failed to get response text");
 
-    let file_content = fs::read_to_string(&file_path).expect("Unable to read file");
+            let document = Html::parse_document(&body);
+            let selector = Selector::parse("#wpTextbox1").expect("Failed to parse selector");
+
+            let textarea_element = document.select(&selector).next().expect("Textarea element not found");
+            file_content = textarea_element.inner_html();
+        },
+        _ => {
+            panic!("Invalid option. Please type 'custom' or 'wiki'.");
+        }
+    }
 
     extract_and_save_whole_gecko_codes(&file_content);
 
-    let gecko_codes = extract_and_destructure_gecko_codes(&file_content);
+    let gecko_codes: Vec<GeckoCode> = extract_and_destructure_gecko_codes(&file_content);
 
-    let json_output =
+    let json_output: String =
         serde_json::to_string_pretty(&gecko_codes).expect("Failed to serialize to JSON");
 
     fs::write("RawDestructuredGeckoCodes.json", json_output).expect("Unable to write to file");
@@ -364,7 +404,7 @@ async fn main() {
     println!("Successfully saved Gecko Codes to RawDestructuredGeckoCodes.json");
 
     // Deserialize the stored JSON file
-    let json_content =
+    let json_content: String =
         fs::read_to_string("RawDestructuredGeckoCodes.json").expect("Unable to read JSON file");
     let deserialized_gecko_codes: Vec<GeckoCode> =
         serde_json::from_str(&json_content).expect("Failed to deserialize JSON");
@@ -384,7 +424,7 @@ async fn main() {
     }
 
     // Post-process the address_map
-    address_map.retain(|_, headers| {
+    address_map.retain(|_, headers: &mut Vec<String>| {
         headers.sort(); // Sort the headers for consistent comparison
         headers.dedup(); // Remove duplicate headers
 
@@ -397,7 +437,7 @@ async fn main() {
     sorted_addresses.sort();
 
     // Store results in a markdown formatted string
-    let mut md_content = String::new();
+    let mut md_content: String = String::new();
     for address in sorted_addresses {
         if let Some(code_headers) = address_map.get(&address) {
             md_content += &format!("## Duplicate address: {}\n", address);
@@ -417,12 +457,12 @@ async fn main() {
     );
 
     // Parse DuplicateAddresses.md and consolidate entries
-    let md_content =
+    let md_content: String =
         fs::read_to_string("DuplicateAddresses.md").expect("Unable to read DuplicateAddresses.md");
-    let parsed_data = parse_duplicate_addresses_md(&md_content);
-    let grouped_data = group_by_code_headers(parsed_data);
+    let parsed_data: HashMap<String, Vec<String>> = parse_duplicate_addresses_md(&md_content);
+    let grouped_data: HashMap<Vec<String>, Vec<String>> = group_by_code_headers(parsed_data);
 
-    let mut new_md_content = String::new();
+    let mut new_md_content: String = String::new();
     for (code_names, addresses) in grouped_data.iter() {
         new_md_content += &format!("## Codes:\n");
         for code_name in code_names {
