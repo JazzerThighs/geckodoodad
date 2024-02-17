@@ -2,12 +2,16 @@ extern crate rayon;
 extern crate regex;
 use rayon::prelude::*;
 use regex::Regex;
-use serde::{Deserialize, Serialize};
-use serde_json;
 use reqwest; // For making HTTP requests
 use scraper::{Html, Selector}; // For parsing HTML
+use serde::{Deserialize, Serialize};
+use serde_json;
+use std::{
+    collections::{HashMap, HashSet},
+    env, fs, io,
+    path::Path,
+};
 use tokio;
-use std::{io, collections::{HashMap, HashSet}, path::Path, env, fs};
 
 #[derive(Debug, PartialEq, Clone, Serialize)]
 pub enum Category {
@@ -33,19 +37,20 @@ impl GeckoCode {
     pub fn from_str(s: &str) -> Option<GeckoCode> {
         // Helper functions for parsing various sections of the Gecko Code.
         fn parse_header(line: &str) -> Option<String> {
-            let re = Regex::new(r"^\$(.*)").unwrap();
-            re.captures(line).map(|caps| caps[1].trim().to_string())
+            let header_pattern: Regex = Regex::new(r"^\$(.*)").unwrap();
+            return header_pattern.captures(line).map(|caps| caps[1].trim().to_string());
         }
 
         fn parse_authors(line: &str) -> Option<Vec<String>> {
-            let re = Regex::new(r"\[([^]]+)\]").unwrap();
-            re.captures(line)
-                .map(|caps| caps[1].split(',').map(|a| a.trim().to_string()).collect())
+            let author_pattern: Regex = Regex::new(r"\[([^]]+)\]").unwrap();
+            return author_pattern
+                .captures(line)
+                .map(|caps| caps[1].split(',').map(|a| a.trim().to_string()).collect());
         }
 
         fn extract_hex_words(hex_line: &str) -> Vec<String> {
-            let bytecode_pattern = Regex::new(r"^[\dA-Fa-fXxYyZz/?]{8}$").unwrap();
-            hex_line
+            let bytecode_pattern: Regex = Regex::new(r"^[\dA-Fa-fXxYyZz/?]{8}$").unwrap();
+            return hex_line
                 .split_whitespace()
                 .filter_map(|s| {
                     if bytecode_pattern.is_match(s) {
@@ -54,11 +59,11 @@ impl GeckoCode {
                         None
                     }
                 })
-                .collect()
+                .collect();
         }
 
         fn extract_opcode_and_address(hex_words: &[&str], index: usize) -> Option<Vec<String>> {
-            let opcode = &hex_words[index][0..2];
+            let opcode: &str = &hex_words[index][0..2];
 
             match opcode {
                 "00" | "01" | // Direct RAM Writes: 8 bit Write & Fill
@@ -82,7 +87,7 @@ impl GeckoCode {
                 "C6" | "C7" | // ASM Codes: Create a branch
                 "F2" | "F3"   // Gecko 1.8+ Only: Insert ASM With 16 bit XOR Checksum
                 => {
-                    let mut base_mem_address =
+                    let mut base_mem_address: i64 =
                         i64::from_str_radix(&hex_words[index][2..], 16).ok()?;
 
                     // Account for if the memory address overflows into the OpCode hex
@@ -115,9 +120,9 @@ impl GeckoCode {
             }
         }
 
-        let mut lines = s.lines();
+        let mut lines: std::str::Lines<'_> = s.lines();
 
-        let mut gecko = GeckoCode {
+        let mut gecko: GeckoCode = GeckoCode {
             header: String::new(),
             version: String::from(""),
             authors: None,
@@ -152,10 +157,10 @@ impl GeckoCode {
                 .unwrap()
                 .is_match(line)
             {
-                let trimmed_line = line.trim().to_string();
+                let trimmed_line: String = line.trim().to_string();
                 gecko.hex_lines.push(trimmed_line.clone());
 
-                let words = extract_hex_words(&trimmed_line);
+                let words: Vec<String> = extract_hex_words(&trimmed_line);
                 for (index, word) in words.iter().enumerate() {
                     gecko.hex_words.push(word.to_string());
 
@@ -170,44 +175,37 @@ impl GeckoCode {
         }
 
         if gecko.header.is_empty() || gecko.hex_lines.is_empty() {
-            None
+            return None;
         } else {
-            Some(gecko)
+            return Some(gecko);
         }
     }
 }
-// \n&lt;/pre&gt;
+
 fn extract_and_save_whole_gecko_codes(file_content: &str) {
-    // Normalize line endings first
-    let normalized_content = file_content.replace("\r\n", "\n");
-
-    // Check if the content starts with a code block and adjust accordingly
-    let content_to_split = if normalized_content.trim_start().starts_with("$") {
-        // Prepend a newline for consistent processing
-        format!("\n{}", normalized_content)
+    let normalized_content: String = file_content.replace("\r\n", "\n"); // Normalize line endings first
+    let content_to_split: String = if normalized_content.trim_start().starts_with("$") {
+        // Check if the content starts with a code block and adjust accordingly
+        format!("\n{}", normalized_content) // Prepend a newline for consistent processing
     } else {
-        normalized_content.clone() // Clone is needed to match types, could optimize by avoiding this
+        normalized_content.clone()
     };
-
-    // Now perform the split, ensuring the content lives long enough
-    let blocks: Vec<&str> = content_to_split.split("\n$").collect();
-
-    // If skipping non-code text before the first "$", adjust the blocks vector as needed
+    let blocks: Vec<&str> = content_to_split.split("\n$").collect(); // Now perform the split, ensuring the content lives long enough
     let blocks: Vec<&str> = if !normalized_content.trim_start().starts_with("$") {
+        // If skipping non-code text before the first "$", adjust the blocks vector as needed
         blocks.into_iter().skip(1).collect()
     } else {
         blocks
     };
-
     let mut whole_gecko_codes: String = String::new();
 
     for block in blocks.iter() {
         if let Some(end_index) = block.find("\n&lt;/pre&gt;") {
-            let formatted_block = format!("${}\n\n", &block[..end_index]);
+            let formatted_block: String = format!("${}\n\n", &block[..end_index]);
             whole_gecko_codes.push_str(&formatted_block);
         } else if !block.trim().is_empty() {
             // Handle blocks without "\n&lt;/pre&gt;"
-            let formatted_block = format!("${}\n\n", block.trim_end());
+            let formatted_block: String = format!("${}\n\n", block.trim_end());
             whole_gecko_codes.push_str(&formatted_block);
         }
     }
@@ -229,7 +227,7 @@ fn extract_and_save_whole_gecko_codes(file_content: &str) {
 
     fs::write("RawWholeGeckoCodes.txt", &whole_gecko_codes)
         .expect("Unable to write to RawWholeGeckoCodes.txt");
-    
+
     println!("Successfully saved whole Gecko Codes to RawWholeGeckoCodes.txt");
 
     // deduplication logic
@@ -239,7 +237,7 @@ fn extract_and_save_whole_gecko_codes(file_content: &str) {
     let mut is_first_block: bool = true;
 
     for block in whole_gecko_codes.split("\n$") {
-        let trimmed_block = block.trim();
+        let trimmed_block: &str = block.trim();
         if !trimmed_block.is_empty() && !block_set.contains(trimmed_block) {
             block_set.insert(trimmed_block);
             if !is_first_block {
@@ -281,12 +279,12 @@ fn extract_and_destructure_gecko_codes(input: &str) -> Vec<GeckoCode> {
     }
 
     // Process the rest in parallel
-    let remaining_gecko_codes = blocks
+    let remaining_gecko_codes: Vec<GeckoCode> = blocks
         .par_iter()
         .skip(1) // Skip the first block as it has been processed
         .filter_map(|&block| {
-            let block_with_prefix = format!("${}", block); // Prefixing with "$"
-            let code = GeckoCode::from_str(&block_with_prefix);
+            let block_with_prefix: String = format!("${}", block); // Prefixing with "$"
+            let code: Option<GeckoCode> = GeckoCode::from_str(&block_with_prefix);
             if let Some(ref gecko_code) = code {
                 println!("Parsed gecko code header: {:?}", gecko_code.header);
             } else {
@@ -305,7 +303,7 @@ fn extract_and_destructure_gecko_codes(input: &str) -> Vec<GeckoCode> {
     );
 
     gecko_codes.extend(remaining_gecko_codes);
-    gecko_codes
+    return gecko_codes;
 }
 
 #[derive(Debug, PartialEq)]
@@ -316,22 +314,22 @@ pub enum HexAddress {
 impl HexAddress {
     pub fn new(s: &str) -> Option<Self> {
         if HexAddress::is_valid(s) {
-            Some(HexAddress::Address(s.to_string()))
+            return Some(HexAddress::Address(s.to_string()));
         } else {
-            None
+            return None;
         }
     }
 
     fn is_valid(s: &str) -> bool {
-        let re = Regex::new(r"^[\dA-Fa-f]{6}$").unwrap();
-        re.is_match(s)
+        let hex_address_pattern: Regex = Regex::new(r"^[\dA-Fa-f]{6}$").unwrap();
+        return hex_address_pattern.is_match(s);
     }
 }
 
 fn parse_duplicate_addresses_md(file_content: &str) -> HashMap<String, Vec<String>> {
-    let mut result = HashMap::new();
+    let mut result: HashMap<String, Vec<String>> = HashMap::new();
     let lines: Vec<&str> = file_content.lines().collect();
-    let mut current_address = String::new();
+    let mut current_address: String = String::new();
 
     for line in lines {
         if line.starts_with("## Duplicate address:") {
@@ -339,7 +337,7 @@ fn parse_duplicate_addresses_md(file_content: &str) -> HashMap<String, Vec<Strin
                 .trim_start_matches("## Duplicate address: ")
                 .to_string();
         } else if line.starts_with("- Found in code:") {
-            let code_name = line.trim_start_matches("- Found in code: ").to_string();
+            let code_name: String = line.trim_start_matches("- Found in code: ").to_string();
             result
                 .entry(current_address.clone())
                 .or_insert_with(Vec::new)
@@ -347,7 +345,7 @@ fn parse_duplicate_addresses_md(file_content: &str) -> HashMap<String, Vec<Strin
         }
     }
 
-    result
+    return result;
 }
 
 fn group_by_code_headers(
@@ -356,7 +354,7 @@ fn group_by_code_headers(
     let mut result: HashMap<Vec<String>, Vec<String>> = HashMap::new();
 
     for (address, codes) in address_map.iter() {
-        let codes_sorted = {
+        let codes_sorted: Vec<String> = {
             let mut sorted_codes = codes.clone();
             sorted_codes.sort();
             sorted_codes
@@ -368,7 +366,7 @@ fn group_by_code_headers(
             .push(address.clone());
     }
 
-    result
+    return result;
 }
 
 #[tokio::main]
@@ -379,38 +377,39 @@ async fn main() {
     let file_content: String;
 
     println!("Type 'custom' to parse Gecko Codes from the file \"PLACE_GECKO_CODES_HERE.txt\", or 'wiki' to fetch the Hoard from the <https://wiki.supercombo.gg/w/SSBM/Gecko_Codes> web page:");
-    
-    io::stdin().read_line(&mut input).expect("Failed to read line");
-
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
     let choice: &str = input.trim();
-
     match choice {
         "custom" => {
-            let file_path = Path::new("PLACE_GECKO_CODES_HERE.txt");
+            let file_path: &Path = Path::new("PLACE_GECKO_CODES_HERE.txt");
             file_content = fs::read_to_string(&file_path)
                 .expect("Unable to read file \"PLACE_GECKO_CODES_HERE.txt\".");
-        },
+        }
         "wiki" => {
-            let url = "https://wiki.supercombo.gg/index.php?title=SSBM/Gecko_Codes&action=edit";
-
-            let response = reqwest::get(url).await.expect("Failed to fetch the page");
-            let body = response.text().await.expect("Failed to get response text");
-
-            let document = Html::parse_document(&body);
-            let selector = Selector::parse("#wpTextbox1").expect("Failed to parse selector");
-
-            let textarea_element = document.select(&selector).next().expect("Textarea element not found");
+            let url: &str =
+                "https://wiki.supercombo.gg/index.php?title=SSBM/Gecko_Codes&action=edit";
+            let response: reqwest::Response =
+                reqwest::get(url).await.expect("Failed to fetch the page");
+            let body: String = response.text().await.expect("Failed to get response text");
+            let document: Html = Html::parse_document(&body);
+            let selector: Selector =
+                Selector::parse("#wpTextbox1").expect("Failed to parse selector");
+            let textarea_element: scraper::ElementRef<'_> = document
+                .select(&selector)
+                .next()
+                .expect("Textarea element not found");
             file_content = textarea_element.inner_html();
-        },
+        }
         _ => {
-            panic!("Invalid option. Please type 'custom' or 'wiki'.");
+            panic!("Invalid option. Please type 'custom' or 'wiki' next time. Shutting down...");
         }
     }
 
     extract_and_save_whole_gecko_codes(&file_content);
 
     let gecko_codes: Vec<GeckoCode> = extract_and_destructure_gecko_codes(&file_content);
-
     let json_output: String =
         serde_json::to_string_pretty(&gecko_codes).expect("Failed to serialize to JSON");
 
