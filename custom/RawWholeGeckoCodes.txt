@@ -1,0 +1,12 @@
+$REPLACE ME! Example Code No. 1 (version) [Author 1, Author 2, etc.]
+*Description of the code's purpose.
+*Description may also contain complimentary information such as Code Options, etc.
+01234567 89ABCDEF #Developer Comments
+01234567 89abxxyy #Developer Comments may also contain pointers to XX, YY, etc.
+
+$REPLACE ME, TOO! Example Code No. 2 (version) [Author 1, Author 2, etc.]
+*Description of the code's purpose.
+*Description may also contain complimentary information such as Code Options, etc.
+01234567 89ABCDEF #Developer Comments
+01234567 89abxxyy #Developer Comments may also contain pointers to XX, YY, etc.
+
