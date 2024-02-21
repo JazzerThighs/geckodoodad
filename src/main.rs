@@ -38,7 +38,9 @@ impl GeckoCode {
         // Helper functions for parsing various sections of the Gecko Code.
         fn parse_header(line: &str) -> Option<String> {
             let header_pattern: Regex = Regex::new(r"^\$(.*)").unwrap();
-            return header_pattern.captures(line).map(|caps| caps[1].trim().to_string());
+            return header_pattern
+                .captures(line)
+                .map(|caps| caps[1].trim().to_string());
         }
 
         fn parse_authors(line: &str) -> Option<Vec<String>> {
@@ -182,7 +184,7 @@ impl GeckoCode {
     }
 }
 
-fn extract_and_save_whole_gecko_codes(file_content: &str) {
+fn extract_and_save_whole_gecko_codes(file_content: &str, raw_path: &Path, filtered_path: &Path) {
     let normalized_content: String = file_content.replace("\r\n", "\n"); // Normalize line endings first
     let content_to_split: String = if normalized_content.trim_start().starts_with("$") {
         // Check if the content starts with a code block and adjust accordingly
@@ -225,10 +227,10 @@ fn extract_and_save_whole_gecko_codes(file_content: &str) {
         .replace("&copy;", "©")
         .replace("&reg;", "®");
 
-    fs::write("RawWholeGeckoCodes.txt", &whole_gecko_codes)
-        .expect("Unable to write to RawWholeGeckoCodes.txt");
+    fs::write(raw_path, &whole_gecko_codes)
+        .expect("Unable to write to `path_raw_whole_gecko_codes`.");
 
-    println!("Successfully saved whole Gecko Codes to RawWholeGeckoCodes.txt");
+    println!("Successfully saved whole Gecko Codes to {:?}", raw_path);
 
     // deduplication logic
     whole_gecko_codes = format!("\n{}", whole_gecko_codes);
@@ -252,10 +254,13 @@ fn extract_and_save_whole_gecko_codes(file_content: &str) {
 
     unique_blocks = format!("${}", unique_blocks);
 
-    fs::write("FilteredWholeGeckoCodes.txt", unique_blocks.trim_end())
-        .expect("Unable to write deduplicated blocks to FilteredWholeGeckoCodes.txt");
+    fs::write(filtered_path, unique_blocks.trim_end())
+        .expect("Unable to write deduplicated blocks to `path_filtered_whole_gecko_codes`.");
 
-    println!("Successfully removed duplicates and saved to FilteredWholeGeckoCodes.txt");
+    println!(
+        "Successfully removed duplicates and saved to {:?}",
+        filtered_path
+    );
 }
 
 fn extract_and_destructure_gecko_codes(input: &str) -> Vec<GeckoCode> {
@@ -297,12 +302,13 @@ fn extract_and_destructure_gecko_codes(input: &str) -> Vec<GeckoCode> {
         })
         .collect::<Vec<GeckoCode>>();
 
+    
+    gecko_codes.extend(remaining_gecko_codes);
+
     println!(
         "Number of GeckoCodes after processing: {}",
-        remaining_gecko_codes.len()
+        gecko_codes.len()
     );
-
-    gecko_codes.extend(remaining_gecko_codes);
     return gecko_codes;
 }
 
@@ -370,22 +376,37 @@ fn group_by_code_headers(
 }
 
 #[tokio::main]
-async fn main() {
+async fn main() -> Result<(), std::io::Error> {
     env::set_var("RUST_BACKTRACE", "full");
 
     let mut input: String = String::new();
+
+    fs::create_dir_all("custom/")?;
+    fs::create_dir_all("wiki")?;
+
     let file_content: String;
+    let path_raw_whole_gecko_codes: &Path;
+    let path_filtered_whole_gecko_codes: &Path;
+    let path_raw_destructured_gecko_codes: &Path;
+    let path_duplicated_addresses: &Path;
+    let path_consolidated_addresses: &Path;
 
     println!("Type 'custom' to parse Gecko Codes from the file \"PLACE_GECKO_CODES_HERE.txt\", or 'wiki' to fetch the Hoard from the <https://wiki.supercombo.gg/w/SSBM/Gecko_Codes> web page:");
     io::stdin()
         .read_line(&mut input)
         .expect("Failed to read line");
+
     let choice: &str = input.trim();
     match choice {
         "custom" => {
-            let file_path: &Path = Path::new("PLACE_GECKO_CODES_HERE.txt");
-            file_content = fs::read_to_string(&file_path)
+            file_content = fs::read_to_string("PLACE_GECKO_CODES_HERE.txt")
                 .expect("Unable to read file \"PLACE_GECKO_CODES_HERE.txt\".");
+
+            path_raw_whole_gecko_codes = Path::new("custom/RawWholeGeckoCodes.txt");
+            path_filtered_whole_gecko_codes = Path::new("custom/FilteredWholeGeckoCodes.txt");
+            path_raw_destructured_gecko_codes = Path::new("custom/RawDestructuredGeckoCodes.json");
+            path_duplicated_addresses = Path::new("custom/DuplicatedAddresses.md");
+            path_consolidated_addresses = Path::new("custom/ConsolidatedAddresses.md");
         }
         "wiki" => {
             let url: &str =
@@ -401,25 +422,41 @@ async fn main() {
                 .next()
                 .expect("Textarea element not found");
             file_content = textarea_element.inner_html();
+
+            path_raw_whole_gecko_codes = Path::new("wiki/RawWholeGeckoCodes.txt");
+            path_filtered_whole_gecko_codes = Path::new("wiki/FilteredWholeGeckoCodes.txt");
+            path_raw_destructured_gecko_codes = Path::new("wiki/RawDestructuredGeckoCodes.json");
+            path_duplicated_addresses = Path::new("wiki/DuplicatedAddresses.md");
+            path_consolidated_addresses = Path::new("wiki/ConsolidatedAddresses.md");
         }
         _ => {
             panic!("Invalid option. Please type 'custom' or 'wiki' next time. Shutting down...");
         }
     }
 
-    extract_and_save_whole_gecko_codes(&file_content);
+    extract_and_save_whole_gecko_codes(
+        &file_content,
+        path_raw_whole_gecko_codes,
+        path_filtered_whole_gecko_codes,
+    );
 
-    let gecko_codes: Vec<GeckoCode> = extract_and_destructure_gecko_codes(&file_content);
+    let filtered_codes: String = fs::read_to_string(&path_filtered_whole_gecko_codes)
+        .expect("Failed to read path_filtered_whole_gecko_codes");
+    let gecko_codes: Vec<GeckoCode> = extract_and_destructure_gecko_codes(&filtered_codes);
     let json_output: String =
         serde_json::to_string_pretty(&gecko_codes).expect("Failed to serialize to JSON");
 
-    fs::write("RawDestructuredGeckoCodes.json", json_output).expect("Unable to write to file");
+    fs::write(&path_raw_destructured_gecko_codes, json_output)
+        .expect("Unable to write to `path_raw_destructured_gecko_codes`");
 
-    println!("Successfully saved Gecko Codes to RawDestructuredGeckoCodes.json");
+    println!(
+        "Successfully saved Gecko Codes to {:?}",
+        path_raw_destructured_gecko_codes
+    );
 
     // Deserialize the stored JSON file
     let json_content: String =
-        fs::read_to_string("RawDestructuredGeckoCodes.json").expect("Unable to read JSON file");
+        fs::read_to_string(&path_raw_destructured_gecko_codes).expect("Unable to read JSON file");
     let deserialized_gecko_codes: Vec<GeckoCode> =
         serde_json::from_str(&json_content).expect("Failed to deserialize JSON");
 
@@ -463,16 +500,17 @@ async fn main() {
     }
 
     // Save the results to a markdown file
-    fs::write("DuplicateAddresses.md", md_content)
-        .expect("Unable to write to DuplicateAddresses.md");
+    fs::write(&path_duplicated_addresses, md_content)
+        .expect("Unable to write to `path_duplicated_addresses`.");
 
     println!(
-        "Successfully saved sorted and cleaned-up duplicate addresses to DuplicateAddresses.md"
+        "Successfully saved sorted and cleaned-up duplicate addresses to {:?}",
+        path_duplicated_addresses
     );
 
     // Parse DuplicateAddresses.md and consolidate entries
-    let md_content: String =
-        fs::read_to_string("DuplicateAddresses.md").expect("Unable to read DuplicateAddresses.md");
+    let md_content: String = fs::read_to_string(&path_duplicated_addresses)
+        .expect("Unable to read `path_dupliucated_addresses`");
     let parsed_data: HashMap<String, Vec<String>> = parse_duplicate_addresses_md(&md_content);
     let grouped_data: HashMap<Vec<String>, Vec<String>> = group_by_code_headers(parsed_data);
 
@@ -489,8 +527,13 @@ async fn main() {
         new_md_content += "\n";
     }
 
-    fs::write("ConsolidatedAddresses.md", new_md_content)
-        .expect("Unable to write to ConsolidatedAddresses.md");
+    fs::write(&path_consolidated_addresses, new_md_content)
+        .expect("Unable to write to `path_consolidated_addresses`");
 
-    println!("Successfully saved consolidated addresses to ConsolidatedAddresses.md");
+    println!(
+        "Successfully saved consolidated addresses to {:?}",
+        path_consolidated_addresses
+    );
+
+    return Ok(());
 }

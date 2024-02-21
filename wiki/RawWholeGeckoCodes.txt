@@ -3645,7 +3645,7 @@ C207D5A0 0000000E
 $CSS Clone Icons Slide Into Place [UnclePunch]
 *Enables the Forgotten Animation of the Clone Character's Icons on the Character Select Screen
 044dc578 00000000
- 
+
 $Disable Kill Explosions GFX [UnclePunch]
 040d4040 60000000
 040d3b50 60000000
@@ -4286,7 +4286,7 @@ C23805A0 00000007
 80610008 80010010
 3821000C 7C0803A6
 808DA8F4 00000000
- 
+
 $Display last RNG call [212 Degrees]
 0416CE0C 38630000
 C23805AC 00000002
@@ -6825,7 +6825,7 @@ C2377B90 0000000B #External/No XY/Ignore Buttons.asm
 41820008 48000008
 7000F3FF 90050000
 60000000 00000000
- 
+
 $No Multi/Special Double Jumps [PKFreeZZy]
 040CB8B4 60000000
 040CB8C4 60000000

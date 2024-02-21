@@ -113,13 +113,13 @@
 - Found in code: Full friendlies codes [Achilles, UnclePunch]
 - Found in code: Full tournament codes [Achilles, UnclePunch]
 - Found in code: Fully Charged Side B = Misfire [UnclePunch]
-- Found in code: G&amp;W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
+- Found in code: G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 - Found in code: GaW Bucket Fill Amount Based on Damage of Projectile [UnclePunch]
 - Found in code: GaW Modulo 10 Hammer [UnclePunch]
 - Found in code: Game! Splash is Half-Sized [Altafen, Dan Salvato]
 - Found in code: Ganon Float v1.0 [UnclePunch]
 - Found in code: Get Hit = Die [Altafen]
-- Found in code: Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]
+- Found in code: Giga Bowser & Sandbag Always Fall On Match Start [Achilles]
 - Found in code: Grab Infinite Removal v3 [Glook, Punkline]
 - Found in code: Grab Items With Airdodge [UnclePunch]
 - Found in code: Grab Port-Priority Fix - Award Grab to Lower % Player [PKFreeZZy]
@@ -172,7 +172,7 @@
 - Found in code: Make Specific Costume on Specific Character Invisible [Altafen]
 - Found in code: Mango Axe Wednesday [Krohnos]
 - Found in code: Mario and Doc Get Jump Back After Down B [UnclePunch]
-- Found in code: Marth &amp; Roy - Restore Whispy Blink Glitch [PKFreeZZy]
+- Found in code: Marth & Roy - Restore Whispy Blink Glitch [PKFreeZZy]
 - Found in code: Mash Firefox to Increase Length [UnclePunch]
 - Found in code: Mewtwo Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 - Found in code: Moonwalk With C-Stick ala PM [UnclePunch]
@@ -397,7 +397,7 @@
 - Found in code: Frame Data Visualization Pack v.22 [rmn, UnclePunch, NeilHarbin0]
 - Found in code: Full friendlies codes [Achilles, UnclePunch]
 - Found in code: Full tournament codes [Achilles, UnclePunch]
-- Found in code: G&amp;W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
+- Found in code: G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 - Found in code: Hitbox Extension v1.8.1 [sushie]
 - Found in code: Hitboxes Always On [UnclePunch]
 - Found in code: Hitboxes Display Knockback Angle v0.3 [rmn, PKFreeZZy]
@@ -566,7 +566,7 @@
 - Found in code: Frame Data Visualization Pack v.22 [rmn, UnclePunch, NeilHarbin0]
 - Found in code: Full friendlies codes [Achilles, UnclePunch]
 - Found in code: Full tournament codes [Achilles, UnclePunch]
-- Found in code: G&amp;W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
+- Found in code: G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 - Found in code: Ganon Float v1.0 [UnclePunch]
 - Found in code: Hitbox Extension v1.8.1 [sushie]
 - Found in code: Hitboxes Display Knockback Angle v0.3 [rmn, PKFreeZZy]
@@ -610,7 +610,7 @@
 - Found in code: Display Ungrabbable Hurtboxes [UnclePunch]
 - Found in code: Enable 8 Hitbox Support v1.0.0 [sushie]
 - Found in code: Force 480p 4:3 [UnclePunch]
-- Found in code: Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]
+- Found in code: Giga Bowser & Sandbag Always Fall On Match Start [Achilles]
 - Found in code: Hitbox Extension v1.8.1 [sushie]
 - Found in code: Hold Start to Skip Results (2 Seconds) [Achilles]
 - Found in code: If character selected is Giga Bowser, set scale to 0.5 [flieskiller]
@@ -1050,7 +1050,7 @@
 - Found in code: Special Hitbox Angle: 367 v2.1.0 [sushie]
 
 ## Duplicate address: 0x0000002E
-- Found in code: Marth &amp; Roy - Restore Whispy Blink Glitch [PKFreeZZy]
+- Found in code: Marth & Roy - Restore Whispy Blink Glitch [PKFreeZZy]
 - Found in code: Press B to Explode Yoshi Egg and Teleport w/ Momentum Based on Angle+Distance From Egg [UnclePunch]
 - Found in code: Z button to toggle NPCs/alternate characters in CSS (1.02) [Achilles1515]
 
@@ -1205,7 +1205,7 @@
 ## Duplicate address: 0x00002F04
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: One CPU Buddy per Player (Buddies stay KOed) [wParam]
 - Found in code: One CPU Mirror per Player (Mirrors stay KOed) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
@@ -1217,7 +1217,7 @@
 ## Duplicate address: 0x00002F08
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: One CPU Buddy per Player (Buddies stay KOed) [wParam]
 - Found in code: One CPU Mirror per Player (Mirrors stay KOed) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
@@ -1229,7 +1229,7 @@
 ## Duplicate address: 0x00002F0C
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: One CPU Buddy per Player (Buddies stay KOed) [wParam]
 - Found in code: One CPU Mirror per Player (Mirrors stay KOed) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
@@ -1241,7 +1241,7 @@
 ## Duplicate address: 0x00002F10
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: One CPU Buddy per Player (Buddies stay KOed) [wParam]
 - Found in code: One CPU Mirror per Player (Mirrors stay KOed) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
@@ -1253,7 +1253,7 @@
 ## Duplicate address: 0x00002F14
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: One CPU Buddy per Player (Buddies stay KOed) [wParam]
 - Found in code: One CPU Mirror per Player (Mirrors stay KOed) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
@@ -1265,7 +1265,7 @@
 ## Duplicate address: 0x00002F18
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: One CPU Buddy per Player (Buddies stay KOed) [wParam]
 - Found in code: One CPU Mirror per Player (Mirrors stay KOed) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
@@ -1277,7 +1277,7 @@
 ## Duplicate address: 0x00002F1C
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
 - Found in code: Three CPU Buddies per Player (Buddies stay KOed) [wParam]
 - Found in code: Three CPU Mirrors per Player (Mirrors stay KOed) [wParam]
@@ -1287,7 +1287,7 @@
 ## Duplicate address: 0x00002F20
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
 - Found in code: Three CPU Buddies per Player (Buddies stay KOed) [wParam]
 - Found in code: Three CPU Mirrors per Player (Mirrors stay KOed) [wParam]
@@ -1297,7 +1297,7 @@
 ## Duplicate address: 0x00002F24
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
 - Found in code: Three CPU Buddies per Player (Buddies stay KOed) [wParam]
 - Found in code: Three CPU Mirrors per Player (Mirrors stay KOed) [wParam]
@@ -1305,7 +1305,7 @@
 ## Duplicate address: 0x00002F28
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
 - Found in code: Three CPU Buddies per Player (Buddies stay KOed) [wParam]
 - Found in code: Three CPU Mirrors per Player (Mirrors stay KOed) [wParam]
@@ -1313,23 +1313,23 @@
 ## Duplicate address: 0x00002F2C
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
 
 ## Duplicate address: 0x00002F30
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
 
 ## Duplicate address: 0x00002F34
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
 
 ## Duplicate address: 0x00002F38
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: Picking up a Metal Box Deals 999% to Opponents [wParam]
 
 ## Duplicate address: 0x00002F3C
@@ -1433,7 +1433,7 @@
 - Found in code: Ledge Grab Limit [UnclePunch]
 - Found in code: Ledge Invincibility Attrition [_glook]
 - Found in code: Mango Axe Wednesday [Krohnos]
-- Found in code: Marth &amp; Roy - Restore Whispy Blink Glitch [PKFreeZZy]
+- Found in code: Marth & Roy - Restore Whispy Blink Glitch [PKFreeZZy]
 - Found in code: Moonwalk With C-Stick ala PM [UnclePunch]
 - Found in code: Nana Respawns After 20 Seconds [UnclePunch]
 - Found in code: Nana and Popo Can Share Ledge [UnclePunch]
@@ -1584,14 +1584,14 @@
 - Found in code: Hold to Pause [UnclePunch]
 
 ## Duplicate address: 0x0003001F
-- Found in code: Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]
+- Found in code: Giga Bowser & Sandbag Always Fall On Match Start [Achilles]
 - Found in code: Samus Shoots Random Item [UnclePunch]
 
 ## Duplicate address: 0x00030020
 - Found in code: Extra characters doesn't crash the game at Victory Screen (1.02) [flieskiller]
 - Found in code: Full friendlies codes [Achilles, UnclePunch]
 - Found in code: Full tournament codes [Achilles, UnclePunch]
-- Found in code: Giga Bowser &amp; Sandbag Always Fall On Match Start [Achilles]
+- Found in code: Giga Bowser & Sandbag Always Fall On Match Start [Achilles]
 - Found in code: Samus Shoots Random Item [UnclePunch]
 - Found in code: Show Player Names [Fizzi, UnclePunch, Enzyme, jmlee337]
 
@@ -1801,7 +1801,7 @@
 - Found in code: L-Cancel Frame Timer Display v1.0 [UnclePunch]
 
 ## Duplicate address: 0x00050008
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 - Found in code: No Voice (Local Player Only) [Altafen]
 
 ## Duplicate address: 0x0005000B
@@ -1823,7 +1823,7 @@
 - Found in code: Extended Name Entry [Dan Salvato]
 - Found in code: Hitbox Extension v1.8.1 [sushie]
 - Found in code: Hot Mr. Saturn Potato (1.02) [wParam, Achilles]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 
 ## Duplicate address: 0x00068EEC
 - Found in code: Character Data Struct Custom Flag Init [Achilles]
@@ -1833,7 +1833,7 @@
 - Found in code: Hot Mr. Saturn Potato (1.02) [wParam, Achilles]
 - Found in code: Immediate KO upon Receiving Damage [wParam]
 - Found in code: Move Swap All Players (DUp P1, DRight P2, DDown P3, DLeft P4) [Y.S.]
-- Found in code: Move Swap Code (D-Pad Up = P1 &gt; P2, P2 &gt; P3, and P3 &gt; P4) [wParam]
+- Found in code: Move Swap Code (D-Pad Up = P1 > P2, P2 > P3, and P3 > P4) [wParam]
 
 ## Duplicate address: 0x0006B80C
 - Found in code: Big Head Mode [UnclePunch]
@@ -1946,7 +1946,7 @@
 - Found in code: Reverse Hitbox ID Draw Order [UnclePunch]
 
 ## Duplicate address: 0x00080764
-- Found in code: Disable Intagible &amp; Invulnerable Hurtbox Display [Achilles]
+- Found in code: Disable Intagible & Invulnerable Hurtbox Display [Achilles]
 - Found in code: Hide Invisible Intangible Hurtboxes [Altafen]
 
 ## Duplicate address: 0x000807D8
@@ -2124,7 +2124,7 @@
 - Found in code: Air Grabs v3 [UnclePunch]
 - Found in code: Brawl-style B Reverse 1.1 [UnclePunch]
 - Found in code: Fox and Falco Enter Fall After Side B and Retains Jump (a la Smash 4) v2[UnclePunch]
-- Found in code: G&amp;W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
+- Found in code: G&W Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 - Found in code: Low-Poly v2 [UnclePunch,Yakult]
 - Found in code: Mewtwo Enters Fall After Up-B, Keeps Jump from Ground, and Cannot Up-B Again (a la PM)[UnclePunch]
 - Found in code: Music Plays at 25% Volume When All Controllers Are Idle For 1 Minute [UnclePunch, Punkline]
@@ -2174,7 +2174,7 @@
 - Found in code: Stock Control/Crew Battle (1.02) [Jorgasms]
 
 ## Duplicate address: 0x000E52E8
-- Found in code: Captain Falcon &amp; Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]
+- Found in code: Captain Falcon & Ganondorf - Add Thrower Exception on Up-B Release [PKFreeZZy]
 - Found in code: Optional: Port Priority Fixes [Punkline, Achilles, PKFreeZZy]
 
 ## Duplicate address: 0x000EA988
@@ -2351,15 +2351,15 @@
 - Found in code: Taunt Battle (r2) [InternetExplorer]:
 
 ## Duplicate address: 0x00132ECC
-- Found in code: Bowser &amp; Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
+- Found in code: Bowser & Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
 - Found in code: Optional: Port Priority Fixes [Punkline, Achilles, PKFreeZZy]
 
 ## Duplicate address: 0x00133A48
-- Found in code: Bowser &amp; Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
+- Found in code: Bowser & Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
 - Found in code: Optional: Port Priority Fixes [Punkline, Achilles, PKFreeZZy]
 
 ## Duplicate address: 0x00133B68
-- Found in code: Bowser &amp; Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
+- Found in code: Bowser & Giga Bowser - Add Thrower Exception on Side-B Release [PKFreeZZy]
 - Found in code: Optional: Port Priority Fixes [Punkline, Achilles, PKFreeZZy]
 
 ## Duplicate address: 0x00140000
@@ -2402,12 +2402,12 @@
 ## Duplicate address: 0x001508B8
 - Found in code: MH/CH Control with Any Port [sushie, Achilles1515]
 - Found in code: MH/CH Improvements [sushie]
-- Found in code: MasterHand &amp; CrazyHand Controlled By All Ports [Achilles]
+- Found in code: MasterHand & CrazyHand Controlled By All Ports [Achilles]
 
 ## Duplicate address: 0x00156AFC
 - Found in code: MH/CH Control with Any Port [sushie, Achilles1515]
 - Found in code: MH/CH Improvements [sushie]
-- Found in code: MasterHand &amp; CrazyHand Controlled By All Ports [Achilles]
+- Found in code: MasterHand & CrazyHand Controlled By All Ports [Achilles]
 
 ## Duplicate address: 0x00158268
 - Found in code: Polling Drift + Half Visual Buffer Fixes [tauKhan, UnclePunch]
